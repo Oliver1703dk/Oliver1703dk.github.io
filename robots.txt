@@ -1,0 +1,36 @@
+---
+permalink: /robots.txt
+---
+User-agent: *
+Disallow:
+
+# Allow AI search crawlers (for GEO)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+# Block AI training crawlers (protect IP)
+User-agent: ClaudeBot
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+Sitemap: {{ site.baseurl | prepend: site.url }}/sitemap.xml
