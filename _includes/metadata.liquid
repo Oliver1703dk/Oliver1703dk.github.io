@@ -239,3 +239,141 @@
     }
   </script>
 {% endif %}
+
+{% comment %}
+  ============================================================
+  CUSTOM SEO ADDITIONS (not provided by al-folio)
+  Phase 3 — SEO Implementation
+  ============================================================
+{% endcomment %}
+
+{% comment %} --- HIGHWIRE PRESS META TAGS (Google Scholar indexing) --- {% endcomment %}
+{% if page.entry %}
+  <meta name="citation_title" content="{{ page.entry.title | strip_html | strip }}">
+  {% for author in page.entry.author_array %}
+    <meta name="citation_author" content="{{ author.last }}, {{ author.first }}">
+  {% endfor %}
+  {% if page.entry.year %}
+    <meta name="citation_publication_date" content="{{ page.entry.year }}">
+  {% endif %}
+  {% if page.entry.booktitle %}
+    <meta name="citation_conference_title" content="{{ page.entry.booktitle | strip_html | strip }}">
+  {% endif %}
+  {% if page.entry.journal %}
+    <meta name="citation_journal_title" content="{{ page.entry.journal | strip_html | strip }}">
+  {% endif %}
+  {% if page.entry.volume %}
+    <meta name="citation_volume" content="{{ page.entry.volume }}">
+  {% endif %}
+  {% if page.entry.number %}
+    <meta name="citation_issue" content="{{ page.entry.number }}">
+  {% endif %}
+  {% if page.entry.pages %}
+    {% assign page_parts = page.entry.pages | split: '--' %}
+    {% if page_parts.size == 2 %}
+      <meta name="citation_firstpage" content="{{ page_parts[0] | strip }}">
+      <meta name="citation_lastpage" content="{{ page_parts[1] | strip }}">
+    {% else %}
+      {% assign page_parts = page.entry.pages | split: '-' %}
+      {% if page_parts.size == 2 %}
+        <meta name="citation_firstpage" content="{{ page_parts[0] | strip }}">
+        <meta name="citation_lastpage" content="{{ page_parts[1] | strip }}">
+      {% endif %}
+    {% endif %}
+  {% endif %}
+  {% if page.entry.doi %}
+    <meta name="citation_doi" content="{{ page.entry.doi }}">
+  {% endif %}
+  {% if page.entry.isbn %}
+    <meta name="citation_isbn" content="{{ page.entry.isbn }}">
+  {% endif %}
+  {% if page.entry.issn %}
+    <meta name="citation_issn" content="{{ page.entry.issn }}">
+  {% endif %}
+  {% if page.entry.publisher %}
+    <meta name="citation_publisher" content="{{ page.entry.publisher }}">
+  {% endif %}
+  {% if page.entry.pdf %}
+    {% if page.entry.pdf contains '://' %}
+      <meta name="citation_pdf_url" content="{{ page.entry.pdf }}">
+    {% else %}
+      <meta name="citation_pdf_url" content="{{ page.entry.pdf | prepend: '/assets/pdf/' | prepend: site.baseurl | prepend: site.url }}">
+    {% endif %}
+  {% endif %}
+  {% if page.entry.arxiv %}
+    <meta name="citation_arxiv_id" content="{{ page.entry.arxiv }}">
+  {% endif %}
+  <meta name="citation_language" content="en">
+{% endif %}
+
+{% comment %} --- ENHANCED PERSON JSON-LD (homepage only) --- {% endcomment %}
+{% if page.url == '/' %}
+  {% capture author_name_person %}{{ site.first_name }}{% if site.middle_name %} {{ site.middle_name }}{% endif %} {{ site.last_name }}{% endcapture %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    "dateModified": "{{ site.time | date_to_xmlschema }}",
+    "mainEntity": {
+      "@type": "Person",
+      "name": "{{ author_name_person }}",
+      "givenName": "{{ site.first_name }}",
+      "familyName": "{{ site.last_name }}",
+      "jobTitle": "Software Architecture Researcher",
+      "url": "{{ site.url }}{{ site.baseurl }}/",
+      "image": "{{ site.url }}{{ site.baseurl }}/assets/img/prof_pic.jpg",
+      "email": "{{ site.email }}",
+      "sameAs": [
+        "https://orcid.org/0009-0003-6944-2560",
+        "https://github.com/Oliver1703dk",
+        "https://www.linkedin.com/in/oliver-larsen-b7bb89243",
+        "https://x.com/OLarsen02"
+      ],
+      "affiliation": {
+        "@type": "CollegeOrUniversity",
+        "@id": "https://ror.org/03yrrjy16",
+        "name": "University of Southern Denmark",
+        "url": "https://www.sdu.dk",
+        "department": {
+          "@type": "Organization",
+          "name": "SDU Software Engineering"
+        }
+      },
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "@id": "https://ror.org/03yrrjy16",
+        "name": "University of Southern Denmark"
+      },
+      "knowsAbout": [
+        "Software Architecture",
+        "Edge Computing",
+        "Generative AI",
+        "AI Governance",
+        "Blockchain Architecture",
+        "Middleware",
+        "EU AI Act"
+      ]
+    }
+  }
+  </script>
+{% endif %}
+
+{% comment %} --- DUBLIN CORE META TAGS --- {% endcomment %}
+{% capture author_name_dc %}{{ site.first_name }}{% if site.middle_name %} {{ site.middle_name }}{% endif %} {{ site.last_name }}{% endcapture %}
+<meta name="DC.title" content="{% if page.title and page.title != 'blank' %}{{ page.title | strip_html | strip }}{% else %}{{ author_name_dc }}{% endif %}">
+<meta name="DC.creator" content="{{ author_name_dc }}">
+<meta name="DC.description" content="{% if page.description %}{{ page.description | strip_html | strip }}{% else %}{{ site.description | strip_html | strip }}{% endif %}">
+<meta name="DC.language" content="en">
+<meta name="DC.publisher" content="{{ author_name_dc }}">
+<meta name="DC.type" content="{% if is_blog_post %}Text{% elsif page.entry %}Text.Article{% else %}Text{% endif %}">
+{% if page.entry %}
+  <meta name="DC.date" content="{{ page.entry.year }}">
+  {% if page.entry.doi %}
+    <meta name="DC.identifier" content="doi:{{ page.entry.doi }}">
+  {% else %}
+    <meta name="DC.identifier" content="{{ page.url | prepend: site.baseurl | prepend: site.url }}">
+  {% endif %}
+  <meta name="DC.source" content="{% if page.entry.booktitle %}{{ page.entry.booktitle | strip_html | strip }}{% elsif page.entry.journal %}{{ page.entry.journal | strip_html | strip }}{% endif %}">
+{% else %}
+  <meta name="DC.identifier" content="{{ page.url | prepend: site.baseurl | prepend: site.url }}">
+{% endif %}

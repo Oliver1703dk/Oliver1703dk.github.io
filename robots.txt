@@ -1,10 +1,27 @@
 ---
 permalink: /robots.txt
 ---
+# ============================================================
+# robots.txt — oliver1703dk.github.io
+# Policy: Allow search + AI-search crawlers. Block training crawlers.
+# ============================================================
+
+# Default: allow everything
 User-agent: *
+Allow: /
 Disallow:
 
-# Allow AI search crawlers (for GEO)
+# ------ Search engine crawlers (explicit allow) ------
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+# ------ AI search/retrieval crawlers (ALLOW for GEO) ------
 User-agent: GPTBot
 Allow: /
 
@@ -26,11 +43,28 @@ Allow: /
 User-agent: Google-Extended
 Allow: /
 
-# Block AI training crawlers (protect IP)
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+# ------ AI training crawlers (BLOCK) ------
 User-agent: ClaudeBot
 Disallow: /
 
 User-agent: CCBot
 Disallow: /
 
-Sitemap: {{ site.baseurl | prepend: site.url }}/sitemap.xml
+User-agent: anthropic-ai
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+User-agent: PetalBot
+Disallow: /
+
+# ------ Sitemaps ------
+Sitemap: {{ site.url }}{{ site.baseurl }}/sitemap.xml
+Sitemap: {{ site.url }}{{ site.baseurl }}/sitemap-pdfs.xml
