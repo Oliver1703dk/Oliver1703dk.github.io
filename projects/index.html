@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects | Oliver Aleksander Larsen</title>
+  <meta name="description" content="Research systems and startup products built by Oliver Aleksander Larsen.">
+  <link rel="canonical" href="https://oliver1703dk.github.io/projects/">
+  <link rel="shortcut icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>&#x1F4BB;</text></svg>">
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+  <style>
+    /* ── Reset & Base ─────────────────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #fafafa;
+      --bg-secondary: #f4f4f5;
+      --text: #09090b;
+      --text-light: #71717a;
+      --accent: #2563eb;
+      --accent-hover: #1d4ed8;
+      --divider: #d4d4d8;
+      --footer-bg: #f4f4f5;
+      --footer-text: #71717a;
+      --footer-link: #09090b;
+      --nav-bg: #fafafa;
+      --card-bg: #f4f4f5;
+      --badge-active-bg: #dcfce7;
+      --badge-active-text: #166534;
+      --badge-completed-bg: #dbeafe;
+      --badge-completed-text: #1e40af;
+      --tag-bg: #e4e4e7;
+      --tag-text: #3f3f46;
+    }
+
+    html[data-theme="dark"] {
+      --bg: #0a0a0a;
+      --bg-secondary: #141414;
+      --text: #fafafa;
+      --text-light: #a1a1aa;
+      --accent: #3b82f6;
+      --accent-hover: #60a5fa;
+      --divider: #262626;
+      --footer-bg: #141414;
+      --footer-text: #71717a;
+      --footer-link: #fafafa;
+      --nav-bg: #0a0a0a;
+      --card-bg: #141414;
+      --badge-active-bg: #14532d;
+      --badge-active-text: #bbf7d0;
+      --badge-completed-bg: #1e3a5f;
+      --badge-completed-text: #bfdbfe;
+      --tag-bg: #27272a;
+      --tag-text: #a1a1aa;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.6;
+      padding-top: 56px;
+    }
+
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { color: var(--accent-hover); text-decoration: underline; }
+
+    /* ── Navbar ────────────────────────────────────────────────────── */
+    .navbar {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 1030;
+      background: var(--nav-bg);
+      border-bottom: 1px solid var(--divider);
+      height: 56px;
+      display: flex; align-items: center;
+    }
+    .navbar .container {
+      max-width: 930px; width: 100%; margin: 0 auto;
+      padding: 0 15px;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .navbar-brand {
+      font-size: 1.05rem; color: var(--text); text-decoration: none;
+      font-weight: 300;
+    }
+    .navbar-brand strong { font-weight: 700; }
+    .navbar-brand:hover { color: var(--text); text-decoration: none; }
+
+    .nav-links { display: flex; align-items: center; gap: 0.15rem; list-style: none; }
+    .nav-links a {
+      color: var(--text); text-decoration: none; padding: 0.4rem 0.65rem;
+      font-size: 0.875rem; border-radius: 4px; transition: background 0.15s;
+    }
+    .nav-links a:hover { background: var(--bg-secondary); text-decoration: none; }
+    .nav-links a.active { font-weight: 600; }
+
+    .theme-toggle {
+      background: none; border: none; cursor: pointer; color: var(--text);
+      font-size: 1.15rem; padding: 0.4rem; margin-left: 0.25rem;
+      border-radius: 4px; display: flex; align-items: center;
+    }
+    .theme-toggle:hover { background: var(--bg-secondary); }
+
+    /* Mobile hamburger */
+    .hamburger {
+      display: none; background: none; border: none; cursor: pointer;
+      flex-direction: column; gap: 5px; padding: 0.4rem;
+    }
+    .hamburger span {
+      display: block; width: 22px; height: 2px; background: var(--text);
+      border-radius: 1px; transition: all 0.2s;
+    }
+
+    @media (max-width: 576px) {
+      .hamburger { display: flex; }
+      .nav-links {
+        display: none; position: absolute; top: 56px; left: 0; right: 0;
+        background: var(--nav-bg); border-bottom: 1px solid var(--divider);
+        flex-direction: column; padding: 0.5rem 0; gap: 0;
+      }
+      .nav-links.open { display: flex; }
+      .nav-links a { padding: 0.6rem 1.25rem; border-radius: 0; width: 100%; }
+    }
+
+    /* ── Main Content ─────────────────────────────────────────────── */
+    .content {
+      max-width: 900px; margin: 0 auto;
+      padding: 2.5rem 15px 4rem;
+    }
+
+    .content h1 {
+      font-size: 28px; font-weight: 700; margin-bottom: 2rem;
+      color: var(--text);
+    }
+
+    /* ── Project Grid ─────────────────────────────────────────────── */
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 1.25rem;
+    }
+
+    .project-card {
+      background: var(--card-bg);
+      border: 1px solid var(--divider);
+      border-radius: 8px;
+      padding: 24px;
+      display: flex; flex-direction: column; gap: 0.75rem;
+    }
+
+    .project-header {
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 0.75rem; flex-wrap: wrap;
+    }
+
+    .project-title {
+      font-size: 1.05rem; font-weight: 600; color: var(--text); margin: 0;
+    }
+
+    .badge {
+      font-size: 0.7rem; font-weight: 600; text-transform: uppercase;
+      letter-spacing: 0.04em; padding: 0.2em 0.6em; border-radius: 9999px;
+      white-space: nowrap;
+    }
+    .badge-active { background: var(--badge-active-bg); color: var(--badge-active-text); }
+    .badge-completed { background: var(--badge-completed-bg); color: var(--badge-completed-text); }
+
+    .project-desc {
+      font-size: 0.875rem; color: var(--text-light); line-height: 1.55;
+      margin: 0;
+    }
+
+    .tags { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: auto; }
+    .tag {
+      font-size: 0.72rem; font-weight: 500;
+      background: var(--tag-bg); color: var(--tag-text);
+      padding: 0.2em 0.55em; border-radius: 4px;
+    }
+
+    /* ── Footer ───────────────────────────────────────────────────── */
+    footer {
+      position: fixed; bottom: 0; left: 0; right: 0;
+      background: var(--footer-bg); border-top: 1px solid var(--divider);
+      padding: 0.75rem 0; font-size: 0.8rem; color: var(--footer-text);
+      z-index: 1020;
+    }
+    footer .container {
+      max-width: 930px; margin: 0 auto; padding: 0 15px; text-align: center;
+    }
+    footer a { color: var(--footer-link); }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <a class="navbar-brand" href="/"><strong>Oliver</strong> Aleksander Larsen</a>
+      <button class="hamburger" aria-label="Toggle navigation" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="/">about</a></li>
+        <li><a href="/publications/">publications</a></li>
+        <li><a href="/projects/" class="active">projects</a></li>
+        <li><a href="/blog/">blog</a></li>
+        <li><a href="/cv/">CV</a></li>
+        <li>
+          <button class="theme-toggle" id="theme-toggle" title="Toggle dark mode" aria-label="Toggle dark mode">
+            <span id="theme-icon">&#9790;</span>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Content -->
+  <div class="content">
+    <h1>Projects</h1>
+
+    <div class="project-grid">
+      <!-- 1. CarboPlanner -->
+      <div class="project-card">
+        <div class="project-header">
+          <h2 class="project-title">CarboPlanner</h2>
+          <span class="badge badge-active">Active</span>
+        </div>
+        <p class="project-desc">Sports nutrition startup. Co-founded and raised 1,090,000 DKK. Built a full-stack platform with React, Flutter, NestJS, and MongoDB.</p>
+        <div class="tags">
+          <span class="tag">React</span>
+          <span class="tag">Flutter</span>
+          <span class="tag">NestJS</span>
+          <span class="tag">MongoDB</span>
+          <span class="tag">Startup</span>
+        </div>
+      </div>
+
+      <!-- 2. Hybrid LLM Meal Recommender -->
+      <div class="project-card">
+        <div class="project-header">
+          <h2 class="project-title">Hybrid LLM Meal Recommender</h2>
+          <span class="badge badge-completed">Completed</span>
+        </div>
+        <p class="project-desc">BSc thesis project. Fine-tuned Mistral-7B-Instruct using LoRA/PEFT. 46.7% accuracy with 100% format adherence.</p>
+        <div class="tags">
+          <span class="tag">LLM</span>
+          <span class="tag">LoRA</span>
+          <span class="tag">Fine-tuning</span>
+          <span class="tag">Mistral-7B</span>
+        </div>
+      </div>
+
+      <!-- 3. Flood Detection System -->
+      <div class="project-card">
+        <div class="project-header">
+          <h2 class="project-title">Flood Detection System</h2>
+          <span class="badge badge-active">Active</span>
+        </div>
+        <p class="project-desc">Edge architecture for real-time flood detection. Raspberry Pi + Jetson AGX Orin running YOLO with FSM orchestration over MQTT.</p>
+        <div class="tags">
+          <span class="tag">Edge AI</span>
+          <span class="tag">YOLO</span>
+          <span class="tag">Raspberry Pi</span>
+          <span class="tag">Jetson</span>
+          <span class="tag">MQTT</span>
+        </div>
+      </div>
+
+      <!-- 4. Stock Analysis System -->
+      <div class="project-card">
+        <div class="project-header">
+          <h2 class="project-title">Stock Analysis System</h2>
+          <span class="badge badge-completed">Completed</span>
+        </div>
+        <p class="project-desc">Multi-agent LLM trading system. Next.js frontend, Flask backend, MongoDB, Celery + Redis.</p>
+        <div class="tags">
+          <span class="tag">Multi-agent</span>
+          <span class="tag">LLM</span>
+          <span class="tag">Next.js</span>
+          <span class="tag">Flask</span>
+        </div>
+      </div>
+
+      <!-- 5. Konsensus / Mindlink AI -->
+      <div class="project-card">
+        <div class="project-header">
+          <h2 class="project-title">Konsensus / Mindlink AI</h2>
+          <span class="badge badge-active">Active</span>
+        </div>
+        <p class="project-desc">Bitcoin-native sovereign mesh communication. ~30,000 lines of Rust with Lightning Network payment gating.</p>
+        <div class="tags">
+          <span class="tag">Rust</span>
+          <span class="tag">Bitcoin</span>
+          <span class="tag">Lightning</span>
+          <span class="tag">Mesh</span>
+          <span class="tag">P2P</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      &copy; 2026 Oliver Aleksander Larsen.
+    </div>
+  </footer>
+
+  <script src="/assets/js/main.js"></script>
+  <script>
+    // Dark mode toggle
+    (function () {
+      const toggle = document.getElementById('theme-toggle');
+      const icon = document.getElementById('theme-icon');
+      const html = document.documentElement;
+
+      function applyTheme(theme) {
+        html.setAttribute('data-theme', theme);
+        icon.textContent = theme === 'dark' ? '\u2600' : '\u263E';
+        localStorage.setItem('theme', theme);
+      }
+
+      const saved = localStorage.getItem('theme');
+      if (saved) {
+        applyTheme(saved);
+      } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        applyTheme('dark');
+      }
+
+      toggle.addEventListener('click', function () {
+        applyTheme(html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark');
+      });
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Behind the Paper: Can LLMs Fix Schema Mismatches? | Oliver Aleksander Larsen</title>
+  <meta name="description" content="SAGAI-MID middleware uses CODEGEN strategy to achieve 0.90 pass@1 on schema translation, then caches the function so the LLM never runs again.">
+  <meta property="og:title" content="Behind the Paper: Can LLMs Fix Schema Mismatches?">
+  <meta property="og:description" content="LLM-powered middleware for schema mismatch resolution in microservice architectures using CODEGEN strategy.">
+  <meta property="og:type" content="article">
+  <meta property="article:published_time" content="2026-03-30">
+  <meta property="article:author" content="Oliver Aleksander Larsen">
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <a class="skip-to-content" href="#main">Skip to content</a>
+
+  <!-- Navbar -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <a class="navbar-brand" href="/">Oliver Larsen</a>
+      <div class="navbar-nav">
+        <a href="/"><span class="nav-label">Home</span></a>
+        <a href="/publications/"><span class="nav-label">Publications</span></a>
+        <a href="/blog/" class="active"><span class="nav-label">Blog</span></a>
+        <a href="/cv/"><span class="nav-label">CV</span></a>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light mode">
+          <svg id="icon-sun" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg id="icon-moon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main id="main" class="container-narrow">
+    <article class="section">
+      <header class="mb-24">
+        <p style="margin-bottom:8px;"><a href="/blog/">&larr; Back to Research Notes</a></p>
+        <h1>Behind the Paper: Can LLMs Fix Schema Mismatches?</h1>
+        <div class="flex items-center gap-12 mt-8">
+          <span class="font-mono text-tertiary" style="font-size:13px;">2026-03-30</span>
+          <span class="text-tertiary" style="font-size:13px;">3 min read</span>
+        </div>
+      </header>
+
+      <div class="tldr">
+        <div class="tldr-label">TL;DR</div>
+        <p>Schema drift in microservices is persistent toil. SAGAI-MID middleware uses an LLM to generate a translation function once, caches it, and runs it without the LLM after. The CODEGEN strategy achieves 0.90 pass@1, outperforming the naive DIRECT approach by 8 percentage points.</p>
+      </div>
+
+      <h2 class="mt-32 mb-8">The Problem</h2>
+      <p class="mb-16">In any microservice architecture that lives long enough, schema drift is inevitable. Service A sends a payload with a field called <code>user_id</code>. Service B expects <code>userId</code>. Service C was written six months later and expects <code>account_identifier</code>. The semantics are identical, but the schemas diverge because teams move at different speeds and coordination is expensive.</p>
+      <p class="mb-16">This is not a one-time problem. Every API version bump, every new service, every refactor creates the potential for new mismatches. The industry response has been schema registries, contract testing, and API gateways, all of which help but none of which eliminate the problem. Teams still spend significant engineering hours writing and maintaining bespoke translation layers between services that should, in principle, understand each other.</p>
+
+      <h2 class="mt-32 mb-8">Our Approach</h2>
+      <p class="mb-16">SAGAI-MID is a middleware layer that sits between microservices and resolves schema mismatches using large language models. We evaluated two strategies. The DIRECT strategy feeds the source payload and target schema to the LLM and asks it to produce the translated payload directly, on every request. The CODEGEN strategy instead asks the LLM to generate a translation function, which is then compiled, tested against sample payloads, and cached.</p>
+      <p class="mb-16">The distinction matters enormously in production. DIRECT is simple but puts an LLM call in the critical path of every request. Latency is unpredictable, cost scales linearly with traffic, and you depend on the LLM being available for every API call. CODEGEN pays the LLM cost once, at schema-discovery time, and from that point forward the cached translation function runs as ordinary code with deterministic latency and zero LLM dependency.</p>
+
+      <h2 class="mt-32 mb-8">Results</h2>
+      <p class="mb-16">On our benchmark of 120 schema mismatch scenarios drawn from real-world microservice architectures, CODEGEN achieved 0.90 pass@1, meaning 90% of generated translation functions passed all test cases on the first attempt. DIRECT achieved 0.82 pass@1. The 8 percentage point gap is explained by the nature of the task: when the LLM generates code, it can use typed function signatures and explicit field mappings, which are inherently more precise than freeform JSON-to-JSON translation.</p>
+      <p class="mb-16">Latency tells a sharper story. DIRECT adds 800-2000ms per request depending on payload complexity and LLM load. CODEGEN's cached functions execute in under 1ms. After the initial generation pass, the middleware behaves like a conventional, hand-written translation layer, just one that was written by an LLM instead of a human.</p>
+
+      <h2 class="mt-32 mb-8">Key Insight</h2>
+      <p class="mb-16">The important idea here is not that LLMs can translate JSON. It is the separation between generation time and execution time. The LLM is a compiler, not a runtime dependency. It writes the translation function once, the function is validated, and then the LLM is out of the loop. This pattern applies far beyond schema translation. Any time you are tempted to put an LLM call in a hot path, ask whether the LLM could instead generate a deterministic artifact that runs without it. The answer is yes more often than you might expect.</p>
+      <p class="mb-16">For teams dealing with schema drift at scale, SAGAI-MID reduces the maintenance burden from continuous manual translation work to a one-time review of auto-generated functions. The functions are readable code, not opaque model outputs, so engineers can inspect, modify, and version them like any other code artifact.</p>
+
+      <div class="paper-links mt-24 mb-32">
+        <a href="#">Read the paper</a>
+        <a href="#">View the code</a>
+      </div>
+
+      <hr class="divider">
+
+      <div class="mb-16">
+        <h3 class="mb-8">More Research Notes</h3>
+        <ul style="list-style:none; padding:0;">
+          <li class="mb-8"><a href="/blog/flood-detection-edge-devices.html">Behind the Paper: Flood Detection on Edge Devices</a></li>
+          <li class="mb-8"><a href="/blog/rad-ai-documentation.html">Behind the Paper: Documenting AI Systems for the EU AI Act</a></li>
+          <li class="mb-8"><a href="/blog/bitsov-sovereign-infrastructure.html">Behind the Paper: Bitcoin-Native Sovereign Architecture</a></li>
+        </ul>
+      </div>
+    </article>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Oliver Aleksander Larsen</p>
+    </div>
+  </footer>
+
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>

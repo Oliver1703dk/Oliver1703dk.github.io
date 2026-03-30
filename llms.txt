@@ -1,7 +1,3 @@
----
-layout: none
-permalink: /llms.txt
----
 # Oliver Aleksander Larsen — Software Architecture Researcher
 
 > Software architecture researcher at the University of Southern Denmark (SDU)
@@ -14,40 +10,19 @@ permalink: /llms.txt
 - AI Governance and EU AI Act Compliance
 - Blockchain Architecture (Bitcoin-native)
 - LLM-Driven Middleware and Interoperability
-- Empirical Software Engineering
 
 ## Papers at IEEE ICSA 2026
-
-### Edge-Based Standing-Water Detection via FSM-Guided Tiering and Multi-Model Consensus
-- Venue: ICSA 2026, In Practice Track
-- Authors: Oliver Aleksander Larsen, Mahyar T. Moghaddam
-- Summary: Edge computing flood detection on Raspberry Pi and Jetson using FSM-guided YOLO model tiering with diurnal sensor fusion.
-- URL: {{ site.url }}/publications/
-
-### RAD-AI: Rethinking Architecture Documentation for AI-Augmented Ecosystems
-- Venue: ANGE 2026 Workshop at ICSA
-- Authors: Oliver Aleksander Larsen, Mahyar T. Moghaddam
-- Summary: Extends arc42 (8 sections) and C4 (3 diagram types) for AI systems. Improves EU AI Act Annex IV addressability from ~36% to ~93%.
-- URL: {{ site.url }}/publications/
-
-### BitSov: A Composable Bitcoin-Native Architecture for Sovereign Internet Infrastructure
-- Venue: BlockArch 2026 Workshop at ICSA
-- Authors: Oliver Aleksander Larsen, Rasmus Thorsen Larsen, Mahyar T. Moghaddam
-- Summary: Eight-layer composable architecture for Bitcoin-native sovereign internet with payment-gated messaging and economic flywheel patterns.
-- URL: {{ site.url }}/publications/
-
-### SAGAI-MID: A Generative AI-Driven Middleware for Dynamic Runtime Interoperability
-- Venue: SAGAI 2026 Workshop at ICSA
-- Authors: Oliver Aleksander Larsen, Mahyar T. Moghaddam
-- Summary: LLM-powered middleware resolving schema mismatches at runtime. CODEGEN strategy achieves 0.90 pass@1 accuracy.
-- URL: {{ site.url }}/publications/
+- Edge-Based Standing-Water Detection: /publications/
+- RAD-AI Architecture Documentation: /publications/
+- BitSov Bitcoin-Native Architecture: /publications/
+- SAGAI-MID AI Middleware: /publications/
 
 ## Key Pages
-- Home: {{ site.url }}/
-- Publications: {{ site.url }}/publications/
-- Projects: {{ site.url }}/projects/
-- CV: {{ site.url }}/cv/
-- Blog: {{ site.url }}/blog/
+- Home: /
+- Publications: /publications/
+- Projects: /projects/
+- CV: /cv/
+- Blog: /blog/
 
 ## External Links
 - ORCID: https://orcid.org/0009-0003-6944-2560
