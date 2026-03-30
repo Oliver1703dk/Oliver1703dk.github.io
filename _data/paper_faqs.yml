@@ -1,0 +1,104 @@
+# Paper FAQs for GEO optimization
+# Keys must match BibTeX entry keys in _bibliography/papers.bib
+
+larsen2026flood:
+  - question: "How can you detect flooding on a farm using edge computing?"
+    answer: >-
+      Our system deploys a multi-model YOLO ensemble across Raspberry Pi and
+      Jetson devices at the network edge. A finite-state machine monitors
+      environmental signals and selects the appropriate detection model tier,
+      avoiding cloud latency and working in areas with poor connectivity.
+
+  - question: "Why use multiple YOLO models instead of a single model for water detection?"
+    answer: >-
+      Standing water looks dramatically different under varying lighting and
+      weather. Our FSM-guided tiering activates lightweight models in clear
+      conditions and switches to heavier, more robust models when conditions
+      are ambiguous. Multi-model consensus reduces false positives by requiring
+      agreement across detectors.
+
+  - question: "Can flood detection work without cloud connectivity?"
+    answer: >-
+      Yes. Our architecture is designed for fully autonomous edge operation.
+      The Raspberry Pi handles sensor ingestion and FSM logic, while the Jetson
+      runs inference locally. Detection and decision-making require no cloud
+      dependency.
+
+  - question: "What is diurnal sensor fusion in the context of flood detection?"
+    answer: >-
+      It means combining camera imagery with time-of-day-aware sensor data —
+      ambient light, temperature, humidity, pressure — to adjust detection
+      thresholds throughout the day-night cycle, compensating for visual
+      similarity between wet soil, shadows, and actual standing water.
+
+larsen2026radai:
+  - question: "How should you document the architecture of an AI system?"
+    answer: >-
+      Traditional frameworks like arc42 and C4 lack viewpoints for ML
+      pipelines, training data provenance, model versioning, and feedback loops.
+      RAD-AI extends these with dedicated AI viewpoints that capture data
+      lineage, model lifecycle, drift monitoring, and ethical constraints.
+
+  - question: "Does arc42 or C4 cover EU AI Act compliance?"
+    answer: >-
+      Not sufficiently. Standard arc42/C4 documentation addresses only about
+      36% of EU AI Act Annex IV requirements. RAD-AI's extensions close this
+      gap to approximately 93% by adding structured sections for risk
+      classification, data governance, human oversight, and continuous
+      monitoring.
+
+  - question: "What is Annex IV of the EU AI Act and why does it matter for software architects?"
+    answer: >-
+      Annex IV specifies the technical documentation providers of high-risk AI
+      systems must maintain. It covers training data descriptions, model design
+      choices, risk management measures, and monitoring plans. RAD-AI provides
+      a concrete mapping from architectural viewpoints to Annex IV sections.
+
+  - question: "Can existing architecture documentation be migrated to RAD-AI?"
+    answer: >-
+      Yes. RAD-AI is an extension, not a replacement. Teams already using arc42
+      or C4 can incrementally add AI-specific viewpoints. The framework
+      identifies which extensions apply based on AI risk classification.
+
+larsen2026bitsov:
+  - question: "What is a Bitcoin-native architecture for sovereign internet?"
+    answer: >-
+      An eight-layer stack where every infrastructure service — identity,
+      messaging, storage, contracts, computation — settles to or is
+      authenticated by Bitcoin's timechain, eliminating dependency on
+      centralized platforms or alternative blockchains.
+
+  - question: "How does payment-gated messaging work?"
+    answer: >-
+      Every message requires a Lightning Network micropayment to be delivered,
+      making spam economically infeasible without censoring content. The sender
+      attaches a small payment; the recipient's node verifies payment before
+      accepting delivery.
+
+  - question: "How does BitSov differ from existing Web3 architectures?"
+    answer: >-
+      Most Web3 architectures depend on multiple token ecosystems and
+      Turing-complete smart contract platforms. BitSov is strictly
+      Bitcoin-native: every layer uses Bitcoin or Lightning primitives,
+      narrowing the trust surface and avoiding cross-chain bridge risks.
+
+larsen2026sagaimid:
+  - question: "How can LLMs solve API schema mismatch problems at runtime?"
+    answer: >-
+      SAGAI-MID intercepts messages with incompatible schemas and prompts an
+      LLM to generate transformation logic — either by directly translating
+      the payload (DIRECT) or generating reusable mapping code (CODEGEN).
+      CODEGEN produces deterministic functions that can be cached and reused.
+
+  - question: "What is the difference between DIRECT and CODEGEN strategies?"
+    answer: >-
+      DIRECT asks the LLM to transform each payload in real time — fast but
+      non-deterministic. CODEGEN asks the LLM to generate a transformation
+      function that is compiled, tested, and cached. CODEGEN achieves 0.90
+      pass@1 accuracy and produces reusable artifacts.
+
+  - question: "How accurate is LLM-generated schema transformation code?"
+    answer: >-
+      The CODEGEN strategy achieves 0.90 pass@1 accuracy — 90% of generated
+      functions pass correctness tests on the first attempt. Failed generations
+      are caught by automated validation before reaching production.

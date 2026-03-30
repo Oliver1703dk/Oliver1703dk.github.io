@@ -1,0 +1,25 @@
+{% comment %}
+  GEO Hook for al-folio bib.liquid
+  Renders: TL;DR callout box, status badge
+  Receives: entry variable from bibliography loop
+{% endcomment %}
+
+{% if entry.tldr %}
+  <div class="geo-tldr mt-2">
+    <span class="geo-tldr-label">TL;DR</span>
+    {{ entry.tldr }}
+  </div>
+{% endif %}
+
+{% if entry.status %}
+  {% assign status_lower = entry.status | downcase %}
+  {% assign status_class = "geo-badge-preprint" %}
+  {% if status_lower == "published" %}
+    {% assign status_class = "geo-badge-published" %}
+  {% elsif status_lower == "accepted" %}
+    {% assign status_class = "geo-badge-accepted" %}
+  {% elsif status_lower == "under-review" or status_lower == "under review" %}
+    {% assign status_class = "geo-badge-under-review" %}
+  {% endif %}
+  <span class="geo-status-badge {{ status_class }}">{{ entry.status | capitalize }}</span>
+{% endif %}
