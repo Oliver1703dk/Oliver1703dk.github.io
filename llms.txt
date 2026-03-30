@@ -12,19 +12,13 @@
 - LLM-Driven Middleware and Interoperability
 
 ## Papers at IEEE ICSA 2026
-- Edge-Based Standing-Water Detection: /publications/
-- RAD-AI Architecture Documentation: /publications/
-- BitSov Bitcoin-Native Architecture: /publications/
-- SAGAI-MID AI Middleware: /publications/
+- Edge-Based Standing-Water Detection via FSM-Guided Tiering and Multi-Model Consensus (In Practice Track)
+- RAD-AI: Rethinking Architecture Documentation for AI-Augmented Ecosystems (ANGE Workshop)
+- BitSov: A Composable Bitcoin-Native Architecture for Sovereign Internet Infrastructure (BlockArch Workshop)
+- SAGAI-MID: A Generative AI-Driven Middleware for Dynamic Runtime Interoperability (SAGAI Workshop)
 
-## Key Pages
-- Home: /
-- Publications: /publications/
-- Projects: /projects/
-- CV: /cv/
-- Blog: /blog/
-
-## External Links
+## Links
+- Home: https://oliver1703dk.github.io/
 - ORCID: https://orcid.org/0009-0003-6944-2560
 - GitHub: https://github.com/Oliver1703dk
 - LinkedIn: https://www.linkedin.com/in/oliver-larsen-b7bb89243/
