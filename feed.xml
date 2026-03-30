@@ -5,7 +5,7 @@
   <link href="https://oliver1703dk.github.io/feed.xml" rel="self"/>
   <link href="https://oliver1703dk.github.io/"/>
   <id>https://oliver1703dk.github.io/</id>
-  <updated>2026-03-30T12:33:05.639Z</updated>
+  <updated>2026-03-30T12:51:14.265Z</updated>
   <author>
     <name>Oliver Aleksander Larsen</name>
     <uri>https://oliver1703dk.github.io/</uri>
@@ -14,7 +14,7 @@
     <title>Edge-Based Standing-Water Detection via FSM-Guided Tiering and Multi-Model Consensus</title>
     <link href="https://oliver1703dk.github.io/papers/flood-detection/" rel="alternate"/>
     <id>https://oliver1703dk.github.io/papers/flood-detection/</id>
-    <updated>2026-03-30T12:33:05.639Z</updated>
+    <updated>2026-03-30T12:51:14.265Z</updated>
     <summary>Standing water detection on agricultural edge devices (Raspberry Pi + Jetson). We present an FSM-guided control plane that selects between local and offloaded inference tiers based on resource availability and environmental conditions. A multi-model YOLO ensemble combined with diurnal sensor fusion achieves robust detection across varying lighting and weather conditions, enabling real-time flood monitoring on resource-constrained hardware.</summary>
     <author>
       <name>Oliver Larsen</name>
@@ -31,7 +31,7 @@
     <title>RAD-AI: Rethinking Architecture Documentation for AI-Augmented Ecosystems</title>
     <link href="https://oliver1703dk.github.io/papers/rad-ai/" rel="alternate"/>
     <id>https://oliver1703dk.github.io/papers/rad-ai/</id>
-    <updated>2026-03-30T12:33:05.639Z</updated>
+    <updated>2026-03-30T12:51:14.265Z</updated>
     <summary>We propose a backward-compatible extension of arc42 (adding 8 sections) and C4 (adding 3 diagram types) specifically designed for AI-augmented ecosystems. Our extensions enable systematic documentation of AI components, their data flows, training pipelines, and regulatory requirements. When evaluated against EU AI Act Annex IV requirements, RAD-AI improves documentation addressability from approximately 36% to 93%. We validate the framework on two industrial case studies: Uber Michelangelo and Netflix Metaflow.</summary>
     <author>
       <name>Oliver Aleksander Larsen</name>
@@ -49,7 +49,7 @@
     <title>BitSov: A Composable Bitcoin-Native Architecture for Sovereign Internet Infrastructure</title>
     <link href="https://oliver1703dk.github.io/papers/bitsov/" rel="alternate"/>
     <id>https://oliver1703dk.github.io/papers/bitsov/</id>
-    <updated>2026-03-30T12:33:05.639Z</updated>
+    <updated>2026-03-30T12:51:14.265Z</updated>
     <summary>We present BitSov, an eight-layer composable architectural framework for Bitcoin-native sovereign internet infrastructure. The framework introduces three architectural patterns: payment-gated messaging, timechain-locked contracts, and a self-sustaining economic flywheel. BitSov employs dual settlement across on-chain Bitcoin transactions and Lightning Network micropayments, enabling censorship-resistant communication and identity management without reliance on traditional internet infrastructure.</summary>
     <author>
       <name>Oliver Aleksander Larsen</name>
@@ -67,7 +67,7 @@
     <title>SAGAI-MID: A Generative AI-Driven Middleware for Dynamic Runtime Interoperability</title>
     <link href="https://oliver1703dk.github.io/papers/sagai-mid/" rel="alternate"/>
     <id>https://oliver1703dk.github.io/papers/sagai-mid/</id>
-    <updated>2026-03-30T12:33:05.639Z</updated>
+    <updated>2026-03-30T12:51:14.265Z</updated>
     <summary>We present SAGAI-MID, a FastAPI-based middleware that uses large language models to dynamically resolve schema mismatches at runtime. The system implements a five-layer pipeline with hybrid detection, dual resolution strategies (DIRECT transformation vs. CODEGEN), and a three-tier safeguard stack. Evaluated across 10 interoperability scenarios using 6 different LLMs, the best configuration achieves 0.90 pass@1 accuracy, demonstrating practical viability of LLM-driven runtime schema adaptation.</summary>
     <author>
       <name>Oliver Aleksander Larsen</name>
