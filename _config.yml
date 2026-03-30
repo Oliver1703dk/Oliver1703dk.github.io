@@ -11,17 +11,14 @@ description: >
   Academic website of Oliver Aleksander Larsen. Software architecture researcher
   at the University of Southern Denmark (SDU). Research on edge computing, AI governance,
   blockchain architecture, and AI-driven middleware. 4 papers at IEEE ICSA 2026.
-footer_text: >
-  Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with
-  <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
-  Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
+footer_text: ""
 keywords: oliver larsen, oliver aleksander larsen, software architecture, edge computing, generative AI, AI governance, ICSA 2026, university of southern denmark, SDU, researcher
 lang: en
 icon: "\U0001F4BB" # laptop emoji
 
 url: https://oliver1703dk.github.io
 baseurl: # EMPTY for username.github.io site
-last_updated: true
+last_updated: false
 impressum_path: # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
 back_to_top: true # set to false to disable the back to top button
 
