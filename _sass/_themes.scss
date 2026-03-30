@@ -7,17 +7,17 @@
 :root {
   --global-bg-color: #{$white-color};
   --global-code-bg-color: #{$code-bg-color-light};
-  --global-text-color: #1e293b;
-  --global-text-color-light: #64748b;
+  --global-text-color: #09090b;
+  --global-text-color-light: #71717a;
   --global-theme-color: #{$purple-color};
   --global-hover-color: #{$blue-color-dark};
   --global-hover-text-color: #ffffff;
-  --global-footer-bg-color: #e2e8f0;
-  --global-footer-text-color: #475569;
-  --global-footer-link-color: #1e293b;
+  --global-footer-bg-color: #f4f4f5;
+  --global-footer-text-color: #71717a;
+  --global-footer-link-color: #09090b;
   --global-distill-app-color: #{$grey-color};
-  --global-divider-color: rgba(0, 0, 0, 0.1);
-  --global-card-bg-color: #ffffff;
+  --global-divider-color: #d4d4d8;
+  --global-card-bg-color: #f4f4f5;
   --global-highlight-color: #{$red-color-dark};
   --global-back-to-top-bg-color: rgba(
     #{color.channel($black-color, "red", $space: rgb)},
@@ -77,16 +77,16 @@
 html[data-theme="dark"] {
   --global-bg-color: #{$grey-color-dark};
   --global-code-bg-color: #{$code-bg-color-dark};
-  --global-text-color: #e2e8f0;
-  --global-text-color-light: #94a3b8;
+  --global-text-color: #fafafa;
+  --global-text-color-light: #a1a1aa;
   --global-theme-color: #{$cyan-color};
   --global-hover-color: #60a5fa;
   --global-hover-text-color: #ffffff;
-  --global-footer-bg-color: #1e293b;
-  --global-footer-text-color: #94a3b8;
-  --global-footer-link-color: #e2e8f0;
-  --global-distill-app-color: #94a3b8;
-  --global-divider-color: #334155;
+  --global-footer-bg-color: #141414;
+  --global-footer-text-color: #71717a;
+  --global-footer-link-color: #fafafa;
+  --global-distill-app-color: #a1a1aa;
+  --global-divider-color: #262626;
   --global-card-bg-color: #{$grey-900};
   --global-back-to-top-bg-color: rgba(
     #{color.channel($white-color, "red", $space: rgb)},
@@ -94,9 +94,9 @@ html[data-theme="dark"] {
     #{color.channel($white-color, "blue", $space: rgb)},
     0.5
   );
-  --global-back-to-top-text-color: #0f172a;
-  --global-newsletter-bg-color: #1e293b;
-  --global-newsletter-text-color: #e2e8f0;
+  --global-back-to-top-text-color: #0a0a0a;
+  --global-newsletter-bg-color: #141414;
+  --global-newsletter-text-color: #fafafa;
 
   --global-tip-block: #42b983;
   --global-tip-block-bg: #1a3a2a;

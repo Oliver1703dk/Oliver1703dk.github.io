@@ -4,123 +4,181 @@ permalink: /cv/
 title: CV
 nav: true
 nav_order: 5
-description: Academic CV for Oliver Aleksander Larsen — software architecture researcher at the University of Southern Denmark.
+description: Curriculum Vitae — Oliver Aleksander Larsen, software architecture researcher at the University of Southern Denmark.
 ---
 
-<p style="display: flex; justify-content: space-between; align-items: center;">
-<span>
-<strong style="font-size: 1.1rem;">Oliver Aleksander Larsen</strong><br>
-<span style="color: var(--global-text-color-light);">Software Architecture Researcher · University of Southern Denmark</span><br>
-<span style="color: var(--global-text-color-light); font-size: 0.9rem;">olar@mmmi.sdu.dk · Odense, Denmark</span>
-</span>
-<a href="{{ 'assets/pdf/oliver-larsen-cv.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer" class="btn btn-sm z-depth-0" role="button" style="white-space: nowrap;"><i class="fa-solid fa-file-pdf"></i> Download PDF</a>
-</p>
+<style>
+.cv-section { margin-bottom: 2.5rem; }
+.cv-section-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--global-text-color);
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--global-divider-color);
+  margin-bottom: 1rem;
+}
+.cv-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.85rem;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+.cv-item-content { flex: 1; min-width: 200px; }
+.cv-item-main {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--global-text-color);
+  margin: 0;
+}
+.cv-item-sub {
+  font-size: 0.82rem;
+  color: var(--global-text-color-light);
+  margin: 2px 0 0;
+  line-height: 1.5;
+}
+.cv-item-date {
+  font-size: 0.82rem;
+  color: var(--global-text-color-light);
+  white-space: nowrap;
+  font-family: ui-monospace, 'Cascadia Code', monospace;
+}
+</style>
 
-<hr>
+<div class="cv-section">
+<h2 class="cv-section-title">Education</h2>
 
-<h4>Research Interests</h4>
+<div class="cv-item">
+<div class="cv-item-content">
+<p class="cv-item-main">MSc Software Engineering</p>
+<p class="cv-item-sub">University of Southern Denmark (SDU)</p>
+</div>
+<span class="cv-item-date">2025 – present</span>
+</div>
 
-Software Architecture · Edge Computing & IoT · AI Governance & EU AI Act · Blockchain Architecture · Generative AI for Software Engineering · Empirical Software Engineering
+<div class="cv-item">
+<div class="cv-item-content">
+<p class="cv-item-main">BSc Software Engineering</p>
+<p class="cv-item-sub">University of Southern Denmark (SDU) · Grade: ~9.5/12 (A) · Thesis: 12/12 (A+)</p>
+</div>
+<span class="cv-item-date">2022 – 2025</span>
+</div>
 
-<hr>
+<div class="cv-item">
+<div class="cv-item-content">
+<p class="cv-item-main">High School Diploma</p>
+<p class="cv-item-sub">Slagelse Gymnasium · Math / Physics / Chemistry</p>
+</div>
+<span class="cv-item-date">2018 – 2021</span>
+</div>
+</div>
 
-<h4>Education</h4>
+<div class="cv-section">
+<h2 class="cv-section-title">Research</h2>
 
-<p>
-<strong>MSc Software Engineering</strong> · University of Southern Denmark (SDU) <span style="float: right; color: var(--global-text-color-light);">2025 — present</span>
-</p>
+<div class="cv-item">
+<div class="cv-item-content">
+<p class="cv-item-main">4 papers accepted at IEEE ICSA 2026</p>
+<p class="cv-item-sub">Edge AI, AI governance (EU AI Act), blockchain architecture, LLM middleware</p>
+</div>
+<span class="cv-item-date">2026</span>
+</div>
 
-<p>
-<strong>BSc Software Engineering</strong> · University of Southern Denmark (SDU) <span style="float: right; color: var(--global-text-color-light);">2022 — 2025</span>
-<br><span style="color: var(--global-text-color-light); font-size: 0.9rem;">Grade average: ~9.5/12 (A). Thesis: <em>Hybrid LLM-Based Meal Recommender System</em> — Grade: 12/12 (A+)</span>
-</p>
+<div class="cv-item">
+<div class="cv-item-content">
+<p class="cv-item-main">"Vibe Coding" — ECSA 2026 (under review)</p>
+<p class="cv-item-sub">Quasi-experimental study of AI-assisted development and architectural erosion</p>
+</div>
+<span class="cv-item-date">2026</span>
+</div>
+</div>
 
-<p>
-<strong>High School Diploma</strong> (Math, Physics, Chemistry) · Slagelse Gymnasium <span style="float: right; color: var(--global-text-color-light);">2018 — 2021</span>
-<br><span style="color: var(--global-text-color-light); font-size: 0.9rem;">Grade average: ~9/12 (A-). Thesis: <em>Enigma Cryptography</em> — Grade: 12/12 (A+)</span>
-</p>
+<div class="cv-section">
+<h2 class="cv-section-title">Experience</h2>
 
-<hr>
+<div class="cv-item">
+<div class="cv-item-content">
+<p class="cv-item-main">Student Software Research Assistant — SDU</p>
+<p class="cv-item-sub">Supervised by Mahyar T. Moghaddam · Edge computing, AI governance, blockchain architecture</p>
+</div>
+<span class="cv-item-date">2024 – present</span>
+</div>
 
-<h4>Publications</h4>
+<div class="cv-item">
+<div class="cv-item-content">
+<p class="cv-item-main">Co-founder & Software Engineer — Mindlink AI ApS</p>
+<p class="cv-item-sub">Sovereign communication infrastructure · Konsensus: ~30,000 lines of Rust · Pursuing Horizon Europe DATA-02 grant (EUR 7–11M)</p>
+</div>
+<span class="cv-item-date">2024 – present</span>
+</div>
 
-Four papers accepted at **IEEE ICSA 2026** (Amsterdam, June 22–26). See full details on the [Publications](/publications/) page.
+<div class="cv-item">
+<div class="cv-item-content">
+<p class="cv-item-main">Co-founder & Software Engineer — CarboPlanner ApS</p>
+<p class="cv-item-sub">Sports nutrition startup · Raised 1,090,000 DKK · React + Flutter + NestJS</p>
+</div>
+<span class="cv-item-date">2024 – present</span>
+</div>
 
-1. **Edge-Based Standing-Water Detection via FSM-Guided Tiering and Multi-Model Consensus**
-   <br><span style="color: var(--global-text-color-light);">Oliver A. Larsen, Mahyar T. Moghaddam · <em>ICSA 2026, In Practice Track</em></span>
+<div class="cv-item">
+<div class="cv-item-content">
+<p class="cv-item-main">Teaching Assistant — SDU</p>
+<p class="cv-item-sub">OOP, Data Management, Computer Systems · 300+ students</p>
+</div>
+<span class="cv-item-date">2023 – present</span>
+</div>
 
-2. **RAD-AI: Rethinking Architecture Documentation for AI-Augmented Ecosystems**
-   <br><span style="color: var(--global-text-color-light);">Oliver A. Larsen, Mahyar T. Moghaddam · <em>ANGE Workshop @ ICSA 2026</em></span>
+<div class="cv-item">
+<div class="cv-item-content">
+<p class="cv-item-main">Soldier — Royal Danish Life Guards</p>
+<p class="cv-item-sub">8 months military service · Armed guard at Amalienborg Palace for the Danish royal family</p>
+</div>
+<span class="cv-item-date">2021 – 2022</span>
+</div>
+</div>
 
-3. **BitSov: A Composable Bitcoin-Native Architecture for Sovereign Internet Infrastructure**
-   <br><span style="color: var(--global-text-color-light);">Oliver A. Larsen, Rasmus T. Larsen, Mahyar T. Moghaddam · <em>BlockArch Workshop @ ICSA 2026</em></span>
+<div class="cv-section">
+<h2 class="cv-section-title">Achievements</h2>
 
-4. **SAGAI-MID: A Generative AI-Driven Middleware for Dynamic Runtime Interoperability**
-   <br><span style="color: var(--global-text-color-light);">Oliver A. Larsen, Mahyar T. Moghaddam · <em>SAGAI Workshop @ ICSA 2026</em></span>
+<div class="cv-item">
+<div class="cv-item-content">
+<p class="cv-item-main">Ironman Copenhagen 140.6</p>
+<p class="cv-item-sub">3.8km swim · 180km bike · 42.2km run</p>
+</div>
+<span class="cv-item-date">Aug 2025</span>
+</div>
 
-<hr>
+<div class="cv-item">
+<div class="cv-item-content">
+<p class="cv-item-main">Stuttering Mentoring Coach</p>
+<p class="cv-item-sub">International program for speech therapy mentoring · I have a stutter myself and work on it every day</p>
+</div>
+<span class="cv-item-date">2020</span>
+</div>
+</div>
 
-<h4>Experience</h4>
+<div class="cv-section">
+<h2 class="cv-section-title">Technical Skills</h2>
 
-<p>
-<strong>Student Software Research Assistant</strong> · University of Southern Denmark <span style="float: right; color: var(--global-text-color-light);">2024 — present</span>
-<br><span style="color: var(--global-text-color-light); font-size: 0.9rem;">Supervised by <a href="https://portal.findresearcher.sdu.dk/en/persons/mtmo/">Mahyar T. Moghaddam</a>. Four papers at IEEE ICSA 2026 on edge computing, AI governance, blockchain architecture, and AI-driven middleware.</span>
-</p>
+<div class="cv-item">
+<div class="cv-item-content">
+<p class="cv-item-main">Languages</p>
+<p class="cv-item-sub">Python · TypeScript · Rust · Java · R · Dart · Kotlin · Go</p>
+</div>
+</div>
 
-<p>
-<strong>Teaching Assistant</strong> · University of Southern Denmark <span style="float: right; color: var(--global-text-color-light);">2023 — present</span>
-<br><span style="color: var(--global-text-color-light); font-size: 0.9rem;">Object Oriented Programming, Data Management, Computer Systems. 300+ students.</span>
-</p>
+<div class="cv-item">
+<div class="cv-item-content">
+<p class="cv-item-main">AI/ML</p>
+<p class="cv-item-sub">PyTorch · LoRA/PEFT fine-tuning · Multi-agent systems · YOLO · Neural Architecture Search</p>
+</div>
+</div>
 
-<p>
-<strong>Co-founder & Software Engineer</strong> · <a href="https://mindlink.tech">Mindlink AI ApS</a> <span style="float: right; color: var(--global-text-color-light);">2024 — present</span>
-<br><span style="color: var(--global-text-color-light); font-size: 0.9rem;">Sovereign communication infrastructure. Konsensus: ~30,000 lines of Rust, Bitcoin-native mesh, Lightning payment gating. Pursuing Horizon Europe DATA-02 grant (EUR 7–11M).</span>
-</p>
-
-<p>
-<strong>Co-founder & Software Engineer</strong> · <a href="https://carboplanner.com">CarboPlanner ApS</a> <span style="float: right; color: var(--global-text-color-light);">2024 — present</span>
-<br><span style="color: var(--global-text-color-light); font-size: 0.9rem;">Sports nutrition for elite football clubs. React + Flutter + NestJS + MongoDB. Raised 1,090,000 DKK. SDU Best Startup nominee. 100+ athletes.</span>
-</p>
-
-<p>
-<strong>Soldier</strong> · Royal Danish Life Guards (Den Kongelige Livgarde) <span style="float: right; color: var(--global-text-color-light);">2021 — 2022</span>
-<br><span style="color: var(--global-text-color-light); font-size: 0.9rem;">8 months: 4 months infantry training + 4 months royal guard duty. Armed guard at Amalienborg Palace for the Danish royal family.</span>
-</p>
-
-<hr>
-
-<h4>Technical Skills</h4>
-
-| Domain | Technologies |
-|--------|-------------|
-| **Languages** | Python, TypeScript, Rust, Java, R, Dart, Kotlin, Go |
-| **AI/ML** | PyTorch, LoRA/PEFT fine-tuning, multi-agent systems, YOLO, Neural Architecture Search |
-| **Web** | Next.js, React, NestJS, Express, FastAPI, Flask, Flutter |
-| **Data** | PostgreSQL, MongoDB, Redis, Supabase, pgvector |
-| **Infrastructure** | Docker, MQTT, AWS, GitHub Actions, Celery |
-| **Research** | LaTeX, R (fixest, diff-in-diff), Arcan, BibTeX |
-
-<hr>
-
-<h4>Achievements</h4>
-
-<p>
-<strong>Ironman Copenhagen 140.6</strong> <span style="float: right; color: var(--global-text-color-light);">2025</span>
-<br><span style="color: var(--global-text-color-light); font-size: 0.9rem;">3.8 km swim, 180 km bike, 42.2 km run</span>
-</p>
-
-<p>
-<strong>Stuttering Coach</strong> · International Mentoring Program <span style="float: right; color: var(--global-text-color-light);">2020</span>
-<br><span style="color: var(--global-text-color-light); font-size: 0.9rem;">Coach supporting people with speech disabilities. I have a stutter myself and work on it every day.</span>
-</p>
-
-<hr>
-
-<h4>Links</h4>
-
-<p>
-<i class="fa-brands fa-orcid"></i> <a href="https://orcid.org/0009-0003-6944-2560">ORCID</a> ·
-<i class="fa-brands fa-github"></i> <a href="https://github.com/Oliver1703dk">GitHub</a> ·
-<i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/oliver-larsen-b7bb89243/">LinkedIn</a> ·
-<i class="fa-brands fa-x-twitter"></i> <a href="https://x.com/OLarsen02">X</a>
-</p>
+<div class="cv-item">
+<div class="cv-item-content">
+<p class="cv-item-main">Web & Infrastructure</p>
+<p class="cv-item-sub">Next.js · React · NestJS · FastAPI · Flask · Flutter · Docker · MQTT · PostgreSQL · MongoDB</p>
+</div>
+</div>
+</div>

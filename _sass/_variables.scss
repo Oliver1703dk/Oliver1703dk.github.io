@@ -1,11 +1,11 @@
 /*******************************************************************************
- * Variables used throughout the theme.
- * CUSTOMIZED: Purple/cyan accent replaced with blue. Warm backgrounds.
+ * Variables — matching artifact design
+ * Blue accent, neutral dark mode (not slate), warm light mode
  ******************************************************************************/
 
 @use "sass:color";
 
-// Colors — blue accent instead of purple
+// Colors — blue accent
 $red-color: #ff3636 !default;
 $red-color-dark: #b71c1c !default;
 $orange-color: #f29105 !default;
@@ -24,18 +24,18 @@ $pink-color: #f92080 !default;
 $pink-color-light: #ffdddd !default;
 $yellow-color: #efcc00 !default;
 
-// Neutral palette — warm off-white, slate dark
+// Neutrals — matching artifact design
 $grey-color: #828282 !default;
 $grey-color-light: color.adjust($grey-color, $lightness: 40%);
-$grey-color-dark: #0f172a;
-$grey-900: #1e293b;
+$grey-color-dark: #0a0a0a;   // artifact dark bg
+$grey-900: #141414;            // artifact secondary bg
 
-$white-color: #f8f7f4 !default;
+$white-color: #fafafa !default;  // artifact light bg
 $black-color: #000000 !default;
 
 // Theme colors
 $code-bg-color-light: rgba($blue-color, 0.05);
-$code-bg-color-dark: #1e293b !default;
+$code-bg-color-dark: #1e1e1e !default;  // artifact tertiary
 
 // Font awesome location
 $fa-font-path: "../webfonts";
