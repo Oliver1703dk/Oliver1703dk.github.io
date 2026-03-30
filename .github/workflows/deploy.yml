@@ -7,12 +7,15 @@ on:
       - main
     paths:
       - "assets/**"
+      - "_sass/**"
       - "**.bib"
       - "**.html"
       - "**.js"
       - "**.liquid"
       - "**/*.md"
       - "**.yml"
+      - "**.scss"
+      - "**.txt"
       - "Gemfile"
       - "Gemfile.lock"
       - "!.github/workflows/axe.yml"
@@ -34,12 +37,15 @@ on:
       - main
     paths:
       - "assets/**"
+      - "_sass/**"
       - "**.bib"
       - "**.html"
       - "**.js"
       - "**.liquid"
       - "**/*.md"
       - "**.yml"
+      - "**.scss"
+      - "**.txt"
       - "Gemfile"
       - "Gemfile.lock"
       - "!.github/workflows/axe.yml"
