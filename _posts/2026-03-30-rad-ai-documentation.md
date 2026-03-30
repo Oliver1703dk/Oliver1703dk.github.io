@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Behind the Paper: Documenting AI Systems for the EU AI Act"
-date: 2026-04-15 09:00:00 +0200
+date: 2026-03-30 10:00:00 +0200
 description: "RAD-AI extends arc42 and C4 architecture docs for AI systems, improving EU AI Act Annex IV compliance addressability from 36% to 93%."
 tags: [ai-governance, architecture-documentation, eu-ai-act, software-architecture, icsa-2026]
 categories: [papers]

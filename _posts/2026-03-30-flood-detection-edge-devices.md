@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Behind the Paper: Flood Detection on Edge Devices"
-date: 2026-04-14 09:00:00 +0200
+date: 2026-03-30 09:00:00 +0200
 description: "How we built an agricultural flood detection system that runs YOLO models on a Raspberry Pi and Jetson, using a finite-state machine to pick the right model for the conditions."
 tags: [edge-computing, computer-vision, iot, software-architecture, icsa-2026]
 categories: [papers]

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Behind the Paper: Can LLMs Fix Schema Mismatches?"
-date: 2026-04-17 09:00:00 +0200
+date: 2026-03-30 12:00:00 +0200
 description: "SAGAI-MID uses LLMs to resolve API schema mismatches at runtime. The CODEGEN strategy generates reusable transformation functions with 0.90 pass@1 accuracy."
 tags: [generative-ai, middleware, interoperability, software-architecture, icsa-2026]
 categories: [papers]

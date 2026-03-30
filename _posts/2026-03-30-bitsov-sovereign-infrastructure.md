@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Behind the Paper: Bitcoin-Native Sovereign Architecture"
-date: 2026-04-16 09:00:00 +0200
+date: 2026-03-30 11:00:00 +0200
 description: "BitSov proposes an 8-layer composable architecture for sovereign internet infrastructure built entirely on Bitcoin, featuring payment-gated messaging and economic flywheel patterns."
 tags: [blockchain, bitcoin, decentralization, software-architecture, icsa-2026]
 categories: [papers]
