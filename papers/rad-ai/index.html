@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAD-AI: Rethinking Architecture Documentation for AI-Augmented Ecosystems — Oliver Aleksander Larsen</title>
+    <meta name="description" content="We extended two popular architecture documentation frameworks (arc42 and C4) to handle AI systems, improving EU AI Act compliance coverage from ~36% to ~93%.">
+    <link rel="canonical" href="https://oliver1703dk.github.io/papers/rad-ai/">
+    <meta http-equiv="refresh" content="0; url=/#paper-rad-ai">
+
+    <!-- Highwire Press (Google Scholar) -->
+    <meta name="citation_title" content="RAD-AI: Rethinking Architecture Documentation for AI-Augmented Ecosystems">
+    <meta name="citation_author" content="Oliver Aleksander Larsen">
+    <meta name="citation_author" content="Mahyar T. Moghaddam">
+    <meta name="citation_publication_date" content="2026">
+    <meta name="citation_conference_title" content="ANGE 2026 Workshop at IEEE ICSA 2026">
+    <meta name="citation_language" content="en">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="RAD-AI: Rethinking Architecture Documentation for AI-Augmented Ecosystems">
+    <meta property="og:description" content="We propose a backward-compatible extension of arc42 (adding 8 sections) and C4 (adding 3 diagram types) specifically designed for AI-augmented ecosystems. Our extensions enable systematic documentation of AI components, their data flows, training pipelines, and regulatory requirements. When evaluated against EU AI Act Annex IV requirements, RAD-AI improves documentation addressability from approximately 36% to 93%. We validate the framework on two industrial case studies: Uber Michelangelo and Netflix Metaflow.">
+    <meta property="og:url" content="https://oliver1703dk.github.io/papers/rad-ai/">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Oliver Aleksander Larsen">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="RAD-AI: Rethinking Architecture Documentation for AI-Augmented Ecosystems">
+    <meta name="twitter:description" content="We extended two popular architecture documentation frameworks (arc42 and C4) to handle AI systems, improving EU AI Act compliance coverage from ~36% to ~93%.">
+
+    <!-- Dublin Core -->
+    <meta name="DC.title" content="RAD-AI: Rethinking Architecture Documentation for AI-Augmented Ecosystems">
+    <meta name="DC.creator" content="Oliver Aleksander Larsen">
+    <meta name="DC.creator" content="Mahyar T. Moghaddam">
+    <meta name="DC.date" content="2026">
+    <meta name="DC.type" content="Text">
+    <meta name="DC.format" content="text/html">
+    <meta name="DC.language" content="en">
+    <meta name="DC.publisher" content="IEEE">
+    <meta name="DC.description" content="We propose a backward-compatible extension of arc42 (adding 8 sections) and C4 (adding 3 diagram types) specifically designed for AI-augmented ecosystems. Our extensions enable systematic documentation of AI components, their data flows, training pipelines, and regulatory requirements. When evaluated against EU AI Act Annex IV requirements, RAD-AI improves documentation addressability from approximately 36% to 93%. We validate the framework on two industrial case studies: Uber Michelangelo and Netflix Metaflow.">
+
+    <!-- JSON-LD: ScholarlyArticle -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "name": "RAD-AI: Rethinking Architecture Documentation for AI-Augmented Ecosystems",
+  "headline": "RAD-AI: Rethinking Architecture Documentation for AI-Augmented Ecosystems",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Oliver Aleksander Larsen"
+    },
+    {
+      "@type": "Person",
+      "name": "Mahyar T. Moghaddam"
+    }
+  ],
+  "datePublished": "2026",
+  "abstract": "We propose a backward-compatible extension of arc42 (adding 8 sections) and C4 (adding 3 diagram types) specifically designed for AI-augmented ecosystems. Our extensions enable systematic documentation of AI components, their data flows, training pipelines, and regulatory requirements. When evaluated against EU AI Act Annex IV requirements, RAD-AI improves documentation addressability from approximately 36% to 93%. We validate the framework on two industrial case studies: Uber Michelangelo and Netflix Metaflow.",
+  "keywords": "software architecture, architecture documentation, AI-augmented systems, arc42, C4 model, EU AI Act",
+  "isPartOf": {
+    "@type": "Event",
+    "name": "ANGE 2026 Workshop at IEEE ICSA 2026",
+    "location": "Amsterdam, Netherlands"
+  },
+  "url": "https://oliver1703dk.github.io/papers/rad-ai/",
+  "codeRepository": "https://github.com/Oliver1703dk/RAD-AI"
+}
+    </script>
+
+    <!-- JSON-LD: FAQPage -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the best architecture documentation framework for AI systems?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "RAD-AI extends arc42 and C4 — two of the most widely adopted frameworks — with AI-specific sections and diagrams, making it backward-compatible with existing documentation practices."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does RAD-AI address EU AI Act compliance?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "RAD-AI maps its documentation sections directly to EU AI Act Annex IV requirements, improving addressability from ~36% (vanilla arc42/C4) to ~93%."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What case studies validate RAD-AI?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We evaluated RAD-AI on two production ML platforms: Uber Michelangelo and Netflix Metaflow, demonstrating practical applicability at scale."
+      }
+    }
+  ]
+}
+    </script>
+
+    <style>
+      body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 720px; margin: 0 auto; padding: 32px 20px; color: #1a1a1a; line-height: 1.6; }
+      h1 { font-size: 1.5rem; line-height: 1.3; margin-bottom: 0.5rem; }
+      .meta { color: #555; font-size: 0.95rem; margin-bottom: 1.5rem; }
+      .meta strong { color: #1a1a1a; }
+      section { margin-bottom: 1.5rem; }
+      section h2 { font-size: 1.1rem; margin-bottom: 0.4rem; border-bottom: 1px solid #e5e5e5; padding-bottom: 0.3rem; }
+      pre { background: #f5f5f5; padding: 16px; border-radius: 6px; overflow-x: auto; font-size: 0.85rem; line-height: 1.5; }
+      details { margin-bottom: 0.75rem; }
+      summary { cursor: pointer; padding: 4px 0; }
+      details p { margin: 0.5rem 0 0 1rem; color: #444; }
+      a { color: #2563eb; }
+      .redirect-note { font-size: 0.85rem; color: #888; margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #e5e5e5; }
+    </style>
+</head>
+<body>
+    <article>
+        <h1>RAD-AI: Rethinking Architecture Documentation for AI-Augmented Ecosystems</h1>
+        <div class="meta">
+            <p><strong>Authors:</strong> Oliver Aleksander Larsen, Mahyar T. Moghaddam</p>
+            <p><strong>Venue:</strong> ANGE 2026 Workshop at IEEE ICSA 2026</p>
+        </div>
+
+        <section>
+            <h2>Abstract</h2>
+            <p>We propose a backward-compatible extension of arc42 (adding 8 sections) and C4 (adding 3 diagram types) specifically designed for AI-augmented ecosystems. Our extensions enable systematic documentation of AI components, their data flows, training pipelines, and regulatory requirements. When evaluated against EU AI Act Annex IV requirements, RAD-AI improves documentation addressability from approximately 36% to 93%. We validate the framework on two industrial case studies: Uber Michelangelo and Netflix Metaflow.</p>
+        </section>
+
+        <section>
+            <h2>TL;DR</h2>
+            <p>We extended two popular architecture documentation frameworks (arc42 and C4) to handle AI systems, improving EU AI Act compliance coverage from ~36% to ~93%.</p>
+        </section>
+
+        <section>
+            <h2>Keywords</h2>
+            <p>software architecture, architecture documentation, AI-augmented systems, arc42, C4 model, EU AI Act</p>
+        </section>
+
+        <section>
+            <h2>Resources</h2>
+            <p><strong>Code:</strong> <a href="https://github.com/Oliver1703dk/RAD-AI">https://github.com/Oliver1703dk/RAD-AI</a></p>
+        </section>
+
+        <section>
+            <h2>Frequently Asked Questions</h2>
+            
+      <details>
+        <summary><strong>What is the best architecture documentation framework for AI systems?</strong></summary>
+        <p>RAD-AI extends arc42 and C4 — two of the most widely adopted frameworks — with AI-specific sections and diagrams, making it backward-compatible with existing documentation practices.</p>
+      </details>
+
+      <details>
+        <summary><strong>How does RAD-AI address EU AI Act compliance?</strong></summary>
+        <p>RAD-AI maps its documentation sections directly to EU AI Act Annex IV requirements, improving addressability from ~36% (vanilla arc42/C4) to ~93%.</p>
+      </details>
+
+      <details>
+        <summary><strong>What case studies validate RAD-AI?</strong></summary>
+        <p>We evaluated RAD-AI on two production ML platforms: Uber Michelangelo and Netflix Metaflow, demonstrating practical applicability at scale.</p>
+      </details>
+        </section>
+
+        <section>
+            <h2>BibTeX</h2>
+            <pre><code>@inproceedings{larsen2026radai,
+  title     = {RAD-AI: Rethinking Architecture Documentation
+               for AI-Augmented Ecosystems},
+  author    = {Larsen, Oliver Aleksander and
+               Moghaddam, Mahyar T.},
+  booktitle = {ANGE Workshop at IEEE ICSA},
+  year      = {2026}
+}</code></pre>
+        </section>
+    </article>
+
+    <p class="redirect-note">Redirecting to the interactive page&hellip; If not redirected, <a href="/#paper-rad-ai">click here</a>.</p>
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BitSov: A Composable Bitcoin-Native Architecture for Sovereign Internet Infrastructure — Oliver Aleksander Larsen</title>
+    <meta name="description" content="An eight-layer architecture that uses Bitcoin and Lightning Network to build censorship-resistant internet infrastructure — with payment-gated messaging and decentralized identity.">
+    <link rel="canonical" href="https://oliver1703dk.github.io/papers/bitsov/">
+    <meta http-equiv="refresh" content="0; url=/#paper-bitsov">
+
+    <!-- Highwire Press (Google Scholar) -->
+    <meta name="citation_title" content="BitSov: A Composable Bitcoin-Native Architecture for Sovereign Internet Infrastructure">
+    <meta name="citation_author" content="Oliver Aleksander Larsen">
+    <meta name="citation_author" content="Rasmus Thorsen Larsen">
+    <meta name="citation_author" content="Mahyar T. Moghaddam">
+    <meta name="citation_publication_date" content="2026">
+    <meta name="citation_conference_title" content="BlockArch 2026 Workshop at IEEE ICSA 2026">
+    <meta name="citation_language" content="en">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="BitSov: A Composable Bitcoin-Native Architecture for Sovereign Internet Infrastructure">
+    <meta property="og:description" content="We present BitSov, an eight-layer composable architectural framework for Bitcoin-native sovereign internet infrastructure. The framework introduces three architectural patterns: payment-gated messaging, timechain-locked contracts, and a self-sustaining economic flywheel. BitSov employs dual settlement across on-chain Bitcoin transactions and Lightning Network micropayments, enabling censorship-resistant communication and identity management without reliance on traditional internet infrastructure.">
+    <meta property="og:url" content="https://oliver1703dk.github.io/papers/bitsov/">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Oliver Aleksander Larsen">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="BitSov: A Composable Bitcoin-Native Architecture for Sovereign Internet Infrastructure">
+    <meta name="twitter:description" content="An eight-layer architecture that uses Bitcoin and Lightning Network to build censorship-resistant internet infrastructure — with payment-gated messaging and decentralized identity.">
+
+    <!-- Dublin Core -->
+    <meta name="DC.title" content="BitSov: A Composable Bitcoin-Native Architecture for Sovereign Internet Infrastructure">
+    <meta name="DC.creator" content="Oliver Aleksander Larsen">
+    <meta name="DC.creator" content="Rasmus Thorsen Larsen">
+    <meta name="DC.creator" content="Mahyar T. Moghaddam">
+    <meta name="DC.date" content="2026">
+    <meta name="DC.type" content="Text">
+    <meta name="DC.format" content="text/html">
+    <meta name="DC.language" content="en">
+    <meta name="DC.publisher" content="IEEE">
+    <meta name="DC.description" content="We present BitSov, an eight-layer composable architectural framework for Bitcoin-native sovereign internet infrastructure. The framework introduces three architectural patterns: payment-gated messaging, timechain-locked contracts, and a self-sustaining economic flywheel. BitSov employs dual settlement across on-chain Bitcoin transactions and Lightning Network micropayments, enabling censorship-resistant communication and identity management without reliance on traditional internet infrastructure.">
+
+    <!-- JSON-LD: ScholarlyArticle -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "name": "BitSov: A Composable Bitcoin-Native Architecture for Sovereign Internet Infrastructure",
+  "headline": "BitSov: A Composable Bitcoin-Native Architecture for Sovereign Internet Infrastructure",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Oliver Aleksander Larsen"
+    },
+    {
+      "@type": "Person",
+      "name": "Rasmus Thorsen Larsen"
+    },
+    {
+      "@type": "Person",
+      "name": "Mahyar T. Moghaddam"
+    }
+  ],
+  "datePublished": "2026",
+  "abstract": "We present BitSov, an eight-layer composable architectural framework for Bitcoin-native sovereign internet infrastructure. The framework introduces three architectural patterns: payment-gated messaging, timechain-locked contracts, and a self-sustaining economic flywheel. BitSov employs dual settlement across on-chain Bitcoin transactions and Lightning Network micropayments, enabling censorship-resistant communication and identity management without reliance on traditional internet infrastructure.",
+  "keywords": "blockchain architecture, Bitcoin, Lightning Network, sovereign infrastructure, decentralized identity",
+  "isPartOf": {
+    "@type": "Event",
+    "name": "BlockArch 2026 Workshop at IEEE ICSA 2026",
+    "location": "Amsterdam, Netherlands"
+  },
+  "url": "https://oliver1703dk.github.io/papers/bitsov/"
+}
+    </script>
+
+    <!-- JSON-LD: FAQPage -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is Bitcoin-native sovereign infrastructure?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Infrastructure that uses Bitcoin's blockchain and Lightning Network as foundational layers — removing dependence on centralized DNS, CAs, and cloud providers."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are the three architectural patterns in BitSov?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Payment-gated messaging (spam prevention via micropayments), timechain-locked contracts (time-bound agreements settled on-chain), and a self-sustaining economic flywheel (network effects that fund infrastructure)."
+      }
+    }
+  ]
+}
+    </script>
+
+    <style>
+      body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 720px; margin: 0 auto; padding: 32px 20px; color: #1a1a1a; line-height: 1.6; }
+      h1 { font-size: 1.5rem; line-height: 1.3; margin-bottom: 0.5rem; }
+      .meta { color: #555; font-size: 0.95rem; margin-bottom: 1.5rem; }
+      .meta strong { color: #1a1a1a; }
+      section { margin-bottom: 1.5rem; }
+      section h2 { font-size: 1.1rem; margin-bottom: 0.4rem; border-bottom: 1px solid #e5e5e5; padding-bottom: 0.3rem; }
+      pre { background: #f5f5f5; padding: 16px; border-radius: 6px; overflow-x: auto; font-size: 0.85rem; line-height: 1.5; }
+      details { margin-bottom: 0.75rem; }
+      summary { cursor: pointer; padding: 4px 0; }
+      details p { margin: 0.5rem 0 0 1rem; color: #444; }
+      a { color: #2563eb; }
+      .redirect-note { font-size: 0.85rem; color: #888; margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #e5e5e5; }
+    </style>
+</head>
+<body>
+    <article>
+        <h1>BitSov: A Composable Bitcoin-Native Architecture for Sovereign Internet Infrastructure</h1>
+        <div class="meta">
+            <p><strong>Authors:</strong> Oliver Aleksander Larsen, Rasmus Thorsen Larsen, Mahyar T. Moghaddam</p>
+            <p><strong>Venue:</strong> BlockArch 2026 Workshop at IEEE ICSA 2026</p>
+        </div>
+
+        <section>
+            <h2>Abstract</h2>
+            <p>We present BitSov, an eight-layer composable architectural framework for Bitcoin-native sovereign internet infrastructure. The framework introduces three architectural patterns: payment-gated messaging, timechain-locked contracts, and a self-sustaining economic flywheel. BitSov employs dual settlement across on-chain Bitcoin transactions and Lightning Network micropayments, enabling censorship-resistant communication and identity management without reliance on traditional internet infrastructure.</p>
+        </section>
+
+        <section>
+            <h2>TL;DR</h2>
+            <p>An eight-layer architecture that uses Bitcoin and Lightning Network to build censorship-resistant internet infrastructure — with payment-gated messaging and decentralized identity.</p>
+        </section>
+
+        <section>
+            <h2>Keywords</h2>
+            <p>blockchain architecture, Bitcoin, Lightning Network, sovereign infrastructure, decentralized identity</p>
+        </section>
+
+        
+
+        <section>
+            <h2>Frequently Asked Questions</h2>
+            
+      <details>
+        <summary><strong>What is Bitcoin-native sovereign infrastructure?</strong></summary>
+        <p>Infrastructure that uses Bitcoin&#39;s blockchain and Lightning Network as foundational layers — removing dependence on centralized DNS, CAs, and cloud providers.</p>
+      </details>
+
+      <details>
+        <summary><strong>What are the three architectural patterns in BitSov?</strong></summary>
+        <p>Payment-gated messaging (spam prevention via micropayments), timechain-locked contracts (time-bound agreements settled on-chain), and a self-sustaining economic flywheel (network effects that fund infrastructure).</p>
+      </details>
+        </section>
+
+        <section>
+            <h2>BibTeX</h2>
+            <pre><code>@inproceedings{larsen2026bitsov,
+  title     = {BitSov: A Composable Bitcoin-Native Architecture
+               for Sovereign Internet Infrastructure},
+  author    = {Larsen, Oliver Aleksander and
+               Larsen, Rasmus Thorsen and
+               Moghaddam, Mahyar T.},
+  booktitle = {BlockArch Workshop at IEEE ICSA},
+  year      = {2026}
+}</code></pre>
+        </section>
+    </article>
+
+    <p class="redirect-note">Redirecting to the interactive page&hellip; If not redirected, <a href="/#paper-bitsov">click here</a>.</p>
+</body>
+</html>
