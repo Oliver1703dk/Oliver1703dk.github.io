@@ -2,7 +2,7 @@
 layout: page
 title: Flood Detection System
 description: Edge-based standing-water detection for agricultural vehicles using FSM-guided YOLO model tiering
-img: assets/img/publication_preview/flood-detection-thumb.png
+# img: assets/img/projects/flood-detection.png  # TODO: add AI-generated image
 importance: 1
 category: research
 related_publications: true
