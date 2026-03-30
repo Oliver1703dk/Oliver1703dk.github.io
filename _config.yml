@@ -396,7 +396,7 @@ external_links:
 # MAKE SURE imagemagick is installed and on your PATH before enabling imagemagick. In a terminal, run:
 #   convert -version
 imagemagick:
-  enabled: false # disabled — GitHub Actions runner lacks ImageMagick; re-enable after adding install step to workflow
+  enabled: true # responsive WebP image generation (ImageMagick installed in deploy.yml)
   widths:
     - 480
     - 800
