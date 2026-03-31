@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hybrid Large-Language-Model Meal Recommender System for Athletes: A Short Communication — Oliver Aleksander Larsen</title>
+    <meta name="description" content="A meal recommender for athletes using LoRA/PEFT fine-tuned Mistral-7B — achieving 100% format adherence for personalized nutrition planning.">
+    <link rel="canonical" href="https://oliver1703dk.github.io/papers/meal-recommender/">
+    <meta http-equiv="refresh" content="0; url=/#paper-meal-recommender">
+
+    <!-- Highwire Press (Google Scholar) -->
+    <meta name="citation_title" content="Hybrid Large-Language-Model Meal Recommender System for Athletes: A Short Communication">
+    <meta name="citation_author" content="Oliver Aleksander Larsen">
+    <meta name="citation_author" content="Vinay Chakravarthi Gogineni">
+    <meta name="citation_publication_date" content="2026">
+    <meta name="citation_conference_title" content="Results in Engineering, Under Revision">
+    <meta name="citation_language" content="en">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Hybrid Large-Language-Model Meal Recommender System for Athletes: A Short Communication">
+    <meta property="og:description" content="We present a hybrid meal recommender system for athletes that combines fine-tuned large language models with nutritional constraint satisfaction. The system uses LoRA/PEFT-adapted Mistral-7B-Instruct to generate personalized meal recommendations that account for dietary requirements, macronutrient targets, and athletic performance goals. Evaluated on dietary-aware meal recommendation tasks, the system achieves 46.7% accuracy with 100% format adherence, demonstrating the viability of parameter-efficient fine-tuning for structured nutrition planning. Extended from a BSc thesis at the University of Southern Denmark.">
+    <meta property="og:url" content="https://oliver1703dk.github.io/papers/meal-recommender/">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Oliver Aleksander Larsen">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Hybrid Large-Language-Model Meal Recommender System for Athletes: A Short Communication">
+    <meta name="twitter:description" content="A meal recommender for athletes using LoRA/PEFT fine-tuned Mistral-7B — achieving 100% format adherence for personalized nutrition planning.">
+
+    <!-- Dublin Core -->
+    <meta name="DC.title" content="Hybrid Large-Language-Model Meal Recommender System for Athletes: A Short Communication">
+    <meta name="DC.creator" content="Oliver Aleksander Larsen">
+    <meta name="DC.creator" content="Vinay Chakravarthi Gogineni">
+    <meta name="DC.date" content="2026">
+    <meta name="DC.type" content="Text">
+    <meta name="DC.format" content="text/html">
+    <meta name="DC.language" content="en">
+    <meta name="DC.publisher" content="IEEE">
+    <meta name="DC.description" content="We present a hybrid meal recommender system for athletes that combines fine-tuned large language models with nutritional constraint satisfaction. The system uses LoRA/PEFT-adapted Mistral-7B-Instruct to generate personalized meal recommendations that account for dietary requirements, macronutrient targets, and athletic performance goals. Evaluated on dietary-aware meal recommendation tasks, the system achieves 46.7% accuracy with 100% format adherence, demonstrating the viability of parameter-efficient fine-tuning for structured nutrition planning. Extended from a BSc thesis at the University of Southern Denmark.">
+
+    <!-- JSON-LD: ScholarlyArticle -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "name": "Hybrid Large-Language-Model Meal Recommender System for Athletes: A Short Communication",
+  "headline": "Hybrid Large-Language-Model Meal Recommender System for Athletes: A Short Communication",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Oliver Aleksander Larsen"
+    },
+    {
+      "@type": "Person",
+      "name": "Vinay Chakravarthi Gogineni"
+    }
+  ],
+  "datePublished": "2026",
+  "abstract": "We present a hybrid meal recommender system for athletes that combines fine-tuned large language models with nutritional constraint satisfaction. The system uses LoRA/PEFT-adapted Mistral-7B-Instruct to generate personalized meal recommendations that account for dietary requirements, macronutrient targets, and athletic performance goals. Evaluated on dietary-aware meal recommendation tasks, the system achieves 46.7% accuracy with 100% format adherence, demonstrating the viability of parameter-efficient fine-tuning for structured nutrition planning. Extended from a BSc thesis at the University of Southern Denmark.",
+  "keywords": "LLM, LoRA, PEFT, meal recommendation, sports nutrition, Mistral-7B",
+  "isPartOf": {
+    "@type": "Event",
+    "name": "Results in Engineering, Under Revision",
+    "location": "Amsterdam, Netherlands"
+  },
+  "url": "https://oliver1703dk.github.io/papers/meal-recommender/"
+}
+    </script>
+
+    <!-- JSON-LD: FAQPage -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What model does the meal recommender use?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The system uses Mistral-7B-Instruct fine-tuned with LoRA/PEFT (Parameter-Efficient Fine-Tuning), enabling dietary-aware meal generation without full model retraining."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How accurate is the meal recommender?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The system achieves 46.7% accuracy on meal recommendation tasks with 100% format adherence, meaning every generated meal plan follows the required nutritional structure."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is this related to CarboPlanner?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "This research extends the BSc thesis work at SDU on personalized nutrition for athletes, which informed the development of the CarboPlanner startup."
+      }
+    }
+  ]
+}
+    </script>
+
+    <style>
+      body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 720px; margin: 0 auto; padding: 32px 20px; color: #1a1a1a; line-height: 1.6; }
+      h1 { font-size: 1.5rem; line-height: 1.3; margin-bottom: 0.5rem; }
+      .meta { color: #555; font-size: 0.95rem; margin-bottom: 1.5rem; }
+      .meta strong { color: #1a1a1a; }
+      section { margin-bottom: 1.5rem; }
+      section h2 { font-size: 1.1rem; margin-bottom: 0.4rem; border-bottom: 1px solid #e5e5e5; padding-bottom: 0.3rem; }
+      pre { background: #f5f5f5; padding: 16px; border-radius: 6px; overflow-x: auto; font-size: 0.85rem; line-height: 1.5; }
+      details { margin-bottom: 0.75rem; }
+      summary { cursor: pointer; padding: 4px 0; }
+      details p { margin: 0.5rem 0 0 1rem; color: #444; }
+      a { color: #2563eb; }
+      .redirect-note { font-size: 0.85rem; color: #888; margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #e5e5e5; }
+    </style>
+</head>
+<body>
+    <article>
+        <h1>Hybrid Large-Language-Model Meal Recommender System for Athletes: A Short Communication</h1>
+        <div class="meta">
+            <p><strong>Authors:</strong> Oliver Aleksander Larsen, Vinay Chakravarthi Gogineni</p>
+            <p><strong>Venue:</strong> Results in Engineering, Under Revision</p>
+            <p><strong>Status:</strong> Accepted — to appear in proceedings after the conference (June 22–26, 2026, Amsterdam)</p>
+        </div>
+
+        <section>
+            <h2>Abstract</h2>
+            <p>We present a hybrid meal recommender system for athletes that combines fine-tuned large language models with nutritional constraint satisfaction. The system uses LoRA/PEFT-adapted Mistral-7B-Instruct to generate personalized meal recommendations that account for dietary requirements, macronutrient targets, and athletic performance goals. Evaluated on dietary-aware meal recommendation tasks, the system achieves 46.7% accuracy with 100% format adherence, demonstrating the viability of parameter-efficient fine-tuning for structured nutrition planning. Extended from a BSc thesis at the University of Southern Denmark.</p>
+        </section>
+
+        <section>
+            <h2>TL;DR</h2>
+            <p>A meal recommender for athletes using LoRA/PEFT fine-tuned Mistral-7B — achieving 100% format adherence for personalized nutrition planning.</p>
+        </section>
+
+        <section>
+            <h2>Keywords</h2>
+            <p>LLM, LoRA, PEFT, meal recommendation, sports nutrition, Mistral-7B</p>
+        </section>
+
+        <section>
+            <h2>Resources</h2>
+            
+            <p><strong>SSRN:</strong> <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6233133">https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6233133</a></p>
+            <p><strong>ResearchGate:</strong> <a href="https://www.researchgate.net/publication/400770955">https://www.researchgate.net/publication/400770955</a></p>
+            
+        </section>
+
+        <section>
+            <h2>Frequently Asked Questions</h2>
+            
+      <details>
+        <summary><strong>What model does the meal recommender use?</strong></summary>
+        <p>The system uses Mistral-7B-Instruct fine-tuned with LoRA/PEFT (Parameter-Efficient Fine-Tuning), enabling dietary-aware meal generation without full model retraining.</p>
+      </details>
+
+      <details>
+        <summary><strong>How accurate is the meal recommender?</strong></summary>
+        <p>The system achieves 46.7% accuracy on meal recommendation tasks with 100% format adherence, meaning every generated meal plan follows the required nutritional structure.</p>
+      </details>
+
+      <details>
+        <summary><strong>Is this related to CarboPlanner?</strong></summary>
+        <p>This research extends the BSc thesis work at SDU on personalized nutrition for athletes, which informed the development of the CarboPlanner startup.</p>
+      </details>
+        </section>
+
+        <section>
+            <h2>BibTeX</h2>
+            <pre><code>@article{larsen2026mealrec,
+  title     = {Hybrid Large-Language-Model Meal Recommender
+               System for Athletes: A Short Communication},
+  author    = {Larsen, Oliver Aleksander and
+               Gogineni, Vinay Chakravarthi},
+  journal   = {Results in Engineering},
+  year      = {2026},
+  note      = {Under revision. Preprint: SSRN 6233133}
+}</code></pre>
+        </section>
+    </article>
+
+    <p class="redirect-note">Redirecting to the interactive page&hellip; If not redirected, <a href="/#paper-meal-recommender">click here</a>.</p>
+</body>
+</html>
