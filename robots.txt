@@ -1,4 +1,4 @@
-# robots.txt — oliver1703dk.github.io
+# robots.txt — oalarsen.com
 User-agent: *
 Allow: /
 
@@ -26,4 +26,4 @@ Disallow: /
 User-agent: Bytespider
 Disallow: /
 
-Sitemap: https://oliver1703dk.github.io/sitemap.xml
+Sitemap: https://oalarsen.com/sitemap.xml

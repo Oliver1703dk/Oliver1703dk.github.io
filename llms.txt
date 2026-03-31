@@ -79,7 +79,7 @@
 **TL;DR:** A hybrid LLM recommender for CarboPlanner that combines in-context learning with LoRA fine-tuned Mistral-7B — achieving 46.7% accuracy and 100% format adherence, outperforming ICL-only and random baselines.
 
 ## Links
-- Home: https://oliver1703dk.github.io/
+- Home: https://oalarsen.com/
 - ORCID: https://orcid.org/0009-0003-6944-2560
 - GitHub: https://github.com/Oliver1703dk
 - LinkedIn: https://www.linkedin.com/in/oliver-larsen-b7bb89243/
