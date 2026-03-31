@@ -13,7 +13,7 @@
     <meta name="citation_author" content="Oliver Aleksander Larsen">
     <meta name="citation_author" content="Vinay Chakravarthi Gogineni">
     <meta name="citation_publication_date" content="2026">
-    <meta name="citation_conference_title" content="Results in Engineering, Under Revision">
+    <meta name="citation_journal_title" content="Results in Engineering">
     <meta name="citation_language" content="en">
 
     <!-- Open Graph -->
@@ -36,7 +36,7 @@
     <meta name="DC.type" content="Text">
     <meta name="DC.format" content="text/html">
     <meta name="DC.language" content="en">
-    <meta name="DC.publisher" content="IEEE">
+    <meta name="DC.publisher" content="Elsevier">
     <meta name="DC.description" content="Athletes often struggle with static, rule-based meal plans that fail to adapt to evolving personal preferences and feedback, leading to reduced adherence and suboptimal nutrition for performance. This short communication introduces a hybrid large-language-model (LLM)-driven recommender system to personalize meal recommendations within CarboPlanner, a sports nutrition platform. The system combines in-context learning (ICL) for short-term adaptation via dynamic prompts incorporating user profiles, recent feedback, and meal candidates, with parameter-efficient fine-tuning (PEFT) using low-rank adaptation (LoRA) on the Mistral-7B-Instruct model for long-term, system-wide learning from accumulated feedback. Implemented as a modular Flask API integrated seamlessly into CarboPlanner&#39;s existing infrastructure (Flutter app, NestJS backend, and MongoDB database), the system processes athlete feedback through dual loops: immediate ICL updates and periodic PEFT retraining. Evaluation on 1000 test prompts from a held-out dataset demonstrated superior performance over baselines. The hybrid model achieved 46.7% prediction accuracy and 100% format adherence, outperforming the non-fine-tuned ICL-only model (41.5% accuracy, 39.7% format adherence) and random selection (20% accuracy, 100% format adherence).">
 
     <!-- JSON-LD: ScholarlyArticle -->
@@ -60,9 +60,8 @@
   "abstract": "Athletes often struggle with static, rule-based meal plans that fail to adapt to evolving personal preferences and feedback, leading to reduced adherence and suboptimal nutrition for performance. This short communication introduces a hybrid large-language-model (LLM)-driven recommender system to personalize meal recommendations within CarboPlanner, a sports nutrition platform. The system combines in-context learning (ICL) for short-term adaptation via dynamic prompts incorporating user profiles, recent feedback, and meal candidates, with parameter-efficient fine-tuning (PEFT) using low-rank adaptation (LoRA) on the Mistral-7B-Instruct model for long-term, system-wide learning from accumulated feedback. Implemented as a modular Flask API integrated seamlessly into CarboPlanner's existing infrastructure (Flutter app, NestJS backend, and MongoDB database), the system processes athlete feedback through dual loops: immediate ICL updates and periodic PEFT retraining. Evaluation on 1000 test prompts from a held-out dataset demonstrated superior performance over baselines. The hybrid model achieved 46.7% prediction accuracy and 100% format adherence, outperforming the non-fine-tuned ICL-only model (41.5% accuracy, 39.7% format adherence) and random selection (20% accuracy, 100% format adherence).",
   "keywords": "LLM, LoRA, PEFT, meal recommendation, sports nutrition, Mistral-7B, in-context learning, recommender system",
   "isPartOf": {
-    "@type": "Event",
-    "name": "Results in Engineering, Under Revision",
-    "location": "Amsterdam, Netherlands"
+    "@type": "Periodical",
+    "name": "Results in Engineering"
   },
   "url": "https://oliver1703dk.github.io/papers/meal-recommender/"
 }
@@ -87,7 +86,7 @@
       "name": "How accurate is the meal recommender?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The system achieves 46.7% accuracy on meal recommendation tasks with 100% format adherence, meaning every generated meal plan follows the required nutritional structure."
+        "text": "The hybrid model achieves 46.7% prediction accuracy and 100% format adherence on 1000 test prompts, outperforming ICL-only (41.5% accuracy, 39.7% format adherence) and random selection (20% accuracy)."
       }
     },
     {
@@ -122,8 +121,8 @@
         <h1>Hybrid Large-Language-Model Meal Recommender System for Athletes: A Short Communication</h1>
         <div class="meta">
             <p><strong>Authors:</strong> Oliver Aleksander Larsen, Vinay Chakravarthi Gogineni</p>
-            <p><strong>Venue:</strong> Results in Engineering, Under Revision</p>
-            <p><strong>Status:</strong> Accepted — to appear in proceedings after the conference (June 22–26, 2026, Amsterdam)</p>
+            <p><strong>Venue:</strong> Results in Engineering</p>
+            <p><strong>Status:</strong> Under Revision — preprint available on SSRN</p>
         </div>
 
         <section>
@@ -159,7 +158,7 @@
 
       <details>
         <summary><strong>How accurate is the meal recommender?</strong></summary>
-        <p>The system achieves 46.7% accuracy on meal recommendation tasks with 100% format adherence, meaning every generated meal plan follows the required nutritional structure.</p>
+        <p>The hybrid model achieves 46.7% prediction accuracy and 100% format adherence on 1000 test prompts, outperforming ICL-only (41.5% accuracy, 39.7% format adherence) and random selection (20% accuracy).</p>
       </details>
 
       <details>

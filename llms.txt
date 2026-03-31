@@ -2,7 +2,7 @@
 
 > Software architecture researcher at the University of Southern Denmark (SDU)
 > studying how architecture adapts when AI becomes both a design tool and a
-> design subject. Four papers accepted at IEEE ICSA 2026 (Amsterdam).
+> design subject. Four papers accepted at IEEE ICSA 2026 (Amsterdam), plus one journal paper under revision at Results in Engineering.
 
 ## Research Areas
 - Software Architecture for AI-Augmented Systems
@@ -67,7 +67,7 @@
 
 ### Hybrid Large-Language-Model Meal Recommender System for Athletes: A Short Communication
 - Authors: Oliver Aleksander Larsen, Vinay Chakravarthi Gogineni
-- Venue: Results in Engineering, Under Revision
+- Venue: Results in Engineering
 - Keywords: LLM, LoRA, PEFT, meal recommendation, sports nutrition, Mistral-7B, in-context learning, recommender system
 
 - SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6233133
