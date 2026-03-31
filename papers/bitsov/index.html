@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BitSov: A Composable Bitcoin-Native Architecture for Sovereign Internet Infrastructure — Oliver Aleksander Larsen</title>
-    <meta name="description" content="An eight-layer architecture that uses Bitcoin and Lightning Network to build censorship-resistant internet infrastructure — with payment-gated messaging and decentralized identity.">
+    <meta name="description" content="An eight-layer Bitcoin-native protocol stack for sovereign internet infrastructure — with payment-gated messaging, timechain-locked contracts, and a self-sustaining economic flywheel.">
     <link rel="canonical" href="https://oliver1703dk.github.io/papers/bitsov/">
     <meta http-equiv="refresh" content="0; url=/#paper-bitsov">
 
@@ -20,7 +20,7 @@
 
     <!-- Open Graph -->
     <meta property="og:title" content="BitSov: A Composable Bitcoin-Native Architecture for Sovereign Internet Infrastructure">
-    <meta property="og:description" content="We present BitSov, an eight-layer composable architectural framework for Bitcoin-native sovereign internet infrastructure. The framework introduces three architectural patterns: payment-gated messaging, timechain-locked contracts, and a self-sustaining economic flywheel. BitSov employs dual settlement across on-chain Bitcoin transactions and Lightning Network micropayments, enabling censorship-resistant communication and identity management without reliance on traditional internet infrastructure.">
+    <meta property="og:description" content="Today&#39;s internet concentrates identity, payments, communication, and content hosting under a small number of corporate intermediaries, creating single points of failure, enabling censorship, and extracting economic rent from participants. We present BitSov, an architectural framework for sovereign internet infrastructure that composes existing decentralized technologies (Bitcoin, Lightning Network, decentralized storage, federated messaging, and mesh connectivity) into a unified, eight-layer protocol stack anchored to Bitcoin&#39;s base layer. The framework introduces three architectural patterns: (1) payment-gated messaging, where every transmitted message requires cryptographic proof of a Bitcoin payment, deterring spam through economic incentives rather than moderation; (2) timechain-locked contracts, which anchor subscriptions and licenses to Bitcoin block height (the timechain) rather than calendar dates; and (3) a self-sustaining economic flywheel that converts service revenue into infrastructure growth. A dual settlement model supports both on-chain transactions for permanence and auditability and Lightning micropayments for high-frequency messaging. As a position paper, we analyze the quality attributes, discuss open challenges, and propose a research agenda for empirical validation.">
     <meta property="og:url" content="https://oliver1703dk.github.io/papers/bitsov/">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="Oliver Aleksander Larsen">
@@ -28,7 +28,7 @@
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="BitSov: A Composable Bitcoin-Native Architecture for Sovereign Internet Infrastructure">
-    <meta name="twitter:description" content="An eight-layer architecture that uses Bitcoin and Lightning Network to build censorship-resistant internet infrastructure — with payment-gated messaging and decentralized identity.">
+    <meta name="twitter:description" content="An eight-layer Bitcoin-native protocol stack for sovereign internet infrastructure — with payment-gated messaging, timechain-locked contracts, and a self-sustaining economic flywheel.">
 
     <!-- Dublin Core -->
     <meta name="DC.title" content="BitSov: A Composable Bitcoin-Native Architecture for Sovereign Internet Infrastructure">
@@ -40,7 +40,7 @@
     <meta name="DC.format" content="text/html">
     <meta name="DC.language" content="en">
     <meta name="DC.publisher" content="IEEE">
-    <meta name="DC.description" content="We present BitSov, an eight-layer composable architectural framework for Bitcoin-native sovereign internet infrastructure. The framework introduces three architectural patterns: payment-gated messaging, timechain-locked contracts, and a self-sustaining economic flywheel. BitSov employs dual settlement across on-chain Bitcoin transactions and Lightning Network micropayments, enabling censorship-resistant communication and identity management without reliance on traditional internet infrastructure.">
+    <meta name="DC.description" content="Today&#39;s internet concentrates identity, payments, communication, and content hosting under a small number of corporate intermediaries, creating single points of failure, enabling censorship, and extracting economic rent from participants. We present BitSov, an architectural framework for sovereign internet infrastructure that composes existing decentralized technologies (Bitcoin, Lightning Network, decentralized storage, federated messaging, and mesh connectivity) into a unified, eight-layer protocol stack anchored to Bitcoin&#39;s base layer. The framework introduces three architectural patterns: (1) payment-gated messaging, where every transmitted message requires cryptographic proof of a Bitcoin payment, deterring spam through economic incentives rather than moderation; (2) timechain-locked contracts, which anchor subscriptions and licenses to Bitcoin block height (the timechain) rather than calendar dates; and (3) a self-sustaining economic flywheel that converts service revenue into infrastructure growth. A dual settlement model supports both on-chain transactions for permanence and auditability and Lightning micropayments for high-frequency messaging. As a position paper, we analyze the quality attributes, discuss open challenges, and propose a research agenda for empirical validation.">
 
     <!-- JSON-LD: ScholarlyArticle -->
     <script type="application/ld+json">
@@ -64,8 +64,8 @@
     }
   ],
   "datePublished": "2026",
-  "abstract": "We present BitSov, an eight-layer composable architectural framework for Bitcoin-native sovereign internet infrastructure. The framework introduces three architectural patterns: payment-gated messaging, timechain-locked contracts, and a self-sustaining economic flywheel. BitSov employs dual settlement across on-chain Bitcoin transactions and Lightning Network micropayments, enabling censorship-resistant communication and identity management without reliance on traditional internet infrastructure.",
-  "keywords": "blockchain architecture, Bitcoin, Lightning Network, sovereign infrastructure, decentralized identity",
+  "abstract": "Today's internet concentrates identity, payments, communication, and content hosting under a small number of corporate intermediaries, creating single points of failure, enabling censorship, and extracting economic rent from participants. We present BitSov, an architectural framework for sovereign internet infrastructure that composes existing decentralized technologies (Bitcoin, Lightning Network, decentralized storage, federated messaging, and mesh connectivity) into a unified, eight-layer protocol stack anchored to Bitcoin's base layer. The framework introduces three architectural patterns: (1) payment-gated messaging, where every transmitted message requires cryptographic proof of a Bitcoin payment, deterring spam through economic incentives rather than moderation; (2) timechain-locked contracts, which anchor subscriptions and licenses to Bitcoin block height (the timechain) rather than calendar dates; and (3) a self-sustaining economic flywheel that converts service revenue into infrastructure growth. A dual settlement model supports both on-chain transactions for permanence and auditability and Lightning micropayments for high-frequency messaging. As a position paper, we analyze the quality attributes, discuss open challenges, and propose a research agenda for empirical validation.",
+  "keywords": "blockchain architecture, Bitcoin, Lightning Network, layered settlement, sovereign infrastructure, payment-gated messaging, decentralized identity",
   "isPartOf": {
     "@type": "Event",
     "name": "BlockArch 2026 Workshop at IEEE ICSA 2026",
@@ -128,17 +128,17 @@
 
         <section>
             <h2>Abstract</h2>
-            <p>We present BitSov, an eight-layer composable architectural framework for Bitcoin-native sovereign internet infrastructure. The framework introduces three architectural patterns: payment-gated messaging, timechain-locked contracts, and a self-sustaining economic flywheel. BitSov employs dual settlement across on-chain Bitcoin transactions and Lightning Network micropayments, enabling censorship-resistant communication and identity management without reliance on traditional internet infrastructure.</p>
+            <p>Today&#39;s internet concentrates identity, payments, communication, and content hosting under a small number of corporate intermediaries, creating single points of failure, enabling censorship, and extracting economic rent from participants. We present BitSov, an architectural framework for sovereign internet infrastructure that composes existing decentralized technologies (Bitcoin, Lightning Network, decentralized storage, federated messaging, and mesh connectivity) into a unified, eight-layer protocol stack anchored to Bitcoin&#39;s base layer. The framework introduces three architectural patterns: (1) payment-gated messaging, where every transmitted message requires cryptographic proof of a Bitcoin payment, deterring spam through economic incentives rather than moderation; (2) timechain-locked contracts, which anchor subscriptions and licenses to Bitcoin block height (the timechain) rather than calendar dates; and (3) a self-sustaining economic flywheel that converts service revenue into infrastructure growth. A dual settlement model supports both on-chain transactions for permanence and auditability and Lightning micropayments for high-frequency messaging. As a position paper, we analyze the quality attributes, discuss open challenges, and propose a research agenda for empirical validation.</p>
         </section>
 
         <section>
             <h2>TL;DR</h2>
-            <p>An eight-layer architecture that uses Bitcoin and Lightning Network to build censorship-resistant internet infrastructure — with payment-gated messaging and decentralized identity.</p>
+            <p>An eight-layer Bitcoin-native protocol stack for sovereign internet infrastructure — with payment-gated messaging, timechain-locked contracts, and a self-sustaining economic flywheel.</p>
         </section>
 
         <section>
             <h2>Keywords</h2>
-            <p>blockchain architecture, Bitcoin, Lightning Network, sovereign infrastructure, decentralized identity</p>
+            <p>blockchain architecture, Bitcoin, Lightning Network, layered settlement, sovereign infrastructure, payment-gated messaging, decentralized identity</p>
         </section>
 
         <section>

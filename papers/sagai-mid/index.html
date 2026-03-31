@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SAGAI-MID: A Generative AI-Driven Middleware for Dynamic Runtime Interoperability — Oliver Aleksander Larsen</title>
-    <meta name="description" content="A middleware that uses LLMs to automatically fix API schema mismatches at runtime — achieving 90% accuracy across 10 test scenarios and 6 different language models.">
+    <meta name="description" content="A FastAPI middleware that uses LLMs to resolve schema mismatches at runtime — achieving 0.90 pass@1 across 10 interoperability scenarios, with CODEGEN outperforming DIRECT and the cheapest model being the most accurate.">
     <link rel="canonical" href="https://oliver1703dk.github.io/papers/sagai-mid/">
     <meta http-equiv="refresh" content="0; url=/#paper-sagai-mid">
 
@@ -19,7 +19,7 @@
 
     <!-- Open Graph -->
     <meta property="og:title" content="SAGAI-MID: A Generative AI-Driven Middleware for Dynamic Runtime Interoperability">
-    <meta property="og:description" content="We present SAGAI-MID, a FastAPI-based middleware that uses large language models to dynamically resolve schema mismatches at runtime. The system implements a five-layer pipeline with hybrid detection, dual resolution strategies (DIRECT transformation vs. CODEGEN), and a three-tier safeguard stack. Evaluated across 10 interoperability scenarios using 6 different LLMs, the best configuration achieves 0.90 pass@1 accuracy, demonstrating practical viability of LLM-driven runtime schema adaptation.">
+    <meta property="og:description" content="Modern distributed systems integrate heterogeneous services, REST APIs with different schema versions, GraphQL endpoints, and IoT devices with proprietary payloads that suffer from persistent schema mismatches. Traditional static adapters require manual coding for every schema pair and cannot handle novel combinations at runtime. We present SAGAI-MID, a FastAPI-based middleware that uses large language models (LLMs) to dynamically detect and resolve schema mismatches at runtime. The system employs a five-layer pipeline: hybrid detection (structural diff plus LLM semantic analysis), dual resolution strategies (per-request LLM transformation and LLM-generated reusable adapter code), and a three-tier safeguard stack (validation, ensemble voting, rule-based fallback). We frame the architecture through Bass et al.&#39;s interoperability tactics, transforming them from design-time artifacts into runtime capabilities. We evaluate SAGAI-MID on 10 interoperability scenarios spanning REST version migration, IoT-to-analytics bridging, and GraphQL protocol conversion across six LLMs from two providers. The best-performing configuration achieves 0.90 pass@1 accuracy. The CODEGEN strategy consistently outperforms DIRECT (0.83 vs 0.77 mean pass@1), while cost varies by over 30x across models with no proportional accuracy gain; the most accurate model is also the cheapest. We discuss implications for software architects adopting LLMs as runtime architectural components.">
     <meta property="og:url" content="https://oliver1703dk.github.io/papers/sagai-mid/">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="Oliver Aleksander Larsen">
@@ -27,7 +27,7 @@
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="SAGAI-MID: A Generative AI-Driven Middleware for Dynamic Runtime Interoperability">
-    <meta name="twitter:description" content="A middleware that uses LLMs to automatically fix API schema mismatches at runtime — achieving 90% accuracy across 10 test scenarios and 6 different language models.">
+    <meta name="twitter:description" content="A FastAPI middleware that uses LLMs to resolve schema mismatches at runtime — achieving 0.90 pass@1 across 10 interoperability scenarios, with CODEGEN outperforming DIRECT and the cheapest model being the most accurate.">
 
     <!-- Dublin Core -->
     <meta name="DC.title" content="SAGAI-MID: A Generative AI-Driven Middleware for Dynamic Runtime Interoperability">
@@ -38,7 +38,7 @@
     <meta name="DC.format" content="text/html">
     <meta name="DC.language" content="en">
     <meta name="DC.publisher" content="IEEE">
-    <meta name="DC.description" content="We present SAGAI-MID, a FastAPI-based middleware that uses large language models to dynamically resolve schema mismatches at runtime. The system implements a five-layer pipeline with hybrid detection, dual resolution strategies (DIRECT transformation vs. CODEGEN), and a three-tier safeguard stack. Evaluated across 10 interoperability scenarios using 6 different LLMs, the best configuration achieves 0.90 pass@1 accuracy, demonstrating practical viability of LLM-driven runtime schema adaptation.">
+    <meta name="DC.description" content="Modern distributed systems integrate heterogeneous services, REST APIs with different schema versions, GraphQL endpoints, and IoT devices with proprietary payloads that suffer from persistent schema mismatches. Traditional static adapters require manual coding for every schema pair and cannot handle novel combinations at runtime. We present SAGAI-MID, a FastAPI-based middleware that uses large language models (LLMs) to dynamically detect and resolve schema mismatches at runtime. The system employs a five-layer pipeline: hybrid detection (structural diff plus LLM semantic analysis), dual resolution strategies (per-request LLM transformation and LLM-generated reusable adapter code), and a three-tier safeguard stack (validation, ensemble voting, rule-based fallback). We frame the architecture through Bass et al.&#39;s interoperability tactics, transforming them from design-time artifacts into runtime capabilities. We evaluate SAGAI-MID on 10 interoperability scenarios spanning REST version migration, IoT-to-analytics bridging, and GraphQL protocol conversion across six LLMs from two providers. The best-performing configuration achieves 0.90 pass@1 accuracy. The CODEGEN strategy consistently outperforms DIRECT (0.83 vs 0.77 mean pass@1), while cost varies by over 30x across models with no proportional accuracy gain; the most accurate model is also the cheapest. We discuss implications for software architects adopting LLMs as runtime architectural components.">
 
     <!-- JSON-LD: ScholarlyArticle -->
     <script type="application/ld+json">
@@ -58,8 +58,8 @@
     }
   ],
   "datePublished": "2026",
-  "abstract": "We present SAGAI-MID, a FastAPI-based middleware that uses large language models to dynamically resolve schema mismatches at runtime. The system implements a five-layer pipeline with hybrid detection, dual resolution strategies (DIRECT transformation vs. CODEGEN), and a three-tier safeguard stack. Evaluated across 10 interoperability scenarios using 6 different LLMs, the best configuration achieves 0.90 pass@1 accuracy, demonstrating practical viability of LLM-driven runtime schema adaptation.",
-  "keywords": "software architecture, interoperability, LLMs, middleware, runtime adaptation",
+  "abstract": "Modern distributed systems integrate heterogeneous services, REST APIs with different schema versions, GraphQL endpoints, and IoT devices with proprietary payloads that suffer from persistent schema mismatches. Traditional static adapters require manual coding for every schema pair and cannot handle novel combinations at runtime. We present SAGAI-MID, a FastAPI-based middleware that uses large language models (LLMs) to dynamically detect and resolve schema mismatches at runtime. The system employs a five-layer pipeline: hybrid detection (structural diff plus LLM semantic analysis), dual resolution strategies (per-request LLM transformation and LLM-generated reusable adapter code), and a three-tier safeguard stack (validation, ensemble voting, rule-based fallback). We frame the architecture through Bass et al.'s interoperability tactics, transforming them from design-time artifacts into runtime capabilities. We evaluate SAGAI-MID on 10 interoperability scenarios spanning REST version migration, IoT-to-analytics bridging, and GraphQL protocol conversion across six LLMs from two providers. The best-performing configuration achieves 0.90 pass@1 accuracy. The CODEGEN strategy consistently outperforms DIRECT (0.83 vs 0.77 mean pass@1), while cost varies by over 30x across models with no proportional accuracy gain; the most accurate model is also the cheapest. We discuss implications for software architects adopting LLMs as runtime architectural components.",
+  "keywords": "software architecture, interoperability, large language models, generative AI, middleware, schema matching, runtime adaptation",
   "isPartOf": {
     "@type": "Event",
     "name": "SAGAI 2026 Workshop at IEEE ICSA 2026",
@@ -123,17 +123,17 @@
 
         <section>
             <h2>Abstract</h2>
-            <p>We present SAGAI-MID, a FastAPI-based middleware that uses large language models to dynamically resolve schema mismatches at runtime. The system implements a five-layer pipeline with hybrid detection, dual resolution strategies (DIRECT transformation vs. CODEGEN), and a three-tier safeguard stack. Evaluated across 10 interoperability scenarios using 6 different LLMs, the best configuration achieves 0.90 pass@1 accuracy, demonstrating practical viability of LLM-driven runtime schema adaptation.</p>
+            <p>Modern distributed systems integrate heterogeneous services, REST APIs with different schema versions, GraphQL endpoints, and IoT devices with proprietary payloads that suffer from persistent schema mismatches. Traditional static adapters require manual coding for every schema pair and cannot handle novel combinations at runtime. We present SAGAI-MID, a FastAPI-based middleware that uses large language models (LLMs) to dynamically detect and resolve schema mismatches at runtime. The system employs a five-layer pipeline: hybrid detection (structural diff plus LLM semantic analysis), dual resolution strategies (per-request LLM transformation and LLM-generated reusable adapter code), and a three-tier safeguard stack (validation, ensemble voting, rule-based fallback). We frame the architecture through Bass et al.&#39;s interoperability tactics, transforming them from design-time artifacts into runtime capabilities. We evaluate SAGAI-MID on 10 interoperability scenarios spanning REST version migration, IoT-to-analytics bridging, and GraphQL protocol conversion across six LLMs from two providers. The best-performing configuration achieves 0.90 pass@1 accuracy. The CODEGEN strategy consistently outperforms DIRECT (0.83 vs 0.77 mean pass@1), while cost varies by over 30x across models with no proportional accuracy gain; the most accurate model is also the cheapest. We discuss implications for software architects adopting LLMs as runtime architectural components.</p>
         </section>
 
         <section>
             <h2>TL;DR</h2>
-            <p>A middleware that uses LLMs to automatically fix API schema mismatches at runtime — achieving 90% accuracy across 10 test scenarios and 6 different language models.</p>
+            <p>A FastAPI middleware that uses LLMs to resolve schema mismatches at runtime — achieving 0.90 pass@1 across 10 interoperability scenarios, with CODEGEN outperforming DIRECT and the cheapest model being the most accurate.</p>
         </section>
 
         <section>
             <h2>Keywords</h2>
-            <p>software architecture, interoperability, LLMs, middleware, runtime adaptation</p>
+            <p>software architecture, interoperability, large language models, generative AI, middleware, schema matching, runtime adaptation</p>
         </section>
 
         <section>

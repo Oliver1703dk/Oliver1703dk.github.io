@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edge-Based Standing-Water Detection via FSM-Guided Tiering and Multi-Model Consensus — Oliver Aleksander Larsen</title>
-    <meta name="description" content="We built an edge AI system that detects standing water on farms using a state-machine to intelligently switch between cheap and expensive ML models depending on device resources.">
+    <meta name="description" content="A deployed edge architecture for standing-water detection that uses an FSM to trade accuracy, latency, and energy across inference tiers — outperforming static baselines while using less energy than always-offload policies.">
     <link rel="canonical" href="https://oliver1703dk.github.io/papers/flood-detection/">
     <meta http-equiv="refresh" content="0; url=/#paper-flood-detection">
 
@@ -18,7 +18,7 @@
 
     <!-- Open Graph -->
     <meta property="og:title" content="Edge-Based Standing-Water Detection via FSM-Guided Tiering and Multi-Model Consensus">
-    <meta property="og:description" content="Standing water detection on agricultural edge devices (Raspberry Pi + Jetson). We present an FSM-guided control plane that selects between local and offloaded inference tiers based on resource availability and environmental conditions. A multi-model YOLO ensemble combined with diurnal sensor fusion achieves robust detection across varying lighting and weather conditions, enabling real-time flood monitoring on resource-constrained hardware.">
+    <meta property="og:description" content="Standing water in agricultural fields threatens vehicle mobility and crop health. This paper presents a deployed edge architecture for standing-water detection using Raspberry-Pi-class devices with optional Jetson acceleration. Camera input and environmental sensors (humidity, pressure, temperature) are combined in a finite-state machine (FSM) that acts as the architectural decision engine. The FSM-guided control plane selects between local and offloaded inference tiers, trading accuracy, latency, and energy under intermittent connectivity and motion-dependent compute budgets. A multi-model YOLO ensemble provides image scores, while diurnal-baseline sensor fusion adjusts caution using environmental anomalies. All decisions are logged per frame, enabling bit-identical hardware-in-the-loop replays. Across ten configurations and sensor variants on identical field sequences with frame-level ground truth, we show that the combination of adaptive tiering, multi-model consensus, and diurnal sensor fusion improves flood-detection performance over static local baselines, uses less energy than a naive always-heavy offload policy, and maintains bounded tail latency in a real agricultural setting.">
     <meta property="og:url" content="https://oliver1703dk.github.io/papers/flood-detection/">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="Oliver Aleksander Larsen">
@@ -26,7 +26,7 @@
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Edge-Based Standing-Water Detection via FSM-Guided Tiering and Multi-Model Consensus">
-    <meta name="twitter:description" content="We built an edge AI system that detects standing water on farms using a state-machine to intelligently switch between cheap and expensive ML models depending on device resources.">
+    <meta name="twitter:description" content="A deployed edge architecture for standing-water detection that uses an FSM to trade accuracy, latency, and energy across inference tiers — outperforming static baselines while using less energy than always-offload policies.">
 
     <!-- Dublin Core -->
     <meta name="DC.title" content="Edge-Based Standing-Water Detection via FSM-Guided Tiering and Multi-Model Consensus">
@@ -37,7 +37,7 @@
     <meta name="DC.format" content="text/html">
     <meta name="DC.language" content="en">
     <meta name="DC.publisher" content="IEEE">
-    <meta name="DC.description" content="Standing water detection on agricultural edge devices (Raspberry Pi + Jetson). We present an FSM-guided control plane that selects between local and offloaded inference tiers based on resource availability and environmental conditions. A multi-model YOLO ensemble combined with diurnal sensor fusion achieves robust detection across varying lighting and weather conditions, enabling real-time flood monitoring on resource-constrained hardware.">
+    <meta name="DC.description" content="Standing water in agricultural fields threatens vehicle mobility and crop health. This paper presents a deployed edge architecture for standing-water detection using Raspberry-Pi-class devices with optional Jetson acceleration. Camera input and environmental sensors (humidity, pressure, temperature) are combined in a finite-state machine (FSM) that acts as the architectural decision engine. The FSM-guided control plane selects between local and offloaded inference tiers, trading accuracy, latency, and energy under intermittent connectivity and motion-dependent compute budgets. A multi-model YOLO ensemble provides image scores, while diurnal-baseline sensor fusion adjusts caution using environmental anomalies. All decisions are logged per frame, enabling bit-identical hardware-in-the-loop replays. Across ten configurations and sensor variants on identical field sequences with frame-level ground truth, we show that the combination of adaptive tiering, multi-model consensus, and diurnal sensor fusion improves flood-detection performance over static local baselines, uses less energy than a naive always-heavy offload policy, and maintains bounded tail latency in a real agricultural setting.">
 
     <!-- JSON-LD: ScholarlyArticle -->
     <script type="application/ld+json">
@@ -57,7 +57,7 @@
     }
   ],
   "datePublished": "2026",
-  "abstract": "Standing water detection on agricultural edge devices (Raspberry Pi + Jetson). We present an FSM-guided control plane that selects between local and offloaded inference tiers based on resource availability and environmental conditions. A multi-model YOLO ensemble combined with diurnal sensor fusion achieves robust detection across varying lighting and weather conditions, enabling real-time flood monitoring on resource-constrained hardware.",
+  "abstract": "Standing water in agricultural fields threatens vehicle mobility and crop health. This paper presents a deployed edge architecture for standing-water detection using Raspberry-Pi-class devices with optional Jetson acceleration. Camera input and environmental sensors (humidity, pressure, temperature) are combined in a finite-state machine (FSM) that acts as the architectural decision engine. The FSM-guided control plane selects between local and offloaded inference tiers, trading accuracy, latency, and energy under intermittent connectivity and motion-dependent compute budgets. A multi-model YOLO ensemble provides image scores, while diurnal-baseline sensor fusion adjusts caution using environmental anomalies. All decisions are logged per frame, enabling bit-identical hardware-in-the-loop replays. Across ten configurations and sensor variants on identical field sequences with frame-level ground truth, we show that the combination of adaptive tiering, multi-model consensus, and diurnal sensor fusion improves flood-detection performance over static local baselines, uses less energy than a naive always-heavy offload policy, and maintains bounded tail latency in a real agricultural setting.",
   "keywords": "edge computing, FSM orchestration, model tiering, multi-model consensus, sensor fusion",
   "isPartOf": {
     "@type": "Event",
@@ -129,12 +129,12 @@
 
         <section>
             <h2>Abstract</h2>
-            <p>Standing water detection on agricultural edge devices (Raspberry Pi + Jetson). We present an FSM-guided control plane that selects between local and offloaded inference tiers based on resource availability and environmental conditions. A multi-model YOLO ensemble combined with diurnal sensor fusion achieves robust detection across varying lighting and weather conditions, enabling real-time flood monitoring on resource-constrained hardware.</p>
+            <p>Standing water in agricultural fields threatens vehicle mobility and crop health. This paper presents a deployed edge architecture for standing-water detection using Raspberry-Pi-class devices with optional Jetson acceleration. Camera input and environmental sensors (humidity, pressure, temperature) are combined in a finite-state machine (FSM) that acts as the architectural decision engine. The FSM-guided control plane selects between local and offloaded inference tiers, trading accuracy, latency, and energy under intermittent connectivity and motion-dependent compute budgets. A multi-model YOLO ensemble provides image scores, while diurnal-baseline sensor fusion adjusts caution using environmental anomalies. All decisions are logged per frame, enabling bit-identical hardware-in-the-loop replays. Across ten configurations and sensor variants on identical field sequences with frame-level ground truth, we show that the combination of adaptive tiering, multi-model consensus, and diurnal sensor fusion improves flood-detection performance over static local baselines, uses less energy than a naive always-heavy offload policy, and maintains bounded tail latency in a real agricultural setting.</p>
         </section>
 
         <section>
             <h2>TL;DR</h2>
-            <p>We built an edge AI system that detects standing water on farms using a state-machine to intelligently switch between cheap and expensive ML models depending on device resources.</p>
+            <p>A deployed edge architecture for standing-water detection that uses an FSM to trade accuracy, latency, and energy across inference tiers — outperforming static baselines while using less energy than always-offload policies.</p>
         </section>
 
         <section>
