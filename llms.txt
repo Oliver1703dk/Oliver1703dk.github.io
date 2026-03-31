@@ -17,6 +17,7 @@
 - Authors: Oliver Larsen, Mahyar T. Moghaddam
 - Venue: IEEE ICSA 2026, Software Architecture in Practice Track
 - Keywords: edge computing, FSM orchestration, model tiering, multi-model consensus, sensor fusion
+
 - Code: https://github.com/Oliver1703dk/flood_detection_system
 
 **Abstract:** Standing water detection on agricultural edge devices (Raspberry Pi + Jetson). We present an FSM-guided control plane that selects between local and offloaded inference tiers based on resource availability and environmental conditions. A multi-model YOLO ensemble combined with diurnal sensor fusion achieves robust detection across varying lighting and weather conditions, enabling real-time flood monitoring on resource-constrained hardware.
@@ -27,6 +28,7 @@
 - Authors: Oliver Aleksander Larsen, Mahyar T. Moghaddam
 - Venue: ANGE 2026 Workshop at IEEE ICSA 2026
 - Keywords: software architecture, architecture documentation, AI-augmented systems, arc42, C4 model, EU AI Act
+- arXiv: https://arxiv.org/abs/2603.28735
 - Code: https://github.com/Oliver1703dk/RAD-AI
 
 **Abstract:** We propose a backward-compatible extension of arc42 (adding 8 sections) and C4 (adding 3 diagram types) specifically designed for AI-augmented ecosystems. Our extensions enable systematic documentation of AI components, their data flows, training pipelines, and regulatory requirements. When evaluated against EU AI Act Annex IV requirements, RAD-AI improves documentation addressability from approximately 36% to 93%. We validate the framework on two industrial case studies: Uber Michelangelo and Netflix Metaflow.
@@ -37,6 +39,7 @@
 - Authors: Oliver Aleksander Larsen, Rasmus Thorsen Larsen, Mahyar T. Moghaddam
 - Venue: BlockArch 2026 Workshop at IEEE ICSA 2026
 - Keywords: blockchain architecture, Bitcoin, Lightning Network, sovereign infrastructure, decentralized identity
+- arXiv: https://arxiv.org/abs/2603.28727
 
 
 **Abstract:** We present BitSov, an eight-layer composable architectural framework for Bitcoin-native sovereign internet infrastructure. The framework introduces three architectural patterns: payment-gated messaging, timechain-locked contracts, and a self-sustaining economic flywheel. BitSov employs dual settlement across on-chain Bitcoin transactions and Lightning Network micropayments, enabling censorship-resistant communication and identity management without reliance on traditional internet infrastructure.
@@ -47,6 +50,7 @@
 - Authors: Oliver Aleksander Larsen, Mahyar T. Moghaddam
 - Venue: SAGAI 2026 Workshop at IEEE ICSA 2026
 - Keywords: software architecture, interoperability, LLMs, middleware, runtime adaptation
+- arXiv: https://arxiv.org/abs/2603.28731
 - Code: https://github.com/Oliver1703dk/sagai-mid
 
 **Abstract:** We present SAGAI-MID, a FastAPI-based middleware that uses large language models to dynamically resolve schema mismatches at runtime. The system implements a five-layer pipeline with hybrid detection, dual resolution strategies (DIRECT transformation vs. CODEGEN), and a three-tier safeguard stack. Evaluated across 10 interoperability scenarios using 6 different LLMs, the best configuration achieves 0.90 pass@1 accuracy, demonstrating practical viability of LLM-driven runtime schema adaptation.
