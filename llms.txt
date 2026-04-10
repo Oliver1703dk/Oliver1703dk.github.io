@@ -12,10 +12,10 @@
 - LLM-Driven Middleware and Interoperability
 
 ## Site Navigation
-- Home: https://oliver1703dk.github.io/
-- Publications: https://oliver1703dk.github.io/publications/
-- Projects: https://oliver1703dk.github.io/projects/
-- CV: https://oliver1703dk.github.io/cv/
+- Home: https://oalarsen.com/
+- Publications: https://oalarsen.com/publications/
+- Projects: https://oalarsen.com/projects/
+- CV: https://oalarsen.com/cv/
 
 ## Papers at IEEE ICSA 2026
 
@@ -106,7 +106,7 @@ Tags: Multi-agent, LLM, Next.js, Flask
 Status: Completed
 
 ## Links
-- Home: https://oliver1703dk.github.io/
+- Home: https://oalarsen.com/
 - ORCID: https://orcid.org/0009-0003-6944-2560
 - GitHub: https://github.com/Oliver1703dk
 - LinkedIn: https://www.linkedin.com/in/oliver-larsen-b7bb89243/
