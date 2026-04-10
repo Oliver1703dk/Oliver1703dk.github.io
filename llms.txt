@@ -11,6 +11,12 @@
 - Blockchain Architecture (Bitcoin-native)
 - LLM-Driven Middleware and Interoperability
 
+## Site Navigation
+- Home: https://oliver1703dk.github.io/
+- Publications: https://oliver1703dk.github.io/publications/
+- Projects: https://oliver1703dk.github.io/projects/
+- CV: https://oliver1703dk.github.io/cv/
+
 ## Papers at IEEE ICSA 2026
 
 ### Edge-Based Standing-Water Detection via FSM-Guided Tiering and Multi-Model Consensus
@@ -77,6 +83,27 @@
 **Abstract:** Athletes often struggle with static, rule-based meal plans that fail to adapt to evolving personal preferences and feedback, leading to reduced adherence and suboptimal nutrition for performance. This short communication introduces a hybrid large-language-model (LLM)-driven recommender system to personalize meal recommendations within CarboPlanner, a sports nutrition platform. The system combines in-context learning (ICL) for short-term adaptation via dynamic prompts incorporating user profiles, recent feedback, and meal candidates, with parameter-efficient fine-tuning (PEFT) using low-rank adaptation (LoRA) on the Mistral-7B-Instruct model for long-term, system-wide learning from accumulated feedback. Implemented as a modular Flask API integrated seamlessly into CarboPlanner's existing infrastructure (Flutter app, NestJS backend, and MongoDB database), the system processes athlete feedback through dual loops: immediate ICL updates and periodic PEFT retraining. Evaluation on 1000 test prompts from a held-out dataset demonstrated superior performance over baselines. The hybrid model achieved 46.7% prediction accuracy and 100% format adherence, outperforming the non-fine-tuned ICL-only model (41.5% accuracy, 39.7% format adherence) and random selection (20% accuracy, 100% format adherence).
 
 **TL;DR:** A hybrid LLM recommender for CarboPlanner that combines in-context learning with LoRA fine-tuned Mistral-7B — achieving 46.7% accuracy and 100% format adherence, outperforming ICL-only and random baselines.
+
+## Projects
+### CarboPlanner
+Sports nutrition startup. Co-founded and raised 1,090,000 DKK. Built a full-stack platform with React, Flutter, NestJS, and MongoDB for personalized macro tracking and meal planning.
+Tags: React, Flutter, NestJS, MongoDB, Startup
+Status: Active
+
+### Hybrid LLM Meal Recommender
+Hybrid LLM recommender integrated into CarboPlanner. Combines in-context learning with LoRA/PEFT fine-tuned Mistral-7B for personalized athlete meal planning. 46.7% accuracy, 100% format adherence. Under revision at Results in Engineering.
+Tags: LLM, LoRA, Mistral-7B, Flask, CarboPlanner
+Status: Completed
+
+### Flood Detection System
+Edge architecture for standing-water detection in agricultural fields. Raspberry Pi + Jetson AGX Orin running YOLO models with FSM-based orchestration over MQTT.
+Tags: Edge AI, YOLO, Raspberry Pi, Jetson, MQTT
+Status: Active
+
+### Stock Analysis System
+Multi-agent LLM trading system with autonomous analysis pipelines. Built with Next.js frontend, Flask backend, MongoDB, Celery task queue, and Redis.
+Tags: Multi-agent, LLM, Next.js, Flask
+Status: Completed
 
 ## Links
 - Home: https://oliver1703dk.github.io/

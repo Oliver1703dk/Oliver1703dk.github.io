@@ -6,7 +6,6 @@
     <title>Edge-Based Standing-Water Detection via FSM-Guided Tiering and Multi-Model Consensus — Oliver Aleksander Larsen</title>
     <meta name="description" content="A deployed edge architecture for standing-water detection that uses an FSM to trade accuracy, latency, and energy across inference tiers — outperforming static baselines while using less energy than always-offload policies.">
     <link rel="canonical" href="https://oliver1703dk.github.io/papers/flood-detection/">
-    <meta http-equiv="refresh" content="0; url=/#paper-flood-detection">
 
     <!-- Highwire Press (Google Scholar) -->
     <meta name="citation_title" content="Edge-Based Standing-Water Detection via FSM-Guided Tiering and Multi-Model Consensus">
@@ -117,10 +116,11 @@
       summary { cursor: pointer; padding: 4px 0; }
       details p { margin: 0.5rem 0 0 1rem; color: #444; }
       a { color: #2563eb; }
-      .redirect-note { font-size: 0.85rem; color: #888; margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #e5e5e5; }
     </style>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>">
 </head>
 <body>
+    <div id="seo-content">
     <article>
         <h1>Edge-Based Standing-Water Detection via FSM-Guided Tiering and Multi-Model Consensus</h1>
         <div class="meta">
@@ -187,7 +187,23 @@
 }</code></pre>
         </section>
     </article>
-
-    <p class="redirect-note">Redirecting to the interactive page&hellip; If not redirected, <a href="/#paper-flood-detection">click here</a>.</p>
+    </div>
+    
+    <!-- SPA mount point -->
+    <div id="root"></div>
+    <link rel="stylesheet" crossorigin href="/assets/index-DwG_fWSr.css">
+    <script type="module" crossorigin src="/assets/index-Bh2w-ARh.js"></script>
+    <script>
+      // Hide SEO content once SPA renders
+      if (document.getElementById('root')) {
+        new MutationObserver(function(m, o) {
+          if (document.getElementById('root').children.length > 0) {
+            var seo = document.getElementById('seo-content');
+            if (seo) seo.style.display = 'none';
+            o.disconnect();
+          }
+        }).observe(document.getElementById('root'), { childList: true });
+      }
+    </script>
 </body>
 </html>

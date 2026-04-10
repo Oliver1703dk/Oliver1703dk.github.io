@@ -6,7 +6,6 @@
     <title>RAD-AI: Rethinking Architecture Documentation for AI-Augmented Ecosystems — Oliver Aleksander Larsen</title>
     <meta name="description" content="A backward-compatible extension of arc42 and C4 for AI-augmented ecosystems — increasing EU AI Act Annex IV documentation addressability from ~36% to ~93%, validated on Uber Michelangelo and Netflix Metaflow.">
     <link rel="canonical" href="https://oliver1703dk.github.io/papers/rad-ai/">
-    <meta http-equiv="refresh" content="0; url=/#paper-rad-ai">
 
     <!-- Highwire Press (Google Scholar) -->
     <meta name="citation_title" content="RAD-AI: Rethinking Architecture Documentation for AI-Augmented Ecosystems">
@@ -117,10 +116,11 @@
       summary { cursor: pointer; padding: 4px 0; }
       details p { margin: 0.5rem 0 0 1rem; color: #444; }
       a { color: #2563eb; }
-      .redirect-note { font-size: 0.85rem; color: #888; margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #e5e5e5; }
     </style>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>">
 </head>
 <body>
+    <div id="seo-content">
     <article>
         <h1>RAD-AI: Rethinking Architecture Documentation for AI-Augmented Ecosystems</h1>
         <div class="meta">
@@ -187,7 +187,23 @@
 }</code></pre>
         </section>
     </article>
-
-    <p class="redirect-note">Redirecting to the interactive page&hellip; If not redirected, <a href="/#paper-rad-ai">click here</a>.</p>
+    </div>
+    
+    <!-- SPA mount point -->
+    <div id="root"></div>
+    <link rel="stylesheet" crossorigin href="/assets/index-DwG_fWSr.css">
+    <script type="module" crossorigin src="/assets/index-Bh2w-ARh.js"></script>
+    <script>
+      // Hide SEO content once SPA renders
+      if (document.getElementById('root')) {
+        new MutationObserver(function(m, o) {
+          if (document.getElementById('root').children.length > 0) {
+            var seo = document.getElementById('seo-content');
+            if (seo) seo.style.display = 'none';
+            o.disconnect();
+          }
+        }).observe(document.getElementById('root'), { childList: true });
+      }
+    </script>
 </body>
 </html>

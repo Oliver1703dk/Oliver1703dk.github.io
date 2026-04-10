@@ -6,7 +6,6 @@
     <title>Hybrid Large-Language-Model Meal Recommender System for Athletes: A Short Communication — Oliver Aleksander Larsen</title>
     <meta name="description" content="A hybrid LLM recommender for CarboPlanner that combines in-context learning with LoRA fine-tuned Mistral-7B — achieving 46.7% accuracy and 100% format adherence, outperforming ICL-only and random baselines.">
     <link rel="canonical" href="https://oliver1703dk.github.io/papers/meal-recommender/">
-    <meta http-equiv="refresh" content="0; url=/#paper-meal-recommender">
 
     <!-- Highwire Press (Google Scholar) -->
     <meta name="citation_title" content="Hybrid Large-Language-Model Meal Recommender System for Athletes: A Short Communication">
@@ -113,10 +112,11 @@
       summary { cursor: pointer; padding: 4px 0; }
       details p { margin: 0.5rem 0 0 1rem; color: #444; }
       a { color: #2563eb; }
-      .redirect-note { font-size: 0.85rem; color: #888; margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #e5e5e5; }
     </style>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>">
 </head>
 <body>
+    <div id="seo-content">
     <article>
         <h1>Hybrid Large-Language-Model Meal Recommender System for Athletes: A Short Communication</h1>
         <div class="meta">
@@ -180,7 +180,23 @@
 }</code></pre>
         </section>
     </article>
-
-    <p class="redirect-note">Redirecting to the interactive page&hellip; If not redirected, <a href="/#paper-meal-recommender">click here</a>.</p>
+    </div>
+    
+    <!-- SPA mount point -->
+    <div id="root"></div>
+    <link rel="stylesheet" crossorigin href="/assets/index-DwG_fWSr.css">
+    <script type="module" crossorigin src="/assets/index-Bh2w-ARh.js"></script>
+    <script>
+      // Hide SEO content once SPA renders
+      if (document.getElementById('root')) {
+        new MutationObserver(function(m, o) {
+          if (document.getElementById('root').children.length > 0) {
+            var seo = document.getElementById('seo-content');
+            if (seo) seo.style.display = 'none';
+            o.disconnect();
+          }
+        }).observe(document.getElementById('root'), { childList: true });
+      }
+    </script>
 </body>
 </html>
