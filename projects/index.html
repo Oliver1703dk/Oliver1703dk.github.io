@@ -15,6 +15,8 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Projects - Oliver Aleksander Larsen">
     <meta name="twitter:description" content="Software projects by Oliver Aleksander Larsen: CarboPlanner (sports nutrition startup), Hybrid LLM Meal Recommender, Flood Detection System, and Stock Analysis System.">
+    <meta name="twitter:site" content="@OLarsen02">
+    <meta name="twitter:image" content="https://oalarsen.com/assets/img/prof_pic.jpg">
     <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -66,6 +68,49 @@
   }
 }
     </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://oalarsen.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Projects"
+    }
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is CarboPlanner?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "CarboPlanner is a sports nutrition startup co-founded by Oliver Larsen that provides personalized meal planning for athletes. It raised 1,090,000 DKK."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What startups has Oliver Larsen founded?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Oliver Larsen co-founded CarboPlanner, a sports nutrition startup providing AI-driven meal recommendations for athletes."
+      }
+    }
+  ]
+}
+    </script>
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>">
     <style>
       body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 720px; margin: 0 auto; padding: 32px 20px; color: #1a1a1a; line-height: 1.6; }
@@ -77,6 +122,12 @@
 </head>
 <body>
     <div id="seo-content">
+        <nav style="margin-bottom:24px;font-size:0.9rem">
+          <a href="/">Home</a> ·
+          <a href="/publications/">Publications</a> ·
+          <a href="/projects/">Projects</a> ·
+          <a href="/cv/">CV</a>
+        </nav>
         <h1>Projects</h1>
 
         <section>
@@ -106,12 +157,23 @@
             <p>Multi-agent LLM trading system with autonomous analysis pipelines. Built with Next.js frontend, Flask backend, MongoDB, Celery task queue, and Redis.</p>
             <p><strong>Tags:</strong> Multi-agent, LLM, Next.js, Flask</p>
         </section>
+        <section>
+            <h2>Frequently Asked Questions</h2>
+            <dl>
+                <dt>What is CarboPlanner?</dt>
+                <dd>CarboPlanner is a sports nutrition startup co-founded by Oliver Larsen that provides personalized meal planning for athletes. It raised 1,090,000 DKK.</dd>
+                <dt>What startups has Oliver Larsen founded?</dt>
+                <dd>Oliver Larsen co-founded CarboPlanner, a sports nutrition startup providing AI-driven meal recommendations for athletes.</dd>
+            </dl>
+        </section>
     </div>
     
     <!-- SPA mount point -->
     <div id="root"></div>
-    <link rel="stylesheet" crossorigin href="/assets/index-DwG_fWSr.css">
-    <script type="module" crossorigin src="/assets/index-CgdeXj4E.js"></script>
+    <link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/npm/geist@1.3.0/dist/fonts/geist-sans/style.min.css">
+    <link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/npm/geist@1.3.0/dist/fonts/geist-mono/style.min.css">
+    <link rel="stylesheet" crossorigin href="/assets/index-BrQHhk5d.css">
+    <script type="module" crossorigin src="/assets/index-DVg-8X4n.js"></script>
     <script>
       // Hide SEO content once SPA renders
       if (document.getElementById('root')) {

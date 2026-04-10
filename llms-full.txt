@@ -1,8 +1,19 @@
 # Oliver Aleksander Larsen - Software Architecture Researcher
 
+> Last updated: 2026-04-10
+
 > Software architecture researcher at the University of Southern Denmark (SDU)
 > studying how architecture adapts when AI becomes both a design tool and a
 > design subject. Four papers accepted at IEEE ICSA 2026 (Amsterdam), plus one journal paper under revision at Results in Engineering.
+
+## Site Navigation
+- Home: https://oalarsen.com/
+- Publications: https://oalarsen.com/publications/
+- Projects: https://oalarsen.com/projects/
+- CV: https://oalarsen.com/cv/
+
+## About
+Oliver Aleksander Larsen is an MSc Software Engineering student at the University of Southern Denmark, supervised by Mahyar T. Moghaddam. His research covers edge computing, AI governance (EU AI Act), blockchain architecture, and LLM middleware. He is also co-founder and CTO of CarboPlanner, a sports nutrition startup that raised 1,090,000 DKK.
 
 ## Research Areas
 - Software Architecture for AI-Augmented Systems
@@ -11,13 +22,7 @@
 - Blockchain Architecture (Bitcoin-native)
 - LLM-Driven Middleware and Interoperability
 
-## Site Navigation
-- Home: https://oalarsen.com/
-- Publications: https://oalarsen.com/publications/
-- Projects: https://oalarsen.com/projects/
-- CV: https://oalarsen.com/cv/
-
-## Papers at IEEE ICSA 2026
+## Papers
 
 ### Edge-Based Standing-Water Detection via FSM-Guided Tiering and Multi-Model Consensus
 - Authors: Oliver Aleksander Larsen, Mahyar T. Moghaddam
@@ -28,9 +33,22 @@
 
 - Code: https://github.com/Oliver1703dk/flood_detection_system
 
+**TL;DR:** A deployed edge architecture for standing-water detection that uses an FSM to trade accuracy, latency, and energy across inference tiers, outperforming static baselines while using less energy than always-offload policies.
+
 **Abstract:** Standing water in agricultural fields threatens vehicle mobility and crop health. This paper presents a deployed edge architecture for standing-water detection using Raspberry-Pi-class devices with optional Jetson acceleration. Camera input and environmental sensors (humidity, pressure, temperature) are combined in a finite-state machine (FSM) that acts as the architectural decision engine. The FSM-guided control plane selects between local and offloaded inference tiers, trading accuracy, latency, and energy under intermittent connectivity and motion-dependent compute budgets. A multi-model YOLO ensemble provides image scores, while diurnal-baseline sensor fusion adjusts caution using environmental anomalies. All decisions are logged per frame, enabling bit-identical hardware-in-the-loop replays. Across ten configurations and sensor variants on identical field sequences with frame-level ground truth, we show that the combination of adaptive tiering, multi-model consensus, and diurnal sensor fusion improves flood-detection performance over static local baselines, uses less energy than a naive always-heavy offload policy, and maintains bounded tail latency in a real agricultural setting.
 
-**TL;DR:** A deployed edge architecture for standing-water detection that uses an FSM to trade accuracy, latency, and energy across inference tiers, outperforming static baselines while using less energy than always-offload policies.
+**FAQs:**
+
+**Q: What hardware does this system run on?**
+The system runs on a Raspberry Pi for lightweight inference and offloads to a Jetson AGX Orin for heavier models, connected via MQTT.
+
+**Q: How does the FSM control model selection?**
+A finite-state machine monitors resource utilization and environmental signals to transition between inference tiers, ranging from a fast, low-power model to a full YOLO ensemble when conditions demand it.
+
+**Q: What accuracy does the system achieve?**
+The multi-model consensus approach with diurnal sensor fusion achieves robust detection across varying lighting conditions, outperforming single-model baselines on our agricultural dataset.
+
+---
 
 ### RAD-AI: Rethinking Architecture Documentation for AI-Augmented Ecosystems
 - Authors: Oliver Aleksander Larsen, Mahyar T. Moghaddam
@@ -41,9 +59,22 @@
 
 - Code: https://github.com/Oliver1703dk/RAD-AI
 
+**TL;DR:** A backward-compatible extension of arc42 and C4 for AI-augmented ecosystems, increasing EU AI Act Annex IV documentation addressability from ~36% to ~93%, validated on Uber Michelangelo and Netflix Metaflow.
+
 **Abstract:** AI-augmented ecosystems (interconnected systems where multiple AI components interact through shared data and infrastructure) are becoming the architectural norm for smart cities, autonomous fleets, and intelligent platforms. Yet the architecture documentation frameworks practitioners rely on, arc42 and the C4 model, were designed for deterministic software and cannot capture probabilistic behavior, data-dependent evolution, or dual ML/software lifecycles. This gap carries regulatory consequence: the EU AI Act (Regulation 2024/1689) mandates technical documentation through Annex IV that no existing framework provides structured support for, with enforcement for high-risk systems beginning August 2, 2026. We present RAD-AI, a backward-compatible extension framework that augments arc42 with eight AI-specific sections and C4 with three diagram extensions, complemented by a systematic EU AI Act Annex IV compliance mapping. A regulatory coverage assessment with six experienced software-architecture practitioners provides preliminary evidence that RAD-AI increases Annex IV addressability from approximately 36% to 93% (mean rating) and demonstrates substantial improvement over existing frameworks. Comparative analysis on two production AI platforms (Uber Michelangelo, Netflix Metaflow) captures eight additional AI-specific concerns missed by standard frameworks and demonstrates that documentation deficiencies are structural rather than domain-specific. An illustrative smart mobility ecosystem case study reveals ecosystem-level concerns, including cascading drift and differentiated compliance obligations, that are invisible under standard notation.
 
-**TL;DR:** A backward-compatible extension of arc42 and C4 for AI-augmented ecosystems, increasing EU AI Act Annex IV documentation addressability from ~36% to ~93%, validated on Uber Michelangelo and Netflix Metaflow.
+**FAQs:**
+
+**Q: What is the best architecture documentation framework for AI systems?**
+RAD-AI extends arc42 and C4, two of the most widely adopted frameworks, with AI-specific sections and diagrams, making it backward-compatible with existing documentation practices.
+
+**Q: How does RAD-AI address EU AI Act compliance?**
+RAD-AI maps its documentation sections directly to EU AI Act Annex IV requirements, improving addressability from ~36% (vanilla arc42/C4) to ~93%.
+
+**Q: What case studies validate RAD-AI?**
+We evaluated RAD-AI on two production ML platforms: Uber Michelangelo and Netflix Metaflow, demonstrating practical applicability at scale.
+
+---
 
 ### BitSov: A Composable Bitcoin-Native Architecture for Sovereign Internet Infrastructure
 - Authors: Oliver Aleksander Larsen, Rasmus Thorsen Larsen, Mahyar T. Moghaddam
@@ -54,9 +85,19 @@
 
 
 
+**TL;DR:** An eight-layer Bitcoin-native protocol stack for sovereign internet infrastructure, featuring payment-gated messaging, timechain-locked contracts, and a self-sustaining economic flywheel.
+
 **Abstract:** Today's internet concentrates identity, payments, communication, and content hosting under a small number of corporate intermediaries, creating single points of failure, enabling censorship, and extracting economic rent from participants. We present BitSov, an architectural framework for sovereign internet infrastructure that composes existing decentralized technologies (Bitcoin, Lightning Network, decentralized storage, federated messaging, and mesh connectivity) into a unified, eight-layer protocol stack anchored to Bitcoin's base layer. The framework introduces three architectural patterns: (1) payment-gated messaging, where every transmitted message requires cryptographic proof of a Bitcoin payment, deterring spam through economic incentives rather than moderation; (2) timechain-locked contracts, which anchor subscriptions and licenses to Bitcoin block height (the timechain) rather than calendar dates; and (3) a self-sustaining economic flywheel that converts service revenue into infrastructure growth. A dual settlement model supports both on-chain transactions for permanence and auditability and Lightning micropayments for high-frequency messaging. As a position paper, we analyze the quality attributes, discuss open challenges, and propose a research agenda for empirical validation.
 
-**TL;DR:** An eight-layer Bitcoin-native protocol stack for sovereign internet infrastructure, featuring payment-gated messaging, timechain-locked contracts, and a self-sustaining economic flywheel.
+**FAQs:**
+
+**Q: What is Bitcoin-native sovereign infrastructure?**
+Infrastructure that uses Bitcoin's blockchain and Lightning Network as foundational layers, removing dependence on centralized DNS, CAs, and cloud providers.
+
+**Q: What are the three architectural patterns in BitSov?**
+Payment-gated messaging (spam prevention via micropayments), timechain-locked contracts (time-bound agreements settled on-chain), and a self-sustaining economic flywheel (network effects that fund infrastructure).
+
+---
 
 ### SAGAI-MID: A Generative AI-Driven Middleware for Dynamic Runtime Interoperability
 - Authors: Oliver Aleksander Larsen, Mahyar T. Moghaddam
@@ -67,9 +108,19 @@
 
 - Code: https://github.com/Oliver1703dk/sagai-mid
 
+**TL;DR:** A FastAPI middleware that uses LLMs to resolve schema mismatches at runtime, achieving 0.90 pass@1 across 10 interoperability scenarios, with CODEGEN outperforming DIRECT and the cheapest model being the most accurate.
+
 **Abstract:** Modern distributed systems integrate heterogeneous services, REST APIs with different schema versions, GraphQL endpoints, and IoT devices with proprietary payloads that suffer from persistent schema mismatches. Traditional static adapters require manual coding for every schema pair and cannot handle novel combinations at runtime. We present SAGAI-MID, a FastAPI-based middleware that uses large language models (LLMs) to dynamically detect and resolve schema mismatches at runtime. The system employs a five-layer pipeline: hybrid detection (structural diff plus LLM semantic analysis), dual resolution strategies (per-request LLM transformation and LLM-generated reusable adapter code), and a three-tier safeguard stack (validation, ensemble voting, rule-based fallback). We frame the architecture through Bass et al.'s interoperability tactics, transforming them from design-time artifacts into runtime capabilities. We evaluate SAGAI-MID on 10 interoperability scenarios spanning REST version migration, IoT-to-analytics bridging, and GraphQL protocol conversion across six LLMs from two providers. The best-performing configuration achieves 0.90 pass@1 accuracy. The CODEGEN strategy consistently outperforms DIRECT (0.83 vs 0.77 mean pass@1), while cost varies by over 30x across models with no proportional accuracy gain; the most accurate model is also the cheapest. We discuss implications for software architects adopting LLMs as runtime architectural components.
 
-**TL;DR:** A FastAPI middleware that uses LLMs to resolve schema mismatches at runtime, achieving 0.90 pass@1 across 10 interoperability scenarios, with CODEGEN outperforming DIRECT and the cheapest model being the most accurate.
+**FAQs:**
+
+**Q: How does SAGAI-MID resolve schema mismatches?**
+It uses a five-layer pipeline: schema extraction, hybrid mismatch detection, LLM-based resolution (via direct transformation or code generation), and a three-tier safeguard stack for validation.
+
+**Q: What accuracy does SAGAI-MID achieve?**
+The best LLM configuration achieves 0.90 pass@1 accuracy across 10 diverse interoperability scenarios, with the CODEGEN strategy generally outperforming DIRECT transformation.
+
+---
 
 ### Hybrid Large-Language-Model Meal Recommender System for Athletes: A Short Communication
 - Authors: Oliver Aleksander Larsen, Vinay Chakravarthi Gogineni
@@ -80,11 +131,23 @@
 - ResearchGate: https://www.researchgate.net/publication/400770955
 
 
-**Abstract:** Athletes often struggle with static, rule-based meal plans that fail to adapt to evolving personal preferences and feedback, leading to reduced adherence and suboptimal nutrition for performance. This short communication introduces a hybrid large-language-model (LLM)-driven recommender system to personalize meal recommendations within CarboPlanner, a sports nutrition platform. The system combines in-context learning (ICL) for short-term adaptation via dynamic prompts incorporating user profiles, recent feedback, and meal candidates, with parameter-efficient fine-tuning (PEFT) using low-rank adaptation (LoRA) on the Mistral-7B-Instruct model for long-term, system-wide learning from accumulated feedback. Implemented as a modular Flask API integrated seamlessly into CarboPlanner's existing infrastructure (Flutter app, NestJS backend, and MongoDB database), the system processes athlete feedback through dual loops: immediate ICL updates and periodic PEFT retraining. Evaluation on 1000 test prompts from a held-out dataset demonstrated superior performance over baselines. The hybrid model achieved 46.7% prediction accuracy and 100% format adherence, outperforming the non-fine-tuned ICL-only model (41.5% accuracy, 39.7% format adherence) and random selection (20% accuracy, 100% format adherence).
-
 **TL;DR:** A hybrid LLM recommender for CarboPlanner that combines in-context learning with LoRA fine-tuned Mistral-7B, achieving 46.7% accuracy and 100% format adherence, outperforming ICL-only and random baselines.
 
+**Abstract:** Athletes often struggle with static, rule-based meal plans that fail to adapt to evolving personal preferences and feedback, leading to reduced adherence and suboptimal nutrition for performance. This short communication introduces a hybrid large-language-model (LLM)-driven recommender system to personalize meal recommendations within CarboPlanner, a sports nutrition platform. The system combines in-context learning (ICL) for short-term adaptation via dynamic prompts incorporating user profiles, recent feedback, and meal candidates, with parameter-efficient fine-tuning (PEFT) using low-rank adaptation (LoRA) on the Mistral-7B-Instruct model for long-term, system-wide learning from accumulated feedback. Implemented as a modular Flask API integrated seamlessly into CarboPlanner's existing infrastructure (Flutter app, NestJS backend, and MongoDB database), the system processes athlete feedback through dual loops: immediate ICL updates and periodic PEFT retraining. Evaluation on 1000 test prompts from a held-out dataset demonstrated superior performance over baselines. The hybrid model achieved 46.7% prediction accuracy and 100% format adherence, outperforming the non-fine-tuned ICL-only model (41.5% accuracy, 39.7% format adherence) and random selection (20% accuracy, 100% format adherence).
+
+**FAQs:**
+
+**Q: What model does the meal recommender use?**
+The system uses Mistral-7B-Instruct fine-tuned with LoRA/PEFT (Parameter-Efficient Fine-Tuning), enabling dietary-aware meal generation without full model retraining.
+
+**Q: How accurate is the meal recommender?**
+The hybrid model achieves 46.7% prediction accuracy and 100% format adherence on 1000 test prompts, outperforming ICL-only (41.5% accuracy, 39.7% format adherence) and random selection (20% accuracy).
+
+**Q: Is this related to CarboPlanner?**
+This research extends the BSc thesis work at SDU on personalized nutrition for athletes, which informed the development of the CarboPlanner startup.
+
 ## Projects
+
 ### CarboPlanner
 Sports nutrition startup. Co-founded and raised 1,090,000 DKK. Built a full-stack platform with React, Flutter, NestJS, and MongoDB for personalized macro tracking and meal planning.
 Tags: React, Flutter, NestJS, MongoDB, Startup
@@ -104,6 +167,42 @@ Status: Active
 Multi-agent LLM trading system with autonomous analysis pipelines. Built with Next.js frontend, Flask backend, MongoDB, Celery task queue, and Redis.
 Tags: Multi-agent, LLM, Next.js, Flask
 Status: Completed
+
+## Curriculum Vitae
+
+### Education
+- **MSc Software Engineering** (2025 - present): University of Southern Denmark (SDU)
+- **BSc Software Engineering** (2022 - 2025): University of Southern Denmark (SDU) · Grade: ~9.5/12 (A) · Thesis: 12/12 (A+)
+- **High School Diploma** (2018 - 2021): Slagelse Gymnasium · Math / Physics / Chemistry
+
+### Research
+- **4 papers accepted at IEEE ICSA 2026** (2026): Edge AI, AI governance (EU AI Act), blockchain architecture, LLM middleware
+- **"Vibe Coding", ECSA 2026 (under review)** (2026): Quasi-experimental study of AI-assisted development and architectural erosion
+- **Hybrid LLM Meal Recommender, Results in Engineering (under revision)** (2025 - 2026): Personalized meal planning with LoRA/PEFT fine-tuned Mistral-7B · BSc thesis extended
+
+### Experience
+- **Co-founder & CTO, CarboPlanner** (2023 - present): Sports nutrition startup · Raised 1,090,000 DKK
+- **Student Researcher, SDU** (2024 - present): Supervised by Mahyar T. Moghaddam · Edge computing, AI governance
+- **Teaching Assistant** (2023 - present): Data Management, Computer Systems · 300+ students
+
+### Achievements
+- **Ironman Copenhagen 140.6** (Aug 2025): 3.8km swim · 180km bike · 42.2km run
+- **Royal Life Guards** (2021 - 2022): 8 months military service, Danish Army
+- **Stuttering Mentoring Coach** (2020): International program for speech therapy mentoring
+
+## Frequently Asked Questions
+
+**Q: Who is Oliver Larsen?**
+Oliver Aleksander Larsen is a software architecture researcher at the University of Southern Denmark. He has 4 papers accepted at IEEE ICSA 2026 and co-founded CarboPlanner, a sports nutrition startup.
+
+**Q: What does Oliver Larsen research?**
+His research focuses on how software architecture adapts when AI becomes both a design tool and a design subject, covering edge computing, AI governance, blockchain architecture, and LLM middleware.
+
+**Q: Where does Oliver Larsen study?**
+He is pursuing an MSc in Software Engineering at the University of Southern Denmark (SDU), supervised by Mahyar T. Moghaddam.
+
+**Q: How many papers has Oliver Larsen published?**
+He has 4 papers accepted at IEEE ICSA 2026 (Amsterdam, June 22-26, 2026) and 1 journal paper under revision at Results in Engineering.
 
 ## Links
 - Home: https://oalarsen.com/

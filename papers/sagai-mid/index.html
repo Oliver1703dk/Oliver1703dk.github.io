@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SAGAI-MID: A Generative AI-Driven Middleware for Dynamic Runtime Interoperability - Oliver Aleksander Larsen</title>
+    <title>SAGAI-MID: A Generative AI-Driven Middleware for D... | Oliver Larsen</title>
     <meta name="description" content="A FastAPI middleware that uses LLMs to resolve schema mismatches at runtime, achieving 0.90 pass@1 across 10 interoperability scenarios, with CODEGEN outperforming DIRECT and the cheapest model being the most accurate.">
     <link rel="canonical" href="https://oalarsen.com/papers/sagai-mid/">
 
@@ -15,18 +15,23 @@
     <meta name="citation_conference_title" content="SAGAI 2026 Workshop at IEEE ICSA 2026">
     <meta name="citation_language" content="en">
     <meta name="citation_arxiv_id" content="2603.28731">
+    <meta name="citation_pdf_url" content="https://arxiv.org/pdf/2603.28731">
+    <meta name="citation_publisher" content="IEEE">
 
     <!-- Open Graph -->
     <meta property="og:title" content="SAGAI-MID: A Generative AI-Driven Middleware for Dynamic Runtime Interoperability">
-    <meta property="og:description" content="Modern distributed systems integrate heterogeneous services, REST APIs with different schema versions, GraphQL endpoints, and IoT devices with proprietary payloads that suffer from persistent schema mismatches. Traditional static adapters require manual coding for every schema pair and cannot handle novel combinations at runtime. We present SAGAI-MID, a FastAPI-based middleware that uses large language models (LLMs) to dynamically detect and resolve schema mismatches at runtime. The system employs a five-layer pipeline: hybrid detection (structural diff plus LLM semantic analysis), dual resolution strategies (per-request LLM transformation and LLM-generated reusable adapter code), and a three-tier safeguard stack (validation, ensemble voting, rule-based fallback). We frame the architecture through Bass et al.&#39;s interoperability tactics, transforming them from design-time artifacts into runtime capabilities. We evaluate SAGAI-MID on 10 interoperability scenarios spanning REST version migration, IoT-to-analytics bridging, and GraphQL protocol conversion across six LLMs from two providers. The best-performing configuration achieves 0.90 pass@1 accuracy. The CODEGEN strategy consistently outperforms DIRECT (0.83 vs 0.77 mean pass@1), while cost varies by over 30x across models with no proportional accuracy gain; the most accurate model is also the cheapest. We discuss implications for software architects adopting LLMs as runtime architectural components.">
+    <meta property="og:description" content="A FastAPI middleware that uses LLMs to resolve schema mismatches at runtime, achieving 0.90 pass@1 across 10 interoperability scenarios, with CODEGEN outperforming DIRECT and the cheapest model being the most accurate.">
     <meta property="og:url" content="https://oalarsen.com/papers/sagai-mid/">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="Oliver Aleksander Larsen">
+    <meta property="og:image" content="https://oalarsen.com/assets/img/prof_pic.jpg">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="SAGAI-MID: A Generative AI-Driven Middleware for Dynamic Runtime Interoperability">
     <meta name="twitter:description" content="A FastAPI middleware that uses LLMs to resolve schema mismatches at runtime, achieving 0.90 pass@1 across 10 interoperability scenarios, with CODEGEN outperforming DIRECT and the cheapest model being the most accurate.">
+    <meta name="twitter:site" content="@OLarsen02">
+    <meta name="twitter:image" content="https://oalarsen.com/assets/img/prof_pic.jpg">
 
     <!-- Dublin Core -->
     <meta name="DC.title" content="SAGAI-MID: A Generative AI-Driven Middleware for Dynamic Runtime Interoperability">
@@ -49,7 +54,13 @@
   "author": [
     {
       "@type": "Person",
-      "name": "Oliver Aleksander Larsen"
+      "name": "Oliver Aleksander Larsen",
+      "@id": "https://oalarsen.com/#person",
+      "sameAs": "https://orcid.org/0009-0003-6944-2560",
+      "affiliation": {
+        "@type": "CollegeOrUniversity",
+        "name": "University of Southern Denmark"
+      }
     },
     {
       "@type": "Person",
@@ -65,6 +76,14 @@
     "location": "Amsterdam, Netherlands"
   },
   "url": "https://oalarsen.com/papers/sagai-mid/",
+  "publisher": {
+    "@type": "Organization",
+    "name": "IEEE"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://oalarsen.com/papers/sagai-mid/"
+  },
   "sameAs": "https://arxiv.org/abs/2603.28731",
   "codeRepository": "https://github.com/Oliver1703dk/sagai-mid"
 }
@@ -96,6 +115,33 @@
 }
     </script>
 
+    <!-- JSON-LD: BreadcrumbList -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://oalarsen.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Publications",
+      "item": "https://oalarsen.com/publications/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "SAGAI-MID: A Generative AI-Driven Middleware for Dynamic ..."
+    }
+  ]
+}
+    </script>
+
     <style>
       body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 720px; margin: 0 auto; padding: 32px 20px; color: #1a1a1a; line-height: 1.6; }
       h1 { font-size: 1.5rem; line-height: 1.3; margin-bottom: 0.5rem; }
@@ -113,6 +159,12 @@
 </head>
 <body>
     <div id="seo-content">
+    <nav style="margin-bottom:24px;font-size:0.9rem">
+      <a href="/">Home</a> ·
+      <a href="/publications/">Publications</a> ·
+      <a href="/projects/">Projects</a> ·
+      <a href="/cv/">CV</a>
+    </nav>
     <article>
         <h1>SAGAI-MID: A Generative AI-Driven Middleware for Dynamic Runtime Interoperability</h1>
         <div class="meta">
@@ -122,13 +174,13 @@
         </div>
 
         <section>
-            <h2>Abstract</h2>
-            <p>Modern distributed systems integrate heterogeneous services, REST APIs with different schema versions, GraphQL endpoints, and IoT devices with proprietary payloads that suffer from persistent schema mismatches. Traditional static adapters require manual coding for every schema pair and cannot handle novel combinations at runtime. We present SAGAI-MID, a FastAPI-based middleware that uses large language models (LLMs) to dynamically detect and resolve schema mismatches at runtime. The system employs a five-layer pipeline: hybrid detection (structural diff plus LLM semantic analysis), dual resolution strategies (per-request LLM transformation and LLM-generated reusable adapter code), and a three-tier safeguard stack (validation, ensemble voting, rule-based fallback). We frame the architecture through Bass et al.&#39;s interoperability tactics, transforming them from design-time artifacts into runtime capabilities. We evaluate SAGAI-MID on 10 interoperability scenarios spanning REST version migration, IoT-to-analytics bridging, and GraphQL protocol conversion across six LLMs from two providers. The best-performing configuration achieves 0.90 pass@1 accuracy. The CODEGEN strategy consistently outperforms DIRECT (0.83 vs 0.77 mean pass@1), while cost varies by over 30x across models with no proportional accuracy gain; the most accurate model is also the cheapest. We discuss implications for software architects adopting LLMs as runtime architectural components.</p>
+            <h2>TL;DR</h2>
+            <p>A FastAPI middleware that uses LLMs to resolve schema mismatches at runtime, achieving 0.90 pass@1 across 10 interoperability scenarios, with CODEGEN outperforming DIRECT and the cheapest model being the most accurate.</p>
         </section>
 
         <section>
-            <h2>TL;DR</h2>
-            <p>A FastAPI middleware that uses LLMs to resolve schema mismatches at runtime, achieving 0.90 pass@1 across 10 interoperability scenarios, with CODEGEN outperforming DIRECT and the cheapest model being the most accurate.</p>
+            <h2>Abstract</h2>
+            <p>Modern distributed systems integrate heterogeneous services, REST APIs with different schema versions, GraphQL endpoints, and IoT devices with proprietary payloads that suffer from persistent schema mismatches. Traditional static adapters require manual coding for every schema pair and cannot handle novel combinations at runtime. We present SAGAI-MID, a FastAPI-based middleware that uses large language models (LLMs) to dynamically detect and resolve schema mismatches at runtime. The system employs a five-layer pipeline: hybrid detection (structural diff plus LLM semantic analysis), dual resolution strategies (per-request LLM transformation and LLM-generated reusable adapter code), and a three-tier safeguard stack (validation, ensemble voting, rule-based fallback). We frame the architecture through Bass et al.&#39;s interoperability tactics, transforming them from design-time artifacts into runtime capabilities. We evaluate SAGAI-MID on 10 interoperability scenarios spanning REST version migration, IoT-to-analytics bridging, and GraphQL protocol conversion across six LLMs from two providers. The best-performing configuration achieves 0.90 pass@1 accuracy. The CODEGEN strategy consistently outperforms DIRECT (0.83 vs 0.77 mean pass@1), while cost varies by over 30x across models with no proportional accuracy gain; the most accurate model is also the cheapest. We discuss implications for software architects adopting LLMs as runtime architectural components.</p>
         </section>
 
         <section>
@@ -178,8 +230,10 @@
     
     <!-- SPA mount point -->
     <div id="root"></div>
-    <link rel="stylesheet" crossorigin href="/assets/index-DwG_fWSr.css">
-    <script type="module" crossorigin src="/assets/index-CgdeXj4E.js"></script>
+    <link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/npm/geist@1.3.0/dist/fonts/geist-sans/style.min.css">
+    <link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/npm/geist@1.3.0/dist/fonts/geist-mono/style.min.css">
+    <link rel="stylesheet" crossorigin href="/assets/index-BrQHhk5d.css">
+    <script type="module" crossorigin src="/assets/index-DVg-8X4n.js"></script>
     <script>
       // Hide SEO content once SPA renders
       if (document.getElementById('root')) {

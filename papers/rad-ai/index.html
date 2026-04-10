@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RAD-AI: Rethinking Architecture Documentation for AI-Augmented Ecosystems - Oliver Aleksander Larsen</title>
+    <title>RAD-AI: Rethinking Architecture Documentation for ... | Oliver Larsen</title>
     <meta name="description" content="A backward-compatible extension of arc42 and C4 for AI-augmented ecosystems, increasing EU AI Act Annex IV documentation addressability from ~36% to ~93%, validated on Uber Michelangelo and Netflix Metaflow.">
     <link rel="canonical" href="https://oalarsen.com/papers/rad-ai/">
 
@@ -15,18 +15,23 @@
     <meta name="citation_conference_title" content="ANGE 2026 Workshop at IEEE ICSA 2026">
     <meta name="citation_language" content="en">
     <meta name="citation_arxiv_id" content="2603.28735">
+    <meta name="citation_pdf_url" content="https://arxiv.org/pdf/2603.28735">
+    <meta name="citation_publisher" content="IEEE">
 
     <!-- Open Graph -->
     <meta property="og:title" content="RAD-AI: Rethinking Architecture Documentation for AI-Augmented Ecosystems">
-    <meta property="og:description" content="AI-augmented ecosystems (interconnected systems where multiple AI components interact through shared data and infrastructure) are becoming the architectural norm for smart cities, autonomous fleets, and intelligent platforms. Yet the architecture documentation frameworks practitioners rely on, arc42 and the C4 model, were designed for deterministic software and cannot capture probabilistic behavior, data-dependent evolution, or dual ML/software lifecycles. This gap carries regulatory consequence: the EU AI Act (Regulation 2024/1689) mandates technical documentation through Annex IV that no existing framework provides structured support for, with enforcement for high-risk systems beginning August 2, 2026. We present RAD-AI, a backward-compatible extension framework that augments arc42 with eight AI-specific sections and C4 with three diagram extensions, complemented by a systematic EU AI Act Annex IV compliance mapping. A regulatory coverage assessment with six experienced software-architecture practitioners provides preliminary evidence that RAD-AI increases Annex IV addressability from approximately 36% to 93% (mean rating) and demonstrates substantial improvement over existing frameworks. Comparative analysis on two production AI platforms (Uber Michelangelo, Netflix Metaflow) captures eight additional AI-specific concerns missed by standard frameworks and demonstrates that documentation deficiencies are structural rather than domain-specific. An illustrative smart mobility ecosystem case study reveals ecosystem-level concerns, including cascading drift and differentiated compliance obligations, that are invisible under standard notation.">
+    <meta property="og:description" content="A backward-compatible extension of arc42 and C4 for AI-augmented ecosystems, increasing EU AI Act Annex IV documentation addressability from ~36% to ~93%, validated on Uber Michelangelo and Netflix Metaflow.">
     <meta property="og:url" content="https://oalarsen.com/papers/rad-ai/">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="Oliver Aleksander Larsen">
+    <meta property="og:image" content="https://oalarsen.com/assets/img/prof_pic.jpg">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="RAD-AI: Rethinking Architecture Documentation for AI-Augmented Ecosystems">
     <meta name="twitter:description" content="A backward-compatible extension of arc42 and C4 for AI-augmented ecosystems, increasing EU AI Act Annex IV documentation addressability from ~36% to ~93%, validated on Uber Michelangelo and Netflix Metaflow.">
+    <meta name="twitter:site" content="@OLarsen02">
+    <meta name="twitter:image" content="https://oalarsen.com/assets/img/prof_pic.jpg">
 
     <!-- Dublin Core -->
     <meta name="DC.title" content="RAD-AI: Rethinking Architecture Documentation for AI-Augmented Ecosystems">
@@ -49,7 +54,13 @@
   "author": [
     {
       "@type": "Person",
-      "name": "Oliver Aleksander Larsen"
+      "name": "Oliver Aleksander Larsen",
+      "@id": "https://oalarsen.com/#person",
+      "sameAs": "https://orcid.org/0009-0003-6944-2560",
+      "affiliation": {
+        "@type": "CollegeOrUniversity",
+        "name": "University of Southern Denmark"
+      }
     },
     {
       "@type": "Person",
@@ -65,6 +76,14 @@
     "location": "Amsterdam, Netherlands"
   },
   "url": "https://oalarsen.com/papers/rad-ai/",
+  "publisher": {
+    "@type": "Organization",
+    "name": "IEEE"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://oalarsen.com/papers/rad-ai/"
+  },
   "sameAs": "https://arxiv.org/abs/2603.28735",
   "codeRepository": "https://github.com/Oliver1703dk/RAD-AI"
 }
@@ -104,6 +123,33 @@
 }
     </script>
 
+    <!-- JSON-LD: BreadcrumbList -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://oalarsen.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Publications",
+      "item": "https://oalarsen.com/publications/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "RAD-AI: Rethinking Architecture Documentation for AI-Augm..."
+    }
+  ]
+}
+    </script>
+
     <style>
       body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 720px; margin: 0 auto; padding: 32px 20px; color: #1a1a1a; line-height: 1.6; }
       h1 { font-size: 1.5rem; line-height: 1.3; margin-bottom: 0.5rem; }
@@ -121,6 +167,12 @@
 </head>
 <body>
     <div id="seo-content">
+    <nav style="margin-bottom:24px;font-size:0.9rem">
+      <a href="/">Home</a> ·
+      <a href="/publications/">Publications</a> ·
+      <a href="/projects/">Projects</a> ·
+      <a href="/cv/">CV</a>
+    </nav>
     <article>
         <h1>RAD-AI: Rethinking Architecture Documentation for AI-Augmented Ecosystems</h1>
         <div class="meta">
@@ -130,13 +182,13 @@
         </div>
 
         <section>
-            <h2>Abstract</h2>
-            <p>AI-augmented ecosystems (interconnected systems where multiple AI components interact through shared data and infrastructure) are becoming the architectural norm for smart cities, autonomous fleets, and intelligent platforms. Yet the architecture documentation frameworks practitioners rely on, arc42 and the C4 model, were designed for deterministic software and cannot capture probabilistic behavior, data-dependent evolution, or dual ML/software lifecycles. This gap carries regulatory consequence: the EU AI Act (Regulation 2024/1689) mandates technical documentation through Annex IV that no existing framework provides structured support for, with enforcement for high-risk systems beginning August 2, 2026. We present RAD-AI, a backward-compatible extension framework that augments arc42 with eight AI-specific sections and C4 with three diagram extensions, complemented by a systematic EU AI Act Annex IV compliance mapping. A regulatory coverage assessment with six experienced software-architecture practitioners provides preliminary evidence that RAD-AI increases Annex IV addressability from approximately 36% to 93% (mean rating) and demonstrates substantial improvement over existing frameworks. Comparative analysis on two production AI platforms (Uber Michelangelo, Netflix Metaflow) captures eight additional AI-specific concerns missed by standard frameworks and demonstrates that documentation deficiencies are structural rather than domain-specific. An illustrative smart mobility ecosystem case study reveals ecosystem-level concerns, including cascading drift and differentiated compliance obligations, that are invisible under standard notation.</p>
+            <h2>TL;DR</h2>
+            <p>A backward-compatible extension of arc42 and C4 for AI-augmented ecosystems, increasing EU AI Act Annex IV documentation addressability from ~36% to ~93%, validated on Uber Michelangelo and Netflix Metaflow.</p>
         </section>
 
         <section>
-            <h2>TL;DR</h2>
-            <p>A backward-compatible extension of arc42 and C4 for AI-augmented ecosystems, increasing EU AI Act Annex IV documentation addressability from ~36% to ~93%, validated on Uber Michelangelo and Netflix Metaflow.</p>
+            <h2>Abstract</h2>
+            <p>AI-augmented ecosystems (interconnected systems where multiple AI components interact through shared data and infrastructure) are becoming the architectural norm for smart cities, autonomous fleets, and intelligent platforms. Yet the architecture documentation frameworks practitioners rely on, arc42 and the C4 model, were designed for deterministic software and cannot capture probabilistic behavior, data-dependent evolution, or dual ML/software lifecycles. This gap carries regulatory consequence: the EU AI Act (Regulation 2024/1689) mandates technical documentation through Annex IV that no existing framework provides structured support for, with enforcement for high-risk systems beginning August 2, 2026. We present RAD-AI, a backward-compatible extension framework that augments arc42 with eight AI-specific sections and C4 with three diagram extensions, complemented by a systematic EU AI Act Annex IV compliance mapping. A regulatory coverage assessment with six experienced software-architecture practitioners provides preliminary evidence that RAD-AI increases Annex IV addressability from approximately 36% to 93% (mean rating) and demonstrates substantial improvement over existing frameworks. Comparative analysis on two production AI platforms (Uber Michelangelo, Netflix Metaflow) captures eight additional AI-specific concerns missed by standard frameworks and demonstrates that documentation deficiencies are structural rather than domain-specific. An illustrative smart mobility ecosystem case study reveals ecosystem-level concerns, including cascading drift and differentiated compliance obligations, that are invisible under standard notation.</p>
         </section>
 
         <section>
@@ -191,8 +243,10 @@
     
     <!-- SPA mount point -->
     <div id="root"></div>
-    <link rel="stylesheet" crossorigin href="/assets/index-DwG_fWSr.css">
-    <script type="module" crossorigin src="/assets/index-CgdeXj4E.js"></script>
+    <link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/npm/geist@1.3.0/dist/fonts/geist-sans/style.min.css">
+    <link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/npm/geist@1.3.0/dist/fonts/geist-mono/style.min.css">
+    <link rel="stylesheet" crossorigin href="/assets/index-BrQHhk5d.css">
+    <script type="module" crossorigin src="/assets/index-DVg-8X4n.js"></script>
     <script>
       // Hide SEO content once SPA renders
       if (document.getElementById('root')) {

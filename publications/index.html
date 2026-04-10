@@ -15,6 +15,8 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Publications - Oliver Aleksander Larsen">
     <meta name="twitter:description" content="Research publications by Oliver Aleksander Larsen. 5 papers at IEEE ICSA 2026 and Results in Engineering on edge AI, architecture documentation, blockchain, LLM middleware, and meal recommendation.">
+    <meta name="twitter:site" content="@OLarsen02">
+    <meta name="twitter:image" content="https://oalarsen.com/assets/img/prof_pic.jpg">
     <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -35,7 +37,7 @@
           "author": [
             {
               "@type": "Person",
-              "name": "Oliver Larsen"
+              "name": "Oliver Aleksander Larsen"
             },
             {
               "@type": "Person",
@@ -129,6 +131,49 @@
   }
 }
     </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://oalarsen.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Publications"
+    }
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How many papers has Oliver Larsen published?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "5 papers: 4 at IEEE ICSA 2026 and 1 under revision at Results in Engineering."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What conferences has Oliver Larsen published at?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "IEEE International Conference on Software Architecture (ICSA) 2026, with papers in the Practice Track, ANGE Workshop, BlockArch Workshop, and SAGAI Workshop."
+      }
+    }
+  ]
+}
+    </script>
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>">
     <style>
       body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 720px; margin: 0 auto; padding: 32px 20px; color: #1a1a1a; line-height: 1.6; }
@@ -141,12 +186,18 @@
 </head>
 <body>
     <div id="seo-content">
+        <nav style="margin-bottom:24px;font-size:0.9rem">
+          <a href="/">Home</a> ·
+          <a href="/publications/">Publications</a> ·
+          <a href="/projects/">Projects</a> ·
+          <a href="/cv/">CV</a>
+        </nav>
         <h1>Publications</h1>
         <p>5 papers · IEEE ICSA 2026 + Results in Engineering</p>
 
         <section>
             <h2><a href="/papers/flood-detection/">Edge-Based Standing-Water Detection via FSM-Guided Tiering and Multi-Model Consensus</a></h2>
-            <p>Oliver Larsen, Mahyar T. Moghaddam · IEEE ICSA 2026, Software Architecture in Practice Track</p>
+            <p>Oliver Aleksander Larsen, Mahyar T. Moghaddam · IEEE ICSA 2026, Software Architecture in Practice Track</p>
             <p>Standing water in agricultural fields threatens vehicle mobility and crop health. This paper presents a deployed edge architecture for standing-water detection using Raspberry-Pi-class devices with optional Jetson acceleration. Camera input and environmental sensors (humidity, pressure, temperature) are combined in a finite-state machine (FSM) that acts as the architectural decision engine. The FSM-guided control plane selects between local and offloaded inference tiers, trading accuracy, latency, and energy under intermittent connectivity and motion-dependent compute budgets. A multi-model YOLO ensemble provides image scores, while diurnal-baseline sensor fusion adjusts caution using environmental anomalies. All decisions are logged per frame, enabling bit-identical hardware-in-the-loop replays. Across ten configurations and sensor variants on identical field sequences with frame-level ground truth, we show that the combination of adaptive tiering, multi-model consensus, and diurnal sensor fusion improves flood-detection performance over static local baselines, uses less energy than a naive always-heavy offload policy, and maintains bounded tail latency in a real agricultural setting.</p>
         </section>
 
@@ -173,12 +224,23 @@
             <p>Oliver Aleksander Larsen, Vinay Chakravarthi Gogineni · Results in Engineering</p>
             <p>Athletes often struggle with static, rule-based meal plans that fail to adapt to evolving personal preferences and feedback, leading to reduced adherence and suboptimal nutrition for performance. This short communication introduces a hybrid large-language-model (LLM)-driven recommender system to personalize meal recommendations within CarboPlanner, a sports nutrition platform. The system combines in-context learning (ICL) for short-term adaptation via dynamic prompts incorporating user profiles, recent feedback, and meal candidates, with parameter-efficient fine-tuning (PEFT) using low-rank adaptation (LoRA) on the Mistral-7B-Instruct model for long-term, system-wide learning from accumulated feedback. Implemented as a modular Flask API integrated seamlessly into CarboPlanner&#39;s existing infrastructure (Flutter app, NestJS backend, and MongoDB database), the system processes athlete feedback through dual loops: immediate ICL updates and periodic PEFT retraining. Evaluation on 1000 test prompts from a held-out dataset demonstrated superior performance over baselines. The hybrid model achieved 46.7% prediction accuracy and 100% format adherence, outperforming the non-fine-tuned ICL-only model (41.5% accuracy, 39.7% format adherence) and random selection (20% accuracy, 100% format adherence).</p>
         </section>
+        <section>
+            <h2>Frequently Asked Questions</h2>
+            <dl>
+                <dt>How many papers has Oliver Larsen published?</dt>
+                <dd>5 papers: 4 at IEEE ICSA 2026 and 1 under revision at Results in Engineering.</dd>
+                <dt>What conferences has Oliver Larsen published at?</dt>
+                <dd>IEEE International Conference on Software Architecture (ICSA) 2026, with papers in the Practice Track, ANGE Workshop, BlockArch Workshop, and SAGAI Workshop.</dd>
+            </dl>
+        </section>
     </div>
     
     <!-- SPA mount point -->
     <div id="root"></div>
-    <link rel="stylesheet" crossorigin href="/assets/index-DwG_fWSr.css">
-    <script type="module" crossorigin src="/assets/index-CgdeXj4E.js"></script>
+    <link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/npm/geist@1.3.0/dist/fonts/geist-sans/style.min.css">
+    <link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/npm/geist@1.3.0/dist/fonts/geist-mono/style.min.css">
+    <link rel="stylesheet" crossorigin href="/assets/index-BrQHhk5d.css">
+    <script type="module" crossorigin src="/assets/index-DVg-8X4n.js"></script>
     <script>
       // Hide SEO content once SPA renders
       if (document.getElementById('root')) {
