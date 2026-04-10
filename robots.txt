@@ -1,4 +1,4 @@
-# robots.txt — oalarsen.com
+# robots.txt - oalarsen.com
 User-agent: *
 Allow: /
 

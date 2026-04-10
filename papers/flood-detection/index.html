@@ -9,9 +9,9 @@
 
     <!-- Highwire Press (Google Scholar) -->
     <meta name="citation_title" content="Edge-Based Standing-Water Detection via FSM-Guided Tiering and Multi-Model Consensus">
-    <meta name="citation_author" content="Oliver Aleksander Larsen">
-    <meta name="citation_author" content="Mahyar T. Moghaddam">
-    <meta name="citation_publication_date" content="2026">
+    <meta name="citation_author" content="Larsen, Oliver Aleksander">
+    <meta name="citation_author" content="Moghaddam, Mahyar T.">
+    <meta name="citation_publication_date" content="2026-04">
     <meta name="citation_conference_title" content="IEEE ICSA 2026, Software Architecture in Practice Track">
     <meta name="citation_language" content="en">
     <meta name="citation_arxiv_id" content="2604.03308">
@@ -25,6 +25,10 @@
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="Oliver Aleksander Larsen">
     <meta property="og:image" content="https://oalarsen.com/assets/img/prof_pic.jpg">
+    <meta property="og:image:width" content="800">
+    <meta property="og:image:height" content="800">
+    <meta property="article:published_time" content="2026-04">
+    <meta property="article:modified_time" content="2026-04-10">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary">
@@ -37,7 +41,7 @@
     <meta name="DC.title" content="Edge-Based Standing-Water Detection via FSM-Guided Tiering and Multi-Model Consensus">
     <meta name="DC.creator" content="Oliver Aleksander Larsen">
     <meta name="DC.creator" content="Mahyar T. Moghaddam">
-    <meta name="DC.date" content="2026">
+    <meta name="DC.date" content="2026-04">
     <meta name="DC.type" content="Text">
     <meta name="DC.format" content="text/html">
     <meta name="DC.language" content="en">
@@ -64,10 +68,15 @@
     },
     {
       "@type": "Person",
-      "name": "Mahyar T. Moghaddam"
+      "name": "Mahyar T. Moghaddam",
+      "affiliation": {
+        "@type": "CollegeOrUniversity",
+        "name": "University of Southern Denmark"
+      }
     }
   ],
-  "datePublished": "2026",
+  "datePublished": "2026-04",
+  "dateModified": "2026-04-10",
   "abstract": "Standing water in agricultural fields threatens vehicle mobility and crop health. This paper presents a deployed edge architecture for standing-water detection using Raspberry-Pi-class devices with optional Jetson acceleration. Camera input and environmental sensors (humidity, pressure, temperature) are combined in a finite-state machine (FSM) that acts as the architectural decision engine. The FSM-guided control plane selects between local and offloaded inference tiers, trading accuracy, latency, and energy under intermittent connectivity and motion-dependent compute budgets. A multi-model YOLO ensemble provides image scores, while diurnal-baseline sensor fusion adjusts caution using environmental anomalies. All decisions are logged per frame, enabling bit-identical hardware-in-the-loop replays. Across ten configurations and sensor variants on identical field sequences with frame-level ground truth, we show that the combination of adaptive tiering, multi-model consensus, and diurnal sensor fusion improves flood-detection performance over static local baselines, uses less energy than a naive always-heavy offload policy, and maintains bounded tail latency in a real agricultural setting.",
   "keywords": "edge computing, FSM orchestration, model tiering, multi-model consensus, sensor fusion",
   "isPartOf": {
@@ -84,6 +93,7 @@
     "@type": "WebPage",
     "@id": "https://oalarsen.com/papers/flood-detection/"
   },
+  "isAccessibleForFree": true,
   "sameAs": "https://arxiv.org/abs/2604.03308",
   "codeRepository": "https://github.com/Oliver1703dk/flood_detection_system"
 }
@@ -164,6 +174,17 @@
       a { color: #2563eb; }
     </style>
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>">
+    
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/geist@1.3.0/dist/fonts/geist-sans/style.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/geist@1.3.0/dist/fonts/geist-mono/style.min.css">
+    <link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/npm/geist@1.3.0/dist/fonts/geist-sans/style.min.css">
+    <link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/npm/geist@1.3.0/dist/fonts/geist-mono/style.min.css">
+    <link rel="stylesheet" crossorigin href="/assets/index-BrQHhk5d.css">
+    <link rel="alternate" type="application/atom+xml" title="Oliver Larsen - Research Papers" href="https://oalarsen.com/feed.xml">
+    <link rel="alternate" type="text/plain" href="https://oalarsen.com/llms.txt" title="LLM-readable content">
+    <meta name="theme-color" content="#0A0A0A" media="(prefers-color-scheme: dark)">
+    <meta name="theme-color" content="#FAFAFA" media="(prefers-color-scheme: light)">
 </head>
 <body>
     <div id="seo-content">
@@ -241,14 +262,9 @@
     </article>
     </div>
     
-    <!-- SPA mount point -->
     <div id="root"></div>
-    <link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/npm/geist@1.3.0/dist/fonts/geist-sans/style.min.css">
-    <link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/npm/geist@1.3.0/dist/fonts/geist-mono/style.min.css">
-    <link rel="stylesheet" crossorigin href="/assets/index-BrQHhk5d.css">
     <script type="module" crossorigin src="/assets/index-DVg-8X4n.js"></script>
     <script>
-      // Hide SEO content once SPA renders
       if (document.getElementById('root')) {
         new MutationObserver(function(m, o) {
           if (document.getElementById('root').children.length > 0) {

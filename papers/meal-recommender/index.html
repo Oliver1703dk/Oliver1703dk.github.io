@@ -9,9 +9,9 @@
 
     <!-- Highwire Press (Google Scholar) -->
     <meta name="citation_title" content="Hybrid Large-Language-Model Meal Recommender System for Athletes: A Short Communication">
-    <meta name="citation_author" content="Oliver Aleksander Larsen">
-    <meta name="citation_author" content="Vinay Chakravarthi Gogineni">
-    <meta name="citation_publication_date" content="2026">
+    <meta name="citation_author" content="Larsen, Oliver Aleksander">
+    <meta name="citation_author" content="Gogineni, Vinay Chakravarthi">
+    <meta name="citation_publication_date" content="2025-11">
     <meta name="citation_journal_title" content="Results in Engineering">
     <meta name="citation_language" content="en">
     <meta name="citation_publisher" content="Elsevier">
@@ -24,6 +24,10 @@
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="Oliver Aleksander Larsen">
     <meta property="og:image" content="https://oalarsen.com/assets/img/prof_pic.jpg">
+    <meta property="og:image:width" content="800">
+    <meta property="og:image:height" content="800">
+    <meta property="article:published_time" content="2025-11">
+    <meta property="article:modified_time" content="2026-04-10">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary">
@@ -36,7 +40,7 @@
     <meta name="DC.title" content="Hybrid Large-Language-Model Meal Recommender System for Athletes: A Short Communication">
     <meta name="DC.creator" content="Oliver Aleksander Larsen">
     <meta name="DC.creator" content="Vinay Chakravarthi Gogineni">
-    <meta name="DC.date" content="2026">
+    <meta name="DC.date" content="2025-11">
     <meta name="DC.type" content="Text">
     <meta name="DC.format" content="text/html">
     <meta name="DC.language" content="en">
@@ -66,7 +70,8 @@
       "name": "Vinay Chakravarthi Gogineni"
     }
   ],
-  "datePublished": "2026",
+  "datePublished": "2025-11",
+  "dateModified": "2026-04-10",
   "abstract": "Athletes often struggle with static, rule-based meal plans that fail to adapt to evolving personal preferences and feedback, leading to reduced adherence and suboptimal nutrition for performance. This short communication introduces a hybrid large-language-model (LLM)-driven recommender system to personalize meal recommendations within CarboPlanner, a sports nutrition platform. The system combines in-context learning (ICL) for short-term adaptation via dynamic prompts incorporating user profiles, recent feedback, and meal candidates, with parameter-efficient fine-tuning (PEFT) using low-rank adaptation (LoRA) on the Mistral-7B-Instruct model for long-term, system-wide learning from accumulated feedback. Implemented as a modular Flask API integrated seamlessly into CarboPlanner's existing infrastructure (Flutter app, NestJS backend, and MongoDB database), the system processes athlete feedback through dual loops: immediate ICL updates and periodic PEFT retraining. Evaluation on 1000 test prompts from a held-out dataset demonstrated superior performance over baselines. The hybrid model achieved 46.7% prediction accuracy and 100% format adherence, outperforming the non-fine-tuned ICL-only model (41.5% accuracy, 39.7% format adherence) and random selection (20% accuracy, 100% format adherence).",
   "keywords": "LLM, LoRA, PEFT, meal recommendation, sports nutrition, Mistral-7B, in-context learning, recommender system",
   "isPartOf": {
@@ -160,6 +165,17 @@
       a { color: #2563eb; }
     </style>
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>">
+    
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/geist@1.3.0/dist/fonts/geist-sans/style.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/geist@1.3.0/dist/fonts/geist-mono/style.min.css">
+    <link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/npm/geist@1.3.0/dist/fonts/geist-sans/style.min.css">
+    <link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/npm/geist@1.3.0/dist/fonts/geist-mono/style.min.css">
+    <link rel="stylesheet" crossorigin href="/assets/index-BrQHhk5d.css">
+    <link rel="alternate" type="application/atom+xml" title="Oliver Larsen - Research Papers" href="https://oalarsen.com/feed.xml">
+    <link rel="alternate" type="text/plain" href="https://oalarsen.com/llms.txt" title="LLM-readable content">
+    <meta name="theme-color" content="#0A0A0A" media="(prefers-color-scheme: dark)">
+    <meta name="theme-color" content="#FAFAFA" media="(prefers-color-scheme: light)">
 </head>
 <body>
     <div id="seo-content">
@@ -234,14 +250,9 @@
     </article>
     </div>
     
-    <!-- SPA mount point -->
     <div id="root"></div>
-    <link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/npm/geist@1.3.0/dist/fonts/geist-sans/style.min.css">
-    <link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/npm/geist@1.3.0/dist/fonts/geist-mono/style.min.css">
-    <link rel="stylesheet" crossorigin href="/assets/index-BrQHhk5d.css">
     <script type="module" crossorigin src="/assets/index-DVg-8X4n.js"></script>
     <script>
-      // Hide SEO content once SPA renders
       if (document.getElementById('root')) {
         new MutationObserver(function(m, o) {
           if (document.getElementById('root').children.length > 0) {

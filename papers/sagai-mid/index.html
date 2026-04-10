@@ -9,9 +9,9 @@
 
     <!-- Highwire Press (Google Scholar) -->
     <meta name="citation_title" content="SAGAI-MID: A Generative AI-Driven Middleware for Dynamic Runtime Interoperability">
-    <meta name="citation_author" content="Oliver Aleksander Larsen">
-    <meta name="citation_author" content="Mahyar T. Moghaddam">
-    <meta name="citation_publication_date" content="2026">
+    <meta name="citation_author" content="Larsen, Oliver Aleksander">
+    <meta name="citation_author" content="Moghaddam, Mahyar T.">
+    <meta name="citation_publication_date" content="2026-03">
     <meta name="citation_conference_title" content="SAGAI 2026 Workshop at IEEE ICSA 2026">
     <meta name="citation_language" content="en">
     <meta name="citation_arxiv_id" content="2603.28731">
@@ -25,6 +25,10 @@
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="Oliver Aleksander Larsen">
     <meta property="og:image" content="https://oalarsen.com/assets/img/prof_pic.jpg">
+    <meta property="og:image:width" content="800">
+    <meta property="og:image:height" content="800">
+    <meta property="article:published_time" content="2026-03">
+    <meta property="article:modified_time" content="2026-04-10">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary">
@@ -37,7 +41,7 @@
     <meta name="DC.title" content="SAGAI-MID: A Generative AI-Driven Middleware for Dynamic Runtime Interoperability">
     <meta name="DC.creator" content="Oliver Aleksander Larsen">
     <meta name="DC.creator" content="Mahyar T. Moghaddam">
-    <meta name="DC.date" content="2026">
+    <meta name="DC.date" content="2026-03">
     <meta name="DC.type" content="Text">
     <meta name="DC.format" content="text/html">
     <meta name="DC.language" content="en">
@@ -64,10 +68,15 @@
     },
     {
       "@type": "Person",
-      "name": "Mahyar T. Moghaddam"
+      "name": "Mahyar T. Moghaddam",
+      "affiliation": {
+        "@type": "CollegeOrUniversity",
+        "name": "University of Southern Denmark"
+      }
     }
   ],
-  "datePublished": "2026",
+  "datePublished": "2026-03",
+  "dateModified": "2026-04-10",
   "abstract": "Modern distributed systems integrate heterogeneous services, REST APIs with different schema versions, GraphQL endpoints, and IoT devices with proprietary payloads that suffer from persistent schema mismatches. Traditional static adapters require manual coding for every schema pair and cannot handle novel combinations at runtime. We present SAGAI-MID, a FastAPI-based middleware that uses large language models (LLMs) to dynamically detect and resolve schema mismatches at runtime. The system employs a five-layer pipeline: hybrid detection (structural diff plus LLM semantic analysis), dual resolution strategies (per-request LLM transformation and LLM-generated reusable adapter code), and a three-tier safeguard stack (validation, ensemble voting, rule-based fallback). We frame the architecture through Bass et al.'s interoperability tactics, transforming them from design-time artifacts into runtime capabilities. We evaluate SAGAI-MID on 10 interoperability scenarios spanning REST version migration, IoT-to-analytics bridging, and GraphQL protocol conversion across six LLMs from two providers. The best-performing configuration achieves 0.90 pass@1 accuracy. The CODEGEN strategy consistently outperforms DIRECT (0.83 vs 0.77 mean pass@1), while cost varies by over 30x across models with no proportional accuracy gain; the most accurate model is also the cheapest. We discuss implications for software architects adopting LLMs as runtime architectural components.",
   "keywords": "software architecture, interoperability, large language models, generative AI, middleware, schema matching, runtime adaptation",
   "isPartOf": {
@@ -84,6 +93,7 @@
     "@type": "WebPage",
     "@id": "https://oalarsen.com/papers/sagai-mid/"
   },
+  "isAccessibleForFree": true,
   "sameAs": "https://arxiv.org/abs/2603.28731",
   "codeRepository": "https://github.com/Oliver1703dk/sagai-mid"
 }
@@ -156,6 +166,17 @@
       a { color: #2563eb; }
     </style>
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>">
+    
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/geist@1.3.0/dist/fonts/geist-sans/style.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/geist@1.3.0/dist/fonts/geist-mono/style.min.css">
+    <link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/npm/geist@1.3.0/dist/fonts/geist-sans/style.min.css">
+    <link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/npm/geist@1.3.0/dist/fonts/geist-mono/style.min.css">
+    <link rel="stylesheet" crossorigin href="/assets/index-BrQHhk5d.css">
+    <link rel="alternate" type="application/atom+xml" title="Oliver Larsen - Research Papers" href="https://oalarsen.com/feed.xml">
+    <link rel="alternate" type="text/plain" href="https://oalarsen.com/llms.txt" title="LLM-readable content">
+    <meta name="theme-color" content="#0A0A0A" media="(prefers-color-scheme: dark)">
+    <meta name="theme-color" content="#FAFAFA" media="(prefers-color-scheme: light)">
 </head>
 <body>
     <div id="seo-content">
@@ -228,14 +249,9 @@
     </article>
     </div>
     
-    <!-- SPA mount point -->
     <div id="root"></div>
-    <link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/npm/geist@1.3.0/dist/fonts/geist-sans/style.min.css">
-    <link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/npm/geist@1.3.0/dist/fonts/geist-mono/style.min.css">
-    <link rel="stylesheet" crossorigin href="/assets/index-BrQHhk5d.css">
     <script type="module" crossorigin src="/assets/index-DVg-8X4n.js"></script>
     <script>
-      // Hide SEO content once SPA renders
       if (document.getElementById('root')) {
         new MutationObserver(function(m, o) {
           if (document.getElementById('root').children.length > 0) {

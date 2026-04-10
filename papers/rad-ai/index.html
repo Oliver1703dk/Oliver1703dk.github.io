@@ -9,9 +9,9 @@
 
     <!-- Highwire Press (Google Scholar) -->
     <meta name="citation_title" content="RAD-AI: Rethinking Architecture Documentation for AI-Augmented Ecosystems">
-    <meta name="citation_author" content="Oliver Aleksander Larsen">
-    <meta name="citation_author" content="Mahyar T. Moghaddam">
-    <meta name="citation_publication_date" content="2026">
+    <meta name="citation_author" content="Larsen, Oliver Aleksander">
+    <meta name="citation_author" content="Moghaddam, Mahyar T.">
+    <meta name="citation_publication_date" content="2026-03">
     <meta name="citation_conference_title" content="ANGE 2026 Workshop at IEEE ICSA 2026">
     <meta name="citation_language" content="en">
     <meta name="citation_arxiv_id" content="2603.28735">
@@ -25,6 +25,10 @@
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="Oliver Aleksander Larsen">
     <meta property="og:image" content="https://oalarsen.com/assets/img/prof_pic.jpg">
+    <meta property="og:image:width" content="800">
+    <meta property="og:image:height" content="800">
+    <meta property="article:published_time" content="2026-03">
+    <meta property="article:modified_time" content="2026-04-10">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary">
@@ -37,7 +41,7 @@
     <meta name="DC.title" content="RAD-AI: Rethinking Architecture Documentation for AI-Augmented Ecosystems">
     <meta name="DC.creator" content="Oliver Aleksander Larsen">
     <meta name="DC.creator" content="Mahyar T. Moghaddam">
-    <meta name="DC.date" content="2026">
+    <meta name="DC.date" content="2026-03">
     <meta name="DC.type" content="Text">
     <meta name="DC.format" content="text/html">
     <meta name="DC.language" content="en">
@@ -64,10 +68,15 @@
     },
     {
       "@type": "Person",
-      "name": "Mahyar T. Moghaddam"
+      "name": "Mahyar T. Moghaddam",
+      "affiliation": {
+        "@type": "CollegeOrUniversity",
+        "name": "University of Southern Denmark"
+      }
     }
   ],
-  "datePublished": "2026",
+  "datePublished": "2026-03",
+  "dateModified": "2026-04-10",
   "abstract": "AI-augmented ecosystems (interconnected systems where multiple AI components interact through shared data and infrastructure) are becoming the architectural norm for smart cities, autonomous fleets, and intelligent platforms. Yet the architecture documentation frameworks practitioners rely on, arc42 and the C4 model, were designed for deterministic software and cannot capture probabilistic behavior, data-dependent evolution, or dual ML/software lifecycles. This gap carries regulatory consequence: the EU AI Act (Regulation 2024/1689) mandates technical documentation through Annex IV that no existing framework provides structured support for, with enforcement for high-risk systems beginning August 2, 2026. We present RAD-AI, a backward-compatible extension framework that augments arc42 with eight AI-specific sections and C4 with three diagram extensions, complemented by a systematic EU AI Act Annex IV compliance mapping. A regulatory coverage assessment with six experienced software-architecture practitioners provides preliminary evidence that RAD-AI increases Annex IV addressability from approximately 36% to 93% (mean rating) and demonstrates substantial improvement over existing frameworks. Comparative analysis on two production AI platforms (Uber Michelangelo, Netflix Metaflow) captures eight additional AI-specific concerns missed by standard frameworks and demonstrates that documentation deficiencies are structural rather than domain-specific. An illustrative smart mobility ecosystem case study reveals ecosystem-level concerns, including cascading drift and differentiated compliance obligations, that are invisible under standard notation.",
   "keywords": "software architecture, architecture documentation, AI-augmented systems, arc42, C4 model, EU AI Act, machine learning, architecture decision records, ecosystems",
   "isPartOf": {
@@ -84,6 +93,7 @@
     "@type": "WebPage",
     "@id": "https://oalarsen.com/papers/rad-ai/"
   },
+  "isAccessibleForFree": true,
   "sameAs": "https://arxiv.org/abs/2603.28735",
   "codeRepository": "https://github.com/Oliver1703dk/RAD-AI"
 }
@@ -164,6 +174,17 @@
       a { color: #2563eb; }
     </style>
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>">
+    
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/geist@1.3.0/dist/fonts/geist-sans/style.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/geist@1.3.0/dist/fonts/geist-mono/style.min.css">
+    <link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/npm/geist@1.3.0/dist/fonts/geist-sans/style.min.css">
+    <link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/npm/geist@1.3.0/dist/fonts/geist-mono/style.min.css">
+    <link rel="stylesheet" crossorigin href="/assets/index-BrQHhk5d.css">
+    <link rel="alternate" type="application/atom+xml" title="Oliver Larsen - Research Papers" href="https://oalarsen.com/feed.xml">
+    <link rel="alternate" type="text/plain" href="https://oalarsen.com/llms.txt" title="LLM-readable content">
+    <meta name="theme-color" content="#0A0A0A" media="(prefers-color-scheme: dark)">
+    <meta name="theme-color" content="#FAFAFA" media="(prefers-color-scheme: light)">
 </head>
 <body>
     <div id="seo-content">
@@ -241,14 +262,9 @@
     </article>
     </div>
     
-    <!-- SPA mount point -->
     <div id="root"></div>
-    <link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/npm/geist@1.3.0/dist/fonts/geist-sans/style.min.css">
-    <link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/npm/geist@1.3.0/dist/fonts/geist-mono/style.min.css">
-    <link rel="stylesheet" crossorigin href="/assets/index-BrQHhk5d.css">
     <script type="module" crossorigin src="/assets/index-DVg-8X4n.js"></script>
     <script>
-      // Hide SEO content once SPA renders
       if (document.getElementById('root')) {
         new MutationObserver(function(m, o) {
           if (document.getElementById('root').children.length > 0) {
