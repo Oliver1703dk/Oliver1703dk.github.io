@@ -2,7 +2,7 @@
 
 > Software architecture researcher at the University of Southern Denmark (SDU).
 > 4 papers at IEEE ICSA 2026, 1 journal paper under revision at Results in Engineering.
-> Last updated: 2026-04-10
+> Last updated: 2026-04-12
 
 ## Pages
 - [Home](https://oalarsen.com/): Personal homepage with bio, news, and selected publications

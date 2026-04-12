@@ -27,7 +27,7 @@
     <meta property="og:image:width" content="800">
     <meta property="og:image:height" content="800">
     <meta property="article:published_time" content="2025-11">
-    <meta property="article:modified_time" content="2026-04-10">
+    <meta property="article:modified_time" content="2026-04-12">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary">
@@ -71,7 +71,7 @@
     }
   ],
   "datePublished": "2025-11",
-  "dateModified": "2026-04-10",
+  "dateModified": "2026-04-12",
   "abstract": "Athletes often struggle with static, rule-based meal plans that fail to adapt to evolving personal preferences and feedback, leading to reduced adherence and suboptimal nutrition for performance. This short communication introduces a hybrid large-language-model (LLM)-driven recommender system to personalize meal recommendations within CarboPlanner, a sports nutrition platform. The system combines in-context learning (ICL) for short-term adaptation via dynamic prompts incorporating user profiles, recent feedback, and meal candidates, with parameter-efficient fine-tuning (PEFT) using low-rank adaptation (LoRA) on the Mistral-7B-Instruct model for long-term, system-wide learning from accumulated feedback. Implemented as a modular Flask API integrated seamlessly into CarboPlanner's existing infrastructure (Flutter app, NestJS backend, and MongoDB database), the system processes athlete feedback through dual loops: immediate ICL updates and periodic PEFT retraining. Evaluation on 1000 test prompts from a held-out dataset demonstrated superior performance over baselines. The hybrid model achieved 46.7% prediction accuracy and 100% format adherence, outperforming the non-fine-tuned ICL-only model (41.5% accuracy, 39.7% format adherence) and random selection (20% accuracy, 100% format adherence).",
   "keywords": "LLM, LoRA, PEFT, meal recommendation, sports nutrition, Mistral-7B, in-context learning, recommender system",
   "isPartOf": {
