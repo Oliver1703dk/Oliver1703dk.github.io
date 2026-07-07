@@ -1,17 +1,18 @@
 # Oliver Aleksander Larsen - Software Architecture Researcher
 
 > Software architecture researcher at the University of Southern Denmark (SDU).
-> 4 papers at IEEE ICSA 2026, 1 journal paper under revision at Results in Engineering.
-> Last updated: 2026-04-12
+> 4 papers at IEEE ICSA 2026, 1 paper at Euromicro SEAA 2026, 1 journal paper under revision at Results in Engineering.
+> Last updated: 2026-07-07
 
 ## Pages
 - [Home](https://oalarsen.com/): Personal homepage with bio, news, and selected publications
-- [Publications](https://oalarsen.com/publications/): All 5 research papers
+- [Publications](https://oalarsen.com/publications/): All 6 research papers
 - [Projects](https://oalarsen.com/projects/): Software projects including CarboPlanner
 - [CV](https://oalarsen.com/cv/): Education, research, experience, and achievements
 - [Full Content](https://oalarsen.com/llms-full.txt): Complete site content for AI systems
 
 ## Papers
+- [Mining Architectural Quality Under Agentic AI Adoption: A Causal Study of Java Repositories](https://oalarsen.com/papers/agentic-ai-architecture/): A causal study of 151 Java repositories showing agentic AI adoption leaves architectural smell counts essentially unchan...
 - [Edge-Based Standing-Water Detection via FSM-Guided Tiering and Multi-Model Consensus](https://oalarsen.com/papers/flood-detection/): A deployed edge architecture for standing-water detection that uses an FSM to trade accuracy, latency, and energy across...
 - [RAD-AI: Rethinking Architecture Documentation for AI-Augmented Ecosystems](https://oalarsen.com/papers/rad-ai/): A backward-compatible extension of arc42 and C4 for AI-augmented ecosystems, increasing EU AI Act Annex IV documentation...
 - [BitSov: A Composable Bitcoin-Native Architecture for Sovereign Internet Infrastructure](https://oalarsen.com/papers/bitsov/): An eight-layer Bitcoin-native protocol stack for sovereign internet infrastructure, featuring payment-gated messaging, t...
@@ -24,6 +25,7 @@
 - AI Governance and EU AI Act Compliance
 - Blockchain Architecture (Bitcoin-native)
 - LLM-Driven Middleware and Interoperability
+- Empirical Studies of AI-Assisted Development
 
 ## Projects
 - CarboPlanner: Sports nutrition startup. Co-founded and raised 1,090,000 DKK. Built a full-stack platform with React, Flutter, NestJS, and MongoDB for personalized macro tracking and meal planning.

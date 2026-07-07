@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mining Architectural Quality Under Agentic AI Adop... | Oliver Larsen</title>
+    <meta name="description" content="A causal study of 151 Java repositories showing agentic AI adoption leaves architectural smell counts essentially unchanged while code grows 12.8%; the apparent 6.7% drop in smell density is a denominator effect, not an architectural improvement.">
+    <link rel="canonical" href="https://oalarsen.com/papers/agentic-ai-architecture/">
+
+    <!-- Highwire Press (Google Scholar) -->
+    <meta name="citation_title" content="Mining Architectural Quality Under Agentic AI Adoption: A Causal Study of Java Repositories">
+    <meta name="citation_author" content="Larsen, Oliver Aleksander">
+    <meta name="citation_author" content="Moghaddam, Mahyar T.">
+    <meta name="citation_publication_date" content="2026-06">
+    <meta name="citation_conference_title" content="Euromicro SEAA 2026, STREAM Track">
+    <meta name="citation_language" content="en">
+    <meta name="citation_arxiv_id" content="2606.13298">
+    <meta name="citation_pdf_url" content="https://arxiv.org/pdf/2606.13298">
+    <meta name="citation_publisher" content="Springer">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Mining Architectural Quality Under Agentic AI Adoption: A Causal Study of Java Repositories">
+    <meta property="og:description" content="A causal study of 151 Java repositories showing agentic AI adoption leaves architectural smell counts essentially unchanged while code grows 12.8%; the apparent 6.7% drop in smell density is a denominator effect, not an architectural improvement.">
+    <meta property="og:url" content="https://oalarsen.com/papers/agentic-ai-architecture/">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Oliver Aleksander Larsen">
+    <meta property="og:image" content="https://oalarsen.com/assets/img/prof_pic.jpg">
+    <meta property="og:image:width" content="800">
+    <meta property="og:image:height" content="800">
+    <meta property="article:published_time" content="2026-06">
+    <meta property="article:modified_time" content="2026-07-07">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Mining Architectural Quality Under Agentic AI Adoption: A Causal Study of Java Repositories">
+    <meta name="twitter:description" content="A causal study of 151 Java repositories showing agentic AI adoption leaves architectural smell counts essentially unchanged while code grows 12.8%; the apparent 6.7% drop in smell density is a denominator effect, not an architectural improvement.">
+    <meta name="twitter:site" content="@OLarsen02">
+    <meta name="twitter:image" content="https://oalarsen.com/assets/img/prof_pic.jpg">
+
+    <!-- Dublin Core -->
+    <meta name="DC.title" content="Mining Architectural Quality Under Agentic AI Adoption: A Causal Study of Java Repositories">
+    <meta name="DC.creator" content="Oliver Aleksander Larsen">
+    <meta name="DC.creator" content="Mahyar T. Moghaddam">
+    <meta name="DC.date" content="2026-06">
+    <meta name="DC.type" content="Text">
+    <meta name="DC.format" content="text/html">
+    <meta name="DC.language" content="en">
+    <meta name="DC.publisher" content="Springer">
+    <meta name="DC.description" content="AI coding tools are now used by a majority of developers, and agentic use of these tools has popularized the practice colloquially called &quot;vibe coding&quot;. Yet causal evidence on their effect on software architecture is scarce. Prior causal work has measured code-level outcomes (complexity, static analysis warnings); whether such degradation propagates to architecture-level outcomes remains unknown. We mine 151 open-source Java repositories, 74 with detectable agentic AI adoption (identified via configuration files and Co-Authored-By commit trailers) and 77 propensity-matched controls, across a 13-month per-repository window yielding 1,811 monthly Arcan snapshots. We estimate the causal effect of adoption on architectural smell density (ASD) with a staggered difference-in-differences design and the Borusyak imputation estimator, applying a causal design recently used for code-level metrics to the architecture level. Total smell counts are essentially unchanged (+1.1%, p=0.82) while lines of code grow +12.8% (p=0.003); the resulting 6.7% ASD decline (p=0.004) is therefore a denominator effect rather than an architectural improvement. Per-type estimates and robustness checks (wild cluster bootstrap, Lee bounds, stale-observation sensitivity) corroborate the pattern; pre-trends are flat (Wald p=0.90), consistent with parallel trends. Density-normalized outcomes can mislead when treatment affects system size: raw counts and explicit decomposition are required for causal mining studies of AI tool adoption. The complete replication package, including the curated 151-repository monthly panel, is publicly available.">
+
+    <!-- JSON-LD: ScholarlyArticle -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "name": "Mining Architectural Quality Under Agentic AI Adoption: A Causal Study of Java Repositories",
+  "headline": "Mining Architectural Quality Under Agentic AI Adoption: A Causal Study of Java Repositories",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Oliver Aleksander Larsen",
+      "@id": "https://oalarsen.com/#person",
+      "sameAs": "https://orcid.org/0009-0003-6944-2560",
+      "affiliation": {
+        "@type": "CollegeOrUniversity",
+        "name": "University of Southern Denmark"
+      }
+    },
+    {
+      "@type": "Person",
+      "name": "Mahyar T. Moghaddam",
+      "affiliation": {
+        "@type": "CollegeOrUniversity",
+        "name": "University of Southern Denmark"
+      }
+    }
+  ],
+  "datePublished": "2026-06",
+  "dateModified": "2026-07-07",
+  "abstract": "AI coding tools are now used by a majority of developers, and agentic use of these tools has popularized the practice colloquially called \"vibe coding\". Yet causal evidence on their effect on software architecture is scarce. Prior causal work has measured code-level outcomes (complexity, static analysis warnings); whether such degradation propagates to architecture-level outcomes remains unknown. We mine 151 open-source Java repositories, 74 with detectable agentic AI adoption (identified via configuration files and Co-Authored-By commit trailers) and 77 propensity-matched controls, across a 13-month per-repository window yielding 1,811 monthly Arcan snapshots. We estimate the causal effect of adoption on architectural smell density (ASD) with a staggered difference-in-differences design and the Borusyak imputation estimator, applying a causal design recently used for code-level metrics to the architecture level. Total smell counts are essentially unchanged (+1.1%, p=0.82) while lines of code grow +12.8% (p=0.003); the resulting 6.7% ASD decline (p=0.004) is therefore a denominator effect rather than an architectural improvement. Per-type estimates and robustness checks (wild cluster bootstrap, Lee bounds, stale-observation sensitivity) corroborate the pattern; pre-trends are flat (Wald p=0.90), consistent with parallel trends. Density-normalized outcomes can mislead when treatment affects system size: raw counts and explicit decomposition are required for causal mining studies of AI tool adoption. The complete replication package, including the curated 151-repository monthly panel, is publicly available.",
+  "keywords": "agentic AI, vibe coding, AI coding tools, architectural smells, repository mining, causal inference, difference-in-differences, software architecture",
+  "isPartOf": {
+    "@type": "Event",
+    "name": "Euromicro SEAA 2026, STREAM Track",
+    "location": "Krakow, Poland"
+  },
+  "url": "https://oalarsen.com/papers/agentic-ai-architecture/",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Springer"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://oalarsen.com/papers/agentic-ai-architecture/"
+  },
+  "isAccessibleForFree": true,
+  "sameAs": "https://arxiv.org/abs/2606.13298",
+  "codeRepository": "https://github.com/Oliver1703dk/seaa2026-replication-package"
+}
+    </script>
+
+    <!-- JSON-LD: FAQPage -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Does AI-assisted coding degrade software architecture?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Across 151 open-source Java repositories, agentic AI adoption left total architectural smell counts essentially unchanged (+1.1%, p=0.82) while lines of code grew 12.8%. The study found no evidence of architecture-level degradation, but no genuine improvement either."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does architectural smell density drop after AI adoption?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The 6.7% decline in architectural smell density is a denominator effect: code grows faster than new smells appear. Density-normalized metrics can mislead when a treatment changes system size, so raw counts and explicit decomposition are required."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How was the causal effect of AI adoption estimated?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "With a staggered difference-in-differences design and the Borusyak imputation estimator over 1,811 monthly Arcan snapshots, comparing 74 repositories with detectable agentic AI adoption against 77 propensity-matched controls, with robustness checks including wild cluster bootstrap and Lee bounds."
+      }
+    }
+  ]
+}
+    </script>
+
+    <!-- JSON-LD: BreadcrumbList -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://oalarsen.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Publications",
+      "item": "https://oalarsen.com/publications/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Mining Architectural Quality Under Agentic AI Adoption: A..."
+    }
+  ]
+}
+    </script>
+
+    <style>
+      body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 720px; margin: 0 auto; padding: 32px 20px; color: #1a1a1a; line-height: 1.6; }
+      h1 { font-size: 1.5rem; line-height: 1.3; margin-bottom: 0.5rem; }
+      .meta { color: #555; font-size: 0.95rem; margin-bottom: 1.5rem; }
+      .meta strong { color: #1a1a1a; }
+      section { margin-bottom: 1.5rem; }
+      section h2 { font-size: 1.1rem; margin-bottom: 0.4rem; border-bottom: 1px solid #e5e5e5; padding-bottom: 0.3rem; }
+      pre { background: #f5f5f5; padding: 16px; border-radius: 6px; overflow-x: auto; font-size: 0.85rem; line-height: 1.5; }
+      details { margin-bottom: 0.75rem; }
+      summary { cursor: pointer; padding: 4px 0; }
+      details p { margin: 0.5rem 0 0 1rem; color: #444; }
+      a { color: #2563eb; }
+    </style>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>">
+    
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/geist@1.3.0/dist/fonts/geist-sans/style.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/geist@1.3.0/dist/fonts/geist-mono/style.min.css">
+    <link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/npm/geist@1.3.0/dist/fonts/geist-sans/style.min.css">
+    <link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/npm/geist@1.3.0/dist/fonts/geist-mono/style.min.css">
+    <link rel="stylesheet" crossorigin href="/assets/index-BrQHhk5d.css">
+    <link rel="alternate" type="application/atom+xml" title="Oliver Larsen - Research Papers" href="https://oalarsen.com/feed.xml">
+    <link rel="alternate" type="text/plain" href="https://oalarsen.com/llms.txt" title="LLM-readable content">
+    <meta name="theme-color" content="#0A0A0A" media="(prefers-color-scheme: dark)">
+    <meta name="theme-color" content="#FAFAFA" media="(prefers-color-scheme: light)">
+</head>
+<body>
+    <div id="seo-content">
+    <nav style="margin-bottom:24px;font-size:0.9rem">
+      <a href="/">Home</a> ·
+      <a href="/publications/">Publications</a> ·
+      <a href="/projects/">Projects</a> ·
+      <a href="/cv/">CV</a>
+    </nav>
+    <article>
+        <h1>Mining Architectural Quality Under Agentic AI Adoption: A Causal Study of Java Repositories</h1>
+        <div class="meta">
+            <p><strong>Authors:</strong> Oliver Aleksander Larsen, Mahyar T. Moghaddam</p>
+            <p><strong>Venue:</strong> Euromicro SEAA 2026, STREAM Track</p>
+            <p><strong>Status:</strong> Accepted - to appear in the Springer LNCS proceedings after the conference (September 2-4, 2026, Krakow)</p>
+        </div>
+
+        <section>
+            <h2>TL;DR</h2>
+            <p>A causal study of 151 Java repositories showing agentic AI adoption leaves architectural smell counts essentially unchanged while code grows 12.8%; the apparent 6.7% drop in smell density is a denominator effect, not an architectural improvement.</p>
+        </section>
+
+        <section>
+            <h2>Abstract</h2>
+            <p>AI coding tools are now used by a majority of developers, and agentic use of these tools has popularized the practice colloquially called &quot;vibe coding&quot;. Yet causal evidence on their effect on software architecture is scarce. Prior causal work has measured code-level outcomes (complexity, static analysis warnings); whether such degradation propagates to architecture-level outcomes remains unknown. We mine 151 open-source Java repositories, 74 with detectable agentic AI adoption (identified via configuration files and Co-Authored-By commit trailers) and 77 propensity-matched controls, across a 13-month per-repository window yielding 1,811 monthly Arcan snapshots. We estimate the causal effect of adoption on architectural smell density (ASD) with a staggered difference-in-differences design and the Borusyak imputation estimator, applying a causal design recently used for code-level metrics to the architecture level. Total smell counts are essentially unchanged (+1.1%, p=0.82) while lines of code grow +12.8% (p=0.003); the resulting 6.7% ASD decline (p=0.004) is therefore a denominator effect rather than an architectural improvement. Per-type estimates and robustness checks (wild cluster bootstrap, Lee bounds, stale-observation sensitivity) corroborate the pattern; pre-trends are flat (Wald p=0.90), consistent with parallel trends. Density-normalized outcomes can mislead when treatment affects system size: raw counts and explicit decomposition are required for causal mining studies of AI tool adoption. The complete replication package, including the curated 151-repository monthly panel, is publicly available.</p>
+        </section>
+
+        <section>
+            <h2>Keywords</h2>
+            <p>agentic AI, vibe coding, AI coding tools, architectural smells, repository mining, causal inference, difference-in-differences, software architecture</p>
+        </section>
+
+        <section>
+            <h2>Resources</h2>
+            <p><strong>arXiv:</strong> <a href="https://arxiv.org/abs/2606.13298">https://arxiv.org/abs/2606.13298</a></p>
+            
+            
+            <p><strong>Code:</strong> <a href="https://github.com/Oliver1703dk/seaa2026-replication-package">https://github.com/Oliver1703dk/seaa2026-replication-package</a></p>
+        </section>
+
+        <section>
+            <h2>Frequently Asked Questions</h2>
+            
+      <details>
+        <summary><strong>Does AI-assisted coding degrade software architecture?</strong></summary>
+        <p>Across 151 open-source Java repositories, agentic AI adoption left total architectural smell counts essentially unchanged (+1.1%, p=0.82) while lines of code grew 12.8%. The study found no evidence of architecture-level degradation, but no genuine improvement either.</p>
+      </details>
+
+      <details>
+        <summary><strong>Why does architectural smell density drop after AI adoption?</strong></summary>
+        <p>The 6.7% decline in architectural smell density is a denominator effect: code grows faster than new smells appear. Density-normalized metrics can mislead when a treatment changes system size, so raw counts and explicit decomposition are required.</p>
+      </details>
+
+      <details>
+        <summary><strong>How was the causal effect of AI adoption estimated?</strong></summary>
+        <p>With a staggered difference-in-differences design and the Borusyak imputation estimator over 1,811 monthly Arcan snapshots, comparing 74 repositories with detectable agentic AI adoption against 77 propensity-matched controls, with robustness checks including wild cluster bootstrap and Lee bounds.</p>
+      </details>
+        </section>
+
+        <section>
+            <h2>BibTeX</h2>
+            <pre><code>@inproceedings{larsen2026mining,
+  title     = {Mining Architectural Quality Under Agentic AI
+               Adoption: A Causal Study of Java Repositories},
+  author    = {Larsen, Oliver Aleksander and
+               Moghaddam, Mahyar T.},
+  booktitle = {Euromicro Conference on Software Engineering
+               and Advanced Applications (SEAA)},
+  year      = {2026},
+  publisher = {Springer},
+  eprint    = {2606.13298},
+  archiveprefix = {arXiv},
+  primaryclass  = {cs.SE},
+  note      = {In STREAM Track. Accepted, to appear}
+}</code></pre>
+        </section>
+    </article>
+    </div>
+    
+    <div id="root"></div>
+    <script type="module" crossorigin src="/assets/index-f6gujKDr.js"></script>
+    <script>
+      if (document.getElementById('root')) {
+        new MutationObserver(function(m, o) {
+          if (document.getElementById('root').children.length > 0) {
+            var seo = document.getElementById('seo-content');
+            if (seo) seo.style.display = 'none';
+            o.disconnect();
+          }
+        }).observe(document.getElementById('root'), { childList: true });
+      }
+    </script>
+</body>
+</html>

@@ -1,10 +1,10 @@
 # Oliver Aleksander Larsen - Software Architecture Researcher
 
-> Last updated: 2026-04-12
+> Last updated: 2026-07-07
 
 > Software architecture researcher at the University of Southern Denmark (SDU)
 > studying how architecture adapts when AI becomes both a design tool and a
-> design subject. Four papers accepted at IEEE ICSA 2026 (Amsterdam), plus one journal paper under revision at Results in Engineering.
+> design subject. Four papers accepted at IEEE ICSA 2026 (Amsterdam), one paper accepted at Euromicro SEAA 2026 (Krakow), plus one journal paper under revision at Results in Engineering.
 
 ## Site Navigation
 - Home: https://oalarsen.com/
@@ -13,7 +13,7 @@
 - CV: https://oalarsen.com/cv/
 
 ## About
-Oliver Aleksander Larsen is an MSc Software Engineering student at the University of Southern Denmark, supervised by Mahyar T. Moghaddam. His research covers edge computing, AI governance (EU AI Act), blockchain architecture, and LLM middleware. He is also co-founder and CTO of CarboPlanner, a sports nutrition startup that raised 1,090,000 DKK.
+Oliver Aleksander Larsen is an MSc Software Engineering student at the University of Southern Denmark, supervised by Mahyar T. Moghaddam. His research covers edge computing, AI governance (EU AI Act), blockchain architecture, LLM middleware, and causal studies of AI-assisted development. He is also co-founder and CTO of CarboPlanner, a sports nutrition startup that raised 1,090,000 DKK.
 
 ## Research Areas
 - Software Architecture for AI-Augmented Systems
@@ -21,8 +21,35 @@ Oliver Aleksander Larsen is an MSc Software Engineering student at the Universit
 - AI Governance and EU AI Act Compliance
 - Blockchain Architecture (Bitcoin-native)
 - LLM-Driven Middleware and Interoperability
+- Empirical Studies of AI-Assisted Development
 
 ## Papers
+
+### Mining Architectural Quality Under Agentic AI Adoption: A Causal Study of Java Repositories
+- Authors: Oliver Aleksander Larsen, Mahyar T. Moghaddam
+- Venue: Euromicro SEAA 2026, STREAM Track
+- Keywords: agentic AI, vibe coding, AI coding tools, architectural smells, repository mining, causal inference, difference-in-differences, software architecture
+- arXiv: https://arxiv.org/abs/2606.13298
+
+
+- Code: https://github.com/Oliver1703dk/seaa2026-replication-package
+
+**TL;DR:** A causal study of 151 Java repositories showing agentic AI adoption leaves architectural smell counts essentially unchanged while code grows 12.8%; the apparent 6.7% drop in smell density is a denominator effect, not an architectural improvement.
+
+**Abstract:** AI coding tools are now used by a majority of developers, and agentic use of these tools has popularized the practice colloquially called "vibe coding". Yet causal evidence on their effect on software architecture is scarce. Prior causal work has measured code-level outcomes (complexity, static analysis warnings); whether such degradation propagates to architecture-level outcomes remains unknown. We mine 151 open-source Java repositories, 74 with detectable agentic AI adoption (identified via configuration files and Co-Authored-By commit trailers) and 77 propensity-matched controls, across a 13-month per-repository window yielding 1,811 monthly Arcan snapshots. We estimate the causal effect of adoption on architectural smell density (ASD) with a staggered difference-in-differences design and the Borusyak imputation estimator, applying a causal design recently used for code-level metrics to the architecture level. Total smell counts are essentially unchanged (+1.1%, p=0.82) while lines of code grow +12.8% (p=0.003); the resulting 6.7% ASD decline (p=0.004) is therefore a denominator effect rather than an architectural improvement. Per-type estimates and robustness checks (wild cluster bootstrap, Lee bounds, stale-observation sensitivity) corroborate the pattern; pre-trends are flat (Wald p=0.90), consistent with parallel trends. Density-normalized outcomes can mislead when treatment affects system size: raw counts and explicit decomposition are required for causal mining studies of AI tool adoption. The complete replication package, including the curated 151-repository monthly panel, is publicly available.
+
+**FAQs:**
+
+**Q: Does AI-assisted coding degrade software architecture?**
+Across 151 open-source Java repositories, agentic AI adoption left total architectural smell counts essentially unchanged (+1.1%, p=0.82) while lines of code grew 12.8%. The study found no evidence of architecture-level degradation, but no genuine improvement either.
+
+**Q: Why does architectural smell density drop after AI adoption?**
+The 6.7% decline in architectural smell density is a denominator effect: code grows faster than new smells appear. Density-normalized metrics can mislead when a treatment changes system size, so raw counts and explicit decomposition are required.
+
+**Q: How was the causal effect of AI adoption estimated?**
+With a staggered difference-in-differences design and the Borusyak imputation estimator over 1,811 monthly Arcan snapshots, comparing 74 repositories with detectable agentic AI adoption against 77 propensity-matched controls, with robustness checks including wild cluster bootstrap and Lee bounds.
+
+---
 
 ### Edge-Based Standing-Water Detection via FSM-Guided Tiering and Multi-Model Consensus
 - Authors: Oliver Aleksander Larsen, Mahyar T. Moghaddam
@@ -176,8 +203,8 @@ Status: Completed
 - **High School Diploma** (2018 - 2021): Slagelse Gymnasium · Math / Physics / Chemistry
 
 ### Research
+- **Paper accepted at Euromicro SEAA 2026 (STREAM Track)** (2026): Mining Architectural Quality Under Agentic AI Adoption: causal study of 151 Java repositories
 - **4 papers accepted at IEEE ICSA 2026** (2026): Edge AI, AI governance (EU AI Act), blockchain architecture, LLM middleware
-- **"Vibe Coding", ECSA 2026 (under review)** (2026): Quasi-experimental study of AI-assisted development and architectural erosion
 - **Hybrid LLM Meal Recommender, Results in Engineering (under revision)** (2025 - 2026): Personalized meal planning with LoRA/PEFT fine-tuned Mistral-7B · BSc thesis extended
 
 ### Experience
@@ -193,16 +220,16 @@ Status: Completed
 ## Frequently Asked Questions
 
 **Q: Who is Oliver Larsen?**
-Oliver Aleksander Larsen is a software architecture researcher at the University of Southern Denmark. He has 4 papers accepted at IEEE ICSA 2026 and co-founded CarboPlanner, a sports nutrition startup.
+Oliver Aleksander Larsen is a software architecture researcher at the University of Southern Denmark. He has 4 papers accepted at IEEE ICSA 2026, 1 paper accepted at Euromicro SEAA 2026, and co-founded CarboPlanner, a sports nutrition startup.
 
 **Q: What does Oliver Larsen research?**
-His research focuses on how software architecture adapts when AI becomes both a design tool and a design subject, covering edge computing, AI governance, blockchain architecture, and LLM middleware.
+His research focuses on how software architecture adapts when AI becomes both a design tool and a design subject, covering edge computing, AI governance, blockchain architecture, LLM middleware, and empirical studies of AI-assisted development.
 
 **Q: Where does Oliver Larsen study?**
 He is pursuing an MSc in Software Engineering at the University of Southern Denmark (SDU), supervised by Mahyar T. Moghaddam.
 
 **Q: How many papers has Oliver Larsen published?**
-He has 4 papers accepted at IEEE ICSA 2026 (Amsterdam, June 22-26, 2026) and 1 journal paper under revision at Results in Engineering.
+He has 4 papers accepted at IEEE ICSA 2026 (Amsterdam, June 22-26, 2026), 1 paper accepted at Euromicro SEAA 2026 (Krakow, September 2-4, 2026), and 1 journal paper under revision at Results in Engineering.
 
 ## Links
 - Home: https://oalarsen.com/
