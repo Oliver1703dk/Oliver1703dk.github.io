@@ -3,7 +3,7 @@
   "outputDirectory": ".",
   "framework": null,
   "rewrites": [
-    { "source": "/((?!assets|favicon\\.svg|icons\\.svg|robots\\.txt|sitemap\\.xml|llms\\.txt|llms-full\\.txt|feed\\.xml|\\.nojekyll).*)", "destination": "/index.html" }
+    { "source": "/((?!assets|favicon\\.svg|icons\\.svg|robots\\.txt|sitemap\\.xml|llms\\.txt|llms-full\\.txt|feed\\.xml|\\.nojekyll|blog).*)", "destination": "/index.html" }
   ],
   "headers": [
     {
