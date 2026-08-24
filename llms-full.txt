@@ -10,7 +10,11 @@
 - Home: https://oalarsen.com/
 - Publications: https://oalarsen.com/publications/
 - Projects: https://oalarsen.com/projects/
+- Blog: https://oalarsen.com/blog/
 - CV: https://oalarsen.com/cv/
+
+## Blog
+Notes on what Oliver is doing and thought-provoking ideas. No posts yet.
 
 ## About
 Oliver Aleksander Larsen is an MSc Software Engineering student at the University of Southern Denmark, supervised by Mahyar T. Moghaddam. His research covers edge computing, AI governance (EU AI Act), blockchain architecture, LLM middleware, and causal studies of AI-assisted development. He is also co-founder and CTO of CarboPlanner, a sports nutrition startup that raised 1,090,000 DKK.
