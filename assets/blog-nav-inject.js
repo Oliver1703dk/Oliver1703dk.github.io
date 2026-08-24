@@ -2,7 +2,7 @@
   function isBlogPath(href) {
     try {
       var path = href ? new URL(href, window.location.origin).pathname : '';
-      return path === '/blog' || path === '/blog/';
+      return path === '/blog' || path === '/blog/' || path.indexOf('/blog/') === 0;
     } catch (e) {
       return false;
     }
@@ -52,11 +52,30 @@
     }
   }
 
-  var obs = new MutationObserver(function () { scan(); });
+  function uncageBody() {
+    var root = document.getElementById('root');
+    if (!root || root.children.length === 0) return false;
+    var b = document.body;
+    b.style.maxWidth = 'none';
+    b.style.margin = '0';
+    b.style.padding = '0';
+    b.style.color = 'inherit';
+    b.style.background = 'transparent';
+    return true;
+  }
+
+  var obs = new MutationObserver(function () {
+    scan();
+    if (uncageBody()) obs.disconnect();
+  });
   obs.observe(document.documentElement, { childList: true, subtree: true });
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', scan);
+    document.addEventListener('DOMContentLoaded', function () {
+      scan();
+      uncageBody();
+    });
   } else {
     scan();
+    uncageBody();
   }
 })();
