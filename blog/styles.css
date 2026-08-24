@@ -73,8 +73,10 @@ a:focus-visible, button:focus-visible {
 .icon-btn {
   background: none; border: none; cursor: pointer;
   color: var(--text-tertiary); padding: 6px; border-radius: 6px;
-  display: flex; align-items: center; font-size: 13px;
+  display: flex; align-items: center; justify-content: center;
+  width: 30px; height: 30px; font-size: 0;
 }
+.icon-btn svg { display: block; flex-shrink: 0; }
 .icon-btn:hover { color: var(--text-primary); }
 .nav-mobile-toggle { display: none; color: var(--text-primary); }
 .nav-mobile {
