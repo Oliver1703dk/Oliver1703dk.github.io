@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Persona-as-Configuration: Generative Stakeholder R... | Oliver Larsen</title>
+    <meta name="description" content="An architectural pattern that keeps LLM stakeholder reports out of the flood-detection control plane: the generative layer is read-only, and each stakeholder is a versioned prompt template. Expert review rated it favourably on ISO/IEC 25010, with strongest agreement on separation of concerns.">
+    <link rel="canonical" href="https://oalarsen.com/papers/persona-as-configuration/">
+
+    <!-- Highwire Press (Google Scholar) -->
+    <meta name="citation_title" content="Persona-as-Configuration: Generative Stakeholder Reporting for Agricultural Floods">
+    <meta name="citation_author" content="Larsen, Oliver Aleksander">
+    <meta name="citation_author" content="Santilli, Tiziano">
+    <meta name="citation_author" content="Daghero, Francesco">
+    <meta name="citation_author" content="Moghaddam, Mahyar T.">
+    <meta name="citation_publication_date" content="2026-07">
+    <meta name="citation_conference_title" content="CASA 2026 Workshop at ECSA 2026">
+    <meta name="citation_language" content="en">
+    <meta name="citation_arxiv_id" content="2607.17774">
+    <meta name="citation_pdf_url" content="https://arxiv.org/pdf/2607.17774">
+    <meta name="citation_publisher" content="Springer">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Persona-as-Configuration: Generative Stakeholder Reporting for Agricultural Floods">
+    <meta property="og:description" content="An architectural pattern that keeps LLM stakeholder reports out of the flood-detection control plane: the generative layer is read-only, and each stakeholder is a versioned prompt template. Expert review rated it favourably on ISO/IEC 25010, with strongest agreement on separation of concerns.">
+    <meta property="og:url" content="https://oalarsen.com/papers/persona-as-configuration/">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Oliver Aleksander Larsen">
+    <meta property="og:image" content="https://oalarsen.com/assets/img/prof_pic.jpg">
+    <meta property="og:image:width" content="800">
+    <meta property="og:image:height" content="800">
+    <meta property="article:published_time" content="2026-07">
+    <meta property="article:modified_time" content="2026-08-24">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Persona-as-Configuration: Generative Stakeholder Reporting for Agricultural Floods">
+    <meta name="twitter:description" content="An architectural pattern that keeps LLM stakeholder reports out of the flood-detection control plane: the generative layer is read-only, and each stakeholder is a versioned prompt template. Expert review rated it favourably on ISO/IEC 25010, with strongest agreement on separation of concerns.">
+    <meta name="twitter:site" content="@OLarsen02">
+    <meta name="twitter:image" content="https://oalarsen.com/assets/img/prof_pic.jpg">
+
+    <!-- Dublin Core -->
+    <meta name="DC.title" content="Persona-as-Configuration: Generative Stakeholder Reporting for Agricultural Floods">
+    <meta name="DC.creator" content="Oliver Aleksander Larsen">
+    <meta name="DC.creator" content="Tiziano Santilli">
+    <meta name="DC.creator" content="Francesco Daghero">
+    <meta name="DC.creator" content="Mahyar T. Moghaddam">
+    <meta name="DC.date" content="2026-07">
+    <meta name="DC.type" content="Text">
+    <meta name="DC.format" content="text/html">
+    <meta name="DC.language" content="en">
+    <meta name="DC.publisher" content="Springer">
+    <meta name="DC.description" content="Cyber-physical systems built on deterministic edge inference, such as on-vehicle flood detection for agricultural fields, produce structured decision logs that must be interpreted differently by heterogeneous stakeholders. Pairing such systems with large language models (LLMs) to generate stakeholder-specific reports introduces a tension: the generative layer is non-deterministic, while the edge plane must remain replayable and auditable. We propose an architectural pattern resting on two invariants: unidirectional consumption, in which the generative layer is a strict read-only consumer of the deterministic plane and never writes back, and persona-as-configuration, in which stakeholder adaptation is a versioned prompt-template artifact rather than runtime improvisation. We instantiate the pattern as a context-aware dashboard layer over the JSON decision logs of a previously published edge-based standing-water detection system, and analyse how the integration boundary admits standard generative-reliability mitigations as configuration- or middleware-level extension points. A structured expert review rated the pattern favourably across five ISO/IEC 25010-aligned quality dimensions, with strongest agreement on separation of concerns. End-user evaluation with agricultural stakeholders is planned for future work.">
+
+    <!-- JSON-LD: ScholarlyArticle -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "name": "Persona-as-Configuration: Generative Stakeholder Reporting for Agricultural Floods",
+  "headline": "Persona-as-Configuration: Generative Stakeholder Reporting for Agricultural Floods",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Oliver Aleksander Larsen",
+      "@id": "https://oalarsen.com/#person",
+      "sameAs": "https://orcid.org/0009-0003-6944-2560",
+      "affiliation": {
+        "@type": "CollegeOrUniversity",
+        "name": "University of Southern Denmark"
+      }
+    },
+    {
+      "@type": "Person",
+      "name": "Tiziano Santilli"
+    },
+    {
+      "@type": "Person",
+      "name": "Francesco Daghero"
+    },
+    {
+      "@type": "Person",
+      "name": "Mahyar T. Moghaddam",
+      "affiliation": {
+        "@type": "CollegeOrUniversity",
+        "name": "University of Southern Denmark"
+      }
+    }
+  ],
+  "datePublished": "2026-07",
+  "dateModified": "2026-08-24",
+  "abstract": "Cyber-physical systems built on deterministic edge inference, such as on-vehicle flood detection for agricultural fields, produce structured decision logs that must be interpreted differently by heterogeneous stakeholders. Pairing such systems with large language models (LLMs) to generate stakeholder-specific reports introduces a tension: the generative layer is non-deterministic, while the edge plane must remain replayable and auditable. We propose an architectural pattern resting on two invariants: unidirectional consumption, in which the generative layer is a strict read-only consumer of the deterministic plane and never writes back, and persona-as-configuration, in which stakeholder adaptation is a versioned prompt-template artifact rather than runtime improvisation. We instantiate the pattern as a context-aware dashboard layer over the JSON decision logs of a previously published edge-based standing-water detection system, and analyse how the integration boundary admits standard generative-reliability mitigations as configuration- or middleware-level extension points. A structured expert review rated the pattern favourably across five ISO/IEC 25010-aligned quality dimensions, with strongest agreement on separation of concerns. End-user evaluation with agricultural stakeholders is planned for future work.",
+  "keywords": "software architecture, generative AI, persona pattern, trust boundary, audit, cyber-physical systems, edge decision logs",
+  "isPartOf": {
+    "@type": "Event",
+    "name": "CASA 2026 Workshop at ECSA 2026",
+    "location": "Bolzano, Italy"
+  },
+  "url": "https://oalarsen.com/papers/persona-as-configuration/",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Springer"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://oalarsen.com/papers/persona-as-configuration/"
+  },
+  "isAccessibleForFree": true,
+  "sameAs": "https://arxiv.org/abs/2607.17774",
+  "codeRepository": "https://github.com/Oliver1703dk/generative-reporting-for-agricultural-floods"
+}
+    </script>
+
+    <!-- JSON-LD: FAQPage -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is persona-as-configuration?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Stakeholder adaptation is treated as a versioned prompt-template artifact rather than runtime improvisation. Each of six stakeholders (farmers, agronomists, farm managers, government agencies, insurers, decision-makers) maps to a first-class configuration element."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does the LLM stay out of the flood detection system?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Unidirectional consumption: the generative layer is a strict read-only consumer of the deterministic edge plane and never writes back, so LLM non-determinism cannot compromise replayability or audit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How was the pattern evaluated?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A structured expert review rated it favourably across five ISO/IEC 25010-aligned quality dimensions, with strongest agreement on separation of concerns. End-user evaluation with agricultural stakeholders is planned for future work."
+      }
+    }
+  ]
+}
+    </script>
+
+    <!-- JSON-LD: BreadcrumbList -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://oalarsen.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Publications",
+      "item": "https://oalarsen.com/publications/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Persona-as-Configuration: Generative Stakeholder Reportin..."
+    }
+  ]
+}
+    </script>
+
+    <style>
+      body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 720px; margin: 0 auto; padding: 32px 20px; color: #1a1a1a; line-height: 1.6; }
+      h1 { font-size: 1.5rem; line-height: 1.3; margin-bottom: 0.5rem; }
+      .meta { color: #555; font-size: 0.95rem; margin-bottom: 1.5rem; }
+      .meta strong { color: #1a1a1a; }
+      section { margin-bottom: 1.5rem; }
+      section h2 { font-size: 1.1rem; margin-bottom: 0.4rem; border-bottom: 1px solid #e5e5e5; padding-bottom: 0.3rem; }
+      pre { background: #f5f5f5; padding: 16px; border-radius: 6px; overflow-x: auto; font-size: 0.85rem; line-height: 1.5; }
+      details { margin-bottom: 0.75rem; }
+      summary { cursor: pointer; padding: 4px 0; }
+      details p { margin: 0.5rem 0 0 1rem; color: #444; }
+      a { color: #2563eb; }
+    </style>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>">
+    
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/geist@1.3.0/dist/fonts/geist-sans/style.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/geist@1.3.0/dist/fonts/geist-mono/style.min.css">
+    <link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/npm/geist@1.3.0/dist/fonts/geist-sans/style.min.css">
+    <link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/npm/geist@1.3.0/dist/fonts/geist-mono/style.min.css">
+    <link rel="stylesheet" crossorigin href="/assets/index-BrQHhk5d.css">
+    <link rel="alternate" type="application/atom+xml" title="Oliver Larsen - Research Papers" href="https://oalarsen.com/feed.xml">
+    <link rel="alternate" type="text/plain" href="https://oalarsen.com/llms.txt" title="LLM-readable content">
+    <meta name="theme-color" content="#0A0A0A" media="(prefers-color-scheme: dark)">
+    <meta name="theme-color" content="#FAFAFA" media="(prefers-color-scheme: light)">
+</head>
+<body>
+    <div id="seo-content">
+    <nav style="margin-bottom:24px;font-size:0.9rem">
+      <a href="/">Home</a> ·
+      <a href="/publications/">Publications</a> ·
+      <a href="/projects/">Projects</a> ·
+      <a href="/cv/">CV</a>
+    </nav>
+    <article>
+        <h1>Persona-as-Configuration: Generative Stakeholder Reporting for Agricultural Floods</h1>
+        <div class="meta">
+            <p><strong>Authors:</strong> Oliver Aleksander Larsen, Tiziano Santilli, Francesco Daghero, Mahyar T. Moghaddam</p>
+            <p><strong>Venue:</strong> CASA 2026 Workshop at ECSA 2026</p>
+            <p><strong>Status:</strong> Accepted - to appear in the Springer LNCS proceedings after the conference (September 7-11, 2026, Bolzano). Talk: 8 September 2026, 11:40.</p>
+        </div>
+
+        <section>
+            <h2>TL;DR</h2>
+            <p>An architectural pattern that keeps LLM stakeholder reports out of the flood-detection control plane: the generative layer is read-only, and each stakeholder is a versioned prompt template. Expert review rated it favourably on ISO/IEC 25010, with strongest agreement on separation of concerns.</p>
+        </section>
+
+        <section>
+            <h2>Abstract</h2>
+            <p>Cyber-physical systems built on deterministic edge inference, such as on-vehicle flood detection for agricultural fields, produce structured decision logs that must be interpreted differently by heterogeneous stakeholders. Pairing such systems with large language models (LLMs) to generate stakeholder-specific reports introduces a tension: the generative layer is non-deterministic, while the edge plane must remain replayable and auditable. We propose an architectural pattern resting on two invariants: unidirectional consumption, in which the generative layer is a strict read-only consumer of the deterministic plane and never writes back, and persona-as-configuration, in which stakeholder adaptation is a versioned prompt-template artifact rather than runtime improvisation. We instantiate the pattern as a context-aware dashboard layer over the JSON decision logs of a previously published edge-based standing-water detection system, and analyse how the integration boundary admits standard generative-reliability mitigations as configuration- or middleware-level extension points. A structured expert review rated the pattern favourably across five ISO/IEC 25010-aligned quality dimensions, with strongest agreement on separation of concerns. End-user evaluation with agricultural stakeholders is planned for future work.</p>
+        </section>
+
+        <section>
+            <h2>Keywords</h2>
+            <p>software architecture, generative AI, persona pattern, trust boundary, audit, cyber-physical systems, edge decision logs</p>
+        </section>
+
+        <section>
+            <h2>Resources</h2>
+            <p><strong>arXiv:</strong> <a href="https://arxiv.org/abs/2607.17774">https://arxiv.org/abs/2607.17774</a></p>
+            
+            
+            <p><strong>Code:</strong> <a href="https://github.com/Oliver1703dk/generative-reporting-for-agricultural-floods">https://github.com/Oliver1703dk/generative-reporting-for-agricultural-floods</a></p>
+        </section>
+
+        <section>
+            <h2>Frequently Asked Questions</h2>
+            
+      <details>
+        <summary><strong>What is persona-as-configuration?</strong></summary>
+        <p>Stakeholder adaptation is treated as a versioned prompt-template artifact rather than runtime improvisation. Each of six stakeholders (farmers, agronomists, farm managers, government agencies, insurers, decision-makers) maps to a first-class configuration element.</p>
+      </details>
+
+      <details>
+        <summary><strong>How does the LLM stay out of the flood detection system?</strong></summary>
+        <p>Unidirectional consumption: the generative layer is a strict read-only consumer of the deterministic edge plane and never writes back, so LLM non-determinism cannot compromise replayability or audit.</p>
+      </details>
+
+      <details>
+        <summary><strong>How was the pattern evaluated?</strong></summary>
+        <p>A structured expert review rated it favourably across five ISO/IEC 25010-aligned quality dimensions, with strongest agreement on separation of concerns. End-user evaluation with agricultural stakeholders is planned for future work.</p>
+      </details>
+        </section>
+
+        <section>
+            <h2>BibTeX</h2>
+            <pre><code>@inproceedings{larsen2026persona,
+  title     = {Persona-as-Configuration: Generative Stakeholder
+               Reporting for Agricultural Floods},
+  author    = {Larsen, Oliver Aleksander and
+               Santilli, Tiziano and
+               Daghero, Francesco and
+               Moghaddam, Mahyar T.},
+  booktitle = {CASA Workshop at ECSA},
+  year      = {2026},
+  publisher = {Springer},
+  eprint    = {2607.17774},
+  archiveprefix = {arXiv},
+  primaryclass  = {cs.SE},
+  note      = {Accepted, to appear}
+}</code></pre>
+        </section>
+    </article>
+    </div>
+    
+    <div id="root"></div>
+    <script type="module" crossorigin src="/assets/index-BhHKWj2r.js"></script>
+    <script>
+      if (document.getElementById('root')) {
+        new MutationObserver(function(m, o) {
+          if (document.getElementById('root').children.length > 0) {
+            var seo = document.getElementById('seo-content');
+            if (seo) seo.style.display = 'none';
+            o.disconnect();
+          }
+        }).observe(document.getElementById('root'), { childList: true });
+      }
+    </script>
+</body>
+</html>

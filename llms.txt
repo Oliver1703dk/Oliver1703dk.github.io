@@ -1,17 +1,18 @@
 # Oliver Aleksander Larsen - Software Architecture Researcher
 
 > Software architecture researcher at the University of Southern Denmark (SDU).
-> 4 papers at IEEE ICSA 2026, 1 paper at Euromicro SEAA 2026, 1 journal paper under revision at Results in Engineering.
-> Last updated: 2026-07-07
+> 4 papers at IEEE ICSA 2026, 1 paper at Euromicro SEAA 2026, 1 paper at CASA (ECSA 2026), 1 journal paper under revision at Results in Engineering.
+> Last updated: 2026-08-24
 
 ## Pages
 - [Home](https://oalarsen.com/): Personal homepage with bio, news, and selected publications
-- [Publications](https://oalarsen.com/publications/): All 6 research papers
+- [Publications](https://oalarsen.com/publications/): All 7 research papers
 - [Projects](https://oalarsen.com/projects/): Software projects including CarboPlanner
 - [CV](https://oalarsen.com/cv/): Education, research, experience, and achievements
 - [Full Content](https://oalarsen.com/llms-full.txt): Complete site content for AI systems
 
 ## Papers
+- [Persona-as-Configuration: Generative Stakeholder Reporting for Agricultural Floods](https://oalarsen.com/papers/persona-as-configuration/): An architectural pattern that keeps LLM stakeholder reports out of the flood-detection control plane: the generative lay...
 - [Mining Architectural Quality Under Agentic AI Adoption: A Causal Study of Java Repositories](https://oalarsen.com/papers/agentic-ai-architecture/): A causal study of 151 Java repositories showing agentic AI adoption leaves architectural smell counts essentially unchan...
 - [Edge-Based Standing-Water Detection via FSM-Guided Tiering and Multi-Model Consensus](https://oalarsen.com/papers/flood-detection/): A deployed edge architecture for standing-water detection that uses an FSM to trade accuracy, latency, and energy across...
 - [RAD-AI: Rethinking Architecture Documentation for AI-Augmented Ecosystems](https://oalarsen.com/papers/rad-ai/): A backward-compatible extension of arc42 and C4 for AI-augmented ecosystems, increasing EU AI Act Annex IV documentation...
