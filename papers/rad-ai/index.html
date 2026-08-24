@@ -187,6 +187,19 @@
     <meta name="theme-color" content="#FAFAFA" media="(prefers-color-scheme: light)">
 </head>
 <body>
+    <script>
+      (function() {
+        try {
+          var redirect = sessionStorage.getItem('spa-redirect');
+          if (redirect) sessionStorage.removeItem('spa-redirect');
+          var path = redirect || location.pathname;
+          if (path.length > 1 && path.charAt(path.length - 1) === '/') path = path.slice(0, -1);
+          var next = path + location.search + location.hash;
+          if (redirect || path !== location.pathname) history.replaceState(null, '', next);
+        } catch (e) {}
+      })();
+    </script>
+
     <div id="seo-content">
     <nav style="margin-bottom:24px;font-size:0.9rem">
       <a href="/">Home</a> ·
@@ -264,14 +277,19 @@
     </div>
     
     <div id="root"></div>
-    <script type="module" crossorigin src="/assets/index-BhHKWj2r.js"></script>
-    <script src="/assets/blog-nav-inject.js" defer></script>
+    <script type="module" crossorigin src="/assets/index-a36606d0.js"></script>
     <script>
       if (document.getElementById('root')) {
         new MutationObserver(function(m, o) {
           if (document.getElementById('root').children.length > 0) {
             var seo = document.getElementById('seo-content');
             if (seo) seo.style.display = 'none';
+            var b = document.body;
+            b.style.maxWidth = 'none';
+            b.style.margin = '0';
+            b.style.padding = '0';
+            b.style.color = 'inherit';
+            b.style.background = 'transparent';
             o.disconnect();
           }
         }).observe(document.getElementById('root'), { childList: true });
