@@ -1,102 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog - Oliver Aleksander Larsen</title>
-    <meta name="description" content="Writing by Oliver Aleksander Larsen about what he is doing and thought-provoking ideas." />
-    <meta name="author" content="Oliver Aleksander Larsen" />
-    <link rel="canonical" href="https://oalarsen.com/blog/" />
-    <meta property="og:title" content="Blog - Oliver Aleksander Larsen" />
-    <meta property="og:description" content="Writing by Oliver Aleksander Larsen about what he is doing and thought-provoking ideas." />
-    <meta property="og:url" content="https://oalarsen.com/blog/" />
-    <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="Oliver Aleksander Larsen" />
-    <meta property="og:image" content="https://oalarsen.com/assets/img/prof_pic.jpg" />
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="@OLarsen02" />
-    <meta name="twitter:title" content="Blog - Oliver Aleksander Larsen" />
-    <meta name="twitter:description" content="Writing by Oliver Aleksander Larsen about what he is doing and thought-provoking ideas." />
-    <meta name="twitter:image" content="https://oalarsen.com/assets/img/prof_pic.jpg" />
-    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/geist@1.3.0/dist/fonts/geist-sans/style.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/geist@1.3.0/dist/fonts/geist-mono/style.min.css" />
-    <link rel="stylesheet" href="/blog/styles.css" />
-    <link rel="stylesheet" href="/assets/index-BrQHhk5d.css" />
-    <link rel="alternate" type="application/atom+xml" title="Oliver Larsen" href="https://oalarsen.com/feed.xml" />
-    <link rel="alternate" type="text/plain" href="https://oalarsen.com/llms.txt" title="LLM-readable content" />
-    <meta name="theme-color" content="#0A0A0A" media="(prefers-color-scheme: dark)" />
-    <meta name="theme-color" content="#FAFAFA" media="(prefers-color-scheme: light)" />
-  </head>
-  <body>
-    <a class="skip-link" href="#main">Skip to main content</a>
-    <nav class="site-nav" aria-label="Primary">
-      <a class="brand" href="/">Oliver Larsen</a>
-      <div class="nav-right">
-        <div class="nav-desktop">
-          <a href="/publications/">Publications</a>
-          <a href="/projects/">Projects</a>
-          <a href="/blog/" class="is-active">Blog</a>
+    <meta name="author" content="Oliver Aleksander Larsen">
+    <meta name="description" content="Writing by Oliver Aleksander Larsen about what he is doing and thought-provoking ideas.">
+    <link rel="canonical" href="https://oalarsen.com/blog/">
+    <meta property="og:title" content="Blog - Oliver Aleksander Larsen">
+    <meta property="og:description" content="Writing by Oliver Aleksander Larsen about what he is doing and thought-provoking ideas.">
+    <meta property="og:url" content="https://oalarsen.com/blog/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Oliver Aleksander Larsen">
+    <meta property="og:image" content="https://oalarsen.com/assets/img/prof_pic.jpg">
+    <meta property="og:image:width" content="800">
+    <meta property="og:image:height" content="800">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Blog - Oliver Aleksander Larsen">
+    <meta name="twitter:description" content="Writing by Oliver Aleksander Larsen about what he is doing and thought-provoking ideas.">
+    <meta name="twitter:site" content="@OLarsen02">
+    <meta name="twitter:image" content="https://oalarsen.com/assets/img/prof_pic.jpg">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>">
+    
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/geist@1.3.0/dist/fonts/geist-sans/style.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/geist@1.3.0/dist/fonts/geist-mono/style.min.css">
+    <link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/npm/geist@1.3.0/dist/fonts/geist-sans/style.min.css">
+    <link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/npm/geist@1.3.0/dist/fonts/geist-mono/style.min.css">
+    <link rel="stylesheet" crossorigin href="/assets/index-BrQHhk5d.css">
+    <link rel="alternate" type="application/atom+xml" title="Oliver Larsen - Research Papers" href="https://oalarsen.com/feed.xml">
+    <link rel="alternate" type="text/plain" href="https://oalarsen.com/llms.txt" title="LLM-readable content">
+    <meta name="theme-color" content="#0A0A0A" media="(prefers-color-scheme: dark)">
+    <meta name="theme-color" content="#FAFAFA" media="(prefers-color-scheme: light)">
+    <style>
+      body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 720px; margin: 0 auto; padding: 32px 20px; color: #1a1a1a; line-height: 1.6; }
+      h1 { font-size: 1.5rem; margin-bottom: 0.5rem; }
+      h2 { font-size: 1.15rem; margin-bottom: 0.3rem; }
+      h2 a { color: #2563eb; }
+      section { margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid #e5e5e5; }
+      section:last-child { border-bottom: none; }
+    </style>
+</head>
+<body>
+    <script>
+      (function() {
+        try {
+          var redirect = sessionStorage.getItem('spa-redirect');
+          if (redirect) sessionStorage.removeItem('spa-redirect');
+          var path = redirect || location.pathname;
+          if (path.length > 1 && path.charAt(path.length - 1) === '/') path = path.slice(0, -1);
+          var next = path + location.search + location.hash;
+          if (redirect || path !== location.pathname) history.replaceState(null, '', next);
+        } catch (e) {}
+      })();
+    </script>
+
+    <div id="seo-content">
+        <nav style="margin-bottom:24px;font-size:0.9rem">
+          <a href="/">Home</a> ·
+          <a href="/publications/">Publications</a> ·
+          <a href="/projects/">Projects</a> ·
+          <a href="/blog/">Blog</a> ·
           <a href="/cv/">CV</a>
-        </div>
-        <button class="icon-btn" type="button" id="theme-toggle" aria-label="Toggle dark/light mode">
-          <svg id="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <circle cx="12" cy="12" r="5"></circle>
-            <line x1="12" y1="1" x2="12" y2="3"></line>
-            <line x1="12" y1="21" x2="12" y2="23"></line>
-            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-            <line x1="1" y1="12" x2="3" y2="12"></line>
-            <line x1="21" y1="12" x2="23" y2="12"></line>
-            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-          </svg>
-          <svg id="icon-moon" hidden width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-          </svg>
-        </button>
-        <button class="icon-btn nav-mobile-toggle" type="button" id="menu-toggle" aria-label="Open menu" aria-expanded="false">
-          <svg id="icon-menu" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <line x1="3" y1="12" x2="21" y2="12"></line>
-            <line x1="3" y1="6" x2="21" y2="6"></line>
-            <line x1="3" y1="18" x2="21" y2="18"></line>
-          </svg>
-          <svg id="icon-close" hidden width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <line x1="18" y1="6" x2="6" y2="18"></line>
-            <line x1="6" y1="6" x2="18" y2="18"></line>
-          </svg>
-        </button>
-      </div>
-    </nav>
-    <div class="nav-mobile" id="mobile-menu">
-      <a href="/">Home</a>
-      <a href="/publications/">Publications</a>
-      <a href="/projects/">Projects</a>
-      <a href="/blog/" class="is-active">Blog</a>
-      <a href="/cv/">CV</a>
+        </nav>
+        <h1>Blog</h1>
+        <p>This is where I write about what I am doing and thought-provoking ideas.</p>
+        <section>
+            <h2><a href="/blog/example-post/">Example: what a post looks like</a></h2>
+            <p>24 August 2026</p>
+            <p>A sample post so the listing and article layout can be checked. Not a real essay.</p>
+        </section>
     </div>
-    <main id="main">
-      <h1>Blog</h1>
-      <p class="lede">This is where I write about what I am doing and thought-provoking ideas.</p>
-      <ul class="post-list">
-        <li>
-          <a class="post-card" href="/blog/example-post/">
-            <h2>Example: what a post looks like</h2>
-            <p class="post-date"><time datetime="2026-08-24">24 August 2026</time></p>
-            <p class="post-excerpt">A sample post so the listing and article layout can be checked. Not a real essay.</p>
-          </a>
-        </li>
-      </ul>
-    </main>
-    <footer class="site-footer">
-      <div class="footer-links">
-        <a href="mailto:olar@mmmi.sdu.dk">olar@mmmi.sdu.dk</a>
-        <a href="https://github.com/Oliver1703dk" rel="noopener noreferrer">GitHub</a>
-        <a href="https://orcid.org/0009-0003-6944-2560" rel="noopener noreferrer">ORCID</a>
-        <a href="https://www.linkedin.com/in/oliver-larsen-b7bb89243/" rel="noopener noreferrer">LinkedIn</a>
-      </div>
-      <p>© 2026 Oliver Larsen · University of Southern Denmark</p>
-    </footer>
-    <script src="/blog/chrome.js" defer></script>
-  </body>
+    
+    <div id="root"></div>
+    <script type="module" crossorigin src="/assets/index-a36606d0.js"></script>
+    <script>
+      if (document.getElementById('root')) {
+        new MutationObserver(function(m, o) {
+          if (document.getElementById('root').children.length > 0) {
+            var seo = document.getElementById('seo-content');
+            if (seo) seo.style.display = 'none';
+            var b = document.body;
+            b.style.maxWidth = 'none';
+            b.style.margin = '0';
+            b.style.padding = '0';
+            b.style.color = 'inherit';
+            b.style.background = 'transparent';
+            o.disconnect();
+          }
+        }).observe(document.getElementById('root'), { childList: true });
+      }
+    </script>
+</body>
 </html>

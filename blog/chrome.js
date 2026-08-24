@@ -50,7 +50,8 @@
       pathname === '/cv' || pathname === '/cv/' ||
       pathname.indexOf('/papers/') === 0
     ) {
-      return pathname.slice(-1) === '/' || pathname === '/' ? pathname : pathname + '/';
+      if (pathname === '/') return '/';
+      return pathname.charAt(pathname.length - 1) === '/' ? pathname.slice(0, -1) : pathname;
     }
     return null;
   }
