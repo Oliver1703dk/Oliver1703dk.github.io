@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Oliver Aleksander Larsen - Research Papers</title>
-  <subtitle>Software architecture and AI research papers</subtitle>
+  <title>Oliver Aleksander Larsen</title>
+  <subtitle>Research papers and writing</subtitle>
   <link href="https://oalarsen.com/feed.xml" rel="self"/>
   <link href="https://oalarsen.com/"/>
   <id>https://oalarsen.com/</id>
@@ -10,6 +10,18 @@
     <name>Oliver Aleksander Larsen</name>
     <uri>https://oalarsen.com/</uri>
   </author>
+  <entry>
+    <title>Blog</title>
+    <link href="https://oalarsen.com/blog/" rel="alternate"/>
+    <id>https://oalarsen.com/blog/</id>
+    <published>2026-08-24T00:00:00Z</published>
+    <updated>2026-08-24T08:41:00Z</updated>
+    <summary>Writing about what I am doing and thought-provoking ideas. No posts yet.</summary>
+    <author>
+      <name>Oliver Aleksander Larsen</name>
+    </author>
+    <category term="blog"/>
+  </entry>
   <entry>
     <title>Persona-as-Configuration: Generative Stakeholder Reporting for Agricultural Floods</title>
     <link href="https://oalarsen.com/papers/persona-as-configuration/" rel="alternate"/>
