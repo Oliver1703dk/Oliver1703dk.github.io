@@ -24,7 +24,7 @@ Oliver Aleksander Larsen is an MSc Software Engineering student at the Universit
 - URL: https://oalarsen.com/blog/death-of-the-application/
 - Markdown: https://oalarsen.com/blog/death-of-the-application/index.md
 
-Software was a product because it was expensive to make. If intent can become working code on demand, the durable layer is protocols and data, not apps. Working idea, not a research result.
+A vision of a paradigm shift: if agentic coding tools make working software cheap, the application stops being the product. What lasts is protocols, data, and identity. Working idea, not a research result.
 
 ## Research Areas
 - Software Architecture for AI-Augmented Systems

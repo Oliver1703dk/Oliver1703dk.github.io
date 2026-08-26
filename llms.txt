@@ -9,7 +9,7 @@
 - [Publications](https://oalarsen.com/publications/): All 7 research papers
 - [Projects](https://oalarsen.com/projects/): Software projects including CarboPlanner
 - [Blog](https://oalarsen.com/blog/): Writing about what Oliver is doing and thought-provoking ideas
-- [The Death of the Application](https://oalarsen.com/blog/death-of-the-application/): Software was a product because it was expensive to make. If intent can become working code on demand, the durable layer is protocols and data, not apps.
+- [The Death of the Application](https://oalarsen.com/blog/death-of-the-application/): A vision of a paradigm shift: if agentic coding tools make working software cheap, the application stops being the product. What lasts is protocols, data, and identity.
   - Markdown: https://oalarsen.com/blog/death-of-the-application/index.md
 - [CV](https://oalarsen.com/cv/): Education, research, experience, and achievements
 - [Full Content](https://oalarsen.com/llms-full.txt): Complete site content for AI systems
