@@ -15,7 +15,7 @@
     <meta name="citation_conference_title" content="IEEE ICSA 2026, Software Architecture in Practice Track">
     <meta name="citation_language" content="en">
     <meta name="citation_arxiv_id" content="2604.03308">
-    <meta name="citation_pdf_url" content="https://arxiv.org/pdf/2604.03308">
+    <meta name="citation_pdf_url" content="https://oalarsen.com/papers/flood-detection/paper.pdf">
     <meta name="citation_publisher" content="IEEE">
 
     <!-- Open Graph -->
@@ -28,7 +28,7 @@
     <meta property="og:image:width" content="800">
     <meta property="og:image:height" content="800">
     <meta property="article:published_time" content="2026-04">
-    <meta property="article:modified_time" content="2026-08-24">
+    <meta property="article:modified_time" content="2026-08-26">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary">
@@ -76,7 +76,7 @@
     }
   ],
   "datePublished": "2026-04",
-  "dateModified": "2026-08-24",
+  "dateModified": "2026-08-26",
   "abstract": "Standing water in agricultural fields threatens vehicle mobility and crop health. This paper presents a deployed edge architecture for standing-water detection using Raspberry-Pi-class devices with optional Jetson acceleration. Camera input and environmental sensors (humidity, pressure, temperature) are combined in a finite-state machine (FSM) that acts as the architectural decision engine. The FSM-guided control plane selects between local and offloaded inference tiers, trading accuracy, latency, and energy under intermittent connectivity and motion-dependent compute budgets. A multi-model YOLO ensemble provides image scores, while diurnal-baseline sensor fusion adjusts caution using environmental anomalies. All decisions are logged per frame, enabling bit-identical hardware-in-the-loop replays. Across ten configurations and sensor variants on identical field sequences with frame-level ground truth, we show that the combination of adaptive tiering, multi-model consensus, and diurnal sensor fusion improves flood-detection performance over static local baselines, uses less energy than a naive always-heavy offload policy, and maintains bounded tail latency in a real agricultural setting.",
   "keywords": "edge computing, FSM orchestration, model tiering, multi-model consensus, sensor fusion",
   "isPartOf": {
@@ -95,6 +95,16 @@
   },
   "isAccessibleForFree": true,
   "sameAs": "https://arxiv.org/abs/2604.03308",
+  "encoding": {
+    "@type": "MediaObject",
+    "contentUrl": "https://oalarsen.com/papers/flood-detection/paper.pdf",
+    "encodingFormat": "application/pdf"
+  },
+  "associatedMedia": {
+    "@type": "MediaObject",
+    "contentUrl": "https://oalarsen.com/papers/flood-detection/paper.pdf",
+    "encodingFormat": "application/pdf"
+  },
   "codeRepository": "https://github.com/Oliver1703dk/flood_detection_system"
 }
     </script>
@@ -154,7 +164,8 @@
     {
       "@type": "ListItem",
       "position": 3,
-      "name": "Edge-Based Standing-Water Detection via FSM-Guided Tierin..."
+      "name": "Edge-Based Standing-Water Detection via FSM-Guided Tierin...",
+      "item": "https://oalarsen.com/papers/flood-detection/"
     }
   ]
 }
@@ -187,26 +198,13 @@
     <meta name="theme-color" content="#FAFAFA" media="(prefers-color-scheme: light)">
 </head>
 <body>
-    <script>
-      (function() {
-        try {
-          var redirect = sessionStorage.getItem('spa-redirect');
-          if (redirect) sessionStorage.removeItem('spa-redirect');
-          var path = redirect || location.pathname;
-          if (path.length > 1 && path.charAt(path.length - 1) === '/') path = path.slice(0, -1);
-          var next = path + location.search + location.hash;
-          if (redirect || path !== location.pathname) history.replaceState(null, '', next);
-        } catch (e) {}
-      })();
-    </script>
-
     <div id="seo-content">
     <nav style="margin-bottom:24px;font-size:0.9rem">
       <a href="/">Home</a> ·
       <a href="/publications/">Publications</a> ·
       <a href="/projects/">Projects</a> ·
       <a href="/blog/">Blog</a> ·
-          <a href="/cv/">CV</a>
+      <a href="/cv/">CV</a>
     </nav>
     <article>
         <h1>Edge-Based Standing-Water Detection via FSM-Guided Tiering and Multi-Model Consensus</h1>
@@ -233,6 +231,7 @@
 
         <section>
             <h2>Resources</h2>
+            <p><strong>PDF:</strong> <a href="https://oalarsen.com/papers/flood-detection/paper.pdf">https://oalarsen.com/papers/flood-detection/paper.pdf</a></p>
             <p><strong>arXiv:</strong> <a href="https://arxiv.org/abs/2604.03308">https://arxiv.org/abs/2604.03308</a></p>
             
             
@@ -277,19 +276,13 @@
     </div>
     
     <div id="root"></div>
-    <script type="module" crossorigin src="/assets/index-0242963f.js"></script>
+    <script type="module" crossorigin src="/assets/index-aH3OJb2p.js"></script>
     <script>
       if (document.getElementById('root')) {
         new MutationObserver(function(m, o) {
           if (document.getElementById('root').children.length > 0) {
             var seo = document.getElementById('seo-content');
             if (seo) seo.style.display = 'none';
-            var b = document.body;
-            b.style.maxWidth = 'none';
-            b.style.margin = '0';
-            b.style.padding = '0';
-            b.style.color = 'inherit';
-            b.style.background = 'transparent';
             o.disconnect();
           }
         }).observe(document.getElementById('root'), { childList: true });

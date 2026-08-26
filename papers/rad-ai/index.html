@@ -15,7 +15,7 @@
     <meta name="citation_conference_title" content="ANGE 2026 Workshop at IEEE ICSA 2026">
     <meta name="citation_language" content="en">
     <meta name="citation_arxiv_id" content="2603.28735">
-    <meta name="citation_pdf_url" content="https://arxiv.org/pdf/2603.28735">
+    <meta name="citation_pdf_url" content="https://oalarsen.com/papers/rad-ai/paper.pdf">
     <meta name="citation_publisher" content="IEEE">
 
     <!-- Open Graph -->
@@ -28,7 +28,7 @@
     <meta property="og:image:width" content="800">
     <meta property="og:image:height" content="800">
     <meta property="article:published_time" content="2026-03">
-    <meta property="article:modified_time" content="2026-08-24">
+    <meta property="article:modified_time" content="2026-08-26">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary">
@@ -76,7 +76,7 @@
     }
   ],
   "datePublished": "2026-03",
-  "dateModified": "2026-08-24",
+  "dateModified": "2026-08-26",
   "abstract": "AI-augmented ecosystems (interconnected systems where multiple AI components interact through shared data and infrastructure) are becoming the architectural norm for smart cities, autonomous fleets, and intelligent platforms. Yet the architecture documentation frameworks practitioners rely on, arc42 and the C4 model, were designed for deterministic software and cannot capture probabilistic behavior, data-dependent evolution, or dual ML/software lifecycles. This gap carries regulatory consequence: the EU AI Act (Regulation 2024/1689) mandates technical documentation through Annex IV that no existing framework provides structured support for, with enforcement for high-risk systems beginning August 2, 2026. We present RAD-AI, a backward-compatible extension framework that augments arc42 with eight AI-specific sections and C4 with three diagram extensions, complemented by a systematic EU AI Act Annex IV compliance mapping. A regulatory coverage assessment with six experienced software-architecture practitioners provides preliminary evidence that RAD-AI increases Annex IV addressability from approximately 36% to 93% (mean rating) and demonstrates substantial improvement over existing frameworks. Comparative analysis on two production AI platforms (Uber Michelangelo, Netflix Metaflow) captures eight additional AI-specific concerns missed by standard frameworks and demonstrates that documentation deficiencies are structural rather than domain-specific. An illustrative smart mobility ecosystem case study reveals ecosystem-level concerns, including cascading drift and differentiated compliance obligations, that are invisible under standard notation.",
   "keywords": "software architecture, architecture documentation, AI-augmented systems, arc42, C4 model, EU AI Act, machine learning, architecture decision records, ecosystems",
   "isPartOf": {
@@ -95,6 +95,16 @@
   },
   "isAccessibleForFree": true,
   "sameAs": "https://arxiv.org/abs/2603.28735",
+  "encoding": {
+    "@type": "MediaObject",
+    "contentUrl": "https://oalarsen.com/papers/rad-ai/paper.pdf",
+    "encodingFormat": "application/pdf"
+  },
+  "associatedMedia": {
+    "@type": "MediaObject",
+    "contentUrl": "https://oalarsen.com/papers/rad-ai/paper.pdf",
+    "encodingFormat": "application/pdf"
+  },
   "codeRepository": "https://github.com/Oliver1703dk/RAD-AI"
 }
     </script>
@@ -154,7 +164,8 @@
     {
       "@type": "ListItem",
       "position": 3,
-      "name": "RAD-AI: Rethinking Architecture Documentation for AI-Augm..."
+      "name": "RAD-AI: Rethinking Architecture Documentation for AI-Augm...",
+      "item": "https://oalarsen.com/papers/rad-ai/"
     }
   ]
 }
@@ -187,26 +198,13 @@
     <meta name="theme-color" content="#FAFAFA" media="(prefers-color-scheme: light)">
 </head>
 <body>
-    <script>
-      (function() {
-        try {
-          var redirect = sessionStorage.getItem('spa-redirect');
-          if (redirect) sessionStorage.removeItem('spa-redirect');
-          var path = redirect || location.pathname;
-          if (path.length > 1 && path.charAt(path.length - 1) === '/') path = path.slice(0, -1);
-          var next = path + location.search + location.hash;
-          if (redirect || path !== location.pathname) history.replaceState(null, '', next);
-        } catch (e) {}
-      })();
-    </script>
-
     <div id="seo-content">
     <nav style="margin-bottom:24px;font-size:0.9rem">
       <a href="/">Home</a> ·
       <a href="/publications/">Publications</a> ·
       <a href="/projects/">Projects</a> ·
       <a href="/blog/">Blog</a> ·
-          <a href="/cv/">CV</a>
+      <a href="/cv/">CV</a>
     </nav>
     <article>
         <h1>RAD-AI: Rethinking Architecture Documentation for AI-Augmented Ecosystems</h1>
@@ -233,6 +231,7 @@
 
         <section>
             <h2>Resources</h2>
+            <p><strong>PDF:</strong> <a href="https://oalarsen.com/papers/rad-ai/paper.pdf">https://oalarsen.com/papers/rad-ai/paper.pdf</a></p>
             <p><strong>arXiv:</strong> <a href="https://arxiv.org/abs/2603.28735">https://arxiv.org/abs/2603.28735</a></p>
             
             
@@ -277,19 +276,13 @@
     </div>
     
     <div id="root"></div>
-    <script type="module" crossorigin src="/assets/index-0242963f.js"></script>
+    <script type="module" crossorigin src="/assets/index-aH3OJb2p.js"></script>
     <script>
       if (document.getElementById('root')) {
         new MutationObserver(function(m, o) {
           if (document.getElementById('root').children.length > 0) {
             var seo = document.getElementById('seo-content');
             if (seo) seo.style.display = 'none';
-            var b = document.body;
-            b.style.maxWidth = 'none';
-            b.style.margin = '0';
-            b.style.padding = '0';
-            b.style.color = 'inherit';
-            b.style.background = 'transparent';
             o.disconnect();
           }
         }).observe(document.getElementById('root'), { childList: true });

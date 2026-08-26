@@ -27,7 +27,7 @@
     <meta property="og:image:width" content="800">
     <meta property="og:image:height" content="800">
     <meta property="article:published_time" content="2025-11">
-    <meta property="article:modified_time" content="2026-08-24">
+    <meta property="article:modified_time" content="2026-08-26">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary">
@@ -71,7 +71,7 @@
     }
   ],
   "datePublished": "2025-11",
-  "dateModified": "2026-08-24",
+  "dateModified": "2026-08-26",
   "abstract": "Athletes often struggle with static, rule-based meal plans that fail to adapt to evolving personal preferences and feedback, leading to reduced adherence and suboptimal nutrition for performance. This short communication introduces a hybrid large-language-model (LLM)-driven recommender system to personalize meal recommendations within CarboPlanner, a sports nutrition platform. The system combines in-context learning (ICL) for short-term adaptation via dynamic prompts incorporating user profiles, recent feedback, and meal candidates, with parameter-efficient fine-tuning (PEFT) using low-rank adaptation (LoRA) on the Mistral-7B-Instruct model for long-term, system-wide learning from accumulated feedback. Implemented as a modular Flask API integrated seamlessly into CarboPlanner's existing infrastructure (Flutter app, NestJS backend, and MongoDB database), the system processes athlete feedback through dual loops: immediate ICL updates and periodic PEFT retraining. Evaluation on 1000 test prompts from a held-out dataset demonstrated superior performance over baselines. The hybrid model achieved 46.7% prediction accuracy and 100% format adherence, outperforming the non-fine-tuned ICL-only model (41.5% accuracy, 39.7% format adherence) and random selection (20% accuracy, 100% format adherence).",
   "keywords": "LLM, LoRA, PEFT, meal recommendation, sports nutrition, Mistral-7B, in-context learning, recommender system",
   "isPartOf": {
@@ -86,6 +86,15 @@
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://oalarsen.com/papers/meal-recommender/"
+  },
+  "sameAs": [
+    "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6233133",
+    "https://doi.org/10.2139/ssrn.6233133"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "SSRN",
+    "value": "6233133"
   }
 }
     </script>
@@ -145,7 +154,8 @@
     {
       "@type": "ListItem",
       "position": 3,
-      "name": "Hybrid Large-Language-Model Meal Recommender System for A..."
+      "name": "Hybrid Large-Language-Model Meal Recommender System for A...",
+      "item": "https://oalarsen.com/papers/meal-recommender/"
     }
   ]
 }
@@ -178,26 +188,13 @@
     <meta name="theme-color" content="#FAFAFA" media="(prefers-color-scheme: light)">
 </head>
 <body>
-    <script>
-      (function() {
-        try {
-          var redirect = sessionStorage.getItem('spa-redirect');
-          if (redirect) sessionStorage.removeItem('spa-redirect');
-          var path = redirect || location.pathname;
-          if (path.length > 1 && path.charAt(path.length - 1) === '/') path = path.slice(0, -1);
-          var next = path + location.search + location.hash;
-          if (redirect || path !== location.pathname) history.replaceState(null, '', next);
-        } catch (e) {}
-      })();
-    </script>
-
     <div id="seo-content">
     <nav style="margin-bottom:24px;font-size:0.9rem">
       <a href="/">Home</a> ·
       <a href="/publications/">Publications</a> ·
       <a href="/projects/">Projects</a> ·
       <a href="/blog/">Blog</a> ·
-          <a href="/cv/">CV</a>
+      <a href="/cv/">CV</a>
     </nav>
     <article>
         <h1>Hybrid Large-Language-Model Meal Recommender System for Athletes: A Short Communication</h1>
@@ -224,6 +221,7 @@
 
         <section>
             <h2>Resources</h2>
+            
             
             <p><strong>SSRN:</strong> <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6233133">https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6233133</a></p>
             <p><strong>ResearchGate:</strong> <a href="https://www.researchgate.net/publication/400770955">https://www.researchgate.net/publication/400770955</a></p>
@@ -265,19 +263,13 @@
     </div>
     
     <div id="root"></div>
-    <script type="module" crossorigin src="/assets/index-0242963f.js"></script>
+    <script type="module" crossorigin src="/assets/index-aH3OJb2p.js"></script>
     <script>
       if (document.getElementById('root')) {
         new MutationObserver(function(m, o) {
           if (document.getElementById('root').children.length > 0) {
             var seo = document.getElementById('seo-content');
             if (seo) seo.style.display = 'none';
-            var b = document.body;
-            b.style.maxWidth = 'none';
-            b.style.margin = '0';
-            b.style.padding = '0';
-            b.style.color = 'inherit';
-            b.style.background = 'transparent';
             o.disconnect();
           }
         }).observe(document.getElementById('root'), { childList: true });

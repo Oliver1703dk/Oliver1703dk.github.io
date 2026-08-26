@@ -17,7 +17,7 @@
     <meta name="citation_conference_title" content="CASA 2026 Workshop at ECSA 2026">
     <meta name="citation_language" content="en">
     <meta name="citation_arxiv_id" content="2607.17774">
-    <meta name="citation_pdf_url" content="https://arxiv.org/pdf/2607.17774">
+    <meta name="citation_pdf_url" content="https://oalarsen.com/papers/persona-as-configuration/paper.pdf">
     <meta name="citation_publisher" content="Springer">
 
     <!-- Open Graph -->
@@ -30,7 +30,7 @@
     <meta property="og:image:width" content="800">
     <meta property="og:image:height" content="800">
     <meta property="article:published_time" content="2026-07">
-    <meta property="article:modified_time" content="2026-08-24">
+    <meta property="article:modified_time" content="2026-08-26">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary">
@@ -88,7 +88,7 @@
     }
   ],
   "datePublished": "2026-07",
-  "dateModified": "2026-08-24",
+  "dateModified": "2026-08-26",
   "abstract": "Cyber-physical systems built on deterministic edge inference, such as on-vehicle flood detection for agricultural fields, produce structured decision logs that must be interpreted differently by heterogeneous stakeholders. Pairing such systems with large language models (LLMs) to generate stakeholder-specific reports introduces a tension: the generative layer is non-deterministic, while the edge plane must remain replayable and auditable. We propose an architectural pattern resting on two invariants: unidirectional consumption, in which the generative layer is a strict read-only consumer of the deterministic plane and never writes back, and persona-as-configuration, in which stakeholder adaptation is a versioned prompt-template artifact rather than runtime improvisation. We instantiate the pattern as a context-aware dashboard layer over the JSON decision logs of a previously published edge-based standing-water detection system, and analyse how the integration boundary admits standard generative-reliability mitigations as configuration- or middleware-level extension points. A structured expert review rated the pattern favourably across five ISO/IEC 25010-aligned quality dimensions, with strongest agreement on separation of concerns. End-user evaluation with agricultural stakeholders is planned for future work.",
   "keywords": "software architecture, generative AI, persona pattern, trust boundary, audit, cyber-physical systems, edge decision logs",
   "isPartOf": {
@@ -107,6 +107,16 @@
   },
   "isAccessibleForFree": true,
   "sameAs": "https://arxiv.org/abs/2607.17774",
+  "encoding": {
+    "@type": "MediaObject",
+    "contentUrl": "https://oalarsen.com/papers/persona-as-configuration/paper.pdf",
+    "encodingFormat": "application/pdf"
+  },
+  "associatedMedia": {
+    "@type": "MediaObject",
+    "contentUrl": "https://oalarsen.com/papers/persona-as-configuration/paper.pdf",
+    "encodingFormat": "application/pdf"
+  },
   "codeRepository": "https://github.com/Oliver1703dk/generative-reporting-for-agricultural-floods"
 }
     </script>
@@ -166,7 +176,8 @@
     {
       "@type": "ListItem",
       "position": 3,
-      "name": "Persona-as-Configuration: Generative Stakeholder Reportin..."
+      "name": "Persona-as-Configuration: Generative Stakeholder Reportin...",
+      "item": "https://oalarsen.com/papers/persona-as-configuration/"
     }
   ]
 }
@@ -199,26 +210,13 @@
     <meta name="theme-color" content="#FAFAFA" media="(prefers-color-scheme: light)">
 </head>
 <body>
-    <script>
-      (function() {
-        try {
-          var redirect = sessionStorage.getItem('spa-redirect');
-          if (redirect) sessionStorage.removeItem('spa-redirect');
-          var path = redirect || location.pathname;
-          if (path.length > 1 && path.charAt(path.length - 1) === '/') path = path.slice(0, -1);
-          var next = path + location.search + location.hash;
-          if (redirect || path !== location.pathname) history.replaceState(null, '', next);
-        } catch (e) {}
-      })();
-    </script>
-
     <div id="seo-content">
     <nav style="margin-bottom:24px;font-size:0.9rem">
       <a href="/">Home</a> ·
       <a href="/publications/">Publications</a> ·
       <a href="/projects/">Projects</a> ·
       <a href="/blog/">Blog</a> ·
-          <a href="/cv/">CV</a>
+      <a href="/cv/">CV</a>
     </nav>
     <article>
         <h1>Persona-as-Configuration: Generative Stakeholder Reporting for Agricultural Floods</h1>
@@ -245,6 +243,7 @@
 
         <section>
             <h2>Resources</h2>
+            <p><strong>PDF:</strong> <a href="https://oalarsen.com/papers/persona-as-configuration/paper.pdf">https://oalarsen.com/papers/persona-as-configuration/paper.pdf</a></p>
             <p><strong>arXiv:</strong> <a href="https://arxiv.org/abs/2607.17774">https://arxiv.org/abs/2607.17774</a></p>
             
             
@@ -292,19 +291,13 @@
     </div>
     
     <div id="root"></div>
-    <script type="module" crossorigin src="/assets/index-0242963f.js"></script>
+    <script type="module" crossorigin src="/assets/index-aH3OJb2p.js"></script>
     <script>
       if (document.getElementById('root')) {
         new MutationObserver(function(m, o) {
           if (document.getElementById('root').children.length > 0) {
             var seo = document.getElementById('seo-content');
             if (seo) seo.style.display = 'none';
-            var b = document.body;
-            b.style.maxWidth = 'none';
-            b.style.margin = '0';
-            b.style.padding = '0';
-            b.style.color = 'inherit';
-            b.style.background = 'transparent';
             o.disconnect();
           }
         }).observe(document.getElementById('root'), { childList: true });
