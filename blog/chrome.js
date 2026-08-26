@@ -42,7 +42,9 @@
 
   function spaPath(pathname) {
     if (!pathname) return null;
-    if (pathname === '/blog' || pathname === '/blog/' || pathname.indexOf('/blog/') === 0) return null;
+    // Individual posts stay on static HTML. The listing belongs in the SPA.
+    if (pathname.indexOf('/blog/') === 0 && pathname !== '/blog/') return null;
+    if (pathname === '/blog' || pathname === '/blog/') return '/blog';
     if (pathname === '/') return '/';
     if (
       pathname === '/publications' || pathname === '/publications/' ||
@@ -50,7 +52,6 @@
       pathname === '/cv' || pathname === '/cv/' ||
       pathname.indexOf('/papers/') === 0
     ) {
-      if (pathname === '/') return '/';
       return pathname.charAt(pathname.length - 1) === '/' ? pathname.slice(0, -1) : pathname;
     }
     return null;
