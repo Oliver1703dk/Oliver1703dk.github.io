@@ -20,6 +20,36 @@
     <meta name="twitter:description" content="Writing by Oliver Aleksander Larsen about what he is doing and thought-provoking ideas.">
     <meta name="twitter:site" content="@OLarsen02">
     <meta name="twitter:image" content="https://oalarsen.com/assets/img/prof_pic.jpg">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "Blog - Oliver Aleksander Larsen",
+  "description": "Writing by Oliver Aleksander Larsen about what he is doing and thought-provoking ideas.",
+  "url": "https://oalarsen.com/blog/",
+  "mainEntity": {
+    "@type": "ItemList",
+    "numberOfItems": 1,
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@type": "BlogPosting",
+          "headline": "The Death of the Application",
+          "description": "Software was a product because it was expensive to make. If intent can become working code on demand, the durable layer is protocols and data, not apps.",
+          "url": "https://oalarsen.com/blog/death-of-the-application/",
+          "datePublished": "2026-08-26",
+          "author": {
+            "@type": "Person",
+            "name": "Oliver Aleksander Larsen"
+          }
+        }
+      }
+    ]
+  }
+}
+    </script>
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>">
     
     <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
@@ -42,19 +72,6 @@
     </style>
 </head>
 <body>
-    <script>
-      (function() {
-        try {
-          var redirect = sessionStorage.getItem('spa-redirect');
-          if (redirect) sessionStorage.removeItem('spa-redirect');
-          var path = redirect || location.pathname;
-          if (path.length > 1 && path.charAt(path.length - 1) === '/') path = path.slice(0, -1);
-          var next = path + location.search + location.hash;
-          if (redirect || path !== location.pathname) history.replaceState(null, '', next);
-        } catch (e) {}
-      })();
-    </script>
-
     <div id="seo-content">
         <nav style="margin-bottom:24px;font-size:0.9rem">
           <a href="/">Home</a> ·
@@ -65,27 +82,22 @@
         </nav>
         <h1>Blog</h1>
         <p>This is where I write about what I am doing and thought-provoking ideas.</p>
+
         <section>
-            <h2><a href="/blog/example-post/">Example: what a post looks like</a></h2>
-            <p>24 August 2026</p>
-            <p>A sample post so the listing and article layout can be checked. Not a real essay.</p>
+            <h2><a href="/blog/death-of-the-application/">The Death of the Application</a></h2>
+            <p>26 August 2026</p>
+            <p>Software was a product because it was expensive to make. If intent can become working code on demand, the durable layer is protocols and data, not apps.</p>
         </section>
     </div>
     
     <div id="root"></div>
-    <script type="module" crossorigin src="/assets/index-0242963f.js"></script>
+    <script type="module" crossorigin src="/assets/index-DFq44SWh.js"></script>
     <script>
       if (document.getElementById('root')) {
         new MutationObserver(function(m, o) {
           if (document.getElementById('root').children.length > 0) {
             var seo = document.getElementById('seo-content');
             if (seo) seo.style.display = 'none';
-            var b = document.body;
-            b.style.maxWidth = 'none';
-            b.style.margin = '0';
-            b.style.padding = '0';
-            b.style.color = 'inherit';
-            b.style.background = 'transparent';
             o.disconnect();
           }
         }).observe(document.getElementById('root'), { childList: true });

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Death of the Application - Oliver Aleksander Larsen</title>
+    <meta name="description" content="Software was a product because it was expensive to make. If intent can become working code on demand, the durable layer is protocols and data, not apps." />
+    <meta name="author" content="Oliver Aleksander Larsen" />
+    <link rel="canonical" href="https://oalarsen.com/blog/death-of-the-application/" />
+    <meta property="og:title" content="The Death of the Application" />
+    <meta property="og:description" content="Software was a product because it was expensive to make. If intent can become working code on demand, the durable layer is protocols and data, not apps." />
+    <meta property="og:url" content="https://oalarsen.com/blog/death-of-the-application/" />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="Oliver Aleksander Larsen" />
+    <meta property="og:image" content="https://oalarsen.com/assets/img/prof_pic.jpg" />
+    <meta property="article:published_time" content="2026-08-26" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@OLarsen02" />
+    <meta name="twitter:title" content="The Death of the Application" />
+    <meta name="twitter:description" content="Software was a product because it was expensive to make. If intent can become working code on demand, the durable layer is protocols and data, not apps." />
+    <meta name="twitter:image" content="https://oalarsen.com/assets/img/prof_pic.jpg" />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/geist@1.3.0/dist/fonts/geist-sans/style.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/geist@1.3.0/dist/fonts/geist-mono/style.min.css" />
+    <link rel="stylesheet" href="/blog/styles.css" />
+    <link rel="alternate" type="application/atom+xml" title="Oliver Larsen" href="https://oalarsen.com/feed.xml" />
+    <link rel="alternate" type="text/plain" href="https://oalarsen.com/llms.txt" title="LLM-readable content" />
+    <meta name="theme-color" content="#0A0A0A" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#FAFAFA" media="(prefers-color-scheme: light)" />
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "The Death of the Application",
+      "description": "Software was a product because it was expensive to make. If intent can become working code on demand, the durable layer is protocols and data, not apps.",
+      "datePublished": "2026-08-26",
+      "url": "https://oalarsen.com/blog/death-of-the-application/",
+      "mainEntityOfPage": "https://oalarsen.com/blog/death-of-the-application/",
+      "author": {
+        "@type": "Person",
+        "name": "Oliver Aleksander Larsen",
+        "url": "https://oalarsen.com/"
+      }
+    }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <nav class="site-nav" aria-label="Primary">
+      <a class="brand" href="/">Oliver Larsen</a>
+      <div class="nav-right">
+        <div class="nav-desktop">
+          <a href="/publications/">Publications</a>
+          <a href="/projects/">Projects</a>
+          <a href="/blog/" class="is-active">Blog</a>
+          <a href="/cv/">CV</a>
+        </div>
+        <button class="icon-btn" type="button" id="theme-toggle" aria-label="Toggle dark/light mode">
+          <svg id="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg id="icon-moon" hidden width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+        <button class="icon-btn nav-mobile-toggle" type="button" id="menu-toggle" aria-label="Open menu" aria-expanded="false">
+          <svg id="icon-menu" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+          <svg id="icon-close" hidden width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </nav>
+    <div class="nav-mobile" id="mobile-menu">
+      <a href="/">Home</a>
+      <a href="/publications/">Publications</a>
+      <a href="/projects/">Projects</a>
+      <a href="/blog/" class="is-active">Blog</a>
+      <a href="/cv/">CV</a>
+    </div>
+    <main id="main">
+      <article>
+        <a class="back" href="/blog/">← Back to Blog</a>
+        <h1>The Death of the Application</h1>
+        <p class="post-date"><time datetime="2026-08-26">26 August 2026</time></p>
+        <p>I keep installing the same class of app. A client, a dashboard, a settings page, an account model, a two-year roadmap. Then I spend an evening in Cursor and watch a working thing appear from a paragraph of intent. The mismatch is getting hard to ignore. Applications exist because software used to be expensive. You wrote it once, you shipped it to a million people who were similar enough, and you amortized the cost. If the cost of getting to working code keeps collapsing, that deal does not hold.</p>
+        <p>I'm doing an MSc in software engineering at SDU. A lot of my week is still the old shape. Papers. Systems that are supposed to last. The other half is agentic tools. I point Cursor at a messy folder and, sometimes in minutes, I have something that runs. Not something I would ship. Not something I would bet a company on. But it does the thing I asked. Fit to the task I actually had that night, not to a persona in a product doc.</p>
+        <p>That is the part I keep coming back to. The persistent, versioned application is an economic object. It exists because writing software was slow enough that you had to spread the cost. You do not build a unique program for one person if it takes a team a year. You build one program for a market.</p>
+        <p>I don't think that constraint survives if agents keep getting better at the "make this work" part.</p>
+        <p>I want to be boringly specific. I am not saying design is free. I am not saying you can skip the domain. Generated code is often junk. I generate junk all the time and I throw most of it away. The weird part is that throwing it away is fine. It cost an evening, sometimes twenty minutes. The artifact was never the point. The intent was.</p>
+        <p>If that becomes normal, software stops looking like a product. It starts looking like a query plan. You state what you want. The engine compiles a plan. The plan runs. Then it is gone. Nobody versions the plan. Nobody sells it to a million users. The database is what lasts. The query language is what lasts. The plan is an ephemeral crystallization of intent, used once.</p>
+        <p>I keep catching myself treating generated tools the same way. I need a converter. A report. A one-off dashboard over a JSON dump from an experiment. I describe it. I get a thing. I use it. I do not open a ticket for v2. There is no installed base. The next time the need is slightly different, I generate again.</p>
+        <p>Logic, in that loop, is disposable. That sounds sloppy until you remember query planners already work like this. Nobody mourns the plan.</p>
+        <h2>What actually has to last</h2>
+        <p>Disposable logic is only tolerable if the stuff underneath is not.</p>
+        <p>I care about this because I work on architecture, not demos. If the program is allowed to vanish, something still has to be there in the morning. The data, for a start. The records I touched. Who may read them. A generated script that quietly copies a private table into some random cloud is not a cute prototype. It is a leak. So the store has to last. Permissions too. Provenance, or you cannot explain what happened after the process is gone.</p>
+        <p>How the short-lived programs talk matters just as much, and it is the boring part everyone wants to skip. If every generated tool invents its own API, you do not get a system. You get a pile of one-offs that cannot see each other. Message shapes. Auth. The capability boundary nobody wants to specify until something breaks. That protocol layer is what has to stay stable. The generated code can be sloppy if it is speaking a language that is not.</p>
+        <p>Identity is the one I underweighted for a while. Who asked for this program. On whose behalf it ran. What it was allowed to do. A query plan is sandboxed by the engine. Generated software is not, unless something engine-shaped sits around it. Otherwise cheap generation just scales accidents.</p>
+        <p>I am not trying to turn that into a framework. It is just where the durability moved, in my head. Down. Out of the application, into protocols, data, identity. The app becomes a brief condensation on top.</p>
+        <h2>Why this clicked for me now</h2>
+        <p>I have a paper at SEAA this year on architectural quality under agentic AI. I mined 151 Java repositories. Smell counts basically did not move. Lines of code grew 12.8%. Density looked better because the denominator grew, not because the architecture got healthier. That is not evidence that applications are dying. It is a much smaller claim: agents are already inside how real codebases grow, and the old quality story does not automatically improve when they show up.</p>
+        <p>Still. Sitting with that result, then going back to Cursor the same week, the two pictures collided. In those repos the application is still the unit. People keep adding to it. The artifact persists. In my own evenings the unit is the task. The artifact is optional. I think both can be true at once, for a while. The second one is the one that will not stay in the evenings.</p>
+        <p>If generating working software from intent keeps getting cheaper, a lot of the objects architects treat as sacred lose their job. API stability contracts assume you will meet the same provider again. Upgrade paths too. Installed bases. Those objects made sense when the program was the product. A thing that exists for one user, one task, one hour does not need them in the same way.</p>
+        <p>What the work looks like, if I am even half right, is not designing the application. It is designing the substrate it condenses on. Isolation so you can throw the program away. Replay so you can trust what it did. A protocol two throwaway programs can share. A data layer you would still trust after the process is gone. I do not have a method for that. I am supposed to be studying architecture under AI, and this is the question I cannot shake: maybe architecture is polishing the wrong long-lived object.</p>
+        <p>This is not a finding. It is an idea I am chewing on. I wrote it down because I notice myself reaching for a product when what I actually needed was a plan, and I don't think I am the only one.</p>
+      </article>
+    </main>
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="mailto:olar@mmmi.sdu.dk">olar@mmmi.sdu.dk</a>
+        <a href="https://github.com/Oliver1703dk" rel="noopener noreferrer">GitHub</a>
+        <a href="https://orcid.org/0009-0003-6944-2560" rel="noopener noreferrer">ORCID</a>
+        <a href="https://www.linkedin.com/in/oliver-larsen-b7bb89243/" rel="noopener noreferrer">LinkedIn</a>
+      </div>
+      <p>© 2026 Oliver Larsen · University of Southern Denmark</p>
+    </footer>
+    <script src="/blog/chrome.js" defer></script>
+  </body>
+</html>
