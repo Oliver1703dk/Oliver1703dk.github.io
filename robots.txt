@@ -2,12 +2,10 @@
 User-agent: *
 Allow: /
 
-# AI search crawlers (ALLOW for GEO)
-User-agent: GPTBot
+# AI search indexers and user-triggered fetchers (ALLOW for citations)
+User-agent: OAI-SearchBot
 Allow: /
 User-agent: ChatGPT-User
-Allow: /
-User-agent: OAI-SearchBot
 Allow: /
 User-agent: PerplexityBot
 Allow: /
@@ -17,20 +15,24 @@ User-agent: Claude-SearchBot
 Allow: /
 User-agent: Claude-User
 Allow: /
-User-agent: Google-Extended
-Allow: /
-User-agent: Applebot-Extended
-Allow: /
-User-agent: cohere-ai
-Allow: /
 User-agent: YouBot
 Allow: /
 User-agent: Amazonbot
 Allow: /
-User-agent: Meta-ExternalAgent
+User-agent: Amzn-SearchBot
+Allow: /
+User-agent: DuckAssistBot
+Allow: /
+User-agent: MistralAI-User
+Allow: /
+User-agent: Meta-ExternalFetcher
+Allow: /
+User-agent: Google-CloudVertexBot
 Allow: /
 
-# AI training crawlers (BLOCK)
+# AI training crawlers (BLOCK unless Oliver says otherwise)
+User-agent: GPTBot
+Disallow: /
 User-agent: ClaudeBot
 Disallow: /
 User-agent: CCBot
@@ -38,6 +40,16 @@ Disallow: /
 User-agent: Bytespider
 Disallow: /
 User-agent: PetalBot
+Disallow: /
+User-agent: Google-Extended
+Disallow: /
+User-agent: Applebot-Extended
+Disallow: /
+User-agent: Meta-ExternalAgent
+Disallow: /
+User-agent: cohere-ai
+Disallow: /
+User-agent: anthropic-ai
 Disallow: /
 
 Sitemap: https://oalarsen.com/sitemap.xml
