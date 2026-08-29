@@ -5,11 +5,23 @@
   <link href="https://oalarsen.com/feed.xml" rel="self"/>
   <link href="https://oalarsen.com/"/>
   <id>https://oalarsen.com/</id>
-  <updated>2026-08-26T11:01:58.962Z</updated>
+  <updated>2026-08-29T12:00:00Z</updated>
   <author>
     <name>Oliver Aleksander Larsen</name>
     <uri>https://oalarsen.com/</uri>
   </author>
+    <entry>
+    <title>Self-Architecting Systems</title>
+    <link href="https://oalarsen.com/blog/self-architecting-systems/" rel="alternate"/>
+    <id>https://oalarsen.com/blog/self-architecting-systems/</id>
+    <published>2026-08-29T00:00:00Z</published>
+    <updated>2026-08-29T12:00:00Z</updated>
+    <summary>A vision of a shift: if agents can change structure continuously, architecture stops being a drawing you finish and becomes a control loop. The human designs the envelope, not the structure.</summary>
+    <author>
+      <name>Oliver Aleksander Larsen</name>
+    </author>
+    <category term="blog"/>
+  </entry>
   <entry>
     <title>The Death of the Application</title>
     <link href="https://oalarsen.com/blog/death-of-the-application/" rel="alternate"/>

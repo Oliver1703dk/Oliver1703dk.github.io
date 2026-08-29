@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Self-Architecting Systems - Oliver Aleksander Larsen</title>
+    <meta name="description" content="A vision of a shift: if agents can change structure continuously, architecture stops being a drawing you finish and becomes a control loop. The human designs the envelope, not the structure." />
+    <meta name="author" content="Oliver Aleksander Larsen" />
+    <link rel="canonical" href="https://oalarsen.com/blog/self-architecting-systems/" />
+    <meta property="og:title" content="Self-Architecting Systems" />
+    <meta property="og:description" content="A vision of a shift: if agents can change structure continuously, architecture stops being a drawing you finish and becomes a control loop. The human designs the envelope, not the structure." />
+    <meta property="og:url" content="https://oalarsen.com/blog/self-architecting-systems/" />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="Oliver Aleksander Larsen" />
+    <meta property="og:image" content="https://oalarsen.com/assets/img/prof_pic.jpg" />
+    <meta property="article:published_time" content="2026-08-29" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@OLarsen02" />
+    <meta name="twitter:title" content="Self-Architecting Systems" />
+    <meta name="twitter:description" content="A vision of a shift: if agents can change structure continuously, architecture stops being a drawing you finish and becomes a control loop. The human designs the envelope, not the structure." />
+    <meta name="twitter:image" content="https://oalarsen.com/assets/img/prof_pic.jpg" />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/geist@1.3.0/dist/fonts/geist-sans/style.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/geist@1.3.0/dist/fonts/geist-mono/style.min.css" />
+    <link rel="stylesheet" href="/blog/styles.css" />
+    <link rel="alternate" type="application/atom+xml" title="Oliver Larsen" href="https://oalarsen.com/feed.xml" />
+    <link rel="alternate" type="text/plain" href="https://oalarsen.com/llms.txt" title="LLM-readable content" />
+    <meta name="theme-color" content="#0A0A0A" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#FAFAFA" media="(prefers-color-scheme: light)" />
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "Self-Architecting Systems",
+      "description": "A vision of a shift: if agents can change structure continuously, architecture stops being a drawing you finish and becomes a control loop. The human designs the envelope, not the structure.",
+      "datePublished": "2026-08-29",
+      "url": "https://oalarsen.com/blog/self-architecting-systems/",
+      "mainEntityOfPage": "https://oalarsen.com/blog/self-architecting-systems/",
+      "author": {
+        "@type": "Person",
+        "name": "Oliver Aleksander Larsen",
+        "url": "https://oalarsen.com/"
+      }
+    }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <nav class="site-nav" aria-label="Primary">
+      <a class="brand" href="/">Oliver Larsen</a>
+      <div class="nav-right">
+        <div class="nav-desktop">
+          <a href="/publications/">Publications</a>
+          <a href="/projects/">Projects</a>
+          <a href="/blog/" class="is-active">Blog</a>
+          <a href="/cv/">CV</a>
+        </div>
+        <button class="icon-btn" type="button" id="theme-toggle" aria-label="Toggle dark/light mode">
+          <svg id="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg id="icon-moon" hidden width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+        <button class="icon-btn nav-mobile-toggle" type="button" id="menu-toggle" aria-label="Open menu" aria-expanded="false">
+          <svg id="icon-menu" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+          <svg id="icon-close" hidden width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </nav>
+    <div class="nav-mobile" id="mobile-menu">
+      <a href="/">Home</a>
+      <a href="/publications/">Publications</a>
+      <a href="/projects/">Projects</a>
+      <a href="/blog/" class="is-active">Blog</a>
+      <a href="/cv/">CV</a>
+    </div>
+    <main id="main">
+      <article>
+        <a class="back" href="/blog/">← Back to Blog</a>
+        <h1>Self-Architecting Systems</h1>
+        <p class="post-date"><time datetime="2026-08-29">29 August 2026</time></p>
+        <p>This is a vision, not a finding. I think the split between design time and run time is about to stop being a law of nature.</p>
+        <p>Software architecture has always rested on that split. Humans make structural decisions slowly. Systems execute them. The split exists because we architect slowly, not because the system is forbidden from changing its own shape.</p>
+        <p>I think agentic AI dissolves that reason. If an agent can propose a change, score it against a quality, and apply it, architecture is not a document you freeze. It is a loop. Something inside the running system keeps the qualities from drifting while load, requirements, and the environment move.</p>
+        <p>The human job shifts. You do not draw the structure. You design the envelope the structure is allowed to live in. Fitness functions. Constraints. What it must never do. Classical architecture documentation becomes input. Conformance checking stops being a quarterly audit and becomes continuous.</p>
+        <p>That sounds clean. It is not.</p>
+        <h2>Design time was a speed limit</h2>
+        <p>We treated design time as a phase because people are slow. You could not re-decide the module boundary every hour. So you decided once, you wrote it down, you hoped it survived contact with production.</p>
+        <p>If an agent can re-decide cheaply, "once" is a habit, not a necessity. The structure can move. What has to stay still is the thing that judges the movement.</p>
+        <p>That judge is the new artifact. Not the diagram. The envelope.</p>
+        <h2>What I am afraid of</h2>
+        <p>Fitness-function gaming is the obvious one. You get what you measure. If the agent is rewarded for latency, it will sell the things you forgot to name.</p>
+        <p>Oscillation is the quieter one. Apply, revert, apply. The system is busy being correct and never still.</p>
+        <p>The one that bothers me more is literacy. If the loop is competent, people stop practicing. Then the day the envelope is wrong, nobody in the room can see it.</p>
+        <p>I am not trying to turn this into a framework. I think the research problem of the next decade is not how to architect systems with AI. It is how to architect the architect.</p>
+        <p>Most systems today are still designed by people, once, and then operated. This is a vision of the shift, not a map of the present. The question I cannot shake is whether we keep treating architecture as a drawing we finish, while the drawing is about to start drawing itself.</p>
+      </article>
+    </main>
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="mailto:olar@mmmi.sdu.dk">olar@mmmi.sdu.dk</a>
+        <a href="https://github.com/Oliver1703dk" rel="noopener noreferrer">GitHub</a>
+        <a href="https://orcid.org/0009-0003-6944-2560" rel="noopener noreferrer">ORCID</a>
+        <a href="https://www.linkedin.com/in/oliver-larsen-b7bb89243/" rel="noopener noreferrer">LinkedIn</a>
+      </div>
+      <p>© 2026 Oliver Larsen · University of Southern Denmark</p>
+    </footer>
+    <script src="/blog/chrome.js" defer></script>
+  </body>
+</html>

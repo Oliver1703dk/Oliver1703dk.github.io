@@ -11,6 +11,7 @@
 - Publications: https://oalarsen.com/publications/
 - Projects: https://oalarsen.com/projects/
 - Blog: https://oalarsen.com/blog/
+- Self-Architecting Systems: https://oalarsen.com/blog/self-architecting-systems/
 - The Death of the Application: https://oalarsen.com/blog/death-of-the-application/
 - CV: https://oalarsen.com/cv/
 
@@ -18,6 +19,13 @@
 Oliver Aleksander Larsen is an MSc Software Engineering student at the University of Southern Denmark, supervised by Mahyar T. Moghaddam. His research covers edge computing, AI governance (EU AI Act), blockchain architecture, LLM middleware, and causal studies of AI-assisted development. He is also co-founder and CTO of CarboPlanner, a sports nutrition startup that raised 1,090,000 DKK.
 
 ## Blog
+
+### Self-Architecting Systems
+- Date: 29 August 2026
+- URL: https://oalarsen.com/blog/self-architecting-systems/
+- Markdown: https://oalarsen.com/blog/self-architecting-systems/index.md
+
+A vision of a shift: if agents can change structure continuously, architecture stops being a drawing you finish and becomes a control loop. The human designs the envelope, not the structure. Working idea, not a research result.
 
 ### The Death of the Application
 - Date: 26 August 2026

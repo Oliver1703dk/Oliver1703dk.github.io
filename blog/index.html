@@ -29,11 +29,26 @@
   "url": "https://oalarsen.com/blog/",
   "mainEntity": {
     "@type": "ItemList",
-    "numberOfItems": 1,
+    "numberOfItems": 2,
     "itemListElement": [
       {
         "@type": "ListItem",
         "position": 1,
+        "item": {
+          "@type": "BlogPosting",
+          "headline": "Self-Architecting Systems",
+          "description": "A vision of a shift: if agents can change structure continuously, architecture stops being a drawing you finish and becomes a control loop. The human designs the envelope, not the structure.",
+          "url": "https://oalarsen.com/blog/self-architecting-systems/",
+          "datePublished": "2026-08-29",
+          "author": {
+            "@type": "Person",
+            "name": "Oliver Aleksander Larsen"
+          }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
         "item": {
           "@type": "BlogPosting",
           "headline": "The Death of the Application",
@@ -84,6 +99,11 @@
         <p>This is where I write about what I am doing and thought-provoking ideas.</p>
 
         <section>
+            <h2><a href="/blog/self-architecting-systems/">Self-Architecting Systems</a></h2>
+            <p>29 August 2026</p>
+            <p>A vision of a shift: if agents can change structure continuously, architecture stops being a drawing you finish and becomes a control loop. The human designs the envelope, not the structure.</p>
+        </section>
+        <section>
             <h2><a href="/blog/death-of-the-application/">The Death of the Application</a></h2>
             <p>26 August 2026</p>
             <p>A vision of a paradigm shift: if agentic coding tools make working software cheap, the application stops being the product. What lasts is protocols, data, and identity.</p>
@@ -91,7 +111,7 @@
     </div>
     
     <div id="root"></div>
-    <script type="module" crossorigin src="/assets/index-204f6e48.js"></script>
+    <script type="module" crossorigin src="/assets/index-cdaf1eb6.js"></script>
     <script>
       if (document.getElementById('root')) {
         new MutationObserver(function(m, o) {
