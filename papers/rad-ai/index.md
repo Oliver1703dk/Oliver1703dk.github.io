@@ -4,6 +4,8 @@
 - Authors: Oliver Aleksander Larsen, Mahyar T. Moghaddam
 - Venue: ANGE 2026 Workshop at IEEE ICSA 2026
 - arXiv: https://arxiv.org/abs/2603.28735
+- DOI: https://doi.org/10.1109/icsa-c68850.2026.00054
+- IEEE Xplore: https://ieeexplore.ieee.org/document/11641201
 - PDF: https://oalarsen.com/papers/rad-ai/paper.pdf
 - Code: https://github.com/Oliver1703dk/RAD-AI
 

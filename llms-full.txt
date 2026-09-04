@@ -101,6 +101,8 @@ With a staggered difference-in-differences design and the Borusyak imputation es
 - Venue: IEEE ICSA 2026, Software Architecture in Practice Track
 - Keywords: edge computing, FSM orchestration, model tiering, multi-model consensus, sensor fusion
 - arXiv: https://arxiv.org/abs/2604.03308
+- DOI: https://doi.org/10.1109/icsa-c68850.2026.00016
+- IEEE Xplore: https://ieeexplore.ieee.org/document/11641159
 
 
 - Code: https://github.com/Oliver1703dk/flood_detection_system
@@ -127,6 +129,8 @@ The multi-model consensus approach with diurnal sensor fusion achieves robust de
 - Venue: ANGE 2026 Workshop at IEEE ICSA 2026
 - Keywords: software architecture, architecture documentation, AI-augmented systems, arc42, C4 model, EU AI Act, machine learning, architecture decision records, ecosystems
 - arXiv: https://arxiv.org/abs/2603.28735
+- DOI: https://doi.org/10.1109/icsa-c68850.2026.00054
+- IEEE Xplore: https://ieeexplore.ieee.org/document/11641201
 
 
 - Code: https://github.com/Oliver1703dk/RAD-AI
@@ -153,6 +157,8 @@ We evaluated RAD-AI on two production ML platforms: Uber Michelangelo and Netfli
 - Venue: BlockArch 2026 Workshop at IEEE ICSA 2026
 - Keywords: blockchain architecture, Bitcoin, Lightning Network, layered settlement, sovereign infrastructure, payment-gated messaging, decentralized identity
 - arXiv: https://arxiv.org/abs/2603.28727
+- DOI: https://doi.org/10.1109/icsa-c68850.2026.00060
+- IEEE Xplore: https://ieeexplore.ieee.org/document/11641158
 
 
 
@@ -176,6 +182,8 @@ Payment-gated messaging (spam prevention via micropayments), timechain-locked co
 - Venue: SAGAI 2026 Workshop at IEEE ICSA 2026
 - Keywords: software architecture, interoperability, large language models, generative AI, middleware, schema matching, runtime adaptation
 - arXiv: https://arxiv.org/abs/2603.28731
+- DOI: https://doi.org/10.1109/icsa-c68850.2026.00090
+- IEEE Xplore: https://ieeexplore.ieee.org/document/11641235
 
 
 - Code: https://github.com/Oliver1703dk/sagai-mid

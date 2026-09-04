@@ -4,6 +4,8 @@
 - Authors: Oliver Aleksander Larsen, Rasmus Thorsen Larsen, Mahyar T. Moghaddam
 - Venue: BlockArch 2026 Workshop at IEEE ICSA 2026
 - arXiv: https://arxiv.org/abs/2603.28727
+- DOI: https://doi.org/10.1109/icsa-c68850.2026.00060
+- IEEE Xplore: https://ieeexplore.ieee.org/document/11641158
 - PDF: https://oalarsen.com/papers/bitsov/paper.pdf
 
 ## TL;DR

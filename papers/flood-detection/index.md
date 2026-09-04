@@ -4,6 +4,8 @@
 - Authors: Oliver Aleksander Larsen, Mahyar T. Moghaddam
 - Venue: IEEE ICSA 2026, Software Architecture in Practice Track
 - arXiv: https://arxiv.org/abs/2604.03308
+- DOI: https://doi.org/10.1109/icsa-c68850.2026.00016
+- IEEE Xplore: https://ieeexplore.ieee.org/document/11641159
 - PDF: https://oalarsen.com/papers/flood-detection/paper.pdf
 - Code: https://github.com/Oliver1703dk/flood_detection_system
 

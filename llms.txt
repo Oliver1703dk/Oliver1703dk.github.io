@@ -29,18 +29,22 @@
   - Markdown: https://oalarsen.com/papers/flood-detection/index.md
   - PDF: https://oalarsen.com/papers/flood-detection/paper.pdf
   - arXiv: https://arxiv.org/abs/2604.03308
+  - DOI: https://doi.org/10.1109/icsa-c68850.2026.00016
 - [RAD-AI: Rethinking Architecture Documentation for AI-Augmented Ecosystems](https://oalarsen.com/papers/rad-ai/): A backward-compatible extension of arc42 and C4 for AI-augmented ecosystems, increasing EU AI Act Annex IV documentation...
   - Markdown: https://oalarsen.com/papers/rad-ai/index.md
   - PDF: https://oalarsen.com/papers/rad-ai/paper.pdf
   - arXiv: https://arxiv.org/abs/2603.28735
+  - DOI: https://doi.org/10.1109/icsa-c68850.2026.00054
 - [BitSov: A Composable Bitcoin-Native Architecture for Sovereign Internet Infrastructure](https://oalarsen.com/papers/bitsov/): An eight-layer Bitcoin-native protocol stack for sovereign internet infrastructure, featuring payment-gated messaging, t...
   - Markdown: https://oalarsen.com/papers/bitsov/index.md
   - PDF: https://oalarsen.com/papers/bitsov/paper.pdf
   - arXiv: https://arxiv.org/abs/2603.28727
+  - DOI: https://doi.org/10.1109/icsa-c68850.2026.00060
 - [SAGAI-MID: A Generative AI-Driven Middleware for Dynamic Runtime Interoperability](https://oalarsen.com/papers/sagai-mid/): A FastAPI middleware that uses LLMs to resolve schema mismatches at runtime, achieving 0.90 pass@1 across 10 interoperab...
   - Markdown: https://oalarsen.com/papers/sagai-mid/index.md
   - PDF: https://oalarsen.com/papers/sagai-mid/paper.pdf
   - arXiv: https://arxiv.org/abs/2603.28731
+  - DOI: https://doi.org/10.1109/icsa-c68850.2026.00090
 - [Hybrid Large-Language-Model Meal Recommender System for Athletes: A Short Communication](https://oalarsen.com/papers/meal-recommender/): A hybrid LLM recommender for CarboPlanner that combines in-context learning with LoRA fine-tuned Mistral-7B, achieving 4...
   - Markdown: https://oalarsen.com/papers/meal-recommender/index.md
 

@@ -4,6 +4,8 @@
 - Authors: Oliver Aleksander Larsen, Mahyar T. Moghaddam
 - Venue: SAGAI 2026 Workshop at IEEE ICSA 2026
 - arXiv: https://arxiv.org/abs/2603.28731
+- DOI: https://doi.org/10.1109/icsa-c68850.2026.00090
+- IEEE Xplore: https://ieeexplore.ieee.org/document/11641235
 - PDF: https://oalarsen.com/papers/sagai-mid/paper.pdf
 - Code: https://github.com/Oliver1703dk/sagai-mid
 
