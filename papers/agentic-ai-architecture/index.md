@@ -7,6 +7,26 @@
 - PDF: https://oalarsen.com/papers/agentic-ai-architecture/paper.pdf
 - Code: https://github.com/Oliver1703dk/seaa2026-replication-package
 
+## Cite this
+
+Larsen, O. A., & Moghaddam, M. T. (2026). Mining Architectural Quality Under Agentic AI Adoption: A Causal Study of Java Repositories. In Euromicro Conference on Software Engineering and Advanced Applications (SEAA). Springer. https://arxiv.org/abs/2606.13298
+
+```bibtex
+@inproceedings{larsen2026mining,
+  title     = {Mining Architectural Quality Under Agentic AI
+               Adoption: A Causal Study of Java Repositories},
+  author    = {Larsen, Oliver Aleksander and
+               Moghaddam, Mahyar T.},
+  booktitle = {Euromicro Conference on Software Engineering
+               and Advanced Applications (SEAA)},
+  year      = {2026},
+  publisher = {Springer},
+  eprint    = {2606.13298},
+  archiveprefix = {arXiv},
+  primaryclass  = {cs.SE},
+  note      = {In STREAM Track. Accepted, to appear}
+}
+```
 ## TL;DR
 
 A causal study of 151 Java repositories showing agentic AI adoption leaves architectural smell counts essentially unchanged while code grows 12.8%; the apparent 6.7% drop in smell density is a denominator effect, not an architectural improvement.

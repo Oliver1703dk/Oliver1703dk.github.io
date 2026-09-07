@@ -3,13 +3,33 @@
 - Canonical: https://oalarsen.com/papers/rad-ai/
 - Authors: Oliver Aleksander Larsen, Mahyar T. Moghaddam
 - Venue: ANGE 2026 Workshop at IEEE ICSA 2026
+- Status: Published (IEEE ICSA 2026 Companion)
 - arXiv: https://arxiv.org/abs/2603.28735
 - DOI: https://doi.org/10.1109/icsa-c68850.2026.00054
 - IEEE Xplore: https://ieeexplore.ieee.org/document/11641201
-- Status: Published (IEEE ICSA 2026 Companion)
 - PDF: https://oalarsen.com/papers/rad-ai/paper.pdf
 - Code: https://github.com/Oliver1703dk/RAD-AI
 
+## Cite this
+
+Larsen, O. A., & Moghaddam, M. T. (2026). RAD-AI: Rethinking Architecture Documentation for AI-Augmented Ecosystems. In 2026 IEEE 23rd International Conference on Software Architecture Companion (ICSA-C) (pp. 229–236). IEEE. https://doi.org/10.1109/icsa-c68850.2026.00054
+
+```bibtex
+@inproceedings{larsen2026radai,
+  title     = {RAD-AI: Rethinking Architecture Documentation
+               for AI-Augmented Ecosystems},
+  author    = {Larsen, Oliver Aleksander and
+               Moghaddam, Mahyar T.},
+  booktitle = {2026 IEEE 23rd International Conference on Software Architecture Companion (ICSA-C)},
+  year      = {2026},
+  doi       = {10.1109/icsa-c68850.2026.00054},
+  publisher = {IEEE},
+  pages     = {229--236},
+  eprint    = {2603.28735},
+  archiveprefix = {arXiv},
+  primaryclass  = {cs.SE},
+}
+```
 ## TL;DR
 
 A backward-compatible extension of arc42 and C4 for AI-augmented ecosystems, increasing EU AI Act Annex IV documentation addressability from ~36% to ~93%, validated on Uber Michelangelo and Netflix Metaflow.

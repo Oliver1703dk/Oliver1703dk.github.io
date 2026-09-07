@@ -7,6 +7,27 @@
 - PDF: https://oalarsen.com/papers/persona-as-configuration/paper.pdf
 - Code: https://github.com/Oliver1703dk/generative-reporting-for-agricultural-floods
 
+## Cite this
+
+Larsen, O. A., Santilli, T., Daghero, F., & Moghaddam, M. T. (2026). Persona-as-Configuration: Generative Stakeholder Reporting for Agricultural Floods. In CASA Workshop at ECSA. Springer. https://arxiv.org/abs/2607.17774
+
+```bibtex
+@inproceedings{larsen2026persona,
+  title     = {Persona-as-Configuration: Generative Stakeholder
+               Reporting for Agricultural Floods},
+  author    = {Larsen, Oliver Aleksander and
+               Santilli, Tiziano and
+               Daghero, Francesco and
+               Moghaddam, Mahyar T.},
+  booktitle = {CASA Workshop at ECSA},
+  year      = {2026},
+  publisher = {Springer},
+  eprint    = {2607.17774},
+  archiveprefix = {arXiv},
+  primaryclass  = {cs.SE},
+  note      = {Accepted, to appear}
+}
+```
 ## TL;DR
 
 An architectural pattern that keeps LLM stakeholder reports out of the flood-detection control plane: the generative layer is read-only, and each stakeholder is a versioned prompt template. Expert review rated it favourably on ISO/IEC 25010, with strongest agreement on separation of concerns.
