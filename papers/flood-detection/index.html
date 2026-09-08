@@ -83,9 +83,17 @@
   "abstract": "Standing water in agricultural fields threatens vehicle mobility and crop health. This paper presents a deployed edge architecture for standing-water detection using Raspberry-Pi-class devices with optional Jetson acceleration. Camera input and environmental sensors (humidity, pressure, temperature) are combined in a finite-state machine (FSM) that acts as the architectural decision engine. The FSM-guided control plane selects between local and offloaded inference tiers, trading accuracy, latency, and energy under intermittent connectivity and motion-dependent compute budgets. A multi-model YOLO ensemble provides image scores, while diurnal-baseline sensor fusion adjusts caution using environmental anomalies. All decisions are logged per frame, enabling bit-identical hardware-in-the-loop replays. Across ten configurations and sensor variants on identical field sequences with frame-level ground truth, we show that the combination of adaptive tiering, multi-model consensus, and diurnal sensor fusion improves flood-detection performance over static local baselines, uses less energy than a naive always-heavy offload policy, and maintains bounded tail latency in a real agricultural setting.",
   "keywords": "edge computing, FSM orchestration, model tiering, multi-model consensus, sensor fusion",
   "isPartOf": {
-    "@type": "Event",
+    "@type": "CreativeWork",
     "name": "IEEE ICSA 2026, Software Architecture in Practice Track",
-    "location": "Amsterdam, Netherlands"
+    "location": {
+      "@type": "Place",
+      "name": "Amsterdam, Netherlands",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Amsterdam",
+        "addressCountry": "NL"
+      }
+    }
   },
   "url": "https://oalarsen.com/papers/flood-detection/",
   "publisher": {
@@ -114,7 +122,7 @@
   },
   "codeRepository": "https://github.com/Oliver1703dk/flood_detection_system"
 }
-  </script>
+</script>
 
     <!-- JSON-LD: FAQPage -->
     <script type="application/ld+json">
@@ -179,16 +187,16 @@
       }
     }
   ],
-  "isPartOf": {
+  "license": [
+    "https://opensource.org/licenses/MIT"
+  ],
+  "citation": {
     "@type": "ScholarlyArticle",
     "name": "Edge-Based Standing-Water Detection via FSM-Guided Tiering and Multi-Model Consensus",
     "url": "https://oalarsen.com/papers/flood-detection/"
-  },
-  "license": [
-    "https://opensource.org/licenses/MIT"
-  ]
+  }
 }
-    </script>
+</script>
 
     <!-- JSON-LD: BreadcrumbList -->
     <script type="application/ld+json">

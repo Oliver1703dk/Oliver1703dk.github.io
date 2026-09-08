@@ -82,9 +82,17 @@
   "abstract": "AI coding tools are now used by a majority of developers, and agentic use of these tools has popularized the practice colloquially called \"vibe coding\". Yet causal evidence on their effect on software architecture is scarce. Prior causal work has measured code-level outcomes (complexity, static analysis warnings); whether such degradation propagates to architecture-level outcomes remains unknown. We mine 151 open-source Java repositories, 74 with detectable agentic AI adoption (identified via configuration files and Co-Authored-By commit trailers) and 77 propensity-matched controls, across a 13-month per-repository window yielding 1,811 monthly Arcan snapshots. We estimate the causal effect of adoption on architectural smell density (ASD) with a staggered difference-in-differences design and the Borusyak imputation estimator, applying a causal design recently used for code-level metrics to the architecture level. Total smell counts are essentially unchanged (+1.1%, p=0.82) while lines of code grow +12.8% (p=0.003); the resulting 6.7% ASD decline (p=0.004) is therefore a denominator effect rather than an architectural improvement. Per-type estimates and robustness checks (wild cluster bootstrap, Lee bounds, stale-observation sensitivity) corroborate the pattern; pre-trends are flat (Wald p=0.90), consistent with parallel trends. Density-normalized outcomes can mislead when treatment affects system size: raw counts and explicit decomposition are required for causal mining studies of AI tool adoption. The complete replication package, including the curated 151-repository monthly panel, is publicly available.",
   "keywords": "agentic AI, vibe coding, AI coding tools, architectural smells, repository mining, causal inference, difference-in-differences, software architecture",
   "isPartOf": {
-    "@type": "Event",
+    "@type": "CreativeWork",
     "name": "Euromicro SEAA 2026, STREAM Track",
-    "location": "Krakow, Poland"
+    "location": {
+      "@type": "Place",
+      "name": "Krakow, Poland",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Krakow",
+        "addressCountry": "PL"
+      }
+    }
   },
   "url": "https://oalarsen.com/papers/agentic-ai-architecture/",
   "publisher": {
@@ -111,7 +119,7 @@
   },
   "codeRepository": "https://github.com/Oliver1703dk/seaa2026-replication-package"
 }
-  </script>
+</script>
 
     <!-- JSON-LD: FAQPage -->
     <script type="application/ld+json">
@@ -172,13 +180,13 @@
       "name": "Mahyar T. Moghaddam"
     }
   ],
-  "isPartOf": {
+  "citation": {
     "@type": "ScholarlyArticle",
     "name": "Mining Architectural Quality Under Agentic AI Adoption: A Causal Study of Java Repositories",
     "url": "https://oalarsen.com/papers/agentic-ai-architecture/"
   }
 }
-    </script>
+</script>
 
     <!-- JSON-LD: BreadcrumbList -->
     <script type="application/ld+json">
