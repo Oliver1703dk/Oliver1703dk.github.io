@@ -29,6 +29,8 @@ User-agent: Meta-ExternalFetcher
 Allow: /
 User-agent: Google-CloudVertexBot
 Allow: /
+User-agent: AI2Bot
+Allow: /
 
 # AI training crawlers (BLOCK unless Oliver says otherwise)
 User-agent: GPTBot
@@ -48,6 +50,8 @@ Disallow: /
 User-agent: Meta-ExternalAgent
 Disallow: /
 User-agent: cohere-ai
+Disallow: /
+User-agent: cohere-training-data-crawler
 Disallow: /
 User-agent: anthropic-ai
 Disallow: /
