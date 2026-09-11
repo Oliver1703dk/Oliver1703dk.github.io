@@ -3,33 +3,11 @@
 - Canonical: https://oalarsen.com/papers/bitsov/
 - Authors: Oliver Aleksander Larsen, Rasmus Thorsen Larsen, Mahyar T. Moghaddam
 - Venue: BlockArch 2026 Workshop at IEEE ICSA 2026
-- Status: Published (IEEE ICSA 2026 Companion)
 - arXiv: https://arxiv.org/abs/2603.28727
 - DOI: https://doi.org/10.1109/icsa-c68850.2026.00060
 - IEEE Xplore: https://ieeexplore.ieee.org/document/11641158
 - PDF: https://oalarsen.com/papers/bitsov/paper.pdf
 
-## Cite this
-
-Larsen, O. A., Larsen, R. T., & Moghaddam, M. T. (2026). BitSov: A Composable Bitcoin-Native Architecture for Sovereign Internet Infrastructure. In 2026 IEEE 23rd International Conference on Software Architecture Companion (ICSA-C) (pp. 273–276). IEEE. https://doi.org/10.1109/icsa-c68850.2026.00060
-
-```bibtex
-@inproceedings{larsen2026bitsov,
-  title     = {BitSov: A Composable Bitcoin-Native Architecture
-               for Sovereign Internet Infrastructure},
-  author    = {Larsen, Oliver Aleksander and
-               Larsen, Rasmus Thorsen and
-               Moghaddam, Mahyar T.},
-  booktitle = {2026 IEEE 23rd International Conference on Software Architecture Companion (ICSA-C)},
-  year      = {2026},
-  doi       = {10.1109/icsa-c68850.2026.00060},
-  publisher = {IEEE},
-  pages     = {273--276},
-  eprint    = {2603.28727},
-  archiveprefix = {arXiv},
-  primaryclass  = {cs.CR},
-}
-```
 ## TL;DR
 
 An eight-layer Bitcoin-native protocol stack for sovereign internet infrastructure, featuring payment-gated messaging, timechain-locked contracts, and a self-sustaining economic flywheel.

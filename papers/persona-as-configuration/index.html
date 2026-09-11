@@ -32,7 +32,7 @@
     <meta property="og:image:width" content="800">
     <meta property="og:image:height" content="800">
     <meta property="article:published_time" content="2026-07">
-    <meta property="article:modified_time" content="2026-08-26">
+    <meta property="article:modified_time" content="2026-09-11">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary">
@@ -90,7 +90,7 @@
     }
   ],
   "datePublished": "2026-07",
-  "dateModified": "2026-08-26",
+  "dateModified": "2026-09-11",
   "abstract": "Cyber-physical systems built on deterministic edge inference, such as on-vehicle flood detection for agricultural fields, produce structured decision logs that must be interpreted differently by heterogeneous stakeholders. Pairing such systems with large language models (LLMs) to generate stakeholder-specific reports introduces a tension: the generative layer is non-deterministic, while the edge plane must remain replayable and auditable. We propose an architectural pattern resting on two invariants: unidirectional consumption, in which the generative layer is a strict read-only consumer of the deterministic plane and never writes back, and persona-as-configuration, in which stakeholder adaptation is a versioned prompt-template artifact rather than runtime improvisation. We instantiate the pattern as a context-aware dashboard layer over the JSON decision logs of a previously published edge-based standing-water detection system, and analyse how the integration boundary admits standard generative-reliability mitigations as configuration- or middleware-level extension points. A structured expert review rated the pattern favourably across five ISO/IEC 25010-aligned quality dimensions, with strongest agreement on separation of concerns. End-user evaluation with agricultural stakeholders is planned for future work.",
   "keywords": "software architecture, generative AI, persona pattern, trust boundary, audit, cyber-physical systems, edge decision logs",
   "isPartOf": {
@@ -116,9 +116,7 @@
     "@id": "https://oalarsen.com/papers/persona-as-configuration/"
   },
   "isAccessibleForFree": true,
-  "sameAs": [
-    "https://arxiv.org/abs/2607.17774"
-  ],
+  "sameAs": "https://arxiv.org/abs/2607.17774",
   "encoding": {
     "@type": "MediaObject",
     "contentUrl": "https://oalarsen.com/papers/persona-as-configuration/paper.pdf",
@@ -131,7 +129,7 @@
   },
   "codeRepository": "https://github.com/Oliver1703dk/generative-reporting-for-agricultural-floods"
 }
-</script>
+    </script>
 
     <!-- JSON-LD: FAQPage -->
     <script type="application/ld+json">
@@ -172,8 +170,8 @@
 {
   "@context": "https://schema.org",
   "@type": "Dataset",
-  "name": "Generative reporting code for Persona-as-Configuration: Generative Stakeholder Reporting for Agricultural Floods",
-  "description": "Public code repository for the persona-as-configuration generative stakeholder reporting layer over agricultural flood decision logs, accompanying the CASA 2026 workshop paper at ECSA 2026.",
+  "name": "Public code for Persona-as-Configuration: Generative Stakeholder Reporting for Agricultural Floods",
+  "description": "Public code repository for the paper Persona-as-Configuration: Generative Stakeholder Reporting for Agricultural Floods.",
   "url": "https://github.com/Oliver1703dk/generative-reporting-for-agricultural-floods",
   "identifier": "https://github.com/Oliver1703dk/generative-reporting-for-agricultural-floods",
   "creator": [
@@ -204,12 +202,11 @@
       }
     }
   ],
-  "citation": "Larsen, O. A., Santilli, T., Daghero, F., & Moghaddam, M. T. (2026). Persona-as-Configuration: Generative Stakeholder Reporting for Agricultural Floods. In CASA Workshop at ECSA. Springer. https://arxiv.org/abs/2607.17774",
   "license": [
     "https://opensource.org/licenses/MIT"
   ]
 }
-</script>
+    </script>
 
     <!-- JSON-LD: BreadcrumbList -->
     <script type="application/ld+json">
@@ -283,27 +280,8 @@
         </div>
 
         
+
         <section>
-            <h2>Cite this</h2>
-            <p>Larsen, O. A., Santilli, T., Daghero, F., & Moghaddam, M. T. (2026). Persona-as-Configuration: Generative Stakeholder Reporting for Agricultural Floods. In CASA Workshop at ECSA. Springer. https://arxiv.org/abs/2607.17774</p>
-            <p><strong>arXiv:</strong> <a href="https://arxiv.org/abs/2607.17774">https://arxiv.org/abs/2607.17774</a></p>
-            <pre><code>@inproceedings{larsen2026persona,
-  title     = {Persona-as-Configuration: Generative Stakeholder
-               Reporting for Agricultural Floods},
-  author    = {Larsen, Oliver Aleksander and
-               Santilli, Tiziano and
-               Daghero, Francesco and
-               Moghaddam, Mahyar T.},
-  booktitle = {CASA Workshop at ECSA},
-  year      = {2026},
-  publisher = {Springer},
-  eprint    = {2607.17774},
-  archiveprefix = {arXiv},
-  primaryclass  = {cs.SE},
-  note      = {Accepted, to appear}
-}</code></pre>
-        </section>
-<section>
             <h2>TL;DR</h2>
             <p>An architectural pattern that keeps LLM stakeholder reports out of the flood-detection control plane: the generative layer is read-only, and each stakeholder is a versioned prompt template. Expert review rated it favourably on ISO/IEC 25010, with strongest agreement on separation of concerns.</p>
         </section>
@@ -322,6 +300,8 @@
             <h2>Resources</h2>
             <p><strong>PDF:</strong> <a href="https://oalarsen.com/papers/persona-as-configuration/paper.pdf">https://oalarsen.com/papers/persona-as-configuration/paper.pdf</a></p>
             <p><strong>arXiv:</strong> <a href="https://arxiv.org/abs/2607.17774">https://arxiv.org/abs/2607.17774</a></p>
+            
+            
             
             
             <p><strong>Code:</strong> <a href="https://github.com/Oliver1703dk/generative-reporting-for-agricultural-floods">https://github.com/Oliver1703dk/generative-reporting-for-agricultural-floods</a></p>
@@ -345,11 +325,30 @@
         <p>A structured expert review rated it favourably across five ISO/IEC 25010-aligned quality dimensions, with strongest agreement on separation of concerns. End-user evaluation with agricultural stakeholders is planned for future work.</p>
       </details>
         </section>
+
+        <section>
+            <h2>BibTeX</h2>
+            <pre><code>@inproceedings{larsen2026persona,
+  title     = {Persona-as-Configuration: Generative Stakeholder
+               Reporting for Agricultural Floods},
+  author    = {Larsen, Oliver Aleksander and
+               Santilli, Tiziano and
+               Daghero, Francesco and
+               Moghaddam, Mahyar T.},
+  booktitle = {CASA Workshop at ECSA},
+  year      = {2026},
+  publisher = {Springer},
+  eprint    = {2607.17774},
+  archiveprefix = {arXiv},
+  primaryclass  = {cs.SE},
+  note      = {Accepted, to appear}
+}</code></pre>
+        </section>
     </article>
     </div>
     
     <div id="root"></div>
-    <script type="module" crossorigin src="/assets/index-c1053edd.js"></script>
+    <script type="module" crossorigin src="/assets/index-CJ40mCOu.js"></script>
     <script>
       if (document.getElementById('root')) {
         new MutationObserver(function(m, o) {

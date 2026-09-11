@@ -3,32 +3,12 @@
 - Canonical: https://oalarsen.com/papers/flood-detection/
 - Authors: Oliver Aleksander Larsen, Mahyar T. Moghaddam
 - Venue: IEEE ICSA 2026, Software Architecture in Practice Track
-- Status: Published (IEEE ICSA 2026 Companion)
 - arXiv: https://arxiv.org/abs/2604.03308
 - DOI: https://doi.org/10.1109/icsa-c68850.2026.00016
 - IEEE Xplore: https://ieeexplore.ieee.org/document/11641159
 - PDF: https://oalarsen.com/papers/flood-detection/paper.pdf
 - Code: https://github.com/Oliver1703dk/flood_detection_system
 
-## Cite this
-
-Larsen, O. A., & Moghaddam, M. T. (2026). Edge-Based Standing-Water Detection via FSM-Guided Tiering and Multi-Model Consensus. In 2026 IEEE 23rd International Conference on Software Architecture Companion (ICSA-C) (pp. 45–52). IEEE. https://doi.org/10.1109/icsa-c68850.2026.00016
-
-```bibtex
-@inproceedings{larsen2026flood,
-  title     = {Edge-Based Standing-Water Detection via
-               FSM-Guided Tiering and Multi-Model Consensus},
-  author    = {Larsen, Oliver Aleksander and Moghaddam, Mahyar T.},
-  booktitle = {2026 IEEE 23rd International Conference on Software Architecture Companion (ICSA-C)},
-  year      = {2026},
-  doi       = {10.1109/icsa-c68850.2026.00016},
-  publisher = {IEEE},
-  pages     = {45--52},
-  eprint    = {2604.03308},
-  archiveprefix = {arXiv},
-  primaryclass  = {cs.CV},
-}
-```
 ## TL;DR
 
 A deployed edge architecture for standing-water detection that uses an FSM to trade accuracy, latency, and energy across inference tiers, outperforming static baselines while using less energy than always-offload policies.

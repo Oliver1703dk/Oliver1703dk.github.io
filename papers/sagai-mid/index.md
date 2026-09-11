@@ -3,33 +3,12 @@
 - Canonical: https://oalarsen.com/papers/sagai-mid/
 - Authors: Oliver Aleksander Larsen, Mahyar T. Moghaddam
 - Venue: SAGAI 2026 Workshop at IEEE ICSA 2026
-- Status: Published (IEEE ICSA 2026 Companion)
 - arXiv: https://arxiv.org/abs/2603.28731
 - DOI: https://doi.org/10.1109/icsa-c68850.2026.00090
 - IEEE Xplore: https://ieeexplore.ieee.org/document/11641235
 - PDF: https://oalarsen.com/papers/sagai-mid/paper.pdf
 - Code: https://github.com/Oliver1703dk/sagai-mid
 
-## Cite this
-
-Larsen, O. A., & Moghaddam, M. T. (2026). SAGAI-MID: A Generative AI-Driven Middleware for Dynamic Runtime Interoperability. In 2026 IEEE 23rd International Conference on Software Architecture Companion (ICSA-C) (pp. 485–492). IEEE. https://doi.org/10.1109/icsa-c68850.2026.00090
-
-```bibtex
-@inproceedings{larsen2026sagaimid,
-  title     = {SAGAI-MID: A Generative AI-Driven Middleware
-               for Dynamic Runtime Interoperability},
-  author    = {Larsen, Oliver Aleksander and
-               Moghaddam, Mahyar T.},
-  booktitle = {2026 IEEE 23rd International Conference on Software Architecture Companion (ICSA-C)},
-  year      = {2026},
-  doi       = {10.1109/icsa-c68850.2026.00090},
-  publisher = {IEEE},
-  pages     = {485--492},
-  eprint    = {2603.28731},
-  archiveprefix = {arXiv},
-  primaryclass  = {cs.SE},
-}
-```
 ## TL;DR
 
 A FastAPI middleware that uses LLMs to resolve schema mismatches at runtime, achieving 0.90 pass@1 across 10 interoperability scenarios, with CODEGEN outperforming DIRECT and the cheapest model being the most accurate.

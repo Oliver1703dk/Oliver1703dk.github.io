@@ -1,10 +1,10 @@
 # Oliver Aleksander Larsen - Software Architecture Researcher
 
-> Last updated: 2026-09-09
+> Last updated: 2026-09-11
 
 > Software architecture researcher at the University of Southern Denmark (SDU)
 > studying how architecture adapts when AI becomes both a design tool and a
-> design subject. Four papers published at IEEE ICSA 2026 (Amsterdam), one paper accepted at Euromicro SEAA 2026 (Krakow), one paper accepted at CASA (ECSA 2026, Bolzano), plus one journal paper under revision at Results in Engineering.
+> design subject. Four papers accepted at IEEE ICSA 2026 (Amsterdam), one paper accepted at Euromicro SEAA 2026 (Krakow), one paper accepted at CASA (ECSA 2026, Bolzano), plus one journal paper under revision at Results in Engineering.
 
 ## Site Navigation
 - Home: https://oalarsen.com/
@@ -49,7 +49,10 @@ A vision of a paradigm shift: if agentic coding tools make working software chea
 - Venue: CASA 2026 Workshop at ECSA 2026
 - Keywords: software architecture, generative AI, persona pattern, trust boundary, audit, cyber-physical systems, edge decision logs
 - arXiv: https://arxiv.org/abs/2607.17774
-- PDF: https://oalarsen.com/papers/persona-as-configuration/paper.pdf
+
+
+
+
 - Code: https://github.com/Oliver1703dk/generative-reporting-for-agricultural-floods
 
 **TL;DR:** An architectural pattern that keeps LLM stakeholder reports out of the flood-detection control plane: the generative layer is read-only, and each stakeholder is a versioned prompt template. Expert review rated it favourably on ISO/IEC 25010, with strongest agreement on separation of concerns.
@@ -74,7 +77,10 @@ A structured expert review rated it favourably across five ISO/IEC 25010-aligned
 - Venue: Euromicro SEAA 2026, STREAM Track
 - Keywords: agentic AI, vibe coding, AI coding tools, architectural smells, repository mining, causal inference, difference-in-differences, software architecture
 - arXiv: https://arxiv.org/abs/2606.13298
-- PDF: https://oalarsen.com/papers/agentic-ai-architecture/paper.pdf
+
+
+
+
 - Code: https://github.com/Oliver1703dk/seaa2026-replication-package
 
 **TL;DR:** A causal study of 151 Java repositories showing agentic AI adoption leaves architectural smell counts essentially unchanged while code grows 12.8%; the apparent 6.7% drop in smell density is a denominator effect, not an architectural improvement.
@@ -101,7 +107,8 @@ With a staggered difference-in-differences design and the Borusyak imputation es
 - arXiv: https://arxiv.org/abs/2604.03308
 - DOI: https://doi.org/10.1109/icsa-c68850.2026.00016
 - IEEE Xplore: https://ieeexplore.ieee.org/document/11641159
-- PDF: https://oalarsen.com/papers/flood-detection/paper.pdf
+
+
 - Code: https://github.com/Oliver1703dk/flood_detection_system
 
 **TL;DR:** A deployed edge architecture for standing-water detection that uses an FSM to trade accuracy, latency, and energy across inference tiers, outperforming static baselines while using less energy than always-offload policies.
@@ -128,7 +135,8 @@ The multi-model consensus approach with diurnal sensor fusion achieves robust de
 - arXiv: https://arxiv.org/abs/2603.28735
 - DOI: https://doi.org/10.1109/icsa-c68850.2026.00054
 - IEEE Xplore: https://ieeexplore.ieee.org/document/11641201
-- PDF: https://oalarsen.com/papers/rad-ai/paper.pdf
+
+
 - Code: https://github.com/Oliver1703dk/RAD-AI
 
 **TL;DR:** A backward-compatible extension of arc42 and C4 for AI-augmented ecosystems, increasing EU AI Act Annex IV documentation addressability from ~36% to ~93%, validated on Uber Michelangelo and Netflix Metaflow.
@@ -155,7 +163,8 @@ We evaluated RAD-AI on two production ML platforms: Uber Michelangelo and Netfli
 - arXiv: https://arxiv.org/abs/2603.28727
 - DOI: https://doi.org/10.1109/icsa-c68850.2026.00060
 - IEEE Xplore: https://ieeexplore.ieee.org/document/11641158
-- PDF: https://oalarsen.com/papers/bitsov/paper.pdf
+
+
 
 
 **TL;DR:** An eight-layer Bitcoin-native protocol stack for sovereign internet infrastructure, featuring payment-gated messaging, timechain-locked contracts, and a self-sustaining economic flywheel.
@@ -179,7 +188,8 @@ Payment-gated messaging (spam prevention via micropayments), timechain-locked co
 - arXiv: https://arxiv.org/abs/2603.28731
 - DOI: https://doi.org/10.1109/icsa-c68850.2026.00090
 - IEEE Xplore: https://ieeexplore.ieee.org/document/11641235
-- PDF: https://oalarsen.com/papers/sagai-mid/paper.pdf
+
+
 - Code: https://github.com/Oliver1703dk/sagai-mid
 
 **TL;DR:** A FastAPI middleware that uses LLMs to resolve schema mismatches at runtime, achieving 0.90 pass@1 across 10 interoperability scenarios, with CODEGEN outperforming DIRECT and the cheapest model being the most accurate.
@@ -200,7 +210,9 @@ The best LLM configuration achieves 0.90 pass@1 accuracy across 10 diverse inter
 - Authors: Oliver Aleksander Larsen, Vinay Chakravarthi Gogineni
 - Venue: Results in Engineering
 - Keywords: LLM, LoRA, PEFT, meal recommendation, sports nutrition, Mistral-7B, in-context learning, recommender system
+
 - DOI: https://doi.org/10.2139/ssrn.6233133
+
 - SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6233133
 - ResearchGate: https://www.researchgate.net/publication/400770955
 
@@ -252,7 +264,7 @@ Status: Completed
 ### Research
 - **Paper accepted at CASA 2026 (ECSA 2026, Bolzano)** (2026): Persona-as-Configuration: Generative Stakeholder Reporting for Agricultural Floods
 - **Paper accepted at Euromicro SEAA 2026 (STREAM Track)** (2026): Mining Architectural Quality Under Agentic AI Adoption: causal study of 151 Java repositories
-- **4 papers published at IEEE ICSA 2026** (2026): Edge AI, AI governance (EU AI Act), blockchain architecture, LLM middleware
+- **4 papers accepted at IEEE ICSA 2026** (2026): Edge AI, AI governance (EU AI Act), blockchain architecture, LLM middleware
 - **Hybrid LLM Meal Recommender, Results in Engineering (under revision)** (2025 - 2026): Personalized meal planning with LoRA/PEFT fine-tuned Mistral-7B · BSc thesis extended
 
 ### Experience
@@ -268,7 +280,7 @@ Status: Completed
 ## Frequently Asked Questions
 
 **Q: Who is Oliver Larsen?**
-Oliver Aleksander Larsen is a software architecture researcher at the University of Southern Denmark. He has 4 papers published at IEEE ICSA 2026, 1 paper accepted at Euromicro SEAA 2026, 1 paper accepted at CASA (ECSA 2026), and co-founded CarboPlanner, a sports nutrition startup.
+Oliver Aleksander Larsen is a software architecture researcher at the University of Southern Denmark. He has 4 papers accepted at IEEE ICSA 2026, 1 paper accepted at Euromicro SEAA 2026, 1 paper accepted at CASA (ECSA 2026), and co-founded CarboPlanner, a sports nutrition startup.
 
 **Q: What does Oliver Larsen research?**
 His research focuses on how software architecture adapts when AI becomes both a design tool and a design subject, covering edge computing, generative stakeholder reporting, AI governance, blockchain architecture, LLM middleware, and empirical studies of AI-assisted development.
@@ -277,7 +289,7 @@ His research focuses on how software architecture adapts when AI becomes both a 
 He is pursuing an MSc in Software Engineering at the University of Southern Denmark (SDU), supervised by Mahyar T. Moghaddam.
 
 **Q: How many papers has Oliver Larsen published?**
-He has 4 papers published at IEEE ICSA 2026 (Amsterdam, June 22-26, 2026), 1 paper accepted at Euromicro SEAA 2026 (Krakow, September 2-4, 2026), 1 paper accepted at CASA (ECSA 2026, Bolzano, September 7-11, 2026), and 1 journal paper under revision at Results in Engineering.
+He has 4 papers accepted at IEEE ICSA 2026 (Amsterdam, June 22-26, 2026), 1 paper accepted at Euromicro SEAA 2026 (Krakow, September 2-4, 2026), 1 paper accepted at CASA (ECSA 2026, Bolzano, September 7-11, 2026), and 1 journal paper under revision at Results in Engineering.
 
 ## Links
 - Home: https://oalarsen.com/
