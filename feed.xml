@@ -5,7 +5,7 @@
   <link href="https://oalarsen.com/feed.xml" rel="self"/>
   <link href="https://oalarsen.com/"/>
   <id>https://oalarsen.com/</id>
-  <updated>2026-09-14T07:05:00.000Z</updated>
+  <updated>2026-09-16T07:20:00.000Z</updated>
   <author>
     <name>Oliver Aleksander Larsen</name>
     <uri>https://oalarsen.com/</uri>
@@ -33,6 +33,28 @@
       <name>Oliver Aleksander Larsen</name>
     </author>
     <category term="blog"/>
+  </entry>
+  <entry>
+    <title>The Agentic Company OS: Substrate Inversion for Sustained Enterprise Agent Deployment</title>
+    <link href="https://oalarsen.com/papers/agentic-company-os/" rel="alternate"/>
+    <id>https://oalarsen.com/papers/agentic-company-os/</id>
+    <published>2026-09-11T00:00:00Z</published>
+    <updated>2026-09-16T07:20:00.000Z</updated>
+    <summary>Enterprise AI agents often succeed in a demonstration and then stall once they must operate day after day. An industry report estimates that most pilots never reach production and that deployed systems rarely retain feedback or improve over time, while agent benchmarks show single-run successes masking unreliable repetition. We argue that these failure modes share a common architectural root: agents reason over data structured for human operators and traditional applications, not for the language models that power them. This position paper proposes that companies deploying agents in sustained operation should rebuild their cognitive substrate, the shared environment agents read as working context, around representations matched to that reasoning surface, isolating schema translation to the action boundary. Markdown is the instantiation available today, not a proven agent-native primitive. Two mechanisms ground the argument: context-bandwidth asymmetry, the gap between one-pass reading of connected prose and field-by-field typed access that strips relations; and cross-loop coupling, the claim that action, skill, and policy loops compound only if they share one substrate. A four-layer framework (Data, Knowledge, Intelligence, Governance) operationalizes the position, with a Sync Agent enforcing the action boundary and a per-skill trust gradient, making governance and auditability structural properties of the substrate. The position revives the shared-substrate tradition of classical multi-agent systems under LLM-era economics. We analyze the main objections and risks, including indirect prompt injection on the compile path, and outline a research agenda for evaluating substrates directly.</summary>
+    <author>
+      <name>Oliver Aleksander Larsen</name>
+    </author>
+    <author>
+      <name>Mahyar T. Moghaddam</name>
+    </author>
+    <category term="AGENTICS 2026, position-paper track (IJCCI 2026)"/>
+    <category term="software architecture"/>
+    <category term="agentic AI"/>
+    <category term="enterprise agents"/>
+    <category term="cognitive substrate"/>
+    <category term="multi-agent systems"/>
+    <category term="governance"/>
+    <category term="LLM"/>
   </entry>
   <entry>
     <title>Persona-as-Configuration: Generative Stakeholder Reporting for Agricultural Floods</title>

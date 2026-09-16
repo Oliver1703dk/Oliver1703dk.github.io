@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Agentic Company OS: Substrate Inversion for... | Oliver Larsen</title>
+    <meta name="description" content="Position paper arguing that sustained enterprise agent deployment fails when agents read human-shaped data; rebuild the cognitive substrate for LLM reasoning (Markdown as today's option), with context-bandwidth asymmetry, cross-loop coupling, and a four-layer Data/Knowledge/Intelligence/Governance framework.">
+    <link rel="canonical" href="https://oalarsen.com/papers/agentic-company-os/">
+
+    <!-- Highwire Press (Google Scholar) -->
+    <meta name="citation_title" content="The Agentic Company OS: Substrate Inversion for Sustained Enterprise Agent Deployment">
+    <meta name="citation_author" content="Larsen, Oliver Aleksander">
+    <meta name="citation_author" content="Moghaddam, Mahyar T.">
+    <meta name="citation_publication_date" content="2026-09">
+    <meta name="citation_conference_title" content="AGENTICS 2026, position-paper track (IJCCI 2026)">
+    <meta name="citation_language" content="en">
+    <meta name="citation_arxiv_id" content="2609.13334">
+    <meta name="citation_pdf_url" content="https://oalarsen.com/papers/agentic-company-os/paper.pdf">
+    <meta name="citation_publisher" content="Springer">
+    <meta name="keywords" content="software architecture, agentic AI, enterprise agents, cognitive substrate, multi-agent systems, governance, LLM">
+    <meta name="citation_abstract_html_url" content="https://oalarsen.com/papers/agentic-company-os/">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="The Agentic Company OS: Substrate Inversion for Sustained Enterprise Agent Deployment">
+    <meta property="og:description" content="Position paper arguing that sustained enterprise agent deployment fails when agents read human-shaped data; rebuild the cognitive substrate for LLM reasoning (Markdown as today's option), with context-bandwidth asymmetry, cross-loop coupling, and a four-layer Data/Knowledge/Intelligence/Governance framework.">
+    <meta property="og:url" content="https://oalarsen.com/papers/agentic-company-os/">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Oliver Aleksander Larsen">
+    <meta property="og:image" content="https://oalarsen.com/assets/img/prof_pic.jpg">
+    <meta property="og:image:width" content="800">
+    <meta property="og:image:height" content="800">
+    <meta property="article:published_time" content="2026-09">
+    <meta property="article:modified_time" content="2026-09-16">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="The Agentic Company OS: Substrate Inversion for Sustained Enterprise Agent Deployment">
+    <meta name="twitter:description" content="Position paper arguing that sustained enterprise agent deployment fails when agents read human-shaped data; rebuild the cognitive substrate for LLM reasoning (Markdown as today's option), with context-bandwidth asymmetry, cross-loop coupling, and a four-layer Data/Knowledge/Intelligence/Governance framework.">
+    <meta name="twitter:site" content="@OLarsen02">
+    <meta name="twitter:image" content="https://oalarsen.com/assets/img/prof_pic.jpg">
+
+    <!-- Dublin Core -->
+    <meta name="DC.title" content="The Agentic Company OS: Substrate Inversion for Sustained Enterprise Agent Deployment">
+    <meta name="DC.creator" content="Oliver Aleksander Larsen">
+    <meta name="DC.creator" content="Mahyar T. Moghaddam">
+    <meta name="DC.date" content="2026-09">
+    <meta name="DC.type" content="Text">
+    <meta name="DC.format" content="text/html">
+    <meta name="DC.language" content="en">
+    <meta name="DC.publisher" content="Springer">
+    <meta name="DC.description" content="Enterprise AI agents often succeed in a demonstration and then stall once they must operate day after day. An industry report estimates that most pilots never reach production and that deployed systems rarely retain feedback or improve over time, while agent benchmarks show single-run successes masking unreliable repetition. We argue that these failure modes share a common architectural root: agents reason over data structured for human operators and traditional applications, not for the language models that power them. This position paper proposes that companies deploying agents in sustained operation should rebuild their cognitive substrate, the shared environment agents read as working context, around representations matched to that reasoning surface, isolating schema translation to the action boundary. Markdown is the instantiation available today, not a proven agent-native primitive. Two mechanisms ground the argument: context-bandwidth asymmetry, the gap between one-pass reading of connected prose and field-by-field typed access that strips relations; and cross-loop coupling, the claim that action, skill, and policy loops compound only if they share one substrate. A four-layer framework (Data, Knowledge, Intelligence, Governance) operationalizes the position, with a Sync Agent enforcing the action boundary and a per-skill trust gradient, making governance and auditability structural properties of the substrate. The position revives the shared-substrate tradition of classical multi-agent systems under LLM-era economics. We analyze the main objections and risks, including indirect prompt injection on the compile path, and outline a research agenda for evaluating substrates directly.">
+
+    <!-- JSON-LD: ScholarlyArticle -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "name": "The Agentic Company OS: Substrate Inversion for Sustained Enterprise Agent Deployment",
+  "headline": "The Agentic Company OS: Substrate Inversion for Sustained Enterprise Agent Deployment",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Oliver Aleksander Larsen",
+      "@id": "https://oalarsen.com/#person",
+      "sameAs": "https://orcid.org/0009-0003-6944-2560",
+      "affiliation": {
+        "@type": "CollegeOrUniversity",
+        "name": "University of Southern Denmark"
+      }
+    },
+    {
+      "@type": "Person",
+      "name": "Mahyar T. Moghaddam",
+      "affiliation": {
+        "@type": "CollegeOrUniversity",
+        "name": "University of Southern Denmark"
+      }
+    }
+  ],
+  "datePublished": "2026-09",
+  "dateModified": "2026-09-16",
+  "abstract": "Enterprise AI agents often succeed in a demonstration and then stall once they must operate day after day. An industry report estimates that most pilots never reach production and that deployed systems rarely retain feedback or improve over time, while agent benchmarks show single-run successes masking unreliable repetition. We argue that these failure modes share a common architectural root: agents reason over data structured for human operators and traditional applications, not for the language models that power them. This position paper proposes that companies deploying agents in sustained operation should rebuild their cognitive substrate, the shared environment agents read as working context, around representations matched to that reasoning surface, isolating schema translation to the action boundary. Markdown is the instantiation available today, not a proven agent-native primitive. Two mechanisms ground the argument: context-bandwidth asymmetry, the gap between one-pass reading of connected prose and field-by-field typed access that strips relations; and cross-loop coupling, the claim that action, skill, and policy loops compound only if they share one substrate. A four-layer framework (Data, Knowledge, Intelligence, Governance) operationalizes the position, with a Sync Agent enforcing the action boundary and a per-skill trust gradient, making governance and auditability structural properties of the substrate. The position revives the shared-substrate tradition of classical multi-agent systems under LLM-era economics. We analyze the main objections and risks, including indirect prompt injection on the compile path, and outline a research agenda for evaluating substrates directly.",
+  "keywords": "software architecture, agentic AI, enterprise agents, cognitive substrate, multi-agent systems, governance, LLM",
+  "isPartOf": {
+    "@type": "CreativeWork",
+    "name": "AGENTICS 2026, position-paper track (IJCCI 2026)",
+    "location": {
+      "@type": "Place",
+      "name": "Angers, France",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Angers",
+        "addressCountry": "FR"
+      }
+    }
+  },
+  "url": "https://oalarsen.com/papers/agentic-company-os/",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Springer"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://oalarsen.com/papers/agentic-company-os/"
+  },
+  "isAccessibleForFree": true,
+  "sameAs": "https://arxiv.org/abs/2609.13334",
+  "encoding": {
+    "@type": "MediaObject",
+    "contentUrl": "https://oalarsen.com/papers/agentic-company-os/paper.pdf",
+    "encodingFormat": "application/pdf"
+  },
+  "associatedMedia": {
+    "@type": "MediaObject",
+    "contentUrl": "https://oalarsen.com/papers/agentic-company-os/paper.pdf",
+    "encodingFormat": "application/pdf"
+  }
+}
+    </script>
+
+    <!-- JSON-LD: FAQPage -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Why do enterprise AI agents stall after successful demos?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The paper argues that pilots often never reach sustained production because agents reason over data structured for human operators and traditional applications, not for the language models that power them. Single-run benchmark successes can also mask unreliable repetition."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is substrate inversion?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Companies deploying agents in sustained operation should rebuild their cognitive substrate (the shared environment agents read as working context) around representations matched to LLM reasoning, isolating schema translation to the action boundary. Markdown is the instantiation available today, not a proven agent-native primitive."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What framework does the paper propose?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A four-layer framework (Data, Knowledge, Intelligence, Governance), with a Sync Agent enforcing the action boundary and a per-skill trust gradient, so governance and auditability become structural properties of the substrate."
+      }
+    }
+  ]
+}
+    </script>
+
+    <!-- JSON-LD: BreadcrumbList -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://oalarsen.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Publications",
+      "item": "https://oalarsen.com/publications/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "The Agentic Company OS: Substrate Inversion for...",
+      "item": "https://oalarsen.com/papers/agentic-company-os/"
+    }
+  ]
+}
+    </script>
+
+    <style>
+      #seo-content { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 720px; margin: 0 auto; padding: 32px 20px; color: #1a1a1a; line-height: 1.6; }
+      h1 { font-size: 1.5rem; line-height: 1.3; margin-bottom: 0.5rem; }
+      .meta { color: #555; font-size: 0.95rem; margin-bottom: 1.5rem; }
+      .meta strong { color: #1a1a1a; }
+      section { margin-bottom: 1.5rem; }
+      section h2 { font-size: 1.1rem; margin-bottom: 0.4rem; border-bottom: 1px solid #e5e5e5; padding-bottom: 0.3rem; }
+      pre { background: #f5f5f5; padding: 16px; border-radius: 6px; overflow-x: auto; font-size: 0.85rem; line-height: 1.5; }
+      details { margin-bottom: 0.75rem; }
+      summary { cursor: pointer; padding: 4px 0; }
+      details p { margin: 0.5rem 0 0 1rem; color: #444; }
+      a { color: #2563eb; }
+    </style>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>">
+    
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/geist@1.3.0/dist/fonts/geist-sans/style.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/geist@1.3.0/dist/fonts/geist-mono/style.min.css">
+    <link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/npm/geist@1.3.0/dist/fonts/geist-sans/style.min.css">
+    <link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/npm/geist@1.3.0/dist/fonts/geist-mono/style.min.css">
+    <link rel="stylesheet" crossorigin href="/assets/index-BrQHhk5d.css">
+    <link rel="alternate" type="application/atom+xml" title="Oliver Larsen - Research Papers" href="https://oalarsen.com/feed.xml">
+    <link rel="alternate" type="text/plain" href="https://oalarsen.com/llms.txt" title="LLM-readable content">
+    <meta name="theme-color" content="#0A0A0A" media="(prefers-color-scheme: dark)">
+    <meta name="theme-color" content="#FAFAFA" media="(prefers-color-scheme: light)">
+</head>
+<body>
+    <div id="seo-content">
+    <nav style="margin-bottom:24px;font-size:0.9rem">
+      <a href="/">Home</a> ·
+      <a href="/publications/">Publications</a> ·
+      <a href="/projects/">Projects</a> ·
+      <a href="/blog/">Blog</a> ·
+      <a href="/cv/">CV</a>
+    </nav>
+    <article>
+        <h1>The Agentic Company OS: Substrate Inversion for Sustained Enterprise Agent Deployment</h1>
+        <div class="meta">
+            <p><strong>Authors:</strong> Oliver Aleksander Larsen, Mahyar T. Moghaddam</p>
+            <p><strong>Venue:</strong> AGENTICS 2026, position-paper track (IJCCI 2026)</p>
+            <p><strong>Status:</strong> Accepted as a peer-reviewed short paper (position-paper track) at AGENTICS 2026 (IJCCI), Angers, 28-30 October 2026; to appear in Springer CCIS</p>
+        </div>
+
+        
+
+        <section>
+            <h2>TL;DR</h2>
+            <p>Position paper arguing that sustained enterprise agent deployment fails when agents read human-shaped data; rebuild the cognitive substrate for LLM reasoning (Markdown as today's option), with context-bandwidth asymmetry, cross-loop coupling, and a four-layer Data/Knowledge/Intelligence/Governance framework.</p>
+        </section>
+
+        <section>
+            <h2>Abstract</h2>
+            <p>Enterprise AI agents often succeed in a demonstration and then stall once they must operate day after day. An industry report estimates that most pilots never reach production and that deployed systems rarely retain feedback or improve over time, while agent benchmarks show single-run successes masking unreliable repetition. We argue that these failure modes share a common architectural root: agents reason over data structured for human operators and traditional applications, not for the language models that power them. This position paper proposes that companies deploying agents in sustained operation should rebuild their cognitive substrate, the shared environment agents read as working context, around representations matched to that reasoning surface, isolating schema translation to the action boundary. Markdown is the instantiation available today, not a proven agent-native primitive. Two mechanisms ground the argument: context-bandwidth asymmetry, the gap between one-pass reading of connected prose and field-by-field typed access that strips relations; and cross-loop coupling, the claim that action, skill, and policy loops compound only if they share one substrate. A four-layer framework (Data, Knowledge, Intelligence, Governance) operationalizes the position, with a Sync Agent enforcing the action boundary and a per-skill trust gradient, making governance and auditability structural properties of the substrate. The position revives the shared-substrate tradition of classical multi-agent systems under LLM-era economics. We analyze the main objections and risks, including indirect prompt injection on the compile path, and outline a research agenda for evaluating substrates directly.</p>
+        </section>
+
+        <section>
+            <h2>Keywords</h2>
+            <p>software architecture, agentic AI, enterprise agents, cognitive substrate, multi-agent systems, governance, LLM</p>
+        </section>
+
+        <section>
+            <h2>Resources</h2>
+            <p><strong>PDF:</strong> <a href="https://oalarsen.com/papers/agentic-company-os/paper.pdf">https://oalarsen.com/papers/agentic-company-os/paper.pdf</a></p>
+            <p><strong>arXiv:</strong> <a href="https://arxiv.org/abs/2609.13334">https://arxiv.org/abs/2609.13334</a></p>
+            
+            
+            
+            
+            
+        </section>
+
+        <section>
+            <h2>Frequently Asked Questions</h2>
+            
+      <details>
+        <summary><strong>Why do enterprise AI agents stall after successful demos?</strong></summary>
+        <p>The paper argues that pilots often never reach sustained production because agents reason over data structured for human operators and traditional applications, not for the language models that power them. Single-run benchmark successes can also mask unreliable repetition.</p>
+      </details>
+
+      <details>
+        <summary><strong>What is substrate inversion?</strong></summary>
+        <p>Companies deploying agents in sustained operation should rebuild their cognitive substrate (the shared environment agents read as working context) around representations matched to LLM reasoning, isolating schema translation to the action boundary. Markdown is the instantiation available today, not a proven agent-native primitive.</p>
+      </details>
+
+      <details>
+        <summary><strong>What framework does the paper propose?</strong></summary>
+        <p>A four-layer framework (Data, Knowledge, Intelligence, Governance), with a Sync Agent enforcing the action boundary and a per-skill trust gradient, so governance and auditability become structural properties of the substrate.</p>
+      </details>
+        </section>
+
+        <section>
+            <h2>BibTeX</h2>
+            <pre><code>@inproceedings{larsen2026agenticos,
+  title     = {The Agentic Company OS: Substrate Inversion
+               for Sustained Enterprise Agent Deployment},
+  author    = {Larsen, Oliver Aleksander and
+               Moghaddam, Mahyar T.},
+  booktitle = {International Conference on Agentic and Generative
+               Techniques in Intelligent Computational Systems
+               (AGENTICS)},
+  year      = {2026},
+  publisher = {Springer},
+  eprint    = {2609.13334},
+  archiveprefix = {arXiv},
+  primaryclass  = {cs.SE},
+  note      = {Position-paper track at AGENTICS 2026 (IJCCI),
+               Angers, 28-30 October 2026; to appear in Springer CCIS}
+}</code></pre>
+        </section>
+    </article>
+    </div>
+    
+    <div id="root"></div>
+    <script type="module" crossorigin src="/assets/index-CJ40mCOu.js"></script>
+    <script>
+      if (document.getElementById('root')) {
+        new MutationObserver(function(m, o) {
+          if (document.getElementById('root').children.length > 0) {
+            var seo = document.getElementById('seo-content');
+            if (seo) seo.style.display = 'none';
+            document.body.style.maxWidth = 'none';
+            document.body.style.margin = '0';
+            document.body.style.padding = '0';
+            o.disconnect();
+          }
+        }).observe(document.getElementById('root'), { childList: true });
+      }
+    </script>
+</body>
+</html>
