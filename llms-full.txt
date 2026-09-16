@@ -4,8 +4,7 @@
 
 > Software architecture researcher at the University of Southern Denmark (SDU)
 > studying how architecture adapts when AI becomes both a design tool and a
-> design subject. Four papers accepted at IEEE ICSA 2026 (Amsterdam), one at Euromicro SEAA 2026 (Krakow),
-> one at CASA (ECSA 2026, Bolzano), one at AGENTICS 2026 (IJCCI, Angers), plus one journal paper under revision at Results in Engineering.
+> design subject. Four papers accepted at IEEE ICSA 2026 (Amsterdam), one paper accepted at Euromicro SEAA 2026 (Krakow), one paper accepted at CASA (ECSA 2026, Bolzano), plus one journal paper under revision at Results in Engineering.
 
 ## Site Navigation
 - Home: https://oalarsen.com/
@@ -47,10 +46,14 @@ A vision of a paradigm shift: if agentic coding tools make working software chea
 
 ### The Agentic Company OS: Substrate Inversion for Sustained Enterprise Agent Deployment
 - Authors: Oliver Aleksander Larsen, Mahyar T. Moghaddam
-- Venue: AGENTICS 2026, position-paper track (IJCCI 2026)
+- Venue: AGENTICS 2026 (IJCCI), Position-paper track
 - Keywords: software architecture, agentic AI, enterprise agents, cognitive substrate, multi-agent systems, governance, LLM
 - arXiv: https://arxiv.org/abs/2609.13334
-- PDF: https://oalarsen.com/papers/agentic-company-os/paper.pdf
+
+
+
+
+
 
 **TL;DR:** Position paper arguing that sustained enterprise agent deployment fails when agents read human-shaped data; rebuild the cognitive substrate for LLM reasoning (Markdown as today's option), with context-bandwidth asymmetry, cross-loop coupling, and a four-layer Data/Knowledge/Intelligence/Governance framework.
 
@@ -58,8 +61,8 @@ A vision of a paradigm shift: if agentic coding tools make working software chea
 
 **FAQs:**
 
-**Q: Why do enterprise AI agents stall after successful demos?**
-The paper argues that pilots often never reach sustained production because agents reason over data structured for human operators and traditional applications, not for the language models that power them. Single-run benchmark successes can also mask unreliable repetition.
+**Q: Why do enterprise agent pilots stall after demos?**
+Agents reason over data structured for human operators and traditional applications, not for the language models that power them. Single-run benchmark successes can also mask unreliable repetition.
 
 **Q: What is substrate inversion?**
 Companies deploying agents in sustained operation should rebuild their cognitive substrate (the shared environment agents read as working context) around representations matched to LLM reasoning, isolating schema translation to the action boundary. Markdown is the instantiation available today, not a proven agent-native primitive.
@@ -287,7 +290,6 @@ Status: Completed
 - **High School Diploma** (2018 - 2021): Slagelse Gymnasium · Math / Physics / Chemistry
 
 ### Research
-- **Paper accepted at AGENTICS 2026 (IJCCI, Angers)** (2026): The Agentic Company OS: Substrate Inversion for Sustained Enterprise Agent Deployment (arXiv:2609.13334)
 - **Paper accepted at CASA 2026 (ECSA 2026, Bolzano)** (2026): Persona-as-Configuration: Generative Stakeholder Reporting for Agricultural Floods
 - **Paper accepted at Euromicro SEAA 2026 (STREAM Track)** (2026): Mining Architectural Quality Under Agentic AI Adoption: causal study of 151 Java repositories
 - **4 papers accepted at IEEE ICSA 2026** (2026): Edge AI, AI governance (EU AI Act), blockchain architecture, LLM middleware
@@ -306,7 +308,7 @@ Status: Completed
 ## Frequently Asked Questions
 
 **Q: Who is Oliver Larsen?**
-Oliver Aleksander Larsen is a software architecture researcher at the University of Southern Denmark. He has 4 papers accepted at IEEE ICSA 2026, 1 at Euromicro SEAA 2026, 1 at CASA (ECSA 2026), 1 at AGENTICS 2026 (IJCCI), and co-founded CarboPlanner, a sports nutrition startup.
+Oliver Aleksander Larsen is a software architecture researcher at the University of Southern Denmark. He has 4 papers accepted at IEEE ICSA 2026, 1 paper accepted at Euromicro SEAA 2026, 1 paper accepted at CASA (ECSA 2026), and co-founded CarboPlanner, a sports nutrition startup.
 
 **Q: What does Oliver Larsen research?**
 His research focuses on how software architecture adapts when AI becomes both a design tool and a design subject, covering edge computing, generative stakeholder reporting, AI governance, blockchain architecture, LLM middleware, and empirical studies of AI-assisted development.
@@ -315,7 +317,7 @@ His research focuses on how software architecture adapts when AI becomes both a 
 He is pursuing an MSc in Software Engineering at the University of Southern Denmark (SDU), supervised by Mahyar T. Moghaddam.
 
 **Q: How many papers has Oliver Larsen published?**
-He has 4 papers accepted at IEEE ICSA 2026 (Amsterdam, June 22-26, 2026), 1 paper accepted at Euromicro SEAA 2026 (Krakow, September 2-4, 2026), 1 paper accepted at CASA (ECSA 2026, Bolzano, September 7-11, 2026), 1 paper accepted at AGENTICS 2026 (IJCCI, Angers, October 28-30, 2026), and 1 journal paper under revision at Results in Engineering.
+He has 4 papers accepted at IEEE ICSA 2026 (Amsterdam, June 22-26, 2026), 1 paper accepted at Euromicro SEAA 2026 (Krakow, September 2-4, 2026), 1 paper accepted at CASA (ECSA 2026, Bolzano, September 7-11, 2026), and 1 journal paper under revision at Results in Engineering.
 
 ## Links
 - Home: https://oalarsen.com/

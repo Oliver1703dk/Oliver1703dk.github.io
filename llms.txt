@@ -1,7 +1,7 @@
 # Oliver Aleksander Larsen - Software Architecture Researcher
 
 > Software architecture researcher at the University of Southern Denmark (SDU).
-> 4 papers at IEEE ICSA 2026, 1 paper at Euromicro SEAA 2026, 1 paper at CASA (ECSA 2026), 1 paper at AGENTICS 2026 (IJCCI), 1 journal paper under revision at Results in Engineering.
+> 4 papers at IEEE ICSA 2026, 1 paper at Euromicro SEAA 2026, 1 paper at CASA (ECSA 2026), 1 journal paper under revision at Results in Engineering.
 > Last updated: 2026-09-16
 
 ## Pages

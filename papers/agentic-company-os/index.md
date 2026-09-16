@@ -2,7 +2,7 @@
 
 - Canonical: https://oalarsen.com/papers/agentic-company-os/
 - Authors: Oliver Aleksander Larsen, Mahyar T. Moghaddam
-- Venue: AGENTICS 2026, position-paper track (IJCCI 2026)
+- Venue: AGENTICS 2026 (IJCCI), Position-paper track
 - arXiv: https://arxiv.org/abs/2609.13334
 - PDF: https://oalarsen.com/papers/agentic-company-os/paper.pdf
 
@@ -16,9 +16,9 @@ Enterprise AI agents often succeed in a demonstration and then stall once they m
 
 ## FAQs
 
-### Why do enterprise AI agents stall after successful demos?
+### Why do enterprise agent pilots stall after demos?
 
-The paper argues that pilots often never reach sustained production because agents reason over data structured for human operators and traditional applications, not for the language models that power them. Single-run benchmark successes can also mask unreliable repetition.
+Agents reason over data structured for human operators and traditional applications, not for the language models that power them. Single-run benchmark successes can also mask unreliable repetition.
 
 ### What is substrate inversion?
 
