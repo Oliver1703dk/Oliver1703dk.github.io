@@ -1,10 +1,10 @@
 # Oliver Aleksander Larsen - Software Architecture Researcher
 
-> Last updated: 2026-09-16
+> Last updated: 2026-09-18
 
 > Software architecture researcher at the University of Southern Denmark (SDU)
 > studying how architecture adapts when AI becomes both a design tool and a
-> design subject. Four papers accepted at IEEE ICSA 2026 (Amsterdam), one paper accepted at Euromicro SEAA 2026 (Krakow), one paper accepted at CASA (ECSA 2026, Bolzano), plus one journal paper under revision at Results in Engineering.
+> design subject. Four papers accepted at IEEE ICSA 2026 (Amsterdam), one paper accepted at Euromicro SEAA 2026 (Krakow), one paper accepted at CASA (ECSA 2026, Bolzano), one paper accepted at AGENTICS 2026 (IJCCI, Angers), plus one journal paper under revision at Results in Engineering.
 
 ## Site Navigation
 - Home: https://oalarsen.com/
@@ -41,6 +41,7 @@ A vision of a paradigm shift: if agentic coding tools make working software chea
 - Blockchain Architecture (Bitcoin-native)
 - LLM-Driven Middleware and Interoperability
 - Empirical Studies of AI-Assisted Development
+- Enterprise Agent Substrates and Multi-Agent Systems
 
 ## Papers
 
@@ -290,6 +291,7 @@ Status: Completed
 - **High School Diploma** (2018 - 2021): Slagelse Gymnasium · Math / Physics / Chemistry
 
 ### Research
+- **Paper accepted at AGENTICS 2026 (IJCCI, Angers)** (2026): The Agentic Company OS: Substrate Inversion for Sustained Enterprise Agent Deployment
 - **Paper accepted at CASA 2026 (ECSA 2026, Bolzano)** (2026): Persona-as-Configuration: Generative Stakeholder Reporting for Agricultural Floods
 - **Paper accepted at Euromicro SEAA 2026 (STREAM Track)** (2026): Mining Architectural Quality Under Agentic AI Adoption: causal study of 151 Java repositories
 - **4 papers accepted at IEEE ICSA 2026** (2026): Edge AI, AI governance (EU AI Act), blockchain architecture, LLM middleware
@@ -308,16 +310,16 @@ Status: Completed
 ## Frequently Asked Questions
 
 **Q: Who is Oliver Larsen?**
-Oliver Aleksander Larsen is a software architecture researcher at the University of Southern Denmark. He has 4 papers accepted at IEEE ICSA 2026, 1 paper accepted at Euromicro SEAA 2026, 1 paper accepted at CASA (ECSA 2026), and co-founded CarboPlanner, a sports nutrition startup.
+Oliver Aleksander Larsen is a software architecture researcher at the University of Southern Denmark. He has 4 papers accepted at IEEE ICSA 2026, 1 paper accepted at Euromicro SEAA 2026, 1 paper accepted at CASA (ECSA 2026), 1 paper accepted at AGENTICS 2026 (IJCCI), and co-founded CarboPlanner, a sports nutrition startup.
 
 **Q: What does Oliver Larsen research?**
-His research focuses on how software architecture adapts when AI becomes both a design tool and a design subject, covering edge computing, generative stakeholder reporting, AI governance, blockchain architecture, LLM middleware, and empirical studies of AI-assisted development.
+His research focuses on how software architecture adapts when AI becomes both a design tool and a design subject, covering edge computing, generative stakeholder reporting, AI governance, blockchain architecture, LLM middleware, enterprise agent substrates, and empirical studies of AI-assisted development.
 
 **Q: Where does Oliver Larsen study?**
 He is pursuing an MSc in Software Engineering at the University of Southern Denmark (SDU), supervised by Mahyar T. Moghaddam.
 
 **Q: How many papers has Oliver Larsen published?**
-He has 4 papers accepted at IEEE ICSA 2026 (Amsterdam, June 22-26, 2026), 1 paper accepted at Euromicro SEAA 2026 (Krakow, September 2-4, 2026), 1 paper accepted at CASA (ECSA 2026, Bolzano, September 7-11, 2026), and 1 journal paper under revision at Results in Engineering.
+He has 4 papers accepted at IEEE ICSA 2026 (Amsterdam, June 22-26, 2026), 1 paper accepted at Euromicro SEAA 2026 (Krakow, September 2-4, 2026), 1 paper accepted at CASA (ECSA 2026, Bolzano, September 7-11, 2026), 1 paper accepted at AGENTICS 2026 (IJCCI, Angers, October 28-30, 2026), and 1 journal paper under revision at Results in Engineering.
 
 ## Links
 - Home: https://oalarsen.com/

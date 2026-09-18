@@ -1,8 +1,8 @@
 # Oliver Aleksander Larsen - Software Architecture Researcher
 
 > Software architecture researcher at the University of Southern Denmark (SDU).
-> 4 papers at IEEE ICSA 2026, 1 paper at Euromicro SEAA 2026, 1 paper at CASA (ECSA 2026), 1 journal paper under revision at Results in Engineering.
-> Last updated: 2026-09-16
+> 4 papers at IEEE ICSA 2026, 1 paper at Euromicro SEAA 2026, 1 paper at CASA (ECSA 2026), 1 paper at AGENTICS 2026 (IJCCI), 1 journal paper under revision at Results in Engineering.
+> Last updated: 2026-09-18
 
 ## Pages
 - [Home](https://oalarsen.com/): Personal homepage with bio, news, and selected publications
@@ -61,6 +61,7 @@
 - Blockchain Architecture (Bitcoin-native)
 - LLM-Driven Middleware and Interoperability
 - Empirical Studies of AI-Assisted Development
+- Enterprise Agent Substrates and Multi-Agent Systems
 
 ## Projects
 - CarboPlanner: Sports nutrition startup. Co-founded and raised 1,090,000 DKK. Built a full-stack platform with React, Flutter, NestJS, and MongoDB for personalized macro tracking and meal planning.
