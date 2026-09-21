@@ -4,6 +4,7 @@
 - Authors: Oliver Aleksander Larsen, Tiziano Santilli, Francesco Daghero, Mahyar T. Moghaddam
 - Venue: CASA 2026 Workshop at ECSA 2026
 - arXiv: https://arxiv.org/abs/2607.17774
+- DOI: https://doi.org/10.1007/978-3-032-39143-8_12
 - PDF: https://oalarsen.com/papers/persona-as-configuration/paper.pdf
 - Code: https://github.com/Oliver1703dk/generative-reporting-for-agricultural-floods
 

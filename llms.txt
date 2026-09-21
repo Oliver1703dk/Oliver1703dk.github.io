@@ -2,7 +2,7 @@
 
 > Software architecture researcher at the University of Southern Denmark (SDU).
 > 4 papers at IEEE ICSA 2026, 1 paper at Euromicro SEAA 2026, 1 paper at CASA (ECSA 2026), 1 paper at AGENTICS 2026 (IJCCI), 1 journal paper under revision at Results in Engineering.
-> Last updated: 2026-09-18
+> Last updated: 2026-09-21
 
 ## Pages
 - [Home](https://oalarsen.com/): Personal homepage with bio, news, and selected publications
@@ -25,10 +25,12 @@
   - Markdown: https://oalarsen.com/papers/persona-as-configuration/index.md
   - PDF: https://oalarsen.com/papers/persona-as-configuration/paper.pdf
   - arXiv: https://arxiv.org/abs/2607.17774
+  - DOI: https://doi.org/10.1007/978-3-032-39143-8_12
 - [Mining Architectural Quality Under Agentic AI Adoption: A Causal Study of Java Repositories](https://oalarsen.com/papers/agentic-ai-architecture/): A causal study of 151 Java repositories showing agentic AI adoption leaves architectural smell counts essentially unchanged while code grows 12.8%; the apparent 6.7% drop in smell density is a denominator effect, not an architectural improvement.
   - Markdown: https://oalarsen.com/papers/agentic-ai-architecture/index.md
   - PDF: https://oalarsen.com/papers/agentic-ai-architecture/paper.pdf
   - arXiv: https://arxiv.org/abs/2606.13298
+  - DOI: https://doi.org/10.1007/978-3-032-36587-3_34
 - [Edge-Based Standing-Water Detection via FSM-Guided Tiering and Multi-Model Consensus](https://oalarsen.com/papers/flood-detection/): A deployed edge architecture for standing-water detection that uses an FSM to trade accuracy, latency, and energy across inference tiers, outperforming static baselines while using less energy than always-offload policies.
   - Markdown: https://oalarsen.com/papers/flood-detection/index.md
   - PDF: https://oalarsen.com/papers/flood-detection/paper.pdf

@@ -4,6 +4,7 @@
 - Authors: Oliver Aleksander Larsen, Mahyar T. Moghaddam
 - Venue: Euromicro SEAA 2026, STREAM Track
 - arXiv: https://arxiv.org/abs/2606.13298
+- DOI: https://doi.org/10.1007/978-3-032-36587-3_34
 - PDF: https://oalarsen.com/papers/agentic-ai-architecture/paper.pdf
 - Code: https://github.com/Oliver1703dk/seaa2026-replication-package
 

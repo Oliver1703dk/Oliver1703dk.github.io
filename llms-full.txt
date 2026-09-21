@@ -1,6 +1,6 @@
 # Oliver Aleksander Larsen - Software Architecture Researcher
 
-> Last updated: 2026-09-18
+> Last updated: 2026-09-21
 
 > Software architecture researcher at the University of Southern Denmark (SDU)
 > studying how architecture adapts when AI becomes both a design tool and a
@@ -78,7 +78,7 @@ A four-layer framework (Data, Knowledge, Intelligence, Governance), with a Sync 
 - Venue: CASA 2026 Workshop at ECSA 2026
 - Keywords: software architecture, generative AI, persona pattern, trust boundary, audit, cyber-physical systems, edge decision logs
 - arXiv: https://arxiv.org/abs/2607.17774
-
+- DOI: https://doi.org/10.1007/978-3-032-39143-8_12
 
 
 
@@ -106,7 +106,7 @@ A structured expert review rated it favourably across five ISO/IEC 25010-aligned
 - Venue: Euromicro SEAA 2026, STREAM Track
 - Keywords: agentic AI, vibe coding, AI coding tools, architectural smells, repository mining, causal inference, difference-in-differences, software architecture
 - arXiv: https://arxiv.org/abs/2606.13298
-
+- DOI: https://doi.org/10.1007/978-3-032-36587-3_34
 
 
 
