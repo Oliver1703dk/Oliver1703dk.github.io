@@ -4,7 +4,7 @@
 
 > Software architecture researcher at the University of Southern Denmark (SDU)
 > studying how architecture adapts when AI becomes both a design tool and a
-> design subject. Four papers accepted at IEEE ICSA 2026 (Amsterdam), one paper accepted at Euromicro SEAA 2026 (Krakow), one paper accepted at CASA (ECSA 2026, Bolzano), one paper accepted at AGENTICS 2026 (IJCCI, Angers), plus one journal paper under revision at Results in Engineering.
+> design subject. Four papers accepted at IEEE ICSA 2026 (Amsterdam), one paper accepted at Euromicro SEAA 2026 (Krakow), one paper accepted at CASA (ECSA 2026, Bolzano), two papers accepted at AGENTICS 2026 (IJCCI, Angers), plus one journal paper under revision at Results in Engineering.
 
 ## Site Navigation
 - Home: https://oalarsen.com/
@@ -72,6 +72,17 @@ Companies deploying agents in sustained operation should rebuild their cognitive
 A four-layer framework (Data, Knowledge, Intelligence, Governance), with a Sync Agent enforcing the action boundary and a per-skill trust gradient, so governance and auditability become structural properties of the substrate.
 
 ---
+
+### NostrAgent: A Decentralized Identity and Delegation Architecture for Sovereign Agentic Systems
+- URL: https://oalarsen.com/papers/nostr-agent/
+- Authors: Oliver Aleksander Larsen, Mahyar T. Moghaddam
+- Venue: AGENTICS 2026 (IJCCI), AIPAA special session, Full Paper
+- Status: Accepted (to appear in Springer CCIS)
+- arXiv: https://arxiv.org/abs/2609.22944
+- PDF: https://oalarsen.com/papers/nostr-agent/paper.pdf
+- Code: https://github.com/Oliver1703dk/agentics2026-replication-package
+- TL;DR: NostrAgent unifies operator-sovereign identity, scoped delegation, peer trust, discovery, and Lightning L402 payment over Nostr relays, evaluated with a mixed-method design (ATAM/Delphi, STRIDE, benchmarks, and failure-mode analysis).
+
 
 ### Persona-as-Configuration: Generative Stakeholder Reporting for Agricultural Floods
 - Authors: Oliver Aleksander Larsen, Tiziano Santilli, Francesco Daghero, Mahyar T. Moghaddam
@@ -292,6 +303,7 @@ Status: Completed
 
 ### Research
 - **Paper accepted at AGENTICS 2026 (IJCCI, Angers)** (2026): The Agentic Company OS: Substrate Inversion for Sustained Enterprise Agent Deployment
+- **Full Paper accepted at AIPAA@AGENTICS 2026 (IJCCI, Angers)** (2026): NostrAgent: A Decentralized Identity and Delegation Architecture for Sovereign Agentic Systems
 - **Paper accepted at CASA 2026 (ECSA 2026, Bolzano)** (2026): Persona-as-Configuration: Generative Stakeholder Reporting for Agricultural Floods
 - **Paper accepted at Euromicro SEAA 2026 (STREAM Track)** (2026): Mining Architectural Quality Under Agentic AI Adoption: causal study of 151 Java repositories
 - **4 papers accepted at IEEE ICSA 2026** (2026): Edge AI, AI governance (EU AI Act), blockchain architecture, LLM middleware
@@ -310,7 +322,7 @@ Status: Completed
 ## Frequently Asked Questions
 
 **Q: Who is Oliver Larsen?**
-Oliver Aleksander Larsen is a software architecture researcher at the University of Southern Denmark. He has 4 papers accepted at IEEE ICSA 2026, 1 paper accepted at Euromicro SEAA 2026, 1 paper accepted at CASA (ECSA 2026), 1 paper accepted at AGENTICS 2026 (IJCCI), and co-founded CarboPlanner, a sports nutrition startup.
+Oliver Aleksander Larsen is a software architecture researcher at the University of Southern Denmark. He has 4 papers accepted at IEEE ICSA 2026, 1 paper accepted at Euromicro SEAA 2026, 1 paper accepted at CASA (ECSA 2026), 2 papers accepted at AGENTICS 2026 (IJCCI), and co-founded CarboPlanner, a sports nutrition startup.
 
 **Q: What does Oliver Larsen research?**
 His research focuses on how software architecture adapts when AI becomes both a design tool and a design subject, covering edge computing, generative stakeholder reporting, AI governance, blockchain architecture, LLM middleware, enterprise agent substrates, and empirical studies of AI-assisted development.
