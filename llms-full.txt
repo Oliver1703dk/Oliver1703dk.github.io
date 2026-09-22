@@ -320,20 +320,21 @@ Status: Completed
 
 ### Research
 - **Paper accepted at AGENTICS 2026 (IJCCI, Angers)** (2026): The Agentic Company OS: Substrate Inversion for Sustained Enterprise Agent Deployment
+- **Paper accepted at AIPAA@AGENTICS 2026 (IJCCI, Angers)** (2026): NostrAgent: A Decentralized Identity and Delegation Architecture for Sovereign Agentic Systems
 - **Paper accepted at CASA 2026 (ECSA 2026, Bolzano)** (2026): Persona-as-Configuration: Generative Stakeholder Reporting for Agricultural Floods
 - **Paper accepted at Euromicro SEAA 2026 (STREAM Track)** (2026): Mining Architectural Quality Under Agentic AI Adoption: causal study of 151 Java repositories
 - **4 papers accepted at IEEE ICSA 2026** (2026): Edge AI, AI governance (EU AI Act), blockchain architecture, LLM middleware
 - **Hybrid LLM Meal Recommender, Results in Engineering (under revision)** (2025 - 2026): Personalized meal planning with LoRA/PEFT fine-tuned Mistral-7B · BSc thesis extended
 
 ### Experience
-- **Co-founder & CTO, CarboPlanner** (2023 - present): Sports nutrition startup · Raised 1,090,000 DKK
+- **Co-founder & CTO, CarboPlanner** (2023 - 2026): Sports nutrition startup · Raised 1,090,000 DKK
 - **Student Researcher, SDU** (2024 - present): Supervised by Mahyar T. Moghaddam · Edge computing, AI governance
 - **Teaching Assistant** (2023 - present): Data Management, Computer Systems · 300+ students
 
 ### Achievements
 - **Ironman Copenhagen 140.6** (Aug 2025): 3.8km swim · 180km bike · 42.2km run
 - **Royal Life Guards** (2021 - 2022): 8 months military service, Danish Army
-- **Stuttering Mentoring Coach** (2020): International program for speech therapy mentoring
+- **Stuttering Mentoring Coach** (2020 - present): International program for speech therapy mentoring
 
 ## Frequently Asked Questions
 
