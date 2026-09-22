@@ -3,7 +3,6 @@
 - Canonical: https://oalarsen.com/papers/nostr-agent/
 - Authors: Oliver Aleksander Larsen, Mahyar T. Moghaddam
 - Venue: AGENTICS 2026 (IJCCI), AIPAA special session, Full Paper
-- Status: Accepted
 - arXiv: https://arxiv.org/abs/2609.22944
 - PDF: https://oalarsen.com/papers/nostr-agent/paper.pdf
 - Code: https://github.com/Oliver1703dk/agentics2026-replication-package
@@ -29,4 +28,3 @@ Persistent identity (G1), scoped delegation (G2), peer trust (G3), discovery (G4
 ### How was NostrAgent evaluated?
 
 With a mixed-method design: ATAM quality analysis plus a two-round mini-Delphi panel, STRIDE threat modeling across three trust boundaries, eleven benchmarks with non-parametric statistics, and 19 failure modes (17 pass empirically, one bounded analytically, one disclosed as an architectural limitation).
-

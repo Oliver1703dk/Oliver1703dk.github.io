@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NostrAgent: A Decentralized Identity and Delegation Ar... | Oliver Larsen</title>
+    <title>NostrAgent: A Decentralized Identity and Delegatio... | Oliver Larsen</title>
     <meta name="description" content="NostrAgent unifies operator-sovereign identity, scoped delegation, peer trust, discovery, and Lightning L402 payment over Nostr relays, evaluated with a mixed-method design (ATAM/Delphi, STRIDE, benchmarks, and failure-mode analysis).">
     <link rel="canonical" href="https://oalarsen.com/papers/nostr-agent/">
 
@@ -14,7 +14,6 @@
     <meta name="citation_author" content="Moghaddam, Mahyar T.">
     <meta name="citation_author_orcid" content="https://orcid.org/0000-0001-5028-7546">
     <meta name="citation_publication_date" content="2026-09">
-    <meta name="citation_online_date" content="2026/9/22">
     <meta name="citation_conference_title" content="AGENTICS 2026 (IJCCI), AIPAA special session, Full Paper">
     <meta name="citation_language" content="en">
     <meta name="citation_arxiv_id" content="2609.22944">
@@ -119,7 +118,8 @@
     "@type": "MediaObject",
     "contentUrl": "https://oalarsen.com/papers/nostr-agent/paper.pdf",
     "encodingFormat": "application/pdf"
-  }
+  },
+  "codeRepository": "https://github.com/Oliver1703dk/agentics2026-replication-package"
 }
     </script>
 
@@ -157,6 +157,42 @@
 }
     </script>
 
+    <!-- JSON-LD: Dataset (public code / replication package) -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "name": "Public code for NostrAgent: A Decentralized Identity and Delegation Architecture for Sovereign Agentic Systems",
+  "description": "Public code repository for the paper NostrAgent: A Decentralized Identity and Delegation Architecture for Sovereign Agentic Systems.",
+  "url": "https://github.com/Oliver1703dk/agentics2026-replication-package",
+  "identifier": "https://github.com/Oliver1703dk/agentics2026-replication-package",
+  "creator": [
+    {
+      "@type": "Person",
+      "name": "Oliver Aleksander Larsen",
+      "sameAs": "https://orcid.org/0009-0003-6944-2560",
+      "@id": "https://oalarsen.com/#person",
+      "affiliation": {
+        "@type": "CollegeOrUniversity",
+        "name": "University of Southern Denmark"
+      }
+    },
+    {
+      "@type": "Person",
+      "name": "Mahyar T. Moghaddam",
+      "sameAs": "https://orcid.org/0000-0001-5028-7546",
+      "affiliation": {
+        "@type": "CollegeOrUniversity",
+        "name": "University of Southern Denmark"
+      }
+    }
+  ],
+  "license": [
+    "https://opensource.org/licenses/MIT"
+  ]
+}
+    </script>
+
     <!-- JSON-LD: BreadcrumbList -->
     <script type="application/ld+json">
 {
@@ -178,7 +214,7 @@
     {
       "@type": "ListItem",
       "position": 3,
-      "name": "NostrAgent: A Decentralized Identity and Delegation Architecture...",
+      "name": "NostrAgent: A Decentralized Identity and Delegation Archi...",
       "item": "https://oalarsen.com/papers/nostr-agent/"
     }
   ]
@@ -252,13 +288,12 @@
             <h2>Resources</h2>
             <p><strong>PDF:</strong> <a href="https://oalarsen.com/papers/nostr-agent/paper.pdf">https://oalarsen.com/papers/nostr-agent/paper.pdf</a></p>
             <p><strong>arXiv:</strong> <a href="https://arxiv.org/abs/2609.22944">https://arxiv.org/abs/2609.22944</a></p>
+            
+            
+            
+            
+            
             <p><strong>Code:</strong> <a href="https://github.com/Oliver1703dk/agentics2026-replication-package">https://github.com/Oliver1703dk/agentics2026-replication-package</a></p>
-            
-            
-            
-            
-            
-            
         </section>
 
         <section>
@@ -268,10 +303,12 @@
         <summary><strong>What is NostrAgent?</strong></summary>
         <p>NostrAgent is a decentralized architecture that gives autonomous AI agents persistent operator-sovereign identity, scoped delegation, peer trust, discovery, and payment by publishing signed Nostr events (Kinds 38100–38102) and binding Lightning HTTP 402 (L402) charges to agent identity, without a registration authority.</p>
       </details>
+
       <details>
         <summary><strong>Which five capabilities does NostrAgent unify (G1–G5)?</strong></summary>
         <p>Persistent identity (G1), scoped delegation (G2), peer trust (G3), discovery (G4), and payment (G5). Today these usually live in separate systems; NostrAgent keeps them continuous over Nostr relays with BIP340-authenticated events and L402.</p>
       </details>
+
       <details>
         <summary><strong>How was NostrAgent evaluated?</strong></summary>
         <p>With a mixed-method design: ATAM quality analysis plus a two-round mini-Delphi panel, STRIDE threat modeling across three trust boundaries, eleven benchmarks with non-parametric statistics, and 19 failure modes (17 pass empirically, one bounded analytically, one disclosed as an architectural limitation).</p>
@@ -298,7 +335,7 @@
     </div>
     
     <div id="root"></div>
-    <script type="module" crossorigin src="/assets/index-8Zqvp1A0.js"></script>
+    <script type="module" crossorigin src="/assets/index-1vQ1D1M8.js"></script>
     <script>
       if (document.getElementById('root')) {
         new MutationObserver(function(m, o) {

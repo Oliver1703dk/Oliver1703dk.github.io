@@ -1,10 +1,10 @@
 # Oliver Aleksander Larsen - Software Architecture Researcher
 
-> Last updated: 2026-09-21
+> Last updated: 2026-09-22
 
 > Software architecture researcher at the University of Southern Denmark (SDU)
 > studying how architecture adapts when AI becomes both a design tool and a
-> design subject. Four papers accepted at IEEE ICSA 2026 (Amsterdam), one paper accepted at Euromicro SEAA 2026 (Krakow), one paper accepted at CASA (ECSA 2026, Bolzano), two papers accepted at AGENTICS 2026 (IJCCI, Angers), plus one journal paper under revision at Results in Engineering.
+> design subject. Four papers accepted at IEEE ICSA 2026 (Amsterdam), one paper accepted at Euromicro SEAA 2026 (Krakow), one paper accepted at CASA (ECSA 2026, Bolzano), one paper accepted at AGENTICS 2026 (IJCCI, Angers), plus one journal paper under revision at Results in Engineering.
 
 ## Site Navigation
 - Home: https://oalarsen.com/
@@ -74,15 +74,32 @@ A four-layer framework (Data, Knowledge, Intelligence, Governance), with a Sync 
 ---
 
 ### NostrAgent: A Decentralized Identity and Delegation Architecture for Sovereign Agentic Systems
-- URL: https://oalarsen.com/papers/nostr-agent/
 - Authors: Oliver Aleksander Larsen, Mahyar T. Moghaddam
 - Venue: AGENTICS 2026 (IJCCI), AIPAA special session, Full Paper
-- Status: Accepted (to appear in Springer CCIS)
+- Keywords: AI agents, trustworthy agents, decentralized identity, scoped delegation, multi-agent trust, Nostr, BIP340, L402
 - arXiv: https://arxiv.org/abs/2609.22944
-- PDF: https://oalarsen.com/papers/nostr-agent/paper.pdf
-- Code: https://github.com/Oliver1703dk/agentics2026-replication-package
-- TL;DR: NostrAgent unifies operator-sovereign identity, scoped delegation, peer trust, discovery, and Lightning L402 payment over Nostr relays, evaluated with a mixed-method design (ATAM/Delphi, STRIDE, benchmarks, and failure-mode analysis).
 
+
+
+
+- Code: https://github.com/Oliver1703dk/agentics2026-replication-package
+
+**TL;DR:** NostrAgent unifies operator-sovereign identity, scoped delegation, peer trust, discovery, and Lightning L402 payment over Nostr relays, evaluated with a mixed-method design (ATAM/Delphi, STRIDE, benchmarks, and failure-mode analysis).
+
+**Abstract:** Autonomous AI agents increasingly act across organizational boundaries on behalf of human operators: they invoke third-party services, delegate subtasks to other agents, and pay for metered resources. Deploying such agents safely requires five capabilities that today live in separate systems: persistent identity, scoped delegation, peer trust, discovery, and payment. Existing approaches root these in centralized authorities or cover only subsets, so authority, trust, and payment fracture exactly where autonomy needs continuity: when a key rotates or a delegation must be revoked. We present NostrAgent, a decentralized architecture that unifies all five over Nostr relays using three custom event kinds: Kind 38100 identity declarations authenticated by BIP340 Schnorr signatures with pre-rotation commitments, Kind 38101 scoped delegation chains whose every hop verifiably narrows granted capabilities, and Kind 38102 peer attestations forming a Sybil-deterrent trust graph, with Lightning HTTP 402 (L402) binding payment to agent identity. Identity remains operator-sovereign without any registration authority; relays are substitutable transport rather than a trust root; and every authorization decision is replayable offline from signed events. We evaluate a Python prototype with a mixed-method design: ATAM quality analysis with a two-round mini-Delphi panel, STRIDE threat modeling across three trust boundaries, eleven benchmarks with non-parametric statistics, and 19 failure modes. Results show sub-millisecond offline verification, linear delegation-chain scaling, and Lightning-settled L402 at 157 ms median on regtest. 17 of 19 failure modes pass empirically, one is bounded analytically, and one is disclosed as an architectural limitation. NostrAgent demonstrates an auditable prototype substrate for trustworthy agentic systems without centralized trust roots.
+
+**FAQs:**
+
+**Q: What is NostrAgent?**
+NostrAgent is a decentralized architecture that gives autonomous AI agents persistent operator-sovereign identity, scoped delegation, peer trust, discovery, and payment by publishing signed Nostr events (Kinds 38100–38102) and binding Lightning HTTP 402 (L402) charges to agent identity, without a registration authority.
+
+**Q: Which five capabilities does NostrAgent unify (G1–G5)?**
+Persistent identity (G1), scoped delegation (G2), peer trust (G3), discovery (G4), and payment (G5). Today these usually live in separate systems; NostrAgent keeps them continuous over Nostr relays with BIP340-authenticated events and L402.
+
+**Q: How was NostrAgent evaluated?**
+With a mixed-method design: ATAM quality analysis plus a two-round mini-Delphi panel, STRIDE threat modeling across three trust boundaries, eleven benchmarks with non-parametric statistics, and 19 failure modes (17 pass empirically, one bounded analytically, one disclosed as an architectural limitation).
+
+---
 
 ### Persona-as-Configuration: Generative Stakeholder Reporting for Agricultural Floods
 - Authors: Oliver Aleksander Larsen, Tiziano Santilli, Francesco Daghero, Mahyar T. Moghaddam
@@ -277,7 +294,7 @@ This research extends the BSc thesis work at SDU on personalized nutrition for a
 ### CarboPlanner
 Sports nutrition startup. Co-founded and raised 1,090,000 DKK. Built a full-stack platform with React, Flutter, NestJS, and MongoDB for personalized macro tracking and meal planning.
 Tags: React, Flutter, NestJS, MongoDB, Startup
-Status: Active
+Status: Completed
 
 ### Hybrid LLM Meal Recommender
 Hybrid LLM recommender integrated into CarboPlanner. Combines in-context learning with LoRA/PEFT fine-tuned Mistral-7B for personalized athlete meal planning. 46.7% accuracy, 100% format adherence. Under revision at Results in Engineering.
@@ -287,7 +304,7 @@ Status: Completed
 ### Flood Detection System
 Edge architecture for standing-water detection in agricultural fields. Raspberry Pi + Jetson AGX Orin running YOLO models with FSM-based orchestration over MQTT.
 Tags: Edge AI, YOLO, Raspberry Pi, Jetson, MQTT
-Status: Active
+Status: Completed
 
 ### Stock Analysis System
 Multi-agent LLM trading system with autonomous analysis pipelines. Built with Next.js frontend, Flask backend, MongoDB, Celery task queue, and Redis.
@@ -303,7 +320,6 @@ Status: Completed
 
 ### Research
 - **Paper accepted at AGENTICS 2026 (IJCCI, Angers)** (2026): The Agentic Company OS: Substrate Inversion for Sustained Enterprise Agent Deployment
-- **Full Paper accepted at AIPAA@AGENTICS 2026 (IJCCI, Angers)** (2026): NostrAgent: A Decentralized Identity and Delegation Architecture for Sovereign Agentic Systems
 - **Paper accepted at CASA 2026 (ECSA 2026, Bolzano)** (2026): Persona-as-Configuration: Generative Stakeholder Reporting for Agricultural Floods
 - **Paper accepted at Euromicro SEAA 2026 (STREAM Track)** (2026): Mining Architectural Quality Under Agentic AI Adoption: causal study of 151 Java repositories
 - **4 papers accepted at IEEE ICSA 2026** (2026): Edge AI, AI governance (EU AI Act), blockchain architecture, LLM middleware
@@ -322,7 +338,7 @@ Status: Completed
 ## Frequently Asked Questions
 
 **Q: Who is Oliver Larsen?**
-Oliver Aleksander Larsen is a software architecture researcher at the University of Southern Denmark. He has 4 papers accepted at IEEE ICSA 2026, 1 paper accepted at Euromicro SEAA 2026, 1 paper accepted at CASA (ECSA 2026), 2 papers accepted at AGENTICS 2026 (IJCCI), and co-founded CarboPlanner, a sports nutrition startup.
+Oliver Aleksander Larsen is a software architecture researcher at the University of Southern Denmark. He has 4 papers accepted at IEEE ICSA 2026, 1 paper accepted at Euromicro SEAA 2026, 1 paper accepted at CASA (ECSA 2026), 1 paper accepted at AGENTICS 2026 (IJCCI), and co-founded CarboPlanner, a sports nutrition startup.
 
 **Q: What does Oliver Larsen research?**
 His research focuses on how software architecture adapts when AI becomes both a design tool and a design subject, covering edge computing, generative stakeholder reporting, AI governance, blockchain architecture, LLM middleware, enterprise agent substrates, and empirical studies of AI-assisted development.

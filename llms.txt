@@ -1,12 +1,12 @@
 # Oliver Aleksander Larsen - Software Architecture Researcher
 
 > Software architecture researcher at the University of Southern Denmark (SDU).
-> 4 papers at IEEE ICSA 2026, 1 paper at Euromicro SEAA 2026, 1 paper at CASA (ECSA 2026), 2 papers at AGENTICS 2026 (IJCCI), 1 journal paper under revision at Results in Engineering.
-> Last updated: 2026-09-21
+> 4 papers at IEEE ICSA 2026, 1 paper at Euromicro SEAA 2026, 1 paper at CASA (ECSA 2026), 1 paper at AGENTICS 2026 (IJCCI), 1 journal paper under revision at Results in Engineering.
+> Last updated: 2026-09-22
 
 ## Pages
 - [Home](https://oalarsen.com/): Personal homepage with bio, news, and selected publications
-- [Publications](https://oalarsen.com/publications/): All 8 research papers
+- [Publications](https://oalarsen.com/publications/): All 9 research papers
 - [Projects](https://oalarsen.com/projects/): Software projects including CarboPlanner
 - [Blog](https://oalarsen.com/blog/): Writing about what Oliver is doing and thought-provoking ideas
 - [Self-Architecting Systems](https://oalarsen.com/blog/self-architecting-systems/): A vision of a shift: if agents can change structure continuously, architecture stops being a drawing you finish and becomes a control loop. The human designs the envelope, not the structure.
@@ -18,10 +18,13 @@
 
 ## Papers
 - [The Agentic Company OS: Substrate Inversion for Sustained Enterprise Agent Deployment](https://oalarsen.com/papers/agentic-company-os/): Position paper arguing that sustained enterprise agent deployment fails when agents read human-shaped data; rebuild the cognitive substrate for LLM reasoning (Markdown as today's option), with context-bandwidth asymmetry, cross-loop coupling, and a four-layer Data/Knowledge/Intelligence/Governance framework.
-- [NostrAgent: A Decentralized Identity and Delegation Architecture for Sovereign Agentic Systems](https://oalarsen.com/papers/nostr-agent/): NostrAgent unifies operator-sovereign identity, scoped delegation, peer trust, discovery, and Lightning L402 payment over Nostr relays, evaluated with a mixed-method design (ATAM/Delphi, STRIDE, benchmarks, and failure-mode analysis).
   - Markdown: https://oalarsen.com/papers/agentic-company-os/index.md
   - PDF: https://oalarsen.com/papers/agentic-company-os/paper.pdf
   - arXiv: https://arxiv.org/abs/2609.13334
+- [NostrAgent: A Decentralized Identity and Delegation Architecture for Sovereign Agentic Systems](https://oalarsen.com/papers/nostr-agent/): NostrAgent unifies operator-sovereign identity, scoped delegation, peer trust, discovery, and Lightning L402 payment over Nostr relays, evaluated with a mixed-method design (ATAM/Delphi, STRIDE, benchmarks, and failure-mode analysis).
+  - Markdown: https://oalarsen.com/papers/nostr-agent/index.md
+  - PDF: https://oalarsen.com/papers/nostr-agent/paper.pdf
+  - arXiv: https://arxiv.org/abs/2609.22944
 - [Persona-as-Configuration: Generative Stakeholder Reporting for Agricultural Floods](https://oalarsen.com/papers/persona-as-configuration/): An architectural pattern that keeps LLM stakeholder reports out of the flood-detection control plane: the generative layer is read-only, and each stakeholder is a versioned prompt template. Expert review rated it favourably on ISO/IEC 25010, with strongest agreement on separation of concerns.
   - Markdown: https://oalarsen.com/papers/persona-as-configuration/index.md
   - PDF: https://oalarsen.com/papers/persona-as-configuration/paper.pdf
