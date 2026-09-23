@@ -305,8 +305,7 @@
       if (document.getElementById('root')) {
         new MutationObserver(function(m, o) {
           if (document.getElementById('root').children.length > 0) {
-            var seo = document.getElementById('seo-content');
-            if (seo) seo.style.display = 'none';
+            document.querySelectorAll('#seo-content').forEach(function(el){ el.style.display = 'none'; });
             document.body.style.maxWidth = 'none';
             document.body.style.margin = '0';
             document.body.style.padding = '0';
