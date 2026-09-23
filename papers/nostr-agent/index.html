@@ -14,6 +14,7 @@
     <meta name="citation_author" content="Moghaddam, Mahyar T.">
     <meta name="citation_author_orcid" content="https://orcid.org/0000-0001-5028-7546">
     <meta name="citation_publication_date" content="2026-09">
+    <meta name="citation_online_date" content="2026/9/19">
     <meta name="citation_conference_title" content="AGENTICS 2026 (IJCCI), AIPAA special session, Full Paper">
     <meta name="citation_language" content="en">
     <meta name="citation_arxiv_id" content="2609.22944">
@@ -33,7 +34,7 @@
     <meta property="og:image:width" content="800">
     <meta property="og:image:height" content="800">
     <meta property="article:published_time" content="2026-09">
-    <meta property="article:modified_time" content="2026-09-22">
+    <meta property="article:modified_time" content="2026-09-23">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary">
@@ -82,7 +83,7 @@
     }
   ],
   "datePublished": "2026-09",
-  "dateModified": "2026-09-22",
+  "dateModified": "2026-09-23",
   "abstract": "Autonomous AI agents increasingly act across organizational boundaries on behalf of human operators: they invoke third-party services, delegate subtasks to other agents, and pay for metered resources. Deploying such agents safely requires five capabilities that today live in separate systems: persistent identity, scoped delegation, peer trust, discovery, and payment. Existing approaches root these in centralized authorities or cover only subsets, so authority, trust, and payment fracture exactly where autonomy needs continuity: when a key rotates or a delegation must be revoked. We present NostrAgent, a decentralized architecture that unifies all five over Nostr relays using three custom event kinds: Kind 38100 identity declarations authenticated by BIP340 Schnorr signatures with pre-rotation commitments, Kind 38101 scoped delegation chains whose every hop verifiably narrows granted capabilities, and Kind 38102 peer attestations forming a Sybil-deterrent trust graph, with Lightning HTTP 402 (L402) binding payment to agent identity. Identity remains operator-sovereign without any registration authority; relays are substitutable transport rather than a trust root; and every authorization decision is replayable offline from signed events. We evaluate a Python prototype with a mixed-method design: ATAM quality analysis with a two-round mini-Delphi panel, STRIDE threat modeling across three trust boundaries, eleven benchmarks with non-parametric statistics, and 19 failure modes. Results show sub-millisecond offline verification, linear delegation-chain scaling, and Lightning-settled L402 at 157 ms median on regtest. 17 of 19 failure modes pass empirically, one is bounded analytically, and one is disclosed as an architectural limitation. NostrAgent demonstrates an auditable prototype substrate for trustworthy agentic systems without centralized trust roots.",
   "keywords": "AI agents, trustworthy agents, decentralized identity, scoped delegation, multi-agent trust, Nostr, BIP340, L402",
   "isPartOf": {
@@ -134,12 +135,12 @@
       "name": "What is NostrAgent?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "NostrAgent is a decentralized architecture that gives autonomous AI agents persistent operator-sovereign identity, scoped delegation, peer trust, discovery, and payment by publishing signed Nostr events (Kinds 38100–38102) and binding Lightning HTTP 402 (L402) charges to agent identity, without a registration authority."
+        "text": "NostrAgent is a decentralized architecture that gives autonomous AI agents persistent operator-sovereign identity, scoped delegation, peer trust, discovery, and payment by publishing signed Nostr events (Kinds 38100-38102) and binding Lightning HTTP 402 (L402) charges to agent identity, without a registration authority."
       }
     },
     {
       "@type": "Question",
-      "name": "Which five capabilities does NostrAgent unify (G1–G5)?",
+      "name": "Which five capabilities does NostrAgent unify (G1-G5)?",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Persistent identity (G1), scoped delegation (G2), peer trust (G3), discovery (G4), and payment (G5). Today these usually live in separate systems; NostrAgent keeps them continuous over Nostr relays with BIP340-authenticated events and L402."
@@ -162,10 +163,17 @@
 {
   "@context": "https://schema.org",
   "@type": "Dataset",
-  "name": "Public code for NostrAgent: A Decentralized Identity and Delegation Architecture for Sovereign Agentic Systems",
-  "description": "Public code repository for the paper NostrAgent: A Decentralized Identity and Delegation Architecture for Sovereign Agentic Systems.",
+  "name": "Replication package for NostrAgent: A Decentralized Identity and Delegation Architecture for Sovereign Agentic Systems",
+  "description": "Public replication package for the AGENTICS 2026 AIPAA Full Paper NostrAgent, including prototype code for operator-sovereign identity, scoped delegation, peer trust, discovery, and Lightning L402 payment over Nostr relays.",
   "url": "https://github.com/Oliver1703dk/agentics2026-replication-package",
-  "identifier": "https://github.com/Oliver1703dk/agentics2026-replication-package",
+  "identifier": [
+    "https://github.com/Oliver1703dk/agentics2026-replication-package",
+    "https://doi.org/10.5281/zenodo.22744262"
+  ],
+  "sameAs": "https://doi.org/10.5281/zenodo.22744262",
+  "license": [
+    "https://opensource.org/licenses/MIT"
+  ],
   "creator": [
     {
       "@type": "Person",
@@ -187,9 +195,11 @@
       }
     }
   ],
-  "license": [
-    "https://opensource.org/licenses/MIT"
-  ]
+  "isPartOf": {
+    "@type": "ScholarlyArticle",
+    "name": "NostrAgent: A Decentralized Identity and Delegation Architecture for Sovereign Agentic Systems",
+    "url": "https://oalarsen.com/papers/nostr-agent/"
+  }
 }
     </script>
 
@@ -294,6 +304,7 @@
             
             
             <p><strong>Code:</strong> <a href="https://github.com/Oliver1703dk/agentics2026-replication-package">https://github.com/Oliver1703dk/agentics2026-replication-package</a></p>
+            <p><strong>Zenodo:</strong> <a href="https://doi.org/10.5281/zenodo.22744262">https://doi.org/10.5281/zenodo.22744262</a></p>
         </section>
 
         <section>
@@ -301,11 +312,11 @@
             
       <details>
         <summary><strong>What is NostrAgent?</strong></summary>
-        <p>NostrAgent is a decentralized architecture that gives autonomous AI agents persistent operator-sovereign identity, scoped delegation, peer trust, discovery, and payment by publishing signed Nostr events (Kinds 38100–38102) and binding Lightning HTTP 402 (L402) charges to agent identity, without a registration authority.</p>
+        <p>NostrAgent is a decentralized architecture that gives autonomous AI agents persistent operator-sovereign identity, scoped delegation, peer trust, discovery, and payment by publishing signed Nostr events (Kinds 38100-38102) and binding Lightning HTTP 402 (L402) charges to agent identity, without a registration authority.</p>
       </details>
 
       <details>
-        <summary><strong>Which five capabilities does NostrAgent unify (G1–G5)?</strong></summary>
+        <summary><strong>Which five capabilities does NostrAgent unify (G1-G5)?</strong></summary>
         <p>Persistent identity (G1), scoped delegation (G2), peer trust (G3), discovery (G4), and payment (G5). Today these usually live in separate systems; NostrAgent keeps them continuous over Nostr relays with BIP340-authenticated events and L402.</p>
       </details>
 
@@ -335,7 +346,7 @@
     </div>
     
     <div id="root"></div>
-    <script type="module" crossorigin src="/assets/index-5o1Ua_BN.js"></script>
+    <script type="module" crossorigin src="/assets/index-C1NJg7pU.js"></script>
     <script>
       if (document.getElementById('root')) {
         new MutationObserver(function(m, o) {

@@ -1,8 +1,8 @@
 # Oliver Aleksander Larsen - Software Architecture Researcher
 
 > Software architecture researcher at the University of Southern Denmark (SDU).
-> 4 papers at IEEE ICSA 2026, 1 paper at Euromicro SEAA 2026, 1 paper at CASA (ECSA 2026), 1 paper at AGENTICS 2026 (IJCCI), 1 journal paper under revision at Results in Engineering.
-> Last updated: 2026-09-22
+> 4 papers at IEEE ICSA 2026, 1 paper at Euromicro SEAA 2026, 1 paper at CASA (ECSA 2026), 2 papers at AGENTICS 2026 (IJCCI), 1 journal paper under revision at Results in Engineering.
+> Last updated: 2026-09-23
 
 ## Pages
 - [Home](https://oalarsen.com/): Personal homepage with bio, news, and selected publications
@@ -25,26 +25,32 @@
   - Markdown: https://oalarsen.com/papers/nostr-agent/index.md
   - PDF: https://oalarsen.com/papers/nostr-agent/paper.pdf
   - arXiv: https://arxiv.org/abs/2609.22944
+  - Code: https://github.com/Oliver1703dk/agentics2026-replication-package
+  - Zenodo: https://doi.org/10.5281/zenodo.22744262
 - [Persona-as-Configuration: Generative Stakeholder Reporting for Agricultural Floods](https://oalarsen.com/papers/persona-as-configuration/): An architectural pattern that keeps LLM stakeholder reports out of the flood-detection control plane: the generative layer is read-only, and each stakeholder is a versioned prompt template. Expert review rated it favourably on ISO/IEC 25010, with strongest agreement on separation of concerns.
   - Markdown: https://oalarsen.com/papers/persona-as-configuration/index.md
   - PDF: https://oalarsen.com/papers/persona-as-configuration/paper.pdf
   - arXiv: https://arxiv.org/abs/2607.17774
   - DOI: https://doi.org/10.1007/978-3-032-39143-8_12
+  - Code: https://github.com/Oliver1703dk/generative-reporting-for-agricultural-floods
 - [Mining Architectural Quality Under Agentic AI Adoption: A Causal Study of Java Repositories](https://oalarsen.com/papers/agentic-ai-architecture/): A causal study of 151 Java repositories showing agentic AI adoption leaves architectural smell counts essentially unchanged while code grows 12.8%; the apparent 6.7% drop in smell density is a denominator effect, not an architectural improvement.
   - Markdown: https://oalarsen.com/papers/agentic-ai-architecture/index.md
   - PDF: https://oalarsen.com/papers/agentic-ai-architecture/paper.pdf
   - arXiv: https://arxiv.org/abs/2606.13298
   - DOI: https://doi.org/10.1007/978-3-032-36587-3_34
+  - Code: https://github.com/Oliver1703dk/seaa2026-replication-package
 - [Edge-Based Standing-Water Detection via FSM-Guided Tiering and Multi-Model Consensus](https://oalarsen.com/papers/flood-detection/): A deployed edge architecture for standing-water detection that uses an FSM to trade accuracy, latency, and energy across inference tiers, outperforming static baselines while using less energy than always-offload policies.
   - Markdown: https://oalarsen.com/papers/flood-detection/index.md
   - PDF: https://oalarsen.com/papers/flood-detection/paper.pdf
   - arXiv: https://arxiv.org/abs/2604.03308
   - DOI: https://doi.org/10.1109/icsa-c68850.2026.00016
+  - Code: https://github.com/Oliver1703dk/flood_detection_system
 - [RAD-AI: Rethinking Architecture Documentation for AI-Augmented Ecosystems](https://oalarsen.com/papers/rad-ai/): A backward-compatible extension of arc42 and C4 for AI-augmented ecosystems, increasing EU AI Act Annex IV documentation addressability from ~36% to ~93%, validated on Uber Michelangelo and Netflix Metaflow.
   - Markdown: https://oalarsen.com/papers/rad-ai/index.md
   - PDF: https://oalarsen.com/papers/rad-ai/paper.pdf
   - arXiv: https://arxiv.org/abs/2603.28735
   - DOI: https://doi.org/10.1109/icsa-c68850.2026.00054
+  - Code: https://github.com/Oliver1703dk/RAD-AI
 - [BitSov: A Composable Bitcoin-Native Architecture for Sovereign Internet Infrastructure](https://oalarsen.com/papers/bitsov/): An eight-layer Bitcoin-native protocol stack for sovereign internet infrastructure, featuring payment-gated messaging, timechain-locked contracts, and a self-sustaining economic flywheel.
   - Markdown: https://oalarsen.com/papers/bitsov/index.md
   - PDF: https://oalarsen.com/papers/bitsov/paper.pdf
@@ -55,6 +61,7 @@
   - PDF: https://oalarsen.com/papers/sagai-mid/paper.pdf
   - arXiv: https://arxiv.org/abs/2603.28731
   - DOI: https://doi.org/10.1109/icsa-c68850.2026.00090
+  - Code: https://github.com/Oliver1703dk/sagai-mid
 - [Hybrid Large-Language-Model Meal Recommender System for Athletes: A Short Communication](https://oalarsen.com/papers/meal-recommender/): A hybrid LLM recommender for CarboPlanner that combines in-context learning with LoRA fine-tuned Mistral-7B, achieving 46.7% accuracy and 100% format adherence, outperforming ICL-only and random baselines.
   - Markdown: https://oalarsen.com/papers/meal-recommender/index.md
   - DOI: https://doi.org/10.2139/ssrn.6233133

@@ -6,6 +6,7 @@
 - arXiv: https://arxiv.org/abs/2609.22944
 - PDF: https://oalarsen.com/papers/nostr-agent/paper.pdf
 - Code: https://github.com/Oliver1703dk/agentics2026-replication-package
+- Zenodo: https://doi.org/10.5281/zenodo.22744262
 
 ## TL;DR
 
@@ -19,9 +20,9 @@ Autonomous AI agents increasingly act across organizational boundaries on behalf
 
 ### What is NostrAgent?
 
-NostrAgent is a decentralized architecture that gives autonomous AI agents persistent operator-sovereign identity, scoped delegation, peer trust, discovery, and payment by publishing signed Nostr events (Kinds 38100–38102) and binding Lightning HTTP 402 (L402) charges to agent identity, without a registration authority.
+NostrAgent is a decentralized architecture that gives autonomous AI agents persistent operator-sovereign identity, scoped delegation, peer trust, discovery, and payment by publishing signed Nostr events (Kinds 38100-38102) and binding Lightning HTTP 402 (L402) charges to agent identity, without a registration authority.
 
-### Which five capabilities does NostrAgent unify (G1–G5)?
+### Which five capabilities does NostrAgent unify (G1-G5)?
 
 Persistent identity (G1), scoped delegation (G2), peer trust (G3), discovery (G4), and payment (G5). Today these usually live in separate systems; NostrAgent keeps them continuous over Nostr relays with BIP340-authenticated events and L402.
 

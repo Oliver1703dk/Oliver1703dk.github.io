@@ -1,10 +1,10 @@
 # Oliver Aleksander Larsen - Software Architecture Researcher
 
-> Last updated: 2026-09-22
+> Last updated: 2026-09-23
 
 > Software architecture researcher at the University of Southern Denmark (SDU)
 > studying how architecture adapts when AI becomes both a design tool and a
-> design subject. Four papers accepted at IEEE ICSA 2026 (Amsterdam), one paper accepted at Euromicro SEAA 2026 (Krakow), one paper accepted at CASA (ECSA 2026, Bolzano), one paper accepted at AGENTICS 2026 (IJCCI, Angers), plus one journal paper under revision at Results in Engineering.
+> design subject. Four papers accepted at IEEE ICSA 2026 (Amsterdam), one paper accepted at Euromicro SEAA 2026 (Krakow), one paper accepted at CASA (ECSA 2026, Bolzano), two papers accepted at AGENTICS 2026 (IJCCI, Angers), plus one journal paper under revision at Results in Engineering.
 
 ## Site Navigation
 - Home: https://oalarsen.com/
@@ -56,6 +56,7 @@ A vision of a paradigm shift: if agentic coding tools make working software chea
 
 
 
+
 **TL;DR:** Position paper arguing that sustained enterprise agent deployment fails when agents read human-shaped data; rebuild the cognitive substrate for LLM reasoning (Markdown as today's option), with context-bandwidth asymmetry, cross-loop coupling, and a four-layer Data/Knowledge/Intelligence/Governance framework.
 
 **Abstract:** Enterprise AI agents often succeed in a demonstration and then stall once they must operate day after day. An industry report estimates that most pilots never reach production and that deployed systems rarely retain feedback or improve over time, while agent benchmarks show single-run successes masking unreliable repetition. We argue that these failure modes share a common architectural root: agents reason over data structured for human operators and traditional applications, not for the language models that power them. This position paper proposes that companies deploying agents in sustained operation should rebuild their cognitive substrate, the shared environment agents read as working context, around representations matched to that reasoning surface, isolating schema translation to the action boundary. Markdown is the instantiation available today, not a proven agent-native primitive. Two mechanisms ground the argument: context-bandwidth asymmetry, the gap between one-pass reading of connected prose and field-by-field typed access that strips relations; and cross-loop coupling, the claim that action, skill, and policy loops compound only if they share one substrate. A four-layer framework (Data, Knowledge, Intelligence, Governance) operationalizes the position, with a Sync Agent enforcing the action boundary and a per-skill trust gradient, making governance and auditability structural properties of the substrate. The position revives the shared-substrate tradition of classical multi-agent systems under LLM-era economics. We analyze the main objections and risks, including indirect prompt injection on the compile path, and outline a research agenda for evaluating substrates directly.
@@ -83,6 +84,7 @@ A four-layer framework (Data, Knowledge, Intelligence, Governance), with a Sync 
 
 
 - Code: https://github.com/Oliver1703dk/agentics2026-replication-package
+- Zenodo: https://doi.org/10.5281/zenodo.22744262
 
 **TL;DR:** NostrAgent unifies operator-sovereign identity, scoped delegation, peer trust, discovery, and Lightning L402 payment over Nostr relays, evaluated with a mixed-method design (ATAM/Delphi, STRIDE, benchmarks, and failure-mode analysis).
 
@@ -91,9 +93,9 @@ A four-layer framework (Data, Knowledge, Intelligence, Governance), with a Sync 
 **FAQs:**
 
 **Q: What is NostrAgent?**
-NostrAgent is a decentralized architecture that gives autonomous AI agents persistent operator-sovereign identity, scoped delegation, peer trust, discovery, and payment by publishing signed Nostr events (Kinds 38100–38102) and binding Lightning HTTP 402 (L402) charges to agent identity, without a registration authority.
+NostrAgent is a decentralized architecture that gives autonomous AI agents persistent operator-sovereign identity, scoped delegation, peer trust, discovery, and payment by publishing signed Nostr events (Kinds 38100-38102) and binding Lightning HTTP 402 (L402) charges to agent identity, without a registration authority.
 
-**Q: Which five capabilities does NostrAgent unify (G1–G5)?**
+**Q: Which five capabilities does NostrAgent unify (G1-G5)?**
 Persistent identity (G1), scoped delegation (G2), peer trust (G3), discovery (G4), and payment (G5). Today these usually live in separate systems; NostrAgent keeps them continuous over Nostr relays with BIP340-authenticated events and L402.
 
 **Q: How was NostrAgent evaluated?**
@@ -111,6 +113,7 @@ With a mixed-method design: ATAM quality analysis plus a two-round mini-Delphi p
 
 
 - Code: https://github.com/Oliver1703dk/generative-reporting-for-agricultural-floods
+
 
 **TL;DR:** An architectural pattern that keeps LLM stakeholder reports out of the flood-detection control plane: the generative layer is read-only, and each stakeholder is a versioned prompt template. Expert review rated it favourably on ISO/IEC 25010, with strongest agreement on separation of concerns.
 
@@ -140,6 +143,7 @@ A structured expert review rated it favourably across five ISO/IEC 25010-aligned
 
 - Code: https://github.com/Oliver1703dk/seaa2026-replication-package
 
+
 **TL;DR:** A causal study of 151 Java repositories showing agentic AI adoption leaves architectural smell counts essentially unchanged while code grows 12.8%; the apparent 6.7% drop in smell density is a denominator effect, not an architectural improvement.
 
 **Abstract:** AI coding tools are now used by a majority of developers, and agentic use of these tools has popularized the practice colloquially called "vibe coding". Yet causal evidence on their effect on software architecture is scarce. Prior causal work has measured code-level outcomes (complexity, static analysis warnings); whether such degradation propagates to architecture-level outcomes remains unknown. We mine 151 open-source Java repositories, 74 with detectable agentic AI adoption (identified via configuration files and Co-Authored-By commit trailers) and 77 propensity-matched controls, across a 13-month per-repository window yielding 1,811 monthly Arcan snapshots. We estimate the causal effect of adoption on architectural smell density (ASD) with a staggered difference-in-differences design and the Borusyak imputation estimator, applying a causal design recently used for code-level metrics to the architecture level. Total smell counts are essentially unchanged (+1.1%, p=0.82) while lines of code grow +12.8% (p=0.003); the resulting 6.7% ASD decline (p=0.004) is therefore a denominator effect rather than an architectural improvement. Per-type estimates and robustness checks (wild cluster bootstrap, Lee bounds, stale-observation sensitivity) corroborate the pattern; pre-trends are flat (Wald p=0.90), consistent with parallel trends. Density-normalized outcomes can mislead when treatment affects system size: raw counts and explicit decomposition are required for causal mining studies of AI tool adoption. The complete replication package, including the curated 151-repository monthly panel, is publicly available.
@@ -167,6 +171,7 @@ With a staggered difference-in-differences design and the Borusyak imputation es
 
 
 - Code: https://github.com/Oliver1703dk/flood_detection_system
+
 
 **TL;DR:** A deployed edge architecture for standing-water detection that uses an FSM to trade accuracy, latency, and energy across inference tiers, outperforming static baselines while using less energy than always-offload policies.
 
@@ -196,6 +201,7 @@ The multi-model consensus approach with diurnal sensor fusion achieves robust de
 
 - Code: https://github.com/Oliver1703dk/RAD-AI
 
+
 **TL;DR:** A backward-compatible extension of arc42 and C4 for AI-augmented ecosystems, increasing EU AI Act Annex IV documentation addressability from ~36% to ~93%, validated on Uber Michelangelo and Netflix Metaflow.
 
 **Abstract:** AI-augmented ecosystems (interconnected systems where multiple AI components interact through shared data and infrastructure) are becoming the architectural norm for smart cities, autonomous fleets, and intelligent platforms. Yet the architecture documentation frameworks practitioners rely on, arc42 and the C4 model, were designed for deterministic software and cannot capture probabilistic behavior, data-dependent evolution, or dual ML/software lifecycles. This gap carries regulatory consequence: the EU AI Act (Regulation 2024/1689) mandates technical documentation through Annex IV that no existing framework provides structured support for, with enforcement for high-risk systems beginning August 2, 2026. We present RAD-AI, a backward-compatible extension framework that augments arc42 with eight AI-specific sections and C4 with three diagram extensions, complemented by a systematic EU AI Act Annex IV compliance mapping. A regulatory coverage assessment with six experienced software-architecture practitioners provides preliminary evidence that RAD-AI increases Annex IV addressability from approximately 36% to 93% (mean rating) and demonstrates substantial improvement over existing frameworks. Comparative analysis on two production AI platforms (Uber Michelangelo, Netflix Metaflow) captures eight additional AI-specific concerns missed by standard frameworks and demonstrates that documentation deficiencies are structural rather than domain-specific. An illustrative smart mobility ecosystem case study reveals ecosystem-level concerns, including cascading drift and differentiated compliance obligations, that are invisible under standard notation.
@@ -220,6 +226,7 @@ We evaluated RAD-AI on two production ML platforms: Uber Michelangelo and Netfli
 - arXiv: https://arxiv.org/abs/2603.28727
 - DOI: https://doi.org/10.1109/icsa-c68850.2026.00060
 - IEEE Xplore: https://ieeexplore.ieee.org/document/11641158
+
 
 
 
@@ -249,6 +256,7 @@ Payment-gated messaging (spam prevention via micropayments), timechain-locked co
 
 - Code: https://github.com/Oliver1703dk/sagai-mid
 
+
 **TL;DR:** A FastAPI middleware that uses LLMs to resolve schema mismatches at runtime, achieving 0.90 pass@1 across 10 interoperability scenarios, with CODEGEN outperforming DIRECT and the cheapest model being the most accurate.
 
 **Abstract:** Modern distributed systems integrate heterogeneous services, REST APIs with different schema versions, GraphQL endpoints, and IoT devices with proprietary payloads that suffer from persistent schema mismatches. Traditional static adapters require manual coding for every schema pair and cannot handle novel combinations at runtime. We present SAGAI-MID, a FastAPI-based middleware that uses large language models (LLMs) to dynamically detect and resolve schema mismatches at runtime. The system employs a five-layer pipeline: hybrid detection (structural diff plus LLM semantic analysis), dual resolution strategies (per-request LLM transformation and LLM-generated reusable adapter code), and a three-tier safeguard stack (validation, ensemble voting, rule-based fallback). We frame the architecture through Bass et al.'s interoperability tactics, transforming them from design-time artifacts into runtime capabilities. We evaluate SAGAI-MID on 10 interoperability scenarios spanning REST version migration, IoT-to-analytics bridging, and GraphQL protocol conversion across six LLMs from two providers. The best-performing configuration achieves 0.90 pass@1 accuracy. The CODEGEN strategy consistently outperforms DIRECT (0.83 vs 0.77 mean pass@1), while cost varies by over 30x across models with no proportional accuracy gain; the most accurate model is also the cheapest. We discuss implications for software architects adopting LLMs as runtime architectural components.
@@ -272,6 +280,7 @@ The best LLM configuration achieves 0.90 pass@1 accuracy across 10 diverse inter
 
 - SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6233133
 - ResearchGate: https://www.researchgate.net/publication/400770955
+
 
 
 **TL;DR:** A hybrid LLM recommender for CarboPlanner that combines in-context learning with LoRA fine-tuned Mistral-7B, achieving 46.7% accuracy and 100% format adherence, outperforming ICL-only and random baselines.
@@ -339,16 +348,16 @@ Status: Completed
 ## Frequently Asked Questions
 
 **Q: Who is Oliver Larsen?**
-Oliver Aleksander Larsen is a software architecture researcher at the University of Southern Denmark. He has 4 papers accepted at IEEE ICSA 2026, 1 paper accepted at Euromicro SEAA 2026, 1 paper accepted at CASA (ECSA 2026), 1 paper accepted at AGENTICS 2026 (IJCCI), and co-founded CarboPlanner, a sports nutrition startup.
+Oliver Aleksander Larsen is a software architecture researcher at the University of Southern Denmark. He has 4 papers accepted at IEEE ICSA 2026, 1 paper accepted at Euromicro SEAA 2026, 1 paper accepted at CASA (ECSA 2026), 2 papers accepted at AGENTICS 2026 (IJCCI), and co-founded CarboPlanner, a sports nutrition startup.
 
 **Q: What does Oliver Larsen research?**
-His research focuses on how software architecture adapts when AI becomes both a design tool and a design subject, covering edge computing, generative stakeholder reporting, AI governance, blockchain architecture, LLM middleware, enterprise agent substrates, and empirical studies of AI-assisted development.
+His research focuses on how software architecture adapts when AI becomes both a design tool and a design subject, covering edge computing, generative stakeholder reporting, AI governance, blockchain architecture, LLM middleware, enterprise agent substrates, decentralized agent identity, and empirical studies of AI-assisted development.
 
 **Q: Where does Oliver Larsen study?**
 He is pursuing an MSc in Software Engineering at the University of Southern Denmark (SDU), supervised by Mahyar T. Moghaddam.
 
 **Q: How many papers has Oliver Larsen published?**
-He has 4 papers accepted at IEEE ICSA 2026 (Amsterdam, June 22-26, 2026), 1 paper accepted at Euromicro SEAA 2026 (Krakow, September 2-4, 2026), 1 paper accepted at CASA (ECSA 2026, Bolzano, September 7-11, 2026), 1 paper accepted at AGENTICS 2026 (IJCCI, Angers, October 28-30, 2026), and 1 journal paper under revision at Results in Engineering.
+He has 4 papers accepted at IEEE ICSA 2026 (Amsterdam, June 22-26, 2026), 1 paper accepted at Euromicro SEAA 2026 (Krakow, September 2-4, 2026), 1 paper accepted at CASA (ECSA 2026, Bolzano, September 7-11, 2026), 2 papers accepted at AGENTICS 2026 (IJCCI, Angers, October 28-30, 2026), and 1 journal paper under revision at Results in Engineering.
 
 ## Links
 - Home: https://oalarsen.com/
