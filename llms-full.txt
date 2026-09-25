@@ -1,6 +1,6 @@
 # Oliver Aleksander Larsen - Software Architecture Researcher
 
-> Last updated: 2026-09-23
+> Last updated: 2026-09-25
 
 > Software architecture researcher at the University of Southern Denmark (SDU)
 > studying how architecture adapts when AI becomes both a design tool and a
