@@ -101,7 +101,7 @@
     }
   ],
   "datePublished": "2026-07",
-  "dateModified": "2026-09-25",
+  "dateModified": "2026-09-28",
   "abstract": "Cyber-physical systems built on deterministic edge inference, such as on-vehicle flood detection for agricultural fields, produce structured decision logs that must be interpreted differently by heterogeneous stakeholders. Pairing such systems with large language models (LLMs) to generate stakeholder-specific reports introduces a tension: the generative layer is non-deterministic, while the edge plane must remain replayable and auditable. We propose an architectural pattern resting on two invariants: unidirectional consumption, in which the generative layer is a strict read-only consumer of the deterministic plane and never writes back, and persona-as-configuration, in which stakeholder adaptation is a versioned prompt-template artifact rather than runtime improvisation. We instantiate the pattern as a context-aware dashboard layer over the JSON decision logs of a previously published edge-based standing-water detection system, and analyse how the integration boundary admits standard generative-reliability mitigations as configuration- or middleware-level extension points. A structured expert review rated the pattern favourably across five ISO/IEC 25010-aligned quality dimensions, with strongest agreement on separation of concerns. End-user evaluation with agricultural stakeholders is planned for future work.",
   "keywords": "software architecture, generative AI, persona pattern, trust boundary, audit, cyber-physical systems, edge decision logs",
   "isPartOf": {
@@ -296,6 +296,7 @@
     <link rel="stylesheet" crossorigin href="/assets/index-BrQHhk5d.css">
     <link rel="alternate" type="application/atom+xml" title="Oliver Larsen - Research Papers" href="https://oalarsen.com/feed.xml">
     <link rel="alternate" type="text/plain" href="https://oalarsen.com/llms.txt" title="LLM-readable content">
+    <link rel="alternate" type="text/markdown" href="https://oalarsen.com/papers/persona-as-configuration/index.md" title="Markdown">
     <meta name="theme-color" content="#0A0A0A" media="(prefers-color-scheme: dark)">
     <meta name="theme-color" content="#FAFAFA" media="(prefers-color-scheme: light)">
 </head>
@@ -360,6 +361,7 @@
         <section>
             <h2>Resources</h2>
             <p><strong>PDF:</strong> <a href="https://oalarsen.com/papers/persona-as-configuration/paper.pdf">https://oalarsen.com/papers/persona-as-configuration/paper.pdf</a></p>
+            <p><strong>Markdown:</strong> <a href="https://oalarsen.com/papers/persona-as-configuration/index.md">https://oalarsen.com/papers/persona-as-configuration/index.md</a></p>
             <p><strong>arXiv:</strong> <a href="https://arxiv.org/abs/2607.17774">https://arxiv.org/abs/2607.17774</a></p>
             <p><strong>DOI:</strong> <a href="https://doi.org/10.1007/978-3-032-39143-8_12">https://doi.org/10.1007/978-3-032-39143-8_12</a></p>
             

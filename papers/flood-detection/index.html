@@ -87,7 +87,7 @@
     }
   ],
   "datePublished": "2026-04",
-  "dateModified": "2026-09-25",
+  "dateModified": "2026-09-28",
   "abstract": "Standing water in agricultural fields threatens vehicle mobility and crop health. This paper presents a deployed edge architecture for standing-water detection using Raspberry-Pi-class devices with optional Jetson acceleration. Camera input and environmental sensors (humidity, pressure, temperature) are combined in a finite-state machine (FSM) that acts as the architectural decision engine. The FSM-guided control plane selects between local and offloaded inference tiers, trading accuracy, latency, and energy under intermittent connectivity and motion-dependent compute budgets. A multi-model YOLO ensemble provides image scores, while diurnal-baseline sensor fusion adjusts caution using environmental anomalies. All decisions are logged per frame, enabling bit-identical hardware-in-the-loop replays. Across ten configurations and sensor variants on identical field sequences with frame-level ground truth, we show that the combination of adaptive tiering, multi-model consensus, and diurnal sensor fusion improves flood-detection performance over static local baselines, uses less energy than a naive always-heavy offload policy, and maintains bounded tail latency in a real agricultural setting.",
   "keywords": "edge computing, FSM orchestration, model tiering, multi-model consensus, sensor fusion",
   "isPartOf": {
@@ -274,6 +274,7 @@
     <link rel="stylesheet" crossorigin href="/assets/index-BrQHhk5d.css">
     <link rel="alternate" type="application/atom+xml" title="Oliver Larsen - Research Papers" href="https://oalarsen.com/feed.xml">
     <link rel="alternate" type="text/plain" href="https://oalarsen.com/llms.txt" title="LLM-readable content">
+    <link rel="alternate" type="text/markdown" href="https://oalarsen.com/papers/flood-detection/index.md" title="Markdown">
     <meta name="theme-color" content="#0A0A0A" media="(prefers-color-scheme: dark)">
     <meta name="theme-color" content="#FAFAFA" media="(prefers-color-scheme: light)">
 </head>
@@ -333,6 +334,7 @@
         <section>
             <h2>Resources</h2>
             <p><strong>PDF:</strong> <a href="https://oalarsen.com/papers/flood-detection/paper.pdf">https://oalarsen.com/papers/flood-detection/paper.pdf</a></p>
+            <p><strong>Markdown:</strong> <a href="https://oalarsen.com/papers/flood-detection/index.md">https://oalarsen.com/papers/flood-detection/index.md</a></p>
             <p><strong>arXiv:</strong> <a href="https://arxiv.org/abs/2604.03308">https://arxiv.org/abs/2604.03308</a></p>
             <p><strong>DOI:</strong> <a href="https://doi.org/10.1109/icsa-c68850.2026.00016">https://doi.org/10.1109/icsa-c68850.2026.00016</a></p>
             <p><strong>IEEE Xplore:</strong> <a href="https://ieeexplore.ieee.org/document/11641159">https://ieeexplore.ieee.org/document/11641159</a></p>
