@@ -16,7 +16,7 @@
 - CV: https://oalarsen.com/cv/
 
 ## About
-Oliver Aleksander Larsen is an MSc Software Engineering student at the University of Southern Denmark, supervised by Mahyar T. Moghaddam. His research covers edge computing, AI governance (EU AI Act), blockchain architecture, LLM middleware, and causal studies of AI-assisted development. He is also co-founder and CTO of CarboPlanner, a sports nutrition startup that raised 1,090,000 DKK.
+Oliver Aleksander Larsen is an MSc Software Engineering student at the University of Southern Denmark, supervised by Mahyar T. Moghaddam. His research covers edge computing, AI governance (EU AI Act), blockchain architecture, LLM middleware, and causal studies of AI-assisted development. He co-founded CarboPlanner, a sports nutrition startup that raised 1,090,000 DKK.
 
 ## Blog
 
@@ -283,7 +283,7 @@ The best LLM configuration achieves 0.90 pass@1 accuracy across 10 diverse inter
 ### Hybrid Large-Language-Model Meal Recommender System for Athletes: A Short Communication
 - Page: https://oalarsen.com/papers/meal-recommender/
 - Authors: Oliver Aleksander Larsen, Vinay Chakravarthi Gogineni
-- Venue: Results in Engineering
+- Venue: SSRN (under revision at Results in Engineering)
 - Status: Under Revision - preprint available on SSRN
 - Keywords: LLM, LoRA, PEFT, meal recommendation, sports nutrition, Mistral-7B, in-context learning, recommender system
 - Markdown: https://oalarsen.com/papers/meal-recommender/index.md
@@ -345,7 +345,7 @@ Status: Completed
 - **Hybrid LLM Meal Recommender, Results in Engineering (under revision)** (2025 - 2026): Personalized meal planning with LoRA/PEFT fine-tuned Mistral-7B · BSc thesis extended
 
 ### Experience
-- **Co-founder & CTO, CarboPlanner** (2023 - 2026): Sports nutrition startup · Raised 1,090,000 DKK
+- **Former Co-founder & CTO, CarboPlanner** (2023 - 2026): Sports nutrition startup · Raised 1,090,000 DKK
 - **Student Researcher, SDU** (2024 - present): Supervised by Mahyar T. Moghaddam · Edge computing, AI governance
 - **Teaching Assistant** (2023 - present): Data Management, Computer Systems · 300+ students
 

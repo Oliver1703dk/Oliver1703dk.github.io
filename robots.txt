@@ -55,5 +55,7 @@ User-agent: cohere-training-data-crawler
 Disallow: /
 User-agent: anthropic-ai
 Disallow: /
+User-agent: MistralAI-Training
+Disallow: /
 
 Sitemap: https://oalarsen.com/sitemap.xml

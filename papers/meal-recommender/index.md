@@ -2,7 +2,7 @@
 
 - Canonical: https://oalarsen.com/papers/meal-recommender/
 - Authors: Oliver Aleksander Larsen, Vinay Chakravarthi Gogineni
-- Venue: Results in Engineering
+- Venue: SSRN (under revision at Results in Engineering)
 - Status: Under Revision - preprint available on SSRN
 - DOI: https://doi.org/10.2139/ssrn.6233133
 - SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6233133
@@ -35,14 +35,14 @@ This research extends the BSc thesis work at SDU on personalized nutrition for a
 Larsen, O. A., & Gogineni, V. C. (2026). Hybrid Large-Language-Model Meal Recommender System for Athletes: A Short Communication [Preprint]. SSRN. https://doi.org/10.2139/ssrn.6233133
 
 ```bibtex
-@article{larsen2026mealrec,
+@misc{larsen2026mealrec,
   title     = {Hybrid Large-Language-Model Meal Recommender
                System for Athletes: A Short Communication},
   author    = {Larsen, Oliver Aleksander and
                Gogineni, Vinay Chakravarthi},
-  journal   = {Results in Engineering},
   year      = {2026},
+  howpublished = {SSRN},
   doi       = {10.2139/ssrn.6233133},
-  note      = {Under revision. Preprint: SSRN 6233133}
+  note      = {Preprint. Under revision at Results in Engineering}
 }
 ```
