@@ -3,8 +3,10 @@
 - Canonical: https://oalarsen.com/papers/agentic-ai-architecture/
 - Authors: Oliver Aleksander Larsen, Mahyar T. Moghaddam
 - Venue: Euromicro SEAA 2026, STREAM Track
+- Status: Published in Springer LNCS (Software Engineering and Advanced Applications), pages 500-516. Presented at Euromicro SEAA 2026 STREAM, Krakow.
 - arXiv: https://arxiv.org/abs/2606.13298
 - DOI: https://doi.org/10.1007/978-3-032-36587-3_34
+- Springer: https://link.springer.com/chapter/10.1007/978-3-032-36587-3_34
 - PDF: https://oalarsen.com/papers/agentic-ai-architecture/paper.pdf
 - Code: https://github.com/Oliver1703dk/seaa2026-replication-package
 
@@ -29,3 +31,27 @@ The 6.7% decline in architectural smell density is a denominator effect: code gr
 ### How was the causal effect of AI adoption estimated?
 
 With a staggered difference-in-differences design and the Borusyak imputation estimator over 1,811 monthly Arcan snapshots, comparing 74 repositories with detectable agentic AI adoption against 77 propensity-matched controls, with robustness checks including wild cluster bootstrap and Lee bounds.
+
+## Cite this
+
+Larsen, O. A., & Moghaddam, M. T. (2026). Mining Architectural Quality Under Agentic AI Adoption: A Causal Study of Java Repositories. In Euromicro SEAA 2026 (pp. 500-516). Springer. https://doi.org/10.1007/978-3-032-36587-3_34
+
+```bibtex
+@inproceedings{larsen2026mining,
+  title     = {Mining Architectural Quality Under Agentic AI
+               Adoption: A Causal Study of Java Repositories},
+  author    = {Larsen, Oliver Aleksander and
+               Moghaddam, Mahyar T.},
+  booktitle = {Software Engineering and Advanced Applications},
+  series    = {Lecture Notes in Computer Science},
+  pages     = {500--516},
+  year      = {2026},
+  publisher = {Springer},
+  doi       = {10.1007/978-3-032-36587-3_34},
+  isbn      = {978-3-032-36587-3},
+  eprint    = {2606.13298},
+  archiveprefix = {arXiv},
+  primaryclass  = {cs.SE},
+  note      = {STREAM Track}
+}
+```

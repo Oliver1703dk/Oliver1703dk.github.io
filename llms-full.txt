@@ -1,6 +1,6 @@
 # Oliver Aleksander Larsen - Software Architecture Researcher
 
-> Last updated: 2026-10-02
+> Last updated: 2026-10-05
 
 > Software architecture researcher at the University of Southern Denmark (SDU)
 > studying how architecture adapts when AI becomes both a design tool and a
@@ -46,16 +46,14 @@ A vision of a paradigm shift: if agentic coding tools make working software chea
 ## Papers
 
 ### The Agentic Company OS: Substrate Inversion for Sustained Enterprise Agent Deployment
+- Page: https://oalarsen.com/papers/agentic-company-os/
 - Authors: Oliver Aleksander Larsen, Mahyar T. Moghaddam
 - Venue: AGENTICS 2026 (IJCCI), Position-paper track
+- Status: Accepted - to appear in the Springer CCIS proceedings after the conference (October 28-30, 2026, Angers).
 - Keywords: software architecture, agentic AI, enterprise agents, cognitive substrate, multi-agent systems, governance, LLM
+- Markdown: https://oalarsen.com/papers/agentic-company-os/index.md
+- PDF: https://oalarsen.com/papers/agentic-company-os/paper.pdf
 - arXiv: https://arxiv.org/abs/2609.13334
-
-
-
-
-
-
 
 **TL;DR:** Position paper arguing that sustained enterprise agent deployment fails when agents read human-shaped data; rebuild the cognitive substrate for LLM reasoning (Markdown as today's option), with context-bandwidth asymmetry, cross-loop coupling, and a four-layer Data/Knowledge/Intelligence/Governance framework.
 
@@ -75,14 +73,14 @@ A four-layer framework (Data, Knowledge, Intelligence, Governance), with a Sync 
 ---
 
 ### NostrAgent: A Decentralized Identity and Delegation Architecture for Sovereign Agentic Systems
+- Page: https://oalarsen.com/papers/nostr-agent/
 - Authors: Oliver Aleksander Larsen, Mahyar T. Moghaddam
 - Venue: AGENTICS 2026 (IJCCI), AIPAA special session, Full Paper
+- Status: Accepted as a Full Paper at the AIPAA special session of AGENTICS 2026 (IJCCI), Angers, 28-30 October 2026; to appear in Springer CCIS.
 - Keywords: AI agents, trustworthy agents, decentralized identity, scoped delegation, multi-agent trust, Nostr, BIP340, L402
+- Markdown: https://oalarsen.com/papers/nostr-agent/index.md
+- PDF: https://oalarsen.com/papers/nostr-agent/paper.pdf
 - arXiv: https://arxiv.org/abs/2609.22944
-
-
-
-
 - Code: https://github.com/Oliver1703dk/agentics2026-replication-package
 - Zenodo: https://doi.org/10.5281/zenodo.22744262
 
@@ -104,16 +102,18 @@ With a mixed-method design: ATAM quality analysis plus a two-round mini-Delphi p
 ---
 
 ### Persona-as-Configuration: Generative Stakeholder Reporting for Agricultural Floods
+- Page: https://oalarsen.com/papers/persona-as-configuration/
 - Authors: Oliver Aleksander Larsen, Tiziano Santilli, Francesco Daghero, Mahyar T. Moghaddam
 - Venue: CASA 2026 Workshop at ECSA 2026
+- Status: Published in Springer LNCS (Software Architecture. ECSA 2026 Tracks and Workshops), pages 115-131. Talk: 8 September 2026, 11:40, Bolzano.
 - Keywords: software architecture, generative AI, persona pattern, trust boundary, audit, cyber-physical systems, edge decision logs
+- Markdown: https://oalarsen.com/papers/persona-as-configuration/index.md
+- PDF: https://oalarsen.com/papers/persona-as-configuration/paper.pdf
 - arXiv: https://arxiv.org/abs/2607.17774
 - DOI: https://doi.org/10.1007/978-3-032-39143-8_12
-
-
-
+- Springer: https://link.springer.com/chapter/10.1007/978-3-032-39143-8_12
 - Code: https://github.com/Oliver1703dk/generative-reporting-for-agricultural-floods
-
+- Cite as: Larsen, O. A., Santilli, T., Daghero, F., & Moghaddam, M. T. (2026). Persona-as-Configuration: Generative Stakeholder Reporting for Agricultural Floods. In ECSA 2026 (pp. 115-131). Springer. https://doi.org/10.1007/978-3-032-39143-8_12
 
 **TL;DR:** An architectural pattern that keeps LLM stakeholder reports out of the flood-detection control plane: the generative layer is read-only, and each stakeholder is a versioned prompt template. Expert review rated it favourably on ISO/IEC 25010, with strongest agreement on separation of concerns.
 
@@ -133,16 +133,18 @@ A structured expert review rated it favourably across five ISO/IEC 25010-aligned
 ---
 
 ### Mining Architectural Quality Under Agentic AI Adoption: A Causal Study of Java Repositories
+- Page: https://oalarsen.com/papers/agentic-ai-architecture/
 - Authors: Oliver Aleksander Larsen, Mahyar T. Moghaddam
 - Venue: Euromicro SEAA 2026, STREAM Track
+- Status: Published in Springer LNCS (Software Engineering and Advanced Applications), pages 500-516. Presented at Euromicro SEAA 2026 STREAM, Krakow.
 - Keywords: agentic AI, vibe coding, AI coding tools, architectural smells, repository mining, causal inference, difference-in-differences, software architecture
+- Markdown: https://oalarsen.com/papers/agentic-ai-architecture/index.md
+- PDF: https://oalarsen.com/papers/agentic-ai-architecture/paper.pdf
 - arXiv: https://arxiv.org/abs/2606.13298
 - DOI: https://doi.org/10.1007/978-3-032-36587-3_34
-
-
-
+- Springer: https://link.springer.com/chapter/10.1007/978-3-032-36587-3_34
 - Code: https://github.com/Oliver1703dk/seaa2026-replication-package
-
+- Cite as: Larsen, O. A., & Moghaddam, M. T. (2026). Mining Architectural Quality Under Agentic AI Adoption: A Causal Study of Java Repositories. In Euromicro SEAA 2026 (pp. 500-516). Springer. https://doi.org/10.1007/978-3-032-36587-3_34
 
 **TL;DR:** A causal study of 151 Java repositories showing agentic AI adoption leaves architectural smell counts essentially unchanged while code grows 12.8%; the apparent 6.7% drop in smell density is a denominator effect, not an architectural improvement.
 
@@ -162,16 +164,18 @@ With a staggered difference-in-differences design and the Borusyak imputation es
 ---
 
 ### Edge-Based Standing-Water Detection via FSM-Guided Tiering and Multi-Model Consensus
+- Page: https://oalarsen.com/papers/flood-detection/
 - Authors: Oliver Aleksander Larsen, Mahyar T. Moghaddam
 - Venue: IEEE ICSA 2026, Software Architecture in Practice Track
+- Status: Published in the 2026 IEEE ICSA Companion (ICSA-C) proceedings on IEEE Xplore
 - Keywords: edge computing, FSM orchestration, model tiering, multi-model consensus, sensor fusion
+- Markdown: https://oalarsen.com/papers/flood-detection/index.md
+- PDF: https://oalarsen.com/papers/flood-detection/paper.pdf
 - arXiv: https://arxiv.org/abs/2604.03308
 - DOI: https://doi.org/10.1109/icsa-c68850.2026.00016
 - IEEE Xplore: https://ieeexplore.ieee.org/document/11641159
-
-
 - Code: https://github.com/Oliver1703dk/flood_detection_system
-
+- Cite as: Larsen, O. A., & Moghaddam, M. T. (2026). Edge-Based Standing-Water Detection via FSM-Guided Tiering and Multi-Model Consensus. In 2026 IEEE 23rd International Conference on Software Architecture Companion (ICSA-C) (pp. 45-52). IEEE. https://doi.org/10.1109/icsa-c68850.2026.00016
 
 **TL;DR:** A deployed edge architecture for standing-water detection that uses an FSM to trade accuracy, latency, and energy across inference tiers, outperforming static baselines while using less energy than always-offload policies.
 
@@ -191,16 +195,18 @@ The multi-model consensus approach with diurnal sensor fusion achieves robust de
 ---
 
 ### RAD-AI: Rethinking Architecture Documentation for AI-Augmented Ecosystems
+- Page: https://oalarsen.com/papers/rad-ai/
 - Authors: Oliver Aleksander Larsen, Mahyar T. Moghaddam
 - Venue: ANGE 2026 Workshop at IEEE ICSA 2026
+- Status: Published in the 2026 IEEE ICSA Companion (ICSA-C) proceedings on IEEE Xplore
 - Keywords: software architecture, architecture documentation, AI-augmented systems, arc42, C4 model, EU AI Act, machine learning, architecture decision records, ecosystems
+- Markdown: https://oalarsen.com/papers/rad-ai/index.md
+- PDF: https://oalarsen.com/papers/rad-ai/paper.pdf
 - arXiv: https://arxiv.org/abs/2603.28735
 - DOI: https://doi.org/10.1109/icsa-c68850.2026.00054
 - IEEE Xplore: https://ieeexplore.ieee.org/document/11641201
-
-
 - Code: https://github.com/Oliver1703dk/RAD-AI
-
+- Cite as: Larsen, O. A., & Moghaddam, M. T. (2026). RAD-AI: Rethinking Architecture Documentation for AI-Augmented Ecosystems. In 2026 IEEE 23rd International Conference on Software Architecture Companion (ICSA-C) (pp. 229-236). IEEE. https://doi.org/10.1109/icsa-c68850.2026.00054
 
 **TL;DR:** A backward-compatible extension of arc42 and C4 for AI-augmented ecosystems, increasing EU AI Act Annex IV documentation addressability from ~36% to ~93%, validated on Uber Michelangelo and Netflix Metaflow.
 
@@ -220,16 +226,17 @@ We evaluated RAD-AI on two production ML platforms: Uber Michelangelo and Netfli
 ---
 
 ### BitSov: A Composable Bitcoin-Native Architecture for Sovereign Internet Infrastructure
+- Page: https://oalarsen.com/papers/bitsov/
 - Authors: Oliver Aleksander Larsen, Rasmus Thorsen Larsen, Mahyar T. Moghaddam
 - Venue: BlockArch 2026 Workshop at IEEE ICSA 2026
+- Status: Published in the 2026 IEEE ICSA Companion (ICSA-C) proceedings on IEEE Xplore
 - Keywords: blockchain architecture, Bitcoin, Lightning Network, layered settlement, sovereign infrastructure, payment-gated messaging, decentralized identity
+- Markdown: https://oalarsen.com/papers/bitsov/index.md
+- PDF: https://oalarsen.com/papers/bitsov/paper.pdf
 - arXiv: https://arxiv.org/abs/2603.28727
 - DOI: https://doi.org/10.1109/icsa-c68850.2026.00060
 - IEEE Xplore: https://ieeexplore.ieee.org/document/11641158
-
-
-
-
+- Cite as: Larsen, O. A., Larsen, R. T., & Moghaddam, M. T. (2026). BitSov: A Composable Bitcoin-Native Architecture for Sovereign Internet Infrastructure. In 2026 IEEE 23rd International Conference on Software Architecture Companion (ICSA-C) (pp. 273-276). IEEE. https://doi.org/10.1109/icsa-c68850.2026.00060
 
 **TL;DR:** An eight-layer Bitcoin-native protocol stack for sovereign internet infrastructure, featuring payment-gated messaging, timechain-locked contracts, and a self-sustaining economic flywheel.
 
@@ -246,16 +253,18 @@ Payment-gated messaging (spam prevention via micropayments), timechain-locked co
 ---
 
 ### SAGAI-MID: A Generative AI-Driven Middleware for Dynamic Runtime Interoperability
+- Page: https://oalarsen.com/papers/sagai-mid/
 - Authors: Oliver Aleksander Larsen, Mahyar T. Moghaddam
 - Venue: SAGAI 2026 Workshop at IEEE ICSA 2026
+- Status: Published in the 2026 IEEE ICSA Companion (ICSA-C) proceedings on IEEE Xplore
 - Keywords: software architecture, interoperability, large language models, generative AI, middleware, schema matching, runtime adaptation
+- Markdown: https://oalarsen.com/papers/sagai-mid/index.md
+- PDF: https://oalarsen.com/papers/sagai-mid/paper.pdf
 - arXiv: https://arxiv.org/abs/2603.28731
 - DOI: https://doi.org/10.1109/icsa-c68850.2026.00090
 - IEEE Xplore: https://ieeexplore.ieee.org/document/11641235
-
-
 - Code: https://github.com/Oliver1703dk/sagai-mid
-
+- Cite as: Larsen, O. A., & Moghaddam, M. T. (2026). SAGAI-MID: A Generative AI-Driven Middleware for Dynamic Runtime Interoperability. In 2026 IEEE 23rd International Conference on Software Architecture Companion (ICSA-C) (pp. 485-492). IEEE. https://doi.org/10.1109/icsa-c68850.2026.00090
 
 **TL;DR:** A FastAPI middleware that uses LLMs to resolve schema mismatches at runtime, achieving 0.90 pass@1 across 10 interoperability scenarios, with CODEGEN outperforming DIRECT and the cheapest model being the most accurate.
 
@@ -272,16 +281,16 @@ The best LLM configuration achieves 0.90 pass@1 accuracy across 10 diverse inter
 ---
 
 ### Hybrid Large-Language-Model Meal Recommender System for Athletes: A Short Communication
+- Page: https://oalarsen.com/papers/meal-recommender/
 - Authors: Oliver Aleksander Larsen, Vinay Chakravarthi Gogineni
 - Venue: Results in Engineering
+- Status: Under Revision - preprint available on SSRN
 - Keywords: LLM, LoRA, PEFT, meal recommendation, sports nutrition, Mistral-7B, in-context learning, recommender system
-
+- Markdown: https://oalarsen.com/papers/meal-recommender/index.md
 - DOI: https://doi.org/10.2139/ssrn.6233133
-
 - SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6233133
 - ResearchGate: https://www.researchgate.net/publication/400770955
-
-
+- Cite as: Larsen, O. A., & Gogineni, V. C. (2026). Hybrid Large-Language-Model Meal Recommender System for Athletes: A Short Communication [Preprint]. SSRN. https://doi.org/10.2139/ssrn.6233133
 
 **TL;DR:** A hybrid LLM recommender for CarboPlanner that combines in-context learning with LoRA fine-tuned Mistral-7B, achieving 46.7% accuracy and 100% format adherence, outperforming ICL-only and random baselines.
 

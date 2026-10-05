@@ -3,6 +3,7 @@
 - Canonical: https://oalarsen.com/papers/meal-recommender/
 - Authors: Oliver Aleksander Larsen, Vinay Chakravarthi Gogineni
 - Venue: Results in Engineering
+- Status: Under Revision - preprint available on SSRN
 - DOI: https://doi.org/10.2139/ssrn.6233133
 - SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6233133
 - SSRN identifier: 6233133
@@ -28,3 +29,20 @@ The hybrid model achieves 46.7% prediction accuracy and 100% format adherence on
 ### Is this related to CarboPlanner?
 
 This research extends the BSc thesis work at SDU on personalized nutrition for athletes, which informed the development of the CarboPlanner startup.
+
+## Cite this
+
+Larsen, O. A., & Gogineni, V. C. (2026). Hybrid Large-Language-Model Meal Recommender System for Athletes: A Short Communication [Preprint]. SSRN. https://doi.org/10.2139/ssrn.6233133
+
+```bibtex
+@article{larsen2026mealrec,
+  title     = {Hybrid Large-Language-Model Meal Recommender
+               System for Athletes: A Short Communication},
+  author    = {Larsen, Oliver Aleksander and
+               Gogineni, Vinay Chakravarthi},
+  journal   = {Results in Engineering},
+  year      = {2026},
+  doi       = {10.2139/ssrn.6233133},
+  note      = {Under revision. Preprint: SSRN 6233133}
+}
+```

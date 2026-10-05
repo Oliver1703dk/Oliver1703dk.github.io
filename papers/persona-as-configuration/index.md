@@ -3,8 +3,10 @@
 - Canonical: https://oalarsen.com/papers/persona-as-configuration/
 - Authors: Oliver Aleksander Larsen, Tiziano Santilli, Francesco Daghero, Mahyar T. Moghaddam
 - Venue: CASA 2026 Workshop at ECSA 2026
+- Status: Published in Springer LNCS (Software Architecture. ECSA 2026 Tracks and Workshops), pages 115-131. Talk: 8 September 2026, 11:40, Bolzano.
 - arXiv: https://arxiv.org/abs/2607.17774
 - DOI: https://doi.org/10.1007/978-3-032-39143-8_12
+- Springer: https://link.springer.com/chapter/10.1007/978-3-032-39143-8_12
 - PDF: https://oalarsen.com/papers/persona-as-configuration/paper.pdf
 - Code: https://github.com/Oliver1703dk/generative-reporting-for-agricultural-floods
 
@@ -29,3 +31,28 @@ Unidirectional consumption: the generative layer is a strict read-only consumer 
 ### How was the pattern evaluated?
 
 A structured expert review rated it favourably across five ISO/IEC 25010-aligned quality dimensions, with strongest agreement on separation of concerns. End-user evaluation with agricultural stakeholders is planned for future work.
+
+## Cite this
+
+Larsen, O. A., Santilli, T., Daghero, F., & Moghaddam, M. T. (2026). Persona-as-Configuration: Generative Stakeholder Reporting for Agricultural Floods. In ECSA 2026 (pp. 115-131). Springer. https://doi.org/10.1007/978-3-032-39143-8_12
+
+```bibtex
+@inproceedings{larsen2026persona,
+  title     = {Persona-as-Configuration: Generative Stakeholder
+               Reporting for Agricultural Floods},
+  author    = {Larsen, Oliver Aleksander and
+               Santilli, Tiziano and
+               Daghero, Francesco and
+               Moghaddam, Mahyar T.},
+  booktitle = {Software Architecture. ECSA 2026 Tracks and Workshops},
+  series    = {Lecture Notes in Computer Science},
+  pages     = {115--131},
+  year      = {2026},
+  publisher = {Springer},
+  doi       = {10.1007/978-3-032-39143-8_12},
+  isbn      = {978-3-032-39143-8},
+  eprint    = {2607.17774},
+  archiveprefix = {arXiv},
+  primaryclass  = {cs.SE}
+}
+```

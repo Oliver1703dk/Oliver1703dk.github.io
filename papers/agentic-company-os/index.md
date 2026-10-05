@@ -3,6 +3,7 @@
 - Canonical: https://oalarsen.com/papers/agentic-company-os/
 - Authors: Oliver Aleksander Larsen, Mahyar T. Moghaddam
 - Venue: AGENTICS 2026 (IJCCI), Position-paper track
+- Status: Accepted - to appear in the Springer CCIS proceedings after the conference (October 28-30, 2026, Angers).
 - arXiv: https://arxiv.org/abs/2609.13334
 - PDF: https://oalarsen.com/papers/agentic-company-os/paper.pdf
 
@@ -27,3 +28,21 @@ Companies deploying agents in sustained operation should rebuild their cognitive
 ### What framework does the paper propose?
 
 A four-layer framework (Data, Knowledge, Intelligence, Governance), with a Sync Agent enforcing the action boundary and a per-skill trust gradient, so governance and auditability become structural properties of the substrate.
+
+## Cite this
+
+```bibtex
+@inproceedings{larsen2026agenticos,
+  title     = {The Agentic Company OS: Substrate Inversion for
+               Sustained Enterprise Agent Deployment},
+  author    = {Larsen, Oliver Aleksander and
+               Moghaddam, Mahyar T.},
+  booktitle = {AGENTICS Special Session at IJCCI},
+  year      = {2026},
+  publisher = {Springer},
+  eprint    = {2609.13334},
+  archiveprefix = {arXiv},
+  primaryclass  = {cs.SE},
+  note      = {Accepted, to appear}
+}
+```

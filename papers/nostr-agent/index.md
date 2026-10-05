@@ -3,6 +3,7 @@
 - Canonical: https://oalarsen.com/papers/nostr-agent/
 - Authors: Oliver Aleksander Larsen, Mahyar T. Moghaddam
 - Venue: AGENTICS 2026 (IJCCI), AIPAA special session, Full Paper
+- Status: Accepted as a Full Paper at the AIPAA special session of AGENTICS 2026 (IJCCI), Angers, 28-30 October 2026; to appear in Springer CCIS.
 - arXiv: https://arxiv.org/abs/2609.22944
 - PDF: https://oalarsen.com/papers/nostr-agent/paper.pdf
 - Code: https://github.com/Oliver1703dk/agentics2026-replication-package
@@ -29,3 +30,21 @@ Persistent identity (G1), scoped delegation (G2), peer trust (G3), discovery (G4
 ### How was NostrAgent evaluated?
 
 With a mixed-method design: ATAM quality analysis plus a two-round mini-Delphi panel, STRIDE threat modeling across three trust boundaries, eleven benchmarks with non-parametric statistics, and 19 failure modes (17 pass empirically, one bounded analytically, one disclosed as an architectural limitation).
+
+## Cite this
+
+```bibtex
+@inproceedings{larsen2026nostragent,
+  title     = {NostrAgent: A Decentralized Identity and Delegation Architecture for
+               Sovereign Agentic Systems},
+  author    = {Larsen, Oliver Aleksander and
+               Moghaddam, Mahyar T.},
+  booktitle = {AIPAA Special Session at AGENTICS / IJCCI},
+  year      = {2026},
+  publisher = {Springer},
+  eprint    = {2609.22944},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.SE},
+  note      = {Accepted to appear}
+}
+```

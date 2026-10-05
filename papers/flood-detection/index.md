@@ -3,6 +3,7 @@
 - Canonical: https://oalarsen.com/papers/flood-detection/
 - Authors: Oliver Aleksander Larsen, Mahyar T. Moghaddam
 - Venue: IEEE ICSA 2026, Software Architecture in Practice Track
+- Status: Published in the 2026 IEEE ICSA Companion (ICSA-C) proceedings on IEEE Xplore
 - arXiv: https://arxiv.org/abs/2604.03308
 - DOI: https://doi.org/10.1109/icsa-c68850.2026.00016
 - IEEE Xplore: https://ieeexplore.ieee.org/document/11641159
@@ -30,3 +31,23 @@ A finite-state machine monitors resource utilization and environmental signals t
 ### What accuracy does the system achieve?
 
 The multi-model consensus approach with diurnal sensor fusion achieves robust detection across varying lighting conditions, outperforming single-model baselines on our agricultural dataset.
+
+## Cite this
+
+Larsen, O. A., & Moghaddam, M. T. (2026). Edge-Based Standing-Water Detection via FSM-Guided Tiering and Multi-Model Consensus. In 2026 IEEE 23rd International Conference on Software Architecture Companion (ICSA-C) (pp. 45-52). IEEE. https://doi.org/10.1109/icsa-c68850.2026.00016
+
+```bibtex
+@inproceedings{larsen2026flood,
+  title     = {Edge-Based Standing-Water Detection via
+               FSM-Guided Tiering and Multi-Model Consensus},
+  author    = {Larsen, Oliver Aleksander and Moghaddam, Mahyar T.},
+  booktitle = {2026 IEEE 23rd International Conference on Software Architecture Companion (ICSA-C)},
+  year      = {2026},
+  doi       = {10.1109/icsa-c68850.2026.00016},
+  publisher = {IEEE},
+  pages     = {45--52},
+  eprint    = {2604.03308},
+  archiveprefix = {arXiv},
+  primaryclass  = {cs.CV},
+}
+```
