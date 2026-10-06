@@ -347,7 +347,7 @@ Status: Completed
 ### Experience
 - **Former Co-founder & CTO, CarboPlanner** (2023 - 2026): Sports nutrition startup · Raised 1,090,000 DKK
 - **Student Researcher, SDU** (2024 - present): Supervised by Mahyar T. Moghaddam · Edge computing, AI governance
-- **Teaching Assistant** (2023 - present): Data Management, Computer Systems · 300+ students
+- **Teaching Assistant** (2023 - present): Data Management, Computer Systems · 500+ students
 
 ### Achievements
 - **Ironman Copenhagen 140.6** (Aug 2025): 3.8km swim · 180km bike · 42.2km run
