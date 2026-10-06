@@ -2,8 +2,8 @@
 
 - Canonical: https://oalarsen.com/papers/meal-recommender/
 - Authors: Oliver Aleksander Larsen, Vinay Chakravarthi Gogineni
-- Venue: SSRN (under revision at Results in Engineering)
-- Status: Under Revision - preprint available on SSRN
+- Venue: SSRN
+- Status: Published on SSRN
 - DOI: https://doi.org/10.2139/ssrn.6233133
 - SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6233133
 - SSRN identifier: 6233133
@@ -42,7 +42,6 @@ Larsen, O. A., & Gogineni, V. C. (2026). Hybrid Large-Language-Model Meal Recomm
                Gogineni, Vinay Chakravarthi},
   year      = {2026},
   howpublished = {SSRN},
-  doi       = {10.2139/ssrn.6233133},
-  note      = {Preprint. Under revision at Results in Engineering}
+  doi       = {10.2139/ssrn.6233133}
 }
 ```

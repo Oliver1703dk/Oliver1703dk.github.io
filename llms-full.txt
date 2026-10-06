@@ -1,10 +1,10 @@
 # Oliver Aleksander Larsen - Software Architecture Researcher
 
-> Last updated: 2026-10-05
+> Last updated: 2026-10-06
 
 > Software architecture researcher at the University of Southern Denmark (SDU)
 > studying how architecture adapts when AI becomes both a design tool and a
-> design subject. Four papers accepted at IEEE ICSA 2026 (Amsterdam), one paper accepted at Euromicro SEAA 2026 (Krakow), one paper accepted at CASA (ECSA 2026, Bolzano), two papers accepted at AGENTICS 2026 (IJCCI, Angers), plus one journal paper under revision at Results in Engineering.
+> design subject. Four papers accepted at IEEE ICSA 2026 (Amsterdam), one paper accepted at Euromicro SEAA 2026 (Krakow), one paper accepted at CASA (ECSA 2026, Bolzano), two papers accepted at AGENTICS 2026 (IJCCI, Angers), plus one paper on SSRN.
 
 ## Site Navigation
 - Home: https://oalarsen.com/
@@ -283,8 +283,8 @@ The best LLM configuration achieves 0.90 pass@1 accuracy across 10 diverse inter
 ### Hybrid Large-Language-Model Meal Recommender System for Athletes: A Short Communication
 - Page: https://oalarsen.com/papers/meal-recommender/
 - Authors: Oliver Aleksander Larsen, Vinay Chakravarthi Gogineni
-- Venue: SSRN (under revision at Results in Engineering)
-- Status: Under Revision - preprint available on SSRN
+- Venue: SSRN
+- Status: Published on SSRN
 - Keywords: LLM, LoRA, PEFT, meal recommendation, sports nutrition, Mistral-7B, in-context learning, recommender system
 - Markdown: https://oalarsen.com/papers/meal-recommender/index.md
 - DOI: https://doi.org/10.2139/ssrn.6233133
@@ -315,12 +315,12 @@ Tags: React, Flutter, NestJS, MongoDB, Startup
 Status: Completed
 
 ### Hybrid LLM Meal Recommender
-Hybrid LLM recommender integrated into CarboPlanner. Combines in-context learning with LoRA/PEFT fine-tuned Mistral-7B for personalized athlete meal planning. 46.7% accuracy, 100% format adherence. Under revision at Results in Engineering.
+Hybrid LLM recommender integrated into CarboPlanner. Combines in-context learning with LoRA/PEFT fine-tuned Mistral-7B for personalized athlete meal planning. 46.7% accuracy, 100% format adherence. Published on SSRN.
 Tags: LLM, LoRA, Mistral-7B, Flask, CarboPlanner
 Status: Completed
 
 ### Flood Detection System
-Edge architecture for standing-water detection in agricultural fields. Raspberry Pi + Jetson AGX Orin running YOLO models with FSM-based orchestration over MQTT.
+2024-2025. Built an edge architecture for standing-water detection in agricultural fields. It ran YOLO models on Raspberry Pi + Jetson AGX Orin with FSM-based orchestration over MQTT.
 Tags: Edge AI, YOLO, Raspberry Pi, Jetson, MQTT
 Status: Completed
 
@@ -342,7 +342,7 @@ Status: Completed
 - **Paper accepted at CASA 2026 (ECSA 2026, Bolzano)** (2026): Persona-as-Configuration: Generative Stakeholder Reporting for Agricultural Floods
 - **Paper accepted at Euromicro SEAA 2026 (STREAM Track)** (2026): Mining Architectural Quality Under Agentic AI Adoption: causal study of 151 Java repositories
 - **4 papers accepted at IEEE ICSA 2026** (2026): Edge AI, AI governance (EU AI Act), blockchain architecture, LLM middleware
-- **Hybrid LLM Meal Recommender, Results in Engineering (under revision)** (2025 - 2026): Personalized meal planning with LoRA/PEFT fine-tuned Mistral-7B · BSc thesis extended
+- **Hybrid LLM Meal Recommender, SSRN** (2025 - 2026): Personalized meal planning with LoRA/PEFT fine-tuned Mistral-7B · BSc thesis extended
 
 ### Experience
 - **Former Co-founder & CTO, CarboPlanner** (2023 - 2026): Sports nutrition startup · Raised 1,090,000 DKK
@@ -366,7 +366,7 @@ His research focuses on how software architecture adapts when AI becomes both a 
 He is pursuing an MSc in Software Engineering at the University of Southern Denmark (SDU), supervised by Mahyar T. Moghaddam.
 
 **Q: How many papers has Oliver Larsen published?**
-He has 4 papers accepted at IEEE ICSA 2026 (Amsterdam, June 22-26, 2026), 1 paper accepted at Euromicro SEAA 2026 (Krakow, September 2-4, 2026), 1 paper accepted at CASA (ECSA 2026, Bolzano, September 7-11, 2026), 2 papers accepted at AGENTICS 2026 (IJCCI, Angers, October 28-30, 2026), and 1 journal paper under revision at Results in Engineering.
+He has 4 papers accepted at IEEE ICSA 2026 (Amsterdam, June 22-26, 2026), 1 paper accepted at Euromicro SEAA 2026 (Krakow, September 2-4, 2026), 1 paper accepted at CASA (ECSA 2026, Bolzano, September 7-11, 2026), 2 papers accepted at AGENTICS 2026 (IJCCI, Angers, October 28-30, 2026), and 1 paper on SSRN.
 
 ## Links
 - Home: https://oalarsen.com/
