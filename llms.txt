@@ -77,7 +77,7 @@
 - Enterprise Agent Substrates and Multi-Agent Systems
 
 ## Projects
-- CarboPlanner: Sports nutrition startup. Co-founded and raised 1,090,000 DKK. Built a full-stack platform with React, Flutter, NestJS, and MongoDB for personalized macro tracking and meal planning.
+- CarboPlanner: Sports nutrition startup. Co-founded and helped raise 1,090,000 DKK. Built a full-stack platform with React, Flutter, NestJS, and MongoDB for personalized macro tracking and meal planning.
 - Hybrid LLM Meal Recommender: Hybrid LLM recommender integrated into CarboPlanner. Combines in-context learning with LoRA/PEFT fine-tuned Mistral-7B for personalized athlete meal planning. 46.7% accuracy, 100% format adherence. Published on SSRN.
 - Flood Detection System: 2024-2025. Built an edge architecture for standing-water detection in agricultural fields. It ran YOLO models on Raspberry Pi + Jetson AGX Orin with FSM-based orchestration over MQTT.
 - Stock Analysis System: Multi-agent LLM trading system with autonomous analysis pipelines. Built with Next.js frontend, Flask backend, MongoDB, Celery task queue, and Redis.

@@ -310,7 +310,7 @@ This research extends the BSc thesis work at SDU on personalized nutrition for a
 ## Projects
 
 ### CarboPlanner
-Sports nutrition startup. Co-founded and raised 1,090,000 DKK. Built a full-stack platform with React, Flutter, NestJS, and MongoDB for personalized macro tracking and meal planning.
+Sports nutrition startup. Co-founded and helped raise 1,090,000 DKK. Built a full-stack platform with React, Flutter, NestJS, and MongoDB for personalized macro tracking and meal planning.
 Tags: React, Flutter, NestJS, MongoDB, Startup
 Status: Completed
 
@@ -332,9 +332,9 @@ Status: Completed
 ## Curriculum Vitae
 
 ### Education
-- **MSc Software Engineering** (2025 - present): University of Southern Denmark (SDU)
-- **BSc Software Engineering** (2022 - 2025): University of Southern Denmark (SDU) · Grade: ~9.5/12 (A) · Thesis: 12/12 (A+)
-- **High School Diploma** (2018 - 2021): Slagelse Gymnasium · Math / Physics / Chemistry
+- **MSc Software Engineering** (08/2025 - 06/2027 (expected)): University of Southern Denmark (SDU)
+- **BSc Engineering, Software Engineering** (09/2022 - 06/2025): University of Southern Denmark (SDU) · Grade: ~9.5/12 (A) · Thesis: 12/12 (A+)
+- **High School Diploma** (08/2018 - 06/2021): Slagelse Gymnasium · Math / Physics / Chemistry
 
 ### Research
 - **Paper accepted at AGENTICS 2026 (IJCCI, Angers)** (2026): The Agentic Company OS: Substrate Inversion for Sustained Enterprise Agent Deployment
@@ -345,14 +345,14 @@ Status: Completed
 - **Hybrid LLM Meal Recommender, SSRN** (2025 - 2026): Personalized meal planning with LoRA/PEFT fine-tuned Mistral-7B · BSc thesis extended
 
 ### Experience
-- **Former Co-founder & CTO, CarboPlanner** (2023 - 2026): Sports nutrition startup · Raised 1,090,000 DKK
-- **Student Researcher, SDU** (2024 - present): Supervised by Mahyar T. Moghaddam · Edge computing, AI governance
-- **Teaching Assistant** (2023 - present): Data Management, Computer Systems · 500+ students
+- **Former Co-founder & Software Engineer, CarboPlanner** (10/2024 - 2026): Sports nutrition startup · Helped raise 1,090,000 DKK
+- **Software Architecture Researcher · Research Assistant, SDU** (10/2024 - present): Supervised by Mahyar T. Moghaddam · Edge computing, AI governance
+- **Teaching Assistant** (09/2023 - present): Object-Oriented Programming, Data Management, Computer Systems, Software Engineering · 500+ students
 
 ### Achievements
-- **Ironman Copenhagen 140.6** (Aug 2025): 3.8km swim · 180km bike · 42.2km run
-- **Royal Life Guards** (2021 - 2022): 8 months military service, Danish Army
-- **Stuttering Mentoring Coach** (2020 - present): International program for speech therapy mentoring
+- **Ironman Copenhagen 140.6** (08/2025): 3.8km swim · 180km bike · 42.2km run
+- **Soldier, The Royal Life Guards** (08/2021 - 03/2022): Military service: 4 months conscription + 4 months guard duty for the Royal Danish Family
+- **Coach Training, Stammer Program** (2020): International mentoring program supporting people with speech disabilities
 
 ## Frequently Asked Questions
 
