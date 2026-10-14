@@ -25,6 +25,12 @@ User-agent: DuckAssistBot
 Allow: /
 User-agent: MistralAI-User
 Allow: /
+User-agent: MistralAI-Index
+Allow: /
+User-agent: Meta-WebIndexer
+Allow: /
+User-agent: Amzn-User
+Allow: /
 User-agent: Meta-ExternalFetcher
 Allow: /
 User-agent: Google-CloudVertexBot
