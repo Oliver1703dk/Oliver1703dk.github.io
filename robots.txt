@@ -17,8 +17,6 @@ User-agent: Claude-User
 Allow: /
 User-agent: YouBot
 Allow: /
-User-agent: Amazonbot
-Allow: /
 User-agent: Amzn-SearchBot
 Allow: /
 User-agent: DuckAssistBot
@@ -34,8 +32,6 @@ Allow: /
 User-agent: Meta-ExternalFetcher
 Allow: /
 User-agent: Google-CloudVertexBot
-Allow: /
-User-agent: AI2Bot
 Allow: /
 
 # AI training crawlers (BLOCK unless Oliver says otherwise)
@@ -62,6 +58,12 @@ Disallow: /
 User-agent: anthropic-ai
 Disallow: /
 User-agent: MistralAI-Training
+Disallow: /
+User-agent: Amazonbot
+Disallow: /
+User-agent: AI2Bot
+Disallow: /
+User-agent: Ai2Bot-Dolma
 Disallow: /
 
 Sitemap: https://oalarsen.com/sitemap.xml
