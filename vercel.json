@@ -12,33 +12,126 @@
     {
       "source": "/(.*)",
       "headers": [
-        { "key": "X-Content-Type-Options", "value": "nosniff" },
-        { "key": "X-Frame-Options", "value": "DENY" },
-        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" }
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        }
       ]
     },
     {
       "source": "/(.*\\.md)",
       "headers": [
-        { "key": "Content-Type", "value": "text/markdown; charset=utf-8" }
+        {
+          "key": "Content-Type",
+          "value": "text/markdown; charset=utf-8"
+        }
       ]
     },
     {
       "source": "/(.*\\.pdf)",
       "headers": [
-        { "key": "Content-Type", "value": "application/pdf" }
+        {
+          "key": "Content-Type",
+          "value": "application/pdf"
+        }
       ]
     },
     {
       "source": "/assets/(.*)",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
       ]
     },
     {
       "source": "/assets/pdf/(.*)",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=86400" }
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400"
+        }
+      ]
+    },
+    {
+      "source": "/papers/agentic-company-os/paper.pdf",
+      "headers": [
+        {
+          "key": "Link",
+          "value": "<https://arxiv.org/pdf/2609.13334>; rel=\"canonical\""
+        }
+      ]
+    },
+    {
+      "source": "/papers/nostr-agent/paper.pdf",
+      "headers": [
+        {
+          "key": "Link",
+          "value": "<https://arxiv.org/pdf/2609.22944>; rel=\"canonical\""
+        }
+      ]
+    },
+    {
+      "source": "/papers/persona-as-configuration/paper.pdf",
+      "headers": [
+        {
+          "key": "Link",
+          "value": "<https://arxiv.org/pdf/2607.17774>; rel=\"canonical\""
+        }
+      ]
+    },
+    {
+      "source": "/papers/agentic-ai-architecture/paper.pdf",
+      "headers": [
+        {
+          "key": "Link",
+          "value": "<https://arxiv.org/pdf/2606.13298>; rel=\"canonical\""
+        }
+      ]
+    },
+    {
+      "source": "/papers/flood-detection/paper.pdf",
+      "headers": [
+        {
+          "key": "Link",
+          "value": "<https://arxiv.org/pdf/2604.03308>; rel=\"canonical\""
+        }
+      ]
+    },
+    {
+      "source": "/papers/rad-ai/paper.pdf",
+      "headers": [
+        {
+          "key": "Link",
+          "value": "<https://arxiv.org/pdf/2603.28735>; rel=\"canonical\""
+        }
+      ]
+    },
+    {
+      "source": "/papers/bitsov/paper.pdf",
+      "headers": [
+        {
+          "key": "Link",
+          "value": "<https://arxiv.org/pdf/2603.28727>; rel=\"canonical\""
+        }
+      ]
+    },
+    {
+      "source": "/papers/sagai-mid/paper.pdf",
+      "headers": [
+        {
+          "key": "Link",
+          "value": "<https://arxiv.org/pdf/2603.28731>; rel=\"canonical\""
+        }
       ]
     }
   ]
