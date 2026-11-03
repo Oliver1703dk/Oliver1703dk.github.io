@@ -133,6 +133,105 @@
           "value": "<https://arxiv.org/pdf/2603.28731>; rel=\"canonical\""
         }
       ]
+    },
+    {
+      "source": "/blog/death-of-the-application/index.md",
+      "headers": [
+        {
+          "key": "Link",
+          "value": "<https://oalarsen.com/blog/death-of-the-application/>; rel=\"canonical\""
+        }
+      ]
+    },
+    {
+      "source": "/blog/self-architecting-systems/index.md",
+      "headers": [
+        {
+          "key": "Link",
+          "value": "<https://oalarsen.com/blog/self-architecting-systems/>; rel=\"canonical\""
+        }
+      ]
+    },
+    {
+      "source": "/papers/agentic-ai-architecture/index.md",
+      "headers": [
+        {
+          "key": "Link",
+          "value": "<https://oalarsen.com/papers/agentic-ai-architecture/>; rel=\"canonical\""
+        }
+      ]
+    },
+    {
+      "source": "/papers/agentic-company-os/index.md",
+      "headers": [
+        {
+          "key": "Link",
+          "value": "<https://oalarsen.com/papers/agentic-company-os/>; rel=\"canonical\""
+        }
+      ]
+    },
+    {
+      "source": "/papers/bitsov/index.md",
+      "headers": [
+        {
+          "key": "Link",
+          "value": "<https://oalarsen.com/papers/bitsov/>; rel=\"canonical\""
+        }
+      ]
+    },
+    {
+      "source": "/papers/flood-detection/index.md",
+      "headers": [
+        {
+          "key": "Link",
+          "value": "<https://oalarsen.com/papers/flood-detection/>; rel=\"canonical\""
+        }
+      ]
+    },
+    {
+      "source": "/papers/meal-recommender/index.md",
+      "headers": [
+        {
+          "key": "Link",
+          "value": "<https://oalarsen.com/papers/meal-recommender/>; rel=\"canonical\""
+        }
+      ]
+    },
+    {
+      "source": "/papers/nostr-agent/index.md",
+      "headers": [
+        {
+          "key": "Link",
+          "value": "<https://oalarsen.com/papers/nostr-agent/>; rel=\"canonical\""
+        }
+      ]
+    },
+    {
+      "source": "/papers/persona-as-configuration/index.md",
+      "headers": [
+        {
+          "key": "Link",
+          "value": "<https://oalarsen.com/papers/persona-as-configuration/>; rel=\"canonical\""
+        }
+      ]
+    },
+    {
+      "source": "/papers/rad-ai/index.md",
+      "headers": [
+        {
+          "key": "Link",
+          "value": "<https://oalarsen.com/papers/rad-ai/>; rel=\"canonical\""
+        }
+      ]
+    },
+    {
+      "source": "/papers/sagai-mid/index.md",
+      "headers": [
+        {
+          "key": "Link",
+          "value": "<https://oalarsen.com/papers/sagai-mid/>; rel=\"canonical\""
+        }
+      ]
     }
   ]
 }
