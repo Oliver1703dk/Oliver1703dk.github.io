@@ -4,6 +4,7 @@
 - Authors: Oliver Aleksander Larsen, Mahyar T. Moghaddam
 - Venue: Euromicro SEAA 2026, STREAM Track
 - Status: Published in Springer LNCS (Software Engineering and Advanced Applications), pages 500-516. Presented at Euromicro SEAA 2026 STREAM, Krakow.
+- Version of record: Software Engineering and Advanced Applications (Lecture Notes in Computer Science), pp. 500-516, Springer, https://doi.org/10.1007/978-3-032-36587-3_34
 - arXiv: https://arxiv.org/abs/2606.13298
 - DOI: https://doi.org/10.1007/978-3-032-36587-3_34
 - Springer: https://link.springer.com/chapter/10.1007/978-3-032-36587-3_34

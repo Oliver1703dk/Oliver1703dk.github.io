@@ -4,6 +4,7 @@
 - Authors: Oliver Aleksander Larsen, Mahyar T. Moghaddam
 - Venue: ANGE 2026 Workshop at IEEE ICSA 2026
 - Status: Published in the 2026 IEEE ICSA Companion (ICSA-C) proceedings on IEEE Xplore
+- Version of record: 2026 IEEE 23rd International Conference on Software Architecture Companion (ICSA-C), pp. 229-236, IEEE, https://doi.org/10.1109/icsa-c68850.2026.00054
 - arXiv: https://arxiv.org/abs/2603.28735
 - DOI: https://doi.org/10.1109/icsa-c68850.2026.00054
 - IEEE Xplore: https://ieeexplore.ieee.org/document/11641201

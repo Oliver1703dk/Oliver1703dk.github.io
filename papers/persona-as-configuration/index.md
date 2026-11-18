@@ -4,6 +4,7 @@
 - Authors: Oliver Aleksander Larsen, Tiziano Santilli, Francesco Daghero, Mahyar T. Moghaddam
 - Venue: CASA 2026 Workshop at ECSA 2026
 - Status: Published in Springer LNCS (Software Architecture. ECSA 2026 Tracks and Workshops), pages 115-131. Talk: 8 September 2026, 11:40, Bolzano.
+- Version of record: Software Architecture. ECSA 2026 Tracks and Workshops (Lecture Notes in Computer Science), pp. 115-131, Springer, https://doi.org/10.1007/978-3-032-39143-8_12
 - arXiv: https://arxiv.org/abs/2607.17774
 - DOI: https://doi.org/10.1007/978-3-032-39143-8_12
 - Springer: https://link.springer.com/chapter/10.1007/978-3-032-39143-8_12

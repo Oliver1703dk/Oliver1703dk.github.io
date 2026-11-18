@@ -1,6 +1,6 @@
 # Oliver Aleksander Larsen - Software Architecture Researcher
 
-> Last updated: 2026-11-11
+> Last updated: 2026-11-18
 
 > Software architecture researcher at the University of Southern Denmark (SDU)
 > studying how architecture adapts when AI becomes both a design tool and a
@@ -106,6 +106,7 @@ With a mixed-method design: ATAM quality analysis plus a two-round mini-Delphi p
 - Authors: Oliver Aleksander Larsen, Tiziano Santilli, Francesco Daghero, Mahyar T. Moghaddam
 - Venue: CASA 2026 Workshop at ECSA 2026
 - Status: Published in Springer LNCS (Software Architecture. ECSA 2026 Tracks and Workshops), pages 115-131. Talk: 8 September 2026, 11:40, Bolzano.
+- Version of record: Software Architecture. ECSA 2026 Tracks and Workshops (Lecture Notes in Computer Science), pp. 115-131, Springer, https://doi.org/10.1007/978-3-032-39143-8_12
 - Keywords: software architecture, generative AI, persona pattern, trust boundary, audit, cyber-physical systems, edge decision logs
 - Markdown: https://oalarsen.com/papers/persona-as-configuration/index.md
 - PDF: https://oalarsen.com/papers/persona-as-configuration/paper.pdf
@@ -137,6 +138,7 @@ A structured expert review rated it favourably across five ISO/IEC 25010-aligned
 - Authors: Oliver Aleksander Larsen, Mahyar T. Moghaddam
 - Venue: Euromicro SEAA 2026, STREAM Track
 - Status: Published in Springer LNCS (Software Engineering and Advanced Applications), pages 500-516. Presented at Euromicro SEAA 2026 STREAM, Krakow.
+- Version of record: Software Engineering and Advanced Applications (Lecture Notes in Computer Science), pp. 500-516, Springer, https://doi.org/10.1007/978-3-032-36587-3_34
 - Keywords: agentic AI, vibe coding, AI coding tools, architectural smells, repository mining, causal inference, difference-in-differences, software architecture
 - Markdown: https://oalarsen.com/papers/agentic-ai-architecture/index.md
 - PDF: https://oalarsen.com/papers/agentic-ai-architecture/paper.pdf
@@ -168,6 +170,7 @@ With a staggered difference-in-differences design and the Borusyak imputation es
 - Authors: Oliver Aleksander Larsen, Mahyar T. Moghaddam
 - Venue: IEEE ICSA 2026, Software Architecture in Practice Track
 - Status: Published in the 2026 IEEE ICSA Companion (ICSA-C) proceedings on IEEE Xplore
+- Version of record: 2026 IEEE 23rd International Conference on Software Architecture Companion (ICSA-C), pp. 45-52, IEEE, https://doi.org/10.1109/icsa-c68850.2026.00016
 - Keywords: edge computing, FSM orchestration, model tiering, multi-model consensus, sensor fusion
 - Markdown: https://oalarsen.com/papers/flood-detection/index.md
 - PDF: https://oalarsen.com/papers/flood-detection/paper.pdf
@@ -199,6 +202,7 @@ The multi-model consensus approach with diurnal sensor fusion achieves robust de
 - Authors: Oliver Aleksander Larsen, Mahyar T. Moghaddam
 - Venue: ANGE 2026 Workshop at IEEE ICSA 2026
 - Status: Published in the 2026 IEEE ICSA Companion (ICSA-C) proceedings on IEEE Xplore
+- Version of record: 2026 IEEE 23rd International Conference on Software Architecture Companion (ICSA-C), pp. 229-236, IEEE, https://doi.org/10.1109/icsa-c68850.2026.00054
 - Keywords: software architecture, architecture documentation, AI-augmented systems, arc42, C4 model, EU AI Act, machine learning, architecture decision records, ecosystems
 - Markdown: https://oalarsen.com/papers/rad-ai/index.md
 - PDF: https://oalarsen.com/papers/rad-ai/paper.pdf
@@ -230,6 +234,7 @@ We evaluated RAD-AI on two production ML platforms: Uber Michelangelo and Netfli
 - Authors: Oliver Aleksander Larsen, Rasmus Thorsen Larsen, Mahyar T. Moghaddam
 - Venue: BlockArch 2026 Workshop at IEEE ICSA 2026
 - Status: Published in the 2026 IEEE ICSA Companion (ICSA-C) proceedings on IEEE Xplore
+- Version of record: 2026 IEEE 23rd International Conference on Software Architecture Companion (ICSA-C), pp. 273-276, IEEE, https://doi.org/10.1109/icsa-c68850.2026.00060
 - Keywords: blockchain architecture, Bitcoin, Lightning Network, layered settlement, sovereign infrastructure, payment-gated messaging, decentralized identity
 - Markdown: https://oalarsen.com/papers/bitsov/index.md
 - PDF: https://oalarsen.com/papers/bitsov/paper.pdf
@@ -257,6 +262,7 @@ Payment-gated messaging (spam prevention via micropayments), timechain-locked co
 - Authors: Oliver Aleksander Larsen, Mahyar T. Moghaddam
 - Venue: SAGAI 2026 Workshop at IEEE ICSA 2026
 - Status: Published in the 2026 IEEE ICSA Companion (ICSA-C) proceedings on IEEE Xplore
+- Version of record: 2026 IEEE 23rd International Conference on Software Architecture Companion (ICSA-C), pp. 485-492, IEEE, https://doi.org/10.1109/icsa-c68850.2026.00090
 - Keywords: software architecture, interoperability, large language models, generative AI, middleware, schema matching, runtime adaptation
 - Markdown: https://oalarsen.com/papers/sagai-mid/index.md
 - PDF: https://oalarsen.com/papers/sagai-mid/paper.pdf

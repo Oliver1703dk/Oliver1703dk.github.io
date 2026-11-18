@@ -4,6 +4,7 @@
 - Authors: Oliver Aleksander Larsen, Mahyar T. Moghaddam
 - Venue: SAGAI 2026 Workshop at IEEE ICSA 2026
 - Status: Published in the 2026 IEEE ICSA Companion (ICSA-C) proceedings on IEEE Xplore
+- Version of record: 2026 IEEE 23rd International Conference on Software Architecture Companion (ICSA-C), pp. 485-492, IEEE, https://doi.org/10.1109/icsa-c68850.2026.00090
 - arXiv: https://arxiv.org/abs/2603.28731
 - DOI: https://doi.org/10.1109/icsa-c68850.2026.00090
 - IEEE Xplore: https://ieeexplore.ieee.org/document/11641235
