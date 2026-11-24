@@ -4,14 +4,14 @@
   "framework": null,
   "redirects": [
     {
-      "source": "/:path*",
+      "source": "/(.*)",
       "has": [
         {
           "type": "host",
           "value": "oalarsen.dk"
         }
       ],
-      "destination": "https://oalarsen.com/:path*",
+      "destination": "https://oalarsen.com/$1",
       "permanent": true
     }
   ],
