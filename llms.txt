@@ -2,7 +2,7 @@
 
 > Software architecture researcher at the University of Southern Denmark (SDU).
 > 4 papers at IEEE ICSA 2026, 1 paper at Euromicro SEAA 2026, 1 paper at CASA (ECSA 2026), 2 papers at AGENTICS 2026 (IJCCI), 1 paper on SSRN.
-> Last updated: 2026-11-18
+> Last updated: 2026-11-24
 
 ## Pages
 - [Home](https://oalarsen.com/): Personal homepage with bio, news, and selected publications
@@ -39,6 +39,7 @@
   - arXiv: https://arxiv.org/abs/2606.13298
   - DOI: https://doi.org/10.1007/978-3-032-36587-3_34
   - Code: https://github.com/Oliver1703dk/seaa2026-replication-package
+  - Zenodo: https://doi.org/10.5281/zenodo.20510047
 - [Edge-Based Standing-Water Detection via FSM-Guided Tiering and Multi-Model Consensus](https://oalarsen.com/papers/flood-detection/): A deployed edge architecture for standing-water detection that uses an FSM to trade accuracy, latency, and energy across inference tiers, outperforming static baselines while using less energy than always-offload policies.
   - Markdown: https://oalarsen.com/papers/flood-detection/index.md
   - PDF: https://oalarsen.com/papers/flood-detection/paper.pdf

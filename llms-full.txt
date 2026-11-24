@@ -1,6 +1,6 @@
 # Oliver Aleksander Larsen - Software Architecture Researcher
 
-> Last updated: 2026-11-18
+> Last updated: 2026-11-24
 
 > Software architecture researcher at the University of Southern Denmark (SDU)
 > studying how architecture adapts when AI becomes both a design tool and a
@@ -105,8 +105,8 @@ With a mixed-method design: ATAM quality analysis plus a two-round mini-Delphi p
 - Page: https://oalarsen.com/papers/persona-as-configuration/
 - Authors: Oliver Aleksander Larsen, Tiziano Santilli, Francesco Daghero, Mahyar T. Moghaddam
 - Venue: CASA 2026 Workshop at ECSA 2026
-- Status: Published in Springer LNCS (Software Architecture. ECSA 2026 Tracks and Workshops), pages 115-131. Talk: 8 September 2026, 11:40, Bolzano.
-- Version of record: Software Architecture. ECSA 2026 Tracks and Workshops (Lecture Notes in Computer Science), pp. 115-131, Springer, https://doi.org/10.1007/978-3-032-39143-8_12
+- Status: Published in Springer LNCS vol. 16991 (Software Architecture. ECSA 2026 Tracks and Workshops), pages 115-131. Talk: 8 September 2026, 11:40, Bolzano.
+- Version of record: Software Architecture. ECSA 2026 Tracks and Workshops (Lecture Notes in Computer Science, vol. 16991), pp. 115-131, Springer, https://doi.org/10.1007/978-3-032-39143-8_12
 - Keywords: software architecture, generative AI, persona pattern, trust boundary, audit, cyber-physical systems, edge decision logs
 - Markdown: https://oalarsen.com/papers/persona-as-configuration/index.md
 - PDF: https://oalarsen.com/papers/persona-as-configuration/paper.pdf
@@ -114,7 +114,7 @@ With a mixed-method design: ATAM quality analysis plus a two-round mini-Delphi p
 - DOI: https://doi.org/10.1007/978-3-032-39143-8_12
 - Springer: https://link.springer.com/chapter/10.1007/978-3-032-39143-8_12
 - Code: https://github.com/Oliver1703dk/generative-reporting-for-agricultural-floods
-- Cite as: Larsen, O. A., Santilli, T., Daghero, F., & Moghaddam, M. T. (2026). Persona-as-Configuration: Generative Stakeholder Reporting for Agricultural Floods. In ECSA 2026 (pp. 115-131). Springer. https://doi.org/10.1007/978-3-032-39143-8_12
+- Cite as: Larsen, O. A., Santilli, T., Daghero, F., & Moghaddam, M. T. (2026). Persona-as-Configuration: Generative Stakeholder Reporting for Agricultural Floods. In Software Architecture. ECSA 2026 Tracks and Workshops (Lecture Notes in Computer Science, Vol. 16991, pp. 115-131). Springer. https://doi.org/10.1007/978-3-032-39143-8_12
 
 **TL;DR:** An architectural pattern that keeps LLM stakeholder reports out of the flood-detection control plane: the generative layer is read-only, and each stakeholder is a versioned prompt template. Expert review rated it favourably on ISO/IEC 25010, with strongest agreement on separation of concerns.
 
@@ -137,8 +137,8 @@ A structured expert review rated it favourably across five ISO/IEC 25010-aligned
 - Page: https://oalarsen.com/papers/agentic-ai-architecture/
 - Authors: Oliver Aleksander Larsen, Mahyar T. Moghaddam
 - Venue: Euromicro SEAA 2026, STREAM Track
-- Status: Published in Springer LNCS (Software Engineering and Advanced Applications), pages 500-516. Presented at Euromicro SEAA 2026 STREAM, Krakow.
-- Version of record: Software Engineering and Advanced Applications (Lecture Notes in Computer Science), pp. 500-516, Springer, https://doi.org/10.1007/978-3-032-36587-3_34
+- Status: Published in Springer LNCS vol. 16864 (Software Engineering and Advanced Applications), pages 500-516. Presented at Euromicro SEAA 2026 STREAM, Krakow.
+- Version of record: Software Engineering and Advanced Applications (Lecture Notes in Computer Science, vol. 16864), pp. 500-516, Springer, https://doi.org/10.1007/978-3-032-36587-3_34
 - Keywords: agentic AI, vibe coding, AI coding tools, architectural smells, repository mining, causal inference, difference-in-differences, software architecture
 - Markdown: https://oalarsen.com/papers/agentic-ai-architecture/index.md
 - PDF: https://oalarsen.com/papers/agentic-ai-architecture/paper.pdf
@@ -146,7 +146,8 @@ A structured expert review rated it favourably across five ISO/IEC 25010-aligned
 - DOI: https://doi.org/10.1007/978-3-032-36587-3_34
 - Springer: https://link.springer.com/chapter/10.1007/978-3-032-36587-3_34
 - Code: https://github.com/Oliver1703dk/seaa2026-replication-package
-- Cite as: Larsen, O. A., & Moghaddam, M. T. (2026). Mining Architectural Quality Under Agentic AI Adoption: A Causal Study of Java Repositories. In Euromicro SEAA 2026 (pp. 500-516). Springer. https://doi.org/10.1007/978-3-032-36587-3_34
+- Zenodo: https://doi.org/10.5281/zenodo.20510047
+- Cite as: Larsen, O. A., & Moghaddam, M. T. (2026). Mining Architectural Quality Under Agentic AI Adoption: A Causal Study of Java Repositories. In Software Engineering and Advanced Applications (Lecture Notes in Computer Science, Vol. 16864, pp. 500-516). Springer. https://doi.org/10.1007/978-3-032-36587-3_34
 
 **TL;DR:** A causal study of 151 Java repositories showing agentic AI adoption leaves architectural smell counts essentially unchanged while code grows 12.8%; the apparent 6.7% drop in smell density is a denominator effect, not an architectural improvement.
 

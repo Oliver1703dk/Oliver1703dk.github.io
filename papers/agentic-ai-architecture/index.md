@@ -3,13 +3,14 @@
 - Canonical: https://oalarsen.com/papers/agentic-ai-architecture/
 - Authors: Oliver Aleksander Larsen, Mahyar T. Moghaddam
 - Venue: Euromicro SEAA 2026, STREAM Track
-- Status: Published in Springer LNCS (Software Engineering and Advanced Applications), pages 500-516. Presented at Euromicro SEAA 2026 STREAM, Krakow.
-- Version of record: Software Engineering and Advanced Applications (Lecture Notes in Computer Science), pp. 500-516, Springer, https://doi.org/10.1007/978-3-032-36587-3_34
+- Status: Published in Springer LNCS vol. 16864 (Software Engineering and Advanced Applications), pages 500-516. Presented at Euromicro SEAA 2026 STREAM, Krakow.
+- Version of record: Software Engineering and Advanced Applications (Lecture Notes in Computer Science, vol. 16864), pp. 500-516, Springer, https://doi.org/10.1007/978-3-032-36587-3_34
 - arXiv: https://arxiv.org/abs/2606.13298
 - DOI: https://doi.org/10.1007/978-3-032-36587-3_34
 - Springer: https://link.springer.com/chapter/10.1007/978-3-032-36587-3_34
 - PDF: https://oalarsen.com/papers/agentic-ai-architecture/paper.pdf
 - Code: https://github.com/Oliver1703dk/seaa2026-replication-package
+- Zenodo: https://doi.org/10.5281/zenodo.20510047
 
 ## TL;DR
 
@@ -35,7 +36,7 @@ With a staggered difference-in-differences design and the Borusyak imputation es
 
 ## Cite this
 
-Larsen, O. A., & Moghaddam, M. T. (2026). Mining Architectural Quality Under Agentic AI Adoption: A Causal Study of Java Repositories. In Euromicro SEAA 2026 (pp. 500-516). Springer. https://doi.org/10.1007/978-3-032-36587-3_34
+Larsen, O. A., & Moghaddam, M. T. (2026). Mining Architectural Quality Under Agentic AI Adoption: A Causal Study of Java Repositories. In Software Engineering and Advanced Applications (Lecture Notes in Computer Science, Vol. 16864, pp. 500-516). Springer. https://doi.org/10.1007/978-3-032-36587-3_34
 
 ```bibtex
 @inproceedings{larsen2026mining,
@@ -45,6 +46,7 @@ Larsen, O. A., & Moghaddam, M. T. (2026). Mining Architectural Quality Under Age
                Moghaddam, Mahyar T.},
   booktitle = {Software Engineering and Advanced Applications},
   series    = {Lecture Notes in Computer Science},
+  volume    = {16864},
   pages     = {500--516},
   year      = {2026},
   publisher = {Springer},

@@ -3,8 +3,8 @@
 - Canonical: https://oalarsen.com/papers/persona-as-configuration/
 - Authors: Oliver Aleksander Larsen, Tiziano Santilli, Francesco Daghero, Mahyar T. Moghaddam
 - Venue: CASA 2026 Workshop at ECSA 2026
-- Status: Published in Springer LNCS (Software Architecture. ECSA 2026 Tracks and Workshops), pages 115-131. Talk: 8 September 2026, 11:40, Bolzano.
-- Version of record: Software Architecture. ECSA 2026 Tracks and Workshops (Lecture Notes in Computer Science), pp. 115-131, Springer, https://doi.org/10.1007/978-3-032-39143-8_12
+- Status: Published in Springer LNCS vol. 16991 (Software Architecture. ECSA 2026 Tracks and Workshops), pages 115-131. Talk: 8 September 2026, 11:40, Bolzano.
+- Version of record: Software Architecture. ECSA 2026 Tracks and Workshops (Lecture Notes in Computer Science, vol. 16991), pp. 115-131, Springer, https://doi.org/10.1007/978-3-032-39143-8_12
 - arXiv: https://arxiv.org/abs/2607.17774
 - DOI: https://doi.org/10.1007/978-3-032-39143-8_12
 - Springer: https://link.springer.com/chapter/10.1007/978-3-032-39143-8_12
@@ -35,7 +35,7 @@ A structured expert review rated it favourably across five ISO/IEC 25010-aligned
 
 ## Cite this
 
-Larsen, O. A., Santilli, T., Daghero, F., & Moghaddam, M. T. (2026). Persona-as-Configuration: Generative Stakeholder Reporting for Agricultural Floods. In ECSA 2026 (pp. 115-131). Springer. https://doi.org/10.1007/978-3-032-39143-8_12
+Larsen, O. A., Santilli, T., Daghero, F., & Moghaddam, M. T. (2026). Persona-as-Configuration: Generative Stakeholder Reporting for Agricultural Floods. In Software Architecture. ECSA 2026 Tracks and Workshops (Lecture Notes in Computer Science, Vol. 16991, pp. 115-131). Springer. https://doi.org/10.1007/978-3-032-39143-8_12
 
 ```bibtex
 @inproceedings{larsen2026persona,
@@ -47,6 +47,7 @@ Larsen, O. A., Santilli, T., Daghero, F., & Moghaddam, M. T. (2026). Persona-as-
                Moghaddam, Mahyar T.},
   booktitle = {Software Architecture. ECSA 2026 Tracks and Workshops},
   series    = {Lecture Notes in Computer Science},
+  volume    = {16991},
   pages     = {115--131},
   year      = {2026},
   publisher = {Springer},
